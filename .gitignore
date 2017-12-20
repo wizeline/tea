@@ -57,3 +57,6 @@ typings/
 # dotenv environment variables file
 .env
 
+# react-stylguidist build files
+/styleguide/build/
+/styleguide/index.html
