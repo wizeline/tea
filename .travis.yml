@@ -1,11 +1,17 @@
 language: node_js
-sudo: false
 dist: trusty
-cache: yarn
+cache:
+  yarn: true
+  directories:
+    - node_modules
 
 script:
-  - yarn danger
-  - yarn test
+  - node --version
+  - yarn --version
+  # Tests have to run before Danger runs because
+  # danger-plugin-jest references the test output
+  - yarn run test
+  - yarn run danger run -- --verbose
 
 notifications:
   slack: wizeline:NqBcWNFLBaluqsCWyjVNcwyh
