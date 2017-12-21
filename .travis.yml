@@ -10,8 +10,8 @@ script:
   - yarn --version
   # Tests have to run before Danger runs because
   # danger-plugin-jest references the test output
-  - yarn run test
-  - yarn run danger run -- --verbose
+  - yarn test
+  - yarn danger run --verbose
 
 notifications:
   slack: wizeline:NqBcWNFLBaluqsCWyjVNcwyh
