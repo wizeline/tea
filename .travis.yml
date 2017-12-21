@@ -6,10 +6,8 @@ cache: yarn
 before_install:
   - npm install npm@latest -g
 
-before_script:
-  - yarn run danger
-
 script:
+  - yarn danger
   - npm test
 
 notifications:
