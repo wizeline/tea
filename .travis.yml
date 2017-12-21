@@ -7,8 +7,7 @@ before_install:
   - npm install npm@latest -g
 
 before_script:
-  - sh -e /etc/init.d/xvfb start
-  - yarn danger
+  - yarn run danger
 
 script:
   - npm test
