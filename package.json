@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "danger": "^2.1.6"
+    "danger": "^2.1.6",
+    "styled-components": "^2.3.3",
+    "styled-reset": "^0.1.3"
   }
 }
