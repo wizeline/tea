@@ -1,4 +1,10 @@
 {
+  "name": "wizeline-phoenix",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wizeline/phoenix.git"
+  },
   "scripts": {
     "danger": "danger"
   },
