@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "danger": "danger"
+  },
   "dependencies": {
     "danger": "^2.1.6",
     "styled-components": "^2.3.3",
