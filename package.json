@@ -6,7 +6,8 @@
     "url": "https://github.com/wizeline/phoenix.git"
   },
   "scripts": {
-    "danger": "danger"
+    "danger": "danger",
+    "test": "echo no test"
   },
   "dependencies": {
     "styled-components": "^2.3.3",
