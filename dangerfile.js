@@ -22,6 +22,8 @@ if (!hasChangelog && !isTrivial) {
   warn('Please add a changelog entry for your changes.');
 }
 
+// Warn when PR size is large
+let errorCount = 0;
 const bigPRThreshold = 600;
 if (danger.github.pr.additions + danger.github.pr.deletions > bigPRThreshold) {
   warn(':exclamation: Big PR (' + ++errorCount + ')');
