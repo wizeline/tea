@@ -10,6 +10,7 @@
     "test": "echo no test"
   },
   "dependencies": {
+    "ramda": "^0.25.0",
     "styled-components": "^2.3.3",
     "styled-reset": "^0.1.3"
   },
