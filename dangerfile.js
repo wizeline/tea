@@ -13,9 +13,8 @@ if (danger.github.pr.assignee === null) {
 }
 
 // Add a CHANGELOG entry for app changes
-const hasChangelog = includes(danger.git.modified_files, 'changelog.md');
-const isTrivial = contains(
-  danger.github.pr.body + danger.github.pr.title,
+const hasChangelog = danger.git.modified_files.includes('changelog.md');
+const isTrivial = `${danger.github.pr.body}${danger.github.pr.title}`.includes(
   '#trivial'
 );
 
