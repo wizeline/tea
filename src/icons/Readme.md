@@ -4,6 +4,13 @@
   <table>
     <tbody>
       <tr>
+        <th>xlarge</th>
+        <th>large</th>
+        <th>medium</th>
+        <th>small</th>
+        <th>xsmall</th>
+      </tr>
+      <tr>
         <td><AddIcon size="xlarge" /></td>
         <td><AddIcon size="large" /></td>
         <td><AddIcon size="medium" /></td>
