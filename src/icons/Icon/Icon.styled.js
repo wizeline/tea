@@ -1,18 +1,19 @@
 import styled from 'styled-components';
 import colors from '../../styles/themes/colors';
 
+const defaultIconSize = '16px';
+
 const IconDivStyled = styled.div`
-  border-style: solid;
   position: relative;
-  height: ${props => props.size || '32px'};
-  width: ${props => props.size || '32px'};
+  height: ${ props => props.size || defaultIconSize };
+  width: ${ props => props.size || defaultIconSize };
 `;
 
 const IconSvgStyled = styled.svg`
-  fill: ${colors.steelGrey};
+  fill: ${ colors.steelGrey };
   user-select: none;
   &:hover {
-    fill: ${colors.darkSkyBlue};
+    fill: ${ colors.darkSkyBlue };
   }
 `;
 

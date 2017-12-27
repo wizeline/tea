@@ -18,6 +18,34 @@ const componentSections = Object
 
 const path = require('path');
 module.exports = {
+  theme: {
+    color: {
+      link: 'firebrick',
+      linkHover: 'salmon',
+    },
+    font: ['proxima-nova', 'sans-serif'],
+  },
+  styles: {
+    Playground: {
+      preview: {
+        paddingLeft: 0,
+        paddingRight: 0,
+        borderWidth: [[0, 0, 1, 0]],
+        borderRadius: 0,
+        fontFamily: ['proxima-nova', 'sans-serif'],
+      },
+    },
+    Markdown: {
+      pre: {
+        border: 0,
+        background: 'none',
+        fontFamily: ['proxima-nova', 'sans-serif'],
+      },
+      code: {
+        fontSize: 14,
+      },
+    },
+  },
   require: [path.resolve(__dirname, 'styleguide/setup.js')],
   skipComponentsWithoutExample: true,
   title: 'Phoenix',
