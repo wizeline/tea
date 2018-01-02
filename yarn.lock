@@ -421,9 +421,9 @@ eslint-config-prettier@^2.6.0:
   dependencies:
     get-stdin "^5.0.1"
 
-"eslint-config-wizeline@github:wizeline/javascript-style-guide#extend-airbnb":
-  version "1.0.1"
-  resolved "https://codeload.github.com/wizeline/javascript-style-guide/tar.gz/08e7fe673b0b2ef4d867db389bb5ebf100809c08"
+eslint-config-wizeline@wizeline/javascript-style-guide#^2.0.0:
+  version "2.0.0"
+  resolved "https://codeload.github.com/wizeline/javascript-style-guide/tar.gz/74974049eb614b6db176d3352643def6ee7d0c69"
 
 eslint-import-resolver-node@^0.3.1:
   version "0.3.1"

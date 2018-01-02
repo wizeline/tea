@@ -11,7 +11,7 @@
     "eslint": "^4.13.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.6.0",
-    "eslint-config-wizeline": "github:wizeline/javascript-style-guide#extend-airbnb",
+    "eslint-config-wizeline": "wizeline/javascript-style-guide#^2.0.0",
     "eslint-plugin-flowtype": "^2.39.1",
     "eslint-plugin-flowtype-errors": "^3.3.6",
     "eslint-plugin-import": "^2.8.0",
