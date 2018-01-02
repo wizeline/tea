@@ -6,9 +6,11 @@
     "url": "https://github.com/wizeline/phoenix.git"
   },
   "scripts": {
+    "lint-staged": "lint-staged",
     "danger": "danger",
-    "test": "echo no test",
-    "lint": "eslint ./"
+    "lint": "eslint ./",
+    "precommit": "lint-staged",
+    "test": "echo no test"
   },
   "dependencies": {
     "ramda": "^0.25.0",
@@ -17,6 +19,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^8.0.3",
+    "danger": "^2.1.6",
     "eslint": "^4.13.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.6.0",
@@ -28,7 +31,8 @@
     "eslint-plugin-prettier": "^2.4.0",
     "eslint-plugin-react": "^7.4.0",
     "flow-bin": "^0.62.0",
-    "prettier": "^1.9.2",
-    "danger": "^2.1.6"
+    "husky": "^0.14.3",
+    "lint-staged": "^6.0.0",
+    "prettier": "^1.9.2"
   }
 }
