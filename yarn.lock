@@ -651,6 +651,10 @@ flat-cache@^1.2.1:
     graceful-fs "^4.1.2"
     write "^0.2.1"
 
+flow-bin@^0.62.0:
+  version "0.62.0"
+  resolved "https://registry.yarnpkg.com/flow-bin/-/flow-bin-0.62.0.tgz#14bca669a6e3f95c0bc0c2d1eb55ec4e98cb1d83"
+
 foreach@^2.0.5:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/foreach/-/foreach-2.0.5.tgz#0bee005018aeb260d0a3af3ae658dd0136ec1b99"
@@ -1101,6 +1105,10 @@ postcss-value-parser@^3.3.0:
 prelude-ls@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
+
+prettier@^1.9.2:
+  version "1.9.2"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.9.2.tgz#96bc2132f7a32338e6078aeb29727178c6335827"
 
 process-nextick-args@~1.0.6:
   version "1.0.7"
