@@ -3,6 +3,7 @@ const COMPONENTS_PATH = './src';
 
 const componentGroups = {
   icons: 'Icons',
+  buttons: 'Buttons',
 };
 
 const componentSections = Object
