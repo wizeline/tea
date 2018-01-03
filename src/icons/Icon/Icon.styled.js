@@ -8,11 +8,11 @@ const CircleIconStyled = styled.div`
   border-radius: 50%;
   background: ${ props => (
     props.background ? props.background : colors.background.iconCircleDefault
-  )};
+  )}; 
 `;
 
 const IconDivStyled = styled.div`
-  //display: inline-block; // TODO: this needs to be toggled on when unwrapped
+  display: ${ props => props.isWrapped ? 'block' : 'inline-block' };
   position: relative;
   height: ${ props => props.size || defaultIconSize };
   width: ${ props => props.size || defaultIconSize };

@@ -15,6 +15,7 @@ const Icon = (props) => {
   const IconWithoutCircle = (
     <IconDivStyled
       size={ getContainerSize(otherProps) }
+      isWrapped={ Boolean(circle) }
     >
       <IconSvgStyled
         viewBox={ viewBox }
