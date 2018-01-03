@@ -2,7 +2,7 @@
   "presets": [
     "env",
     "flow",
-    "react",
+    "react"
   ],
   "plugins": [
     "transform-object-rest-spread"
