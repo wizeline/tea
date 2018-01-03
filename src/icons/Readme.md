@@ -11,11 +11,11 @@
         <th>xsmall</th>
       </tr>
       <tr>
-        <td><AddIcon size="xlarge" /></td>
+        <td><AddIcon size="xlarge" circle /></td>
         <td><AddIcon size="large" /></td>
         <td><AddIcon size="medium" /></td>
         <td><AddIcon size="small" /></td>
-        <td><AddIcon size="xsmall" /></td>
+        <td><AddIcon size="xsmall" circle /></td>
         <td>AddIcon</td>
       </tr>
       <tr>

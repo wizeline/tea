@@ -14,6 +14,7 @@ const background = {
   inputError: palette.white,
   inputDisabled: palette.paleGrey3,
   inputFocus: palette.white,
+  iconCircleDefault: palette.darkMint,
 };
 
 const text = {

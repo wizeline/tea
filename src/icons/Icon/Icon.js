@@ -1,12 +1,21 @@
 import React, { Component } from 'react';
 import { getContainerSize } from '../../utils';
 import { viewBox, preserveAspectRatio } from './Icon.constants.js';
-import { IconDivStyled, IconSvgStyled } from './Icon.styled.js';
+import { IconDivStyled, IconSvgStyled, CircleIconStyled } from './Icon.styled.js';
+
+const CircleIconWrapper = (props) => {
+  const { background, children } = props;
+  return (
+    <CircleIconStyled background={ background } >{ children }</CircleIconStyled>
+  );
+};
 
 const Icon = (props) => {
-  const { icon, ...otherProps } = props;
-  return (
-    <IconDivStyled size={ getContainerSize(otherProps) }>
+  const { icon, circle, background, ...otherProps } = props;
+  const IconWithoutCircle = (
+    <IconDivStyled
+      size={ getContainerSize(otherProps) }
+    >
       <IconSvgStyled
         viewBox={ viewBox }
         preserveAspectRatio={ preserveAspectRatio }
@@ -16,6 +25,11 @@ const Icon = (props) => {
         { icon }
       </IconSvgStyled>
     </IconDivStyled>
+  );
+  return (
+    circle ?
+      <CircleIconWrapper>{ IconWithoutCircle }</CircleIconWrapper> :
+      IconWithoutCircle
   );
 };
 

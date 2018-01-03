@@ -3,8 +3,16 @@ import * as colors from '../../styles/themes/colors';
 
 const defaultIconSize = '16px';
 
-const IconDivStyled = styled.div`
+const CircleIconStyled = styled.div`
   display: inline-block;
+  border-radius: 50%;
+  background: ${ props => (
+    props.background ? props.background : colors.background.iconCircleDefault
+  )};
+`;
+
+const IconDivStyled = styled.div`
+  //display: inline-block; // TODO: this needs to be toggled on when unwrapped
   position: relative;
   height: ${ props => props.size || defaultIconSize };
   width: ${ props => props.size || defaultIconSize };
@@ -19,4 +27,4 @@ const IconSvgStyled = styled.svg`
   }
 `;
 
-export { IconDivStyled, IconSvgStyled };
+export { IconDivStyled, IconSvgStyled, CircleIconStyled };
