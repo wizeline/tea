@@ -1,0 +1,20 @@
+language: node_js
+dist: trusty
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
+script:
+  - node --version
+  - yarn --version
+  # Tests have to run before Danger runs because
+  # danger-plugin-jest references the test output
+  - yarn test
+  - yarn danger run --verbose
+
+notifications:
+  slack: wizeline:NqBcWNFLBaluqsCWyjVNcwyh
+  webhooks:
+    urls:
+      - https://wizeline-webhooks.appspot.com/travis/notifications

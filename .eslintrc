@@ -1,0 +1,6 @@
+{
+  "extends": "eslint-config-wizeline/browser",
+  "env": {
+    "jest": true
+  }
+}
