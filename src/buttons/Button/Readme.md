@@ -21,9 +21,15 @@
 </div>
 ```
 
+### Large
+
 ```jsx
-<Button icon={<AddIcon />} />
+<div>
+  <Button large >Sign up</Button>
+  <Button large disabled >Sign up</Button>
+</div>
 ```
+
 
 ## Destructive
 
@@ -36,6 +42,8 @@
 
 ## Secondary
 
+Medium (default)
+
 ```jsx
 <div>
   <Button secondary >Create</Button>
@@ -43,7 +51,24 @@
 </div>
 ```
 
+Small
+
+```jsx
+<div>
+  <Button secondary small>Expand</Button>
+  <Button secondary small disabled >Expand</Button>
+</div>
+```
+
 ## Button with icon only
+
+```jsx
+<div>
+  <Button secondary small icon={<MoreHorizIcon />} />
+  <Button secondary small disabled icon={<MoreHorizIcon />} />
+</div>
+```
+
 
 ## Close button
 

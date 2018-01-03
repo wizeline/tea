@@ -24,7 +24,7 @@ const isButtonDisabled = (props) => {
 const getButtonSize = (props) => {
   const { xlarge, large, medium, small, xsmall, ...otherProps } = props;
   const sizeFlags = { xlarge, large, medium, small, xsmall };
-  const sizeFlagOrder = [ 'xsmall', 'small', 'medium', 'large', 'xlarge' ];
+  const sizeFlagOrder = [ 'small', 'medium', 'large' ];
   const defaultSize = 'medium';
   return getFirstTruthyKey(sizeFlags, sizeFlagOrder, defaultSize);
 };
@@ -68,7 +68,6 @@ const getButtonStyle = (props) => {
   const hasText = hasChildren;
   const size = getButtonSize(props);
   const sizeStyle = getButtonSizeStyle(size, hasText);
-
   const buttonStyleProps = { ...colorStyle, disabled, ...sizeStyle };
   return { buttonStyleProps, iconStyleProps, iconWrapperStyleProps };
 };
