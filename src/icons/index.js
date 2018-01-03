@@ -105,4 +105,4 @@ export {
   FileEmptyIcon,
   PeopleEmptyIcon,
   Icon,
-}
+};

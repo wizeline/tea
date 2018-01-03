@@ -10,6 +10,8 @@ const Icon = (props) => {
       <IconSvgStyled
         viewBox={ viewBox }
         preserveAspectRatio={ preserveAspectRatio }
+        fill={ props.fill }
+        hoverFill={ props.hoverFill }
       >
         { icon }
       </IconSvgStyled>

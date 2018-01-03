@@ -28,7 +28,8 @@ module.exports = {
   styles: {
     Playground: {
       preview: {
-        paddingLeft: 0,
+        backgroundColor: '#fafbfc',
+        paddingLeft: '74px',
         paddingRight: 0,
         borderWidth: [[0, 0, 1, 0]],
         borderRadius: 0,
@@ -49,12 +50,7 @@ module.exports = {
   require: [path.resolve(__dirname, 'styleguide/setup.js')],
   skipComponentsWithoutExample: true,
   title: 'Phoenix',
-  sections: [
-    {
-      name: 'Components',
-      sections: componentSections,
-    },
-  ],
+  sections: componentSections,
   webpackConfig: {
     module: {
       rules: [
