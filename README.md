@@ -67,7 +67,7 @@ import myCustomTheme from './myCustomTheme';
 // ...
 
 // Theme variables in the default theme will not be
-// overrided if a theme prop is not provided.
+// overridden if a theme prop is not provided.
 <ThemeProvider theme={ myCustomTheme } />
   <App />
 </ThemeProvider>
