@@ -10,17 +10,14 @@ Wizeline Design System
 
 ## Theming Support
 
-The goal of theming support is:
-1. To allow the design system to easily scale, and
-2. To allow consumers to configure their own theme that will consistently propagate throughout the design system with minimal effort.
+The goal of theming support is to allow consumers to configure their own theme that will consistently propagate throughout the design system with minimal effort.
 
 Engineering proposes to:
-1. Create a mapping between color representations and component surfaces
+1. Create a mapping between color representations and component surfaces.
 2. Provide an interface to consumers to override color values assigned to component surfaces.
-3. When a new component surface value has not been specified, the DS will fall back on the values specified in the default phoenix theme.
+3. Allow the Design System to fall back on the values specified in the default phoenix theme when a custom theme variable has not been specified.
 4. Draw inspiration from the Design Tokens from Saleforce's Lightning Design System.
-
-Naming conventions for both color and theme variable names will be defined by UX.
+5. Provide a structured naming convention for configuration files with assistance from UX.
 
 
 ### Proposed API
