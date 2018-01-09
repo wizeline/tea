@@ -29,16 +29,16 @@ To produce example theme variable names concatenate examples below from left to 
 * Function Type (optional): { Primary, Secondary, Destructive }
 * Component Type (optional): { Icon, CircleIcon, Input, Select, Button, CircleButton }
 * Sub-Component Type (optional): See Component Set Above
-* Component State (optional): { Hover, Disabled, Error }
+* Component State (optional): { Hovered, Disabled, Invalidated }
 * Inverse State (optional): { inverse }
 
 Example variable names to be used in code:
 
 ```jsx
-props.theme.backgroundPrimaryHover  // yields #4793cd
+props.theme.backgroundPrimaryHovered  // yields #4793cd
 props.theme.borderSecondaryDisabled // yields #e2e8ea
 props.theme.borderPrimary
-props.theme.borderPrimaryInputHoverInverse
+props.theme.borderPrimaryInputHoveredInverse
 ```
 
 The general idea is to specify more specific name segments to the right of less specific name segments.
@@ -71,10 +71,10 @@ import colors from './defaultColors.js';
 
 export default {
   backgroundPrimary: colors.darkSkyBlue,
-  backgroundPrimaryHover: colors.dullBlue,
+  backgroundPrimaryHovered: colors.dullBlue,
   textPrimary: colors.white,
-  textPrimaryHover: colors.white,
-  borderSecondaryHover: colors.white,
+  textPrimaryHovered: colors.white,
+  borderSecondaryHovered: colors.white,
   // ... etc ...
 }
 ```
@@ -88,7 +88,7 @@ import colors from './defaultColors.js';
 
 export default {
   backgroundPrimary: colors.darkSkyBlue,
-  backgroundPrimaryHover: colors.dullBlue,
+  backgroundPrimaryHovered: colors.dullBlue,
   // ... etc ...
 }
 ```
@@ -100,7 +100,7 @@ import colors from './defaultColors.js';
 
 export default {
   textPrimary: colors.white,
-  textPrimaryHover: colors.white,
+  textPrimaryHovered: colors.white,
   // ... etc ...
 }
 ```
@@ -110,7 +110,7 @@ export default {
 import colors from './defaultColors.js';
 
 export default {
-  borderSecondaryHover: colors.white,
+  borderSecondaryHovered: colors.white,
   // ... etc ...
 }
 ```
