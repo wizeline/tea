@@ -1,23 +1,26 @@
+// @flow
 
-const COMPONENTS_PATH = './src';
+const COMPONENTS_PATH = './src/components';
 
 const componentGroups = {
-  icons: 'Icons',
+  testComponent: 'TestComponent',
 };
 
-const componentSections = Object
-  .entries(componentGroups)
-  .map(([folder, sectionName]) => {
-    return {
-      name: sectionName,
-      content: `${COMPONENTS_PATH}/${folder}/Readme.md`,
-      components: `${COMPONENTS_PATH}/${folder}/*/index.js`,
-      ignore: `${COMPONENTS_PATH}/${folder}/*/index.js`,
-    };
-  });
+const componentSections = Object.entries(componentGroups).map(
+  ([folder, sectionName]) => ({
+    name: sectionName,
+    content: `${COMPONENTS_PATH}/${folder}/Readme.md`,
+    components: `${COMPONENTS_PATH}/${folder}/*/index.js`,
+    ignore: `${COMPONENTS_PATH}/${folder}/*/index.js`,
+  }),
+);
 
 const path = require('path');
+
 module.exports = {
+  styleguideComponents: {
+    Wrapper: path.join(__dirname, './styleguide/TestWrapper'),
+  },
   theme: {
     color: {
       link: 'firebrick',

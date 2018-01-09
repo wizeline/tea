@@ -1,5 +1,7 @@
-import * as icons from '../src/icons';
+// @flow
 
-export {
-  icons,
-};
+/* eslint flowtype-errors/enforce-min-coverage: 0 */
+
+import TestComponent from '../src/components/TestComponent';
+
+export default TestComponent;
