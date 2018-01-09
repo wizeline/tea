@@ -22,43 +22,120 @@ Engineering proposes to:
 
 ### Proposed API
 
-Color Representations declared in a file containing color codes (hexidecimal or rgba)
+CSS Color codes (hexidecimal, rgba, etc.) are assigned human-readable color names.
 
 ```jsx
-// myCustomColors.js or defaultColors.js
+// defaultColors.js
 
+// Example colors are from the freya project and are subject to change by request from UX.
 export default {
-  red: '#ff0000',
-  green: '#00ff00',
-  blue: '#0000ff',
-  black: '#000000',
-  white: '#ffffff',
-}
-```
-
-Colors mapped to theme variables
-```jsx
-// myCustomTheme.js or defaultTheme.js
-
-import colors from 'myCustomColors.js';
-
-export default {
-  backgroundPrimary: colors.blue,
-  backgroundPrimaryHover: colors.black,
-  textPrimary: colors.white,
-  textPrimaryHover: colors.white,
-  borderPrimaryHover: colors.white,
+  charcoalGrey: '#3f484b',
+  coolGrey: '#a2abaf',
+  darkSkyBlue: '#50a5e7',
+  duskyBlue: '#4f55a1',
+  rosyPink: '#ec5659',
+  tomato: '#e62a2a',
   // ... etc ...
 }
 ```
 
-The Phoenix API will provide its own ThemeProvider wrapper component that
-consumers can pass an alternative theme to as a prop.
+Color names are then mapped to theme variables. Each theme variable represents a surface on a given component or multiple components.
+
+```jsx
+// defaultTheme.js
+
+import colors from './defaultColors.js';
+
+export default {
+  backgroundPrimary: colors.darkSkyBlue,
+  backgroundPrimaryHover: colors.dullBlue,
+  textPrimary: colors.white,
+  textPrimaryHover: colors.white,
+  borderSecondaryHover: colors.white,
+  // ... etc ...
+}
+```
+
+A flat object hierachy has been opted for to allow the default theme to be easily overriden (explained later). The number of theme variables is expected to grow over time. To allow for increased maintainability, theme variables will be grouped into separate files.
+
+```jsx
+// defaultBackgroundTheme.js
+
+import colors from './defaultColors.js';
+
+export default {
+  backgroundPrimary: colors.darkSkyBlue,
+  backgroundPrimaryHover: colors.dullBlue,
+  // ... etc ...
+}
+```
+
+```jsx
+// defaultTextTheme.js
+
+import colors from './defaultColors.js';
+
+export default {
+  textPrimary: colors.white,
+  textPrimaryHover: colors.white,
+  // ... etc ...
+}
+```
+
+```jsx
+// defaultBorderTheme.js
+import colors from './defaultColors.js';
+
+export default {
+  borderSecondaryHover: colors.white,
+  // ... etc ...
+}
+```
+
+```jsx
+// A more maintainable version of defaultTheme.js
+
+import backgroundTheme from './defaultBackgroundTheme'
+import textTheme from './defaultTextTheme'
+import borderTheme from './defaultBorderTheme'
+
+export default {
+  ...backgroundTheme,
+  ...textTheme,
+  ...borderTheme,
+  // ... etc ...
+}
+```
+
+Consumers have the freedom to manage their own colours and theme overrides however they desire as long as they later provide a flat object with keys that correspond to supported theme variables. These theme variables will be listed publicly in the API documentation.
+
+```jsx
+// myCustomColors.js
+
+export default {
+  hotPink: '#ff69b4',
+  deepPurple: '#502075',
+}
+```
+
+```jsx
+// myCustomTheme.js
+
+import colors from './myCustomColors';
+
+export default {
+  backgroundPrimary: colors.deepPurple,
+  textPrimary: colors.hotPink,
+  borderPrimary: colors.hotPink,
+}
+```
+
+The Phoenix API will expose its own ThemeProvider wrapper component that consumers can pass an alternative theme to as a prop.
 
 ```jsx
 // WrappedApp.js
 
-import ThemeWrapper from 'phoenix';
+import ThemeProvider from 'phoenix';
 import myCustomTheme from './myCustomTheme';
 
 // ...
@@ -71,3 +148,26 @@ import myCustomTheme from './myCustomTheme';
 
 // ...
 ```
+
+### Under the Hood
+
+The current approach under consideration is to allow Phoenix to expose it's own ThemeProvider to consumers, which wraps the ThemeProvider from styled-components.
+
+```jsx
+// PhoenixThemeProvider.js
+
+import ThemeProvider from 'styled-components';
+import defaultTheme from './defaultTheme';
+
+const PhoenixThemeProvider = (props) => {
+  const finalTheme = { ...defaultTheme, ...props.theme };
+  return (
+    <ThemeProvider theme={ finalTheme } >
+      { props.children }
+    </ThemeProvider>
+  );
+};
+
+export default PhoenixThemeProvider;
+```
+
