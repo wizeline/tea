@@ -29,7 +29,7 @@ To produce example theme variable names concatenate examples below from left to 
 * Function Type (optional): { Primary, Secondary, Destructive }
 * Component Type (optional): { Icon, CircleIcon, Input, Select, Button, CircleButton }
 * Sub-Component Type (optional): See Component Set Above
-* Component State (optional): { Hovered, Disabled, Invalidated }
+* Component State (optional): { Hovered, Disabled, Invalidated, Focused }
 * Inverse State (optional): { inverse }
 
 Example variable names to be used in code:
