@@ -35,10 +35,10 @@ To produce example theme variable names concatenate examples below from left to 
 Example variable names to be used in code:
 
 ```jsx
-props.theme.borderPrimary
-props.theme.borderPrimaryInputHoverInverse
 props.theme.backgroundPrimaryHover  // yields #4793cd
 props.theme.borderSecondaryDisabled // yields #e2e8ea
+props.theme.borderPrimary
+props.theme.borderPrimaryInputHoverInverse
 ```
 
 The general idea is to specify more specific name segments to the right of less specific name segments.
