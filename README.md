@@ -19,6 +19,29 @@ Engineering proposes to:
 4. Draw inspiration from the Design Tokens from Saleforce's Lightning Design System.
 5. Provide a structured naming convention for configuration files with assistance from UX.
 
+### Proposed Naming Convention of Theme Variable names
+
+The proposed naming convention for theme variables draws inspiration from the [Design Tokens in Salesforce's Lightning Design System](https://www.lightningdesignsystem.com/design-tokens)
+
+To produce example theme variable names concatenate examples below from left to right columns.
+
+* Surface Type (mandatory): { background, text, border, shadow }
+* Function Type (optional): { Primary, Secondary, Destructive }
+* Component Type (optional): { Icon, CircleIcon, Input, Select, Button, CircleButton }
+* Sub-Component Type (optional): See Component Set Above
+* Component State (optional): { Hover, Disabled, Error }
+* Inverse State (optional): { inverse }
+
+Example variable names to be used in code:
+
+```jsx
+props.theme.borderPrimary
+props.theme.borderPrimaryInputHoverInverse
+props.theme.backgroundPrimaryHover  // yields #4793cd
+props.theme.borderSecondaryDisabled // yields #e2e8ea
+```
+
+The general idea is to specify more specific name segments to the right of less specific name segments.
 
 ### Proposed API
 
@@ -170,4 +193,3 @@ const PhoenixThemeProvider = (props) => {
 
 export default PhoenixThemeProvider;
 ```
-
