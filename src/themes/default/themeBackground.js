@@ -4,13 +4,13 @@ import colors from './colors';
 
 export default {
   backgroundPrimary: colors.darkSkyBlue,
-  backgroundPrimaryHover: colors.dullBlue,
+  backgroundPrimaryHovered: colors.dullBlue,
   backgroundPrimaryDisabled: colors.paleGrey3,
   backgroundSecondary: colors.white,
-  backgroundSecondaryHover: colors.white,
+  backgroundSecondaryHovered: colors.white,
   backgroundSecondaryDisabled: colors.white,
   backgroundDestructive: colors.rosyPink,
-  backgroundDestructiveHover: colors.tomato,
+  backgroundDestructiveHovered: colors.tomato,
   backgroundDestructiveDisabled: colors.paleGrey3,
   backgroundInput: colors.white,
 };
