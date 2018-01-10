@@ -1,3 +1,4 @@
+// @flow
 
 const size = {
   xsmall: 10,
@@ -8,4 +9,4 @@ const size = {
   xlarge: 18,
 };
 
-export { size };
+export default size;

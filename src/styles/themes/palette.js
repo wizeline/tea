@@ -1,3 +1,5 @@
+// @flow
+
 const palette = {
   black: '#000000',
   charcoalGrey: '#3f484b',

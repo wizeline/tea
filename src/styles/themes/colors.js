@@ -1,3 +1,5 @@
+// @flow
+
 import palette from './palette';
 
 const background = {
@@ -60,9 +62,4 @@ const shadowAlpha = {
   buttonIconOnlyLarge: 0.11,
 };
 
-export {
-  background,
-  text,
-  border,
-  shadowAlpha,
-};
+export { background, text, border, shadowAlpha };

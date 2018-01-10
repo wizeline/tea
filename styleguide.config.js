@@ -1,22 +1,22 @@
+// @flow
 
 const COMPONENTS_PATH = './src';
 
 const componentGroups = {
-  icons: 'Icons',
+  Icon: 'Icon',
 };
 
-const componentSections = Object
-  .entries(componentGroups)
-  .map(([folder, sectionName]) => {
-    return {
-      name: sectionName,
-      content: `${COMPONENTS_PATH}/${folder}/Readme.md`,
-      components: `${COMPONENTS_PATH}/${folder}/*/index.js`,
-      ignore: `${COMPONENTS_PATH}/${folder}/*/index.js`,
-    };
-  });
+const componentSections = Object.entries(componentGroups).map(
+  ([folder, sectionName]) => ({
+    name: sectionName,
+    content: `${COMPONENTS_PATH}/${folder}/Readme.md`,
+    components: `${COMPONENTS_PATH}/${folder}/*/index.js`,
+    ignore: `${COMPONENTS_PATH}/${folder}/*/index.js`,
+  }),
+);
 
 const path = require('path');
+
 module.exports = {
   theme: {
     color: {

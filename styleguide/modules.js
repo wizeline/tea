@@ -1,5 +1,9 @@
-import * as icons from '../src/icons';
+// @flow
 
-export {
-  icons,
+import Icon from '../src/Icon';
+
+const modules: Object = {
+  Icon,
 };
+
+export default modules;
