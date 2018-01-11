@@ -11,7 +11,7 @@ script:
   # Tests have to run before Danger runs because
   # danger-plugin-jest references the test output
   - yarn test
-  - yarn danger run --verbose
+  - yarn danger ci
 
 notifications:
   slack: wizeline:NqBcWNFLBaluqsCWyjVNcwyh
