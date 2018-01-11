@@ -1,9 +1,11 @@
 // @flow
 
-import Icon from '../src/Icon';
+import CircleIcon from '../src/icons/CircleIcon';
+import SquareIcon from '../src/icons/SquareIcon';
 
 const modules: Object = {
-  Icon,
+  CircleIcon,
+  SquareIcon,
 };
 
 export default modules;
