@@ -29,19 +29,22 @@ To produce example theme variable names concatenate examples below from left to 
 * Function Type (optional): { Primary, Secondary, Destructive }
 * Component Type (optional): { Icon, CircleIcon, Input, Select, Button, CircleButton }
 * Sub-Component Type (optional): See Component Set Above
-* Component State (optional): { Hovered, Disabled, Invalidated, Focused }
-* Inverse State (optional): { inverse }
+* Component State (optional): { Active, Disabled, Focus, Hover, Invalid }
+* Inverse State (optional): { Inverse }
 
 Example variable names to be used in code:
 
 ```jsx
-props.theme.backgroundPrimaryHovered  // yields #4793cd
+props.theme.backgroundPrimaryHover  // yields #4793cd
 props.theme.borderSecondaryDisabled // yields #e2e8ea
 props.theme.borderPrimary
-props.theme.borderPrimaryInputHoveredInverse
+props.theme.borderPrimaryInputHoverInverse
 ```
 
 The general idea is to specify more specific name segments to the right of less specific name segments.
+
+**Note:** Component State names are to remain consistent with css/html class and attribute names.
+See [HTML Attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes) and [CSS Pseudo Classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes) for more examples.
 
 ### Proposed API
 
@@ -71,10 +74,10 @@ import colors from './defaultColors.js';
 
 export default {
   backgroundPrimary: colors.darkSkyBlue,
-  backgroundPrimaryHovered: colors.dullBlue,
+  backgroundPrimaryHover: colors.dullBlue,
   textPrimary: colors.white,
-  textPrimaryHovered: colors.white,
-  borderSecondaryHovered: colors.white,
+  textPrimaryHover: colors.white,
+  borderSecondaryHover: colors.white,
   // ... etc ...
 }
 ```
@@ -88,7 +91,7 @@ import colors from './defaultColors.js';
 
 export default {
   backgroundPrimary: colors.darkSkyBlue,
-  backgroundPrimaryHovered: colors.dullBlue,
+  backgroundPrimaryHover: colors.dullBlue,
   // ... etc ...
 }
 ```
@@ -100,7 +103,7 @@ import colors from './defaultColors.js';
 
 export default {
   textPrimary: colors.white,
-  textPrimaryHovered: colors.white,
+  textPrimaryHover: colors.white,
   // ... etc ...
 }
 ```
@@ -110,7 +113,7 @@ export default {
 import colors from './defaultColors.js';
 
 export default {
-  borderSecondaryHovered: colors.white,
+  borderSecondaryHover: colors.white,
   // ... etc ...
 }
 ```
