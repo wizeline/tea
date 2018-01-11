@@ -4,7 +4,7 @@ Interfaces inspired by [react-native-vector-icons](https://github.com/oblador/re
 
 The SVG must display centered within each IconContainer and scaled up uniformly to fit the SVG Content Size.
 
-### IconSquare
+### SquareIcon
 
 | Property      | Value Type | Value                                  |
 |:-------------:|:----------:|:--------------------------------------:|
@@ -20,14 +20,14 @@ The SVG must display centered within each IconContainer and scaled up uniformly 
 | large         | 48px           | 48px              |
 | xlarge        | 56px           | 56px              |
 
-#### IconSquare Code Examples
+#### SquareIcon Code Examples
 
 ```jsx
-<IconSquare />
-<IconSquare name=”plus” size=”xsmall” color={ colors.darkSkyBlue } />
+<SquareIcon />
+<SquareIcon name=”plus” size=”xsmall” color={ colors.darkSkyBlue } />
 ```
 
-### IconCircle
+### CircleIcon
 
 | Property      | Value Type | Value                                     |
 |:-------------:|:----------:|:-----------------------------------------:|
@@ -42,11 +42,11 @@ The SVG must display centered within each IconContainer and scaled up uniformly 
 | small         | 48px           | 24px              |
 | medium        | 56px           | 32px              |
 
-#### IconCircle Code Examples
+#### CircleIcon Code Examples
 
 ```jsx
-<IconCircle />
-<IconCircle name=”plus” size=”small” color={ colors.darkSkyBlue } />
+<CircleIcon />
+<CircleIcon name=”plus” size=”small” color={ colors.darkSkyBlue } />
 ```
 
 ### Other Considerations
