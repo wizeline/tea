@@ -15,6 +15,12 @@ const componentSections = Object.entries(componentGroups).map(
   }),
 );
 
+const styleGuideColors = {
+  themeColorLink: 'firebrick',
+  themeColorLinkHover: 'salmon',
+  previewBackground: '#fafbfc',
+};
+
 const path = require('path');
 
 module.exports = {
@@ -23,15 +29,15 @@ module.exports = {
   },
   theme: {
     color: {
-      link: 'firebrick',
-      linkHover: 'salmon',
+      link: styleGuideColors.themeColorLink,
+      linkHover: styleGuideColors.themeColorLinkHover,
     },
     font: ['proxima-nova', 'sans-serif'],
   },
   styles: {
     Playground: {
       preview: {
-        backgroundColor: '#fafbfc',
+        backgroundColor: styleGuideColors.previewBackground,
         paddingLeft: '74px',
         paddingRight: 0,
         borderWidth: [[0, 0, 1, 0]],
