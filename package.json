@@ -8,7 +8,9 @@
   },
   "scripts": {
     "danger": "danger",
-    "flow": "flow",
+    "flow:check": "flow check ./",
+    "flow-typed": "flow-typed install --overwrite",
+    "flow": "yarn flow-typed && yarn check ./",
     "jest": "jest --coverage --maxWorkers=6",
     "jest-watch": "jest --watch --debug",
     "lint": "eslint ./",
@@ -16,11 +18,10 @@
     "precommit": "lint-staged",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
-    "test": "yarn lint && yarn jest",
+    "test": "yarn flow && yarn lint && yarn jest",
     "test-debug": "jest --coverage --debug"
   },
   "dependencies": {
-    "raf": "^3.4.0",
     "ramda": "^0.25.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -51,6 +52,7 @@
     "eslint-plugin-prettier": "^2.4.0",
     "eslint-plugin-react": "^7.4.0",
     "flow-bin": "^0.62.0",
+    "flow-typed": "^2.2.3",
     "husky": "^0.14.3",
     "jest": "^22.0.6",
     "jest-styled-components": "^4.9.0",

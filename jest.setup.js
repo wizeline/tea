@@ -2,7 +2,6 @@
 
 /* eslint flowtype-errors/enforce-min-coverage: 0 */
 
-import 'raf/polyfill';
 import Adapter from 'enzyme-adapter-react-16';
 import Enzyme from 'enzyme';
 
