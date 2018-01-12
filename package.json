@@ -7,7 +7,6 @@
     "url": "https://github.com/wizeline/phoenix.git"
   },
   "scripts": {
-    "test": "echo no test",
     "danger": "danger",
     "flow": "flow",
     "jest": "jest --coverage --maxWorkers=6",
@@ -17,6 +16,7 @@
     "precommit": "lint-staged",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
+    "test": "yarn lint && yarn jest",
     "test-debug": "jest --coverage --debug"
   },
   "dependencies": {
