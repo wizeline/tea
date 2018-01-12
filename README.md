@@ -9,7 +9,7 @@ Wizeline Design System
 
 ## Running the tests
 
-HEADSUP - Tests files are part of the Components folder. They follow the naming convention of `Component.test.js`
+Tests files are part of the Components folder. They follow the naming convention of `Component.test.js`
 
 In order to run the tests, you'll need to run `yarn test`
 
