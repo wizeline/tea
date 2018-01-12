@@ -9,6 +9,7 @@ const sizes = {
   xsmall: 16,
 };
 
-const getContainerSize = (sizeKey: string = defaultSizeKey) => sizes[sizeKey];
+const getContainerSize = (sizeKey: string) =>
+  sizes.hasOwnProperty(sizeKey) ? sizes[sizeKey] : sizes[defaultSizeKey];
 
 export default getContainerSize;
