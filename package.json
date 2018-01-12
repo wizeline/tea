@@ -18,7 +18,7 @@
     "precommit": "lint-staged",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
-    "test": "yarn flow && yarn lint && yarn jest",
+    "test": "yarn lint && yarn jest",
     "test-debug": "jest --coverage --debug"
   },
   "dependencies": {

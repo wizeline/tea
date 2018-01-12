@@ -4,7 +4,7 @@ module.exports = {
   browser: true,
   setupFiles: ['./jest.setup.js'],
   verbose: true,
-  testMatch: ['**/.test.js'],
+  testMatch: ['**/*.test.js'],
   moduleNameMapper: {
     '\\.(css|scss)$': '<rootDir>/__mocks__/styleMock.js',
   },
