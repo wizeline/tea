@@ -1,10 +1,11 @@
 ## Proposed Icon API
 
-Interfaces inspired by [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons).
+Interface inspired by [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons).
 
-The SVG must display centered within each IconContainer and scaled up uniformly to fit the SVG Content Size.
+### Icon
 
-### SquareIcon
+`<Icon />` contains SVG contents that scales up uniformly to fit the `<Icon />` container size.
+The SVG contents displays centered within the `<Icon />` container.
 
 | Property      | Value Type | Value                                  |
 |:-------------:|:----------:|:--------------------------------------:|
@@ -20,14 +21,17 @@ The SVG must display centered within each IconContainer and scaled up uniformly 
 | large         | 48px           | 48px              |
 | xlarge        | 56px           | 56px              |
 
-#### SquareIcon Code Examples
+#### Icon Code Examples
 
 ```jsx
-<SquareIcon />
-<SquareIcon name=”plus” size=”xsmall” color={ colors.darkSkyBlue } />
+<Icon />
+<Icon name=”plus” size=”xsmall” color={ colors.darkSkyBlue } />
 ```
 
 ### CircleIcon
+
+`<CircleIcon />` wraps the `<Icon />` component and displays a circle background behind the contents in the `<Icon />` component.
+The `<Icon />` component displays centered within the `<CircleIcon />` wrapper.
 
 | Property      | Value Type | Value                                     |
 |:-------------:|:----------:|:-----------------------------------------:|
@@ -36,11 +40,11 @@ The SVG must display centered within each IconContainer and scaled up uniformly 
 | color         | string     | CSS Color String of the SVG fill color    |
 | background    | string     | CSS Color String of the circle background |
 
-| Size Value    | Container Size | SVG Content Size  |
-|:-------------:|:--------------:|:-----------------:|
-| xsmall        | 32px           | 16px              |
-| small         | 48px           | 24px              |
-| medium        | 56px           | 32px              |
+| Size Value    | Container Size | SVG Content Size  | Uniform Side Padding  |
+|:-------------:|:--------------:|:-----------------:|:---------------------:|
+| xsmall        | 32px           | 16px              | 8px                   |
+| small         | 48px           | 24px              | 12px                  |
+| medium        | 56px           | 32px              | 12px                  |
 
 #### CircleIcon Code Examples
 
