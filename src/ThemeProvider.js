@@ -3,10 +3,10 @@
 import * as React from 'react';
 import { ThemeProvider } from 'styled-components';
 import defaultTheme from './themes';
-import type { Theme, Props } from './ThemeProviderTypes';
+import type { Props } from './ThemeProviderTypes';
 
 const PhoenixThemeProvider = (props: Props) => {
-  const theme: Theme = { ...defaultTheme, ...props.theme };
+  const theme: Object = { ...defaultTheme, ...props.theme };
   return <ThemeProvider theme={theme}>{props.children}</ThemeProvider>;
 };
 

@@ -2,13 +2,7 @@
 
 import * as React from 'react';
 
-type Theme = {
-  [key: string]: string,
-};
-
-type Props = {
-  theme: Theme,
+export type Props = {
+  theme: Object,
   children?: React.Node,
 };
-
-export type { Theme, Props };
