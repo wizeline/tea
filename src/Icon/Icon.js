@@ -19,14 +19,14 @@ const Icon = (props: Props) => {
   const { name, size } = props;
   const svg = getSVG(name);
   if (!svg) return null;
-  const { viewBox } = svg.props;
+  const iconViewBox = svg.props.viewBox || constants.defaultViewBox;
   const iconChildren = svg.props.children;
   const iconSize = getContainerSize(size);
   return (
     <IconDivStyled iconSize={iconSize}>
       <IconSvgStyled
         iconFillColor={props.color}
-        viewBox={viewBox}
+        viewBox={iconViewBox}
         preserveAspectRatio={constants.preserveAspectRatio}
       >
         {iconChildren}
