@@ -16,4 +16,4 @@ const getContainerSize = (sizeKey: ?string) => {
   return sizes[defaultSizeKey];
 };
 
-export default getContainerSize;
+export { getContainerSize, defaultSizeKey };

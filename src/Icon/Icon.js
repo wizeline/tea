@@ -3,17 +3,12 @@
 /* eslint flowtype-errors/enforce-min-coverage: 0 */
 
 import React from 'react';
-import getContainerSize from '../utils';
+import { getContainerSize } from '../utils';
 import constants from './IconConstants';
 import { IconDivStyled, IconSvgStyled } from './IconStyled';
 
 import getSVG from './data';
-
-type Props = {
-  name: string,
-  color?: string,
-  size?: string,
-};
+import type { Props } from './IconTypes';
 
 const Icon = (props: Props) => {
   const { name, size } = props;
@@ -33,11 +28,6 @@ const Icon = (props: Props) => {
       </IconSvgStyled>
     </IconDivStyled>
   );
-};
-
-Icon.defaultProps = {
-  size: undefined,
-  color: undefined,
 };
 
 export default Icon;

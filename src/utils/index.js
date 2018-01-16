@@ -1,4 +1,4 @@
 // @flow
-import getContainerSize from './Utils';
+import { getContainerSize, defaultSizeKey } from './Utils';
 
-export default getContainerSize;
+export { getContainerSize, defaultSizeKey };

@@ -3,18 +3,11 @@
 /* eslint flowtype-errors/enforce-min-coverage: 0 */
 
 import styled from 'styled-components';
-import * as colors from '../styles/themes/colors';
-
-type SVGFillProps = {
-  [fill: string]: string,
-};
-
-type ContainerSizeProps = {
-  [iconSize: string]: number,
-};
+import type { SVGFillProps, ContainerSizeProps } from './IconTypes';
+import constants from './IconConstants';
 
 const getSVGFill = ({
-  iconFillColor: iconFillColor = colors.text.iconDefaultInverse,
+  iconFillColor: iconFillColor = constants.defaultFillColor,
 }: SVGFillProps) => iconFillColor;
 
 const getContainerSize = ({ iconSize }: ContainerSizeProps) => iconSize;
@@ -35,4 +28,4 @@ const IconSvgStyled = styled.svg`
   margin: 0 auto;
 `;
 
-export { IconDivStyled, IconSvgStyled };
+export { getSVGFill, IconDivStyled, IconSvgStyled };
