@@ -1,8 +1,10 @@
 [ignore]
+.*/*.test.js
 
 [include]
 
 [libs]
+flow-typed
 
 [lints]
 
