@@ -8,6 +8,7 @@
   },
   "scripts": {
     "danger": "danger",
+    "flow": "flow",
     "flow:check": "flow check ./",
     "flow-typed": "flow-typed install --overwrite",
     "flow": "yarn flow-typed && yarn check ./",
@@ -32,7 +33,8 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
-    "babel-eslint": "^8.0.3",
+    "babel-eslint": "^8.1.1",
+    "babel-loader": "^7.1.2",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-es2017": "^6.24.1",
