@@ -1,17 +1,18 @@
 // @flow
 
-import React from 'react';
+import * as React from 'react';
 import ThemeProvider from '../src/ThemeProvider';
-import TestComponent from '../src/components/TestComponent';
 
 const customTheme = {
   backgroundPrimary: 'green',
 };
 
-const TestWrapper = () => (
-  <ThemeProvider theme={customTheme}>
-    <TestComponent />
-  </ThemeProvider>
+type Props = {
+  children: ?React.Node,
+};
+
+const TestWrapper = (props: Props) => (
+  <ThemeProvider theme={customTheme}>{props.children}</ThemeProvider>
 );
 
 export default TestWrapper;
