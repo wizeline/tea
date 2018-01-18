@@ -3,12 +3,10 @@
 /* eslint flowtype-errors/enforce-min-coverage: 0 */
 
 import React from 'react';
-import { getContainerSize } from '../utils';
 import constants from './IconConstants';
-import { IconDivStyled, IconSvgStyled } from './IconStyled';
-
-import getSVG from './data';
 import type { Props } from './IconTypes';
+import { IconDivStyled, IconSvgStyled } from './IconStyled';
+import getSVG from './data';
 
 const Icon = (props: Props) => {
   const { name, size } = props;
@@ -16,9 +14,8 @@ const Icon = (props: Props) => {
   if (!svg) return null;
   const iconViewBox = svg.props.viewBox || constants.defaultViewBox;
   const iconChildren = svg.props.children;
-  const iconSize = getContainerSize(size);
   return (
-    <IconDivStyled iconSize={iconSize}>
+    <IconDivStyled size={size}>
       <IconSvgStyled
         iconFillColor={props.color}
         viewBox={iconViewBox}

@@ -5,7 +5,7 @@ export type SVGFillProps = {
 };
 
 export type ContainerSizeProps = {
-  [iconSize: string]: number,
+  size: number,
 };
 
 export type Props = {

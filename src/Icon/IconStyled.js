@@ -10,7 +10,8 @@ const getSVGFill = ({
   iconFillColor: iconFillColor = constants.defaultFillColor,
 }: SVGFillProps) => iconFillColor;
 
-const getContainerSize = ({ iconSize }: ContainerSizeProps) => iconSize;
+const getContainerSize = ({ size }: ContainerSizeProps) =>
+  constants.sizes[size] || constants.sizes[constants.defaultSizeKey];
 
 const IconDivStyled = styled.div`
   display: inline-block;
