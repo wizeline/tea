@@ -8,10 +8,9 @@
   },
   "scripts": {
     "danger": "danger",
-    "flow": "flow",
+    "flow": "yarn flow-typed && yarn check ./",
     "flow:check": "flow check ./",
     "flow-typed": "flow-typed install --overwrite",
-    "flow": "yarn flow-typed && yarn check ./",
     "jest": "jest --coverage --maxWorkers=6",
     "jest-watch": "jest --watch --debug",
     "lint": "eslint ./",
@@ -57,7 +56,7 @@
     "flow-typed": "^2.2.3",
     "husky": "^0.14.3",
     "jest": "^22.0.6",
-    "jest-styled-components": "^4.9.0",
+    "jest-styled-components": "^4.10.0",
     "lint-staged": "^6.0.0",
     "prettier": "^1.9.2",
     "webpack": "^3.10.0"

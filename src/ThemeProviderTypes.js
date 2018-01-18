@@ -3,6 +3,6 @@
 import * as React from 'react';
 
 export type Props = {
-  theme: Object,
+  theme: ?Object,
   children?: React.Node,
 };
