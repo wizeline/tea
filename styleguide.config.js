@@ -4,7 +4,6 @@ const COMPONENTS_PATH = './src';
 
 const componentGroups = {
   Icon: 'Icon',
-  '/components/testComponent': 'TestComponent',
 };
 
 const componentSections = Object.entries(componentGroups).map(
