@@ -5,7 +5,6 @@
 import styled from 'styled-components';
 
 const TestComponent = styled.div`
-  display: block;
   background: ${props => props.theme.backgroundPrimary};
   height: 100px;
   width: 100px;
