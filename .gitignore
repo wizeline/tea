@@ -60,3 +60,7 @@ typings/
 # react-stylguidist build files
 /styleguide/build/
 /styleguide/index.html
+
+# flow files
+/flow-typed
+/flow-typed/npm
