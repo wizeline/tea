@@ -1,12 +1,12 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { shallow } from 'enzyme';
 import TestComponent from './TestComponent';
 
 describe('TestComponent', () => {
   it('Uses provided theme', () => {
     const backgroundPrimaryValue = '#000000';
     const theme = { backgroundPrimary: backgroundPrimaryValue };
-    const component = renderer.create(<TestComponent theme={theme} />).toJSON();
+    const component = shallow(<TestComponent theme={theme} />);
     expect(component).toHaveStyleRule('background', backgroundPrimaryValue);
   });
 });
