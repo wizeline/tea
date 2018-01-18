@@ -1,6 +1,6 @@
 // @flow
 
-import * as colors from '../styles/themes/colors';
+import defaultTheme from '../themes';
 
 const constants: {
   preserveAspectRatio: string,
@@ -9,7 +9,7 @@ const constants: {
 } = {
   preserveAspectRatio: 'xMidYMid meet',
   defaultViewBox: '0 0 24 24',
-  defaultFillColor: colors.text.iconDefaultInverse,
+  defaultFillColor: defaultTheme.textPrimary,
 };
 
 export default constants;

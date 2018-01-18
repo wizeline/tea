@@ -61,3 +61,4 @@ typings/
 /styleguide/build/
 /styleguide/index.html
 /flow-typed
+/flow-typed/npm
