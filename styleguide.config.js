@@ -1,9 +1,9 @@
 // @flow
 
-const COMPONENTS_PATH = './src/components';
+const COMPONENTS_PATH = './src';
 
 const componentGroups = {
-  testComponent: 'TestComponent',
+  Icon: 'Icon',
 };
 
 const componentSections = Object.entries(componentGroups).map(
@@ -18,7 +18,7 @@ const componentSections = Object.entries(componentGroups).map(
 const styleGuideColors = {
   themeColorLink: 'firebrick',
   themeColorLinkHover: 'salmon',
-  previewBackground: '#fafbfc',
+  previewBackground: '#a2abaf',
 };
 
 const path = require('path');
