@@ -3,41 +3,28 @@
 /* eslint flowtype-errors/enforce-min-coverage: 0 */
 
 import React from 'react';
-import getContainerSize from '../utils';
 import constants from './IconConstants';
+import type { Props } from './IconTypes';
 import { IconDivStyled, IconSvgStyled } from './IconStyled';
-
 import getSVG from './data';
-
-type Props = {
-  name: string,
-  color?: string,
-  size?: string,
-};
 
 const Icon = (props: Props) => {
   const { name, size } = props;
   const svg = getSVG(name);
   if (!svg) return null;
-  const { viewBox } = svg.props;
-  const iconChildren = svg.props.children;
-  const iconSize = getContainerSize(size);
+  const svgViewBox = svg.props.viewBox || constants.defaultViewBox;
+  const svgChildren = svg.props.children;
   return (
-    <IconDivStyled iconSize={iconSize}>
+    <IconDivStyled size={size}>
       <IconSvgStyled
         iconFillColor={props.color}
-        viewBox={viewBox}
+        viewBox={svgViewBox}
         preserveAspectRatio={constants.preserveAspectRatio}
       >
-        {iconChildren}
+        {svgChildren}
       </IconSvgStyled>
     </IconDivStyled>
   );
-};
-
-Icon.defaultProps = {
-  size: undefined,
-  color: undefined,
 };
 
 export default Icon;

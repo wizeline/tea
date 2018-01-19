@@ -1,6 +1,6 @@
 // @flow
 
-const palette = {
+export default {
   black: '#000000',
   charcoalGrey: '#3f484b',
   cloudyBlue: '#acbcd9',
@@ -10,6 +10,7 @@ const palette = {
   darkLavender: '#8165a3',
   darkMint: '#46c485',
   darkSkyBlue: '#50a5e7',
+  darkGrey: '#1b2224',
   dullBlue: '#4793cd',
   duskyBlue: '#4f55a1',
   fadedOrange: '#f6a250',
@@ -28,5 +29,3 @@ const palette = {
   sweetBlue: 'rgba(80, 165, 231, 0.1)',
   skyBlue: '#e6f6ff',
 };
-
-export default palette;

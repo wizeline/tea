@@ -54,6 +54,7 @@ const data = {
   trash,
 };
 
-const getSVG = (name: string) => data[lispToPascalCase(name)];
+const getSVG = (name: string) =>
+  name === undefined ? null : data[lispToPascalCase(name)];
 
 export default getSVG;
