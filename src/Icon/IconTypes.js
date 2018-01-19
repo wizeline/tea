@@ -8,8 +8,8 @@ export type ContainerSizeProps = {
   size: number,
 };
 
-export type Props = {
+export type IconProps = {
   name: string,
-  color: string,
-  size: string,
+  color?: string,
+  size?: string,
 };
