@@ -3,6 +3,7 @@
 module.exports = {
   browser: true,
   setupFiles: ['./jest.setup.js'],
+  setupTestFrameworkScriptFile: './jest/setupTest.js',
   verbose: true,
   testMatch: ['**/*.test.js'],
   moduleNameMapper: {
