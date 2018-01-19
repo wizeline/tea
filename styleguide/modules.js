@@ -2,6 +2,10 @@
 
 /* eslint flowtype-errors/enforce-min-coverage: 0 */
 
-import TestComponent from '../src/components/TestComponent';
+import Icon from '../src/Icon';
 
-export default TestComponent;
+const modules: Object = {
+  Icon,
+};
+
+export default modules;

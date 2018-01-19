@@ -8,7 +8,6 @@
   },
   "scripts": {
     "danger": "danger",
-    "flow": "flow",
     "flow:check": "flow check ./",
     "flow-typed": "flow-typed install --overwrite",
     "flow": "yarn flow-typed && yarn check ./",
@@ -26,7 +25,6 @@
     "ramda": "^0.25.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-styleguidist": "^6.1.0",
     "styled-components": "^2.3.3",
     "styled-reset": "^0.1.3"
   },
@@ -56,10 +54,11 @@
     "flow-bin": "^0.62.0",
     "flow-typed": "^2.2.3",
     "husky": "^0.14.3",
-    "jest": "^22.0.6",
+    "jest": "^22.1.1",
     "jest-styled-components": "^4.9.0",
     "lint-staged": "^6.0.0",
     "prettier": "^1.9.2",
+    "react-styleguidist": "^6.1.0",
     "webpack": "^3.10.0"
   }
 }
