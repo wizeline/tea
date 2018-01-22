@@ -6,7 +6,7 @@ export type SVGFillProps = {
 
 export type SVGIconProps = {
   name: string,
-  size: string,
+  size?: string,
   color?: string,
   top?: number,
 };
@@ -16,5 +16,5 @@ export type ContainerSizeProps = {
 };
 
 export type ContainerTopProps = {
-  [top: string]: number,
+  top: number,
 };
