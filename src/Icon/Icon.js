@@ -4,11 +4,11 @@
 
 import React from 'react';
 import constants from './IconConstants';
-import type { Props } from './IconTypes';
+import type { IconProps } from './IconTypes';
 import { IconDivStyled, IconSvgStyled } from './IconStyled';
 import getSVG from './data';
 
-const Icon = (props: Props) => {
+const Icon = (props: IconProps) => {
   const { name, size } = props;
   const svg = getSVG(name);
   if (!svg) return null;

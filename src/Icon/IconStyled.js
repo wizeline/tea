@@ -20,7 +20,6 @@ const IconDivStyled = styled.div`
   width: ${getContainerSize}px;
   vertical-align: middle;
   text-align: center;
-  border: 1px solid;
 `;
 
 const IconSvgStyled = styled.svg`
