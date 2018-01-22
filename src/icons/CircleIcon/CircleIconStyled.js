@@ -3,17 +3,11 @@
 /* eslint flowtype-errors/enforce-min-coverage: 0 */
 
 import styled from 'styled-components';
+import type { DiameterProps, BackgroundProps } from './CircleIconTypes';
 
-type PropsDiameter = {
-  [diameter: string]: number,
-};
-
-type PropsBackground = {
-  [background: string]: string,
-};
-
-const getContainerDiameter = ({ diameter }: PropsDiameter) => diameter;
-const getContainerBackground = ({ background }: PropsBackground) => background;
+const getContainerDiameter = ({ diameter }: DiameterProps) => diameter;
+const getContainerBackground = (props: BackgroundProps) =>
+  props.background || props.theme.backgroundPrimary;
 
 const CircleIconStyled = styled.div`
   display: inline-block;
