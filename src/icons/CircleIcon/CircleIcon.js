@@ -13,7 +13,7 @@ import {
   getDiameter,
   getSVGIconSize,
   getTopOffset,
-} from './CircleIconHelpers';
+} from './CircleIconConstants';
 
 const CircleIcon = ({ name, size, background, color }: CircleIconProps) => {
   if (!isSizeValid(size)) {
