@@ -4,7 +4,6 @@
 
 import React from 'react';
 import SVGIcon from '../SVGIcon';
-
 import type { CircleIconProps } from './CircleIconTypes';
 import CircleIconStyled from './CircleIconStyled';
 import {

@@ -1,31 +1,39 @@
 // @flow
 
-const defaultSize = 'small';
-
-const circleDiameters = {
-  small: 32,
-  medium: 48,
-  large: 56,
-};
-
-const tops = {
-  small: 8,
-  medium: 12,
-  large: 12,
-};
-
-const sizeReductions = {
-  small: 'xsmall',
-  medium: 'small',
-  large: 'medium',
+const constants = {
+  defaultSize: 'small',
+  circleDiameters: {
+    small: 32,
+    medium: 48,
+    large: 56,
+  },
+  tops: {
+    small: 8,
+    medium: 12,
+    large: 12,
+  },
+  sizeReductions: {
+    small: 'xsmall',
+    medium: 'small',
+    large: 'medium',
+  },
 };
 
 const isSizeValid = (size: ?string): boolean =>
-  size === undefined || circleDiameters.hasOwnProperty(size);
-const parseSize = (size: ?string): string => (!size ? defaultSize : size);
-const getDiameter = (parsedSize: string): number => circleDiameters[parsedSize];
+  size === undefined || constants.circleDiameters.hasOwnProperty(size);
+const parseSize = (size: ?string): string =>
+  !size ? constants.defaultSize : size;
+const getDiameter = (parsedSize: string): number =>
+  constants.circleDiameters[parsedSize];
 const getSVGIconSize = (parsedSize: string): string =>
-  sizeReductions[parsedSize];
-const getTopOffset = (parsedSize: string): number => tops[parsedSize];
+  constants.sizeReductions[parsedSize];
+const getTopOffset = (parsedSize: string): number => constants.tops[parsedSize];
 
-export { isSizeValid, parseSize, getDiameter, getSVGIconSize, getTopOffset };
+export {
+  constants,
+  isSizeValid,
+  parseSize,
+  getDiameter,
+  getSVGIconSize,
+  getTopOffset,
+};
