@@ -6,6 +6,9 @@ import SVGIcon from '../src/icons/SVGIcon';
 const SVGIconRow = ({ name }: { name: string }) => (
   <tr>
     <td>
+      <SVGIcon name={name} />
+    </td>
+    <td>
       <SVGIcon name={name} size="xlarge" />
     </td>
     <td>
@@ -21,7 +24,7 @@ const SVGIconRow = ({ name }: { name: string }) => (
       <SVGIcon name={name} size="xsmall" />
     </td>
     <td>
-      <SVGIcon name={name} />
+      <SVGIcon name={name} size="invalid-size" />
     </td>
     <td>{name}</td>
   </tr>

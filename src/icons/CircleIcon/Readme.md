@@ -1,11 +1,23 @@
 
+
+## Circle Icon Sizes
 ```jsx
   <div>
-    Circle Icons<br />
+    Default (Small)
+    <br /><CircleIcon name="add-people" />add-item
+    <br /><br />Small
+    <br /><CircleIcon name="add-people" size="small" />add-item
+    <br /><br />Medium
+    <br /><CircleIcon name="add-people" size="medium" />add-item
+    <br /><br />Large
+    <br /><CircleIcon name="add-people" size="large" />add-item
+  </div>
+```
+
+## Default Circle Icons
+```jsx
+  <div>
     <CircleIcon name="add-item" />add-item<br />
-    <CircleIcon name="add-item" size="small" />add-item<br />
-    <CircleIcon name="add-item" size="medium" />add-item<br />
-    <CircleIcon name="add-item" size="large" />add-item<br />
     <CircleIcon name="add-people" />add-people<br />
     <CircleIcon name="arrow-down" />arrow-down<br />
     <CircleIcon name="bell" />bell<br />
@@ -20,9 +32,6 @@
     <CircleIcon name="flag" />flag<br />
     <CircleIcon name="heart" />heart<br />
     <CircleIcon name="info" />info<br />
-    <CircleIcon name="info" size="small" />info<br />
-    <CircleIcon name="info" size="medium" />info<br />
-    <CircleIcon name="info" size="large" />info<br />
     <CircleIcon name="magnifier" />magnifier<br />
     <CircleIcon name="lock" />lock<br />
     <CircleIcon name="plus" />plus<br />

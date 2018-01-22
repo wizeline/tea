@@ -1,11 +1,9 @@
 
-**Note:** When the size property is not specified or an invalid size is specified the `<Icon />` component will use the default size. 
-
-The default size is currently set to `xsmall`.
+**Note:** When the size property is not specified or an invalid size is specified the `<Icon />` component will use `xsmall`, the default size.
 
 ```jsx
 <div>
-  <h3>Size Cases</h3>
+  <h3>Sizes</h3>
   <table>
     <tbody>
       <tr>
@@ -15,7 +13,7 @@ The default size is currently set to `xsmall`.
         <th>medium</th>
         <th>small</th>
         <th>xsmall</th>
-        <th>404</th>
+        <th>invalid</th>
       </tr>
       <SVGIconRow name="add-item" />
       <SVGIconRow name="add-people" />
@@ -45,7 +43,7 @@ The default size is currently set to `xsmall`.
 
 **Note:** When the name property is not specified or an invalid name is specified the `<Icon />` component will not render any component. 
 
-In these cases `null` is returned.
+In these cases `null` is returned and the component is not rendered.
 
 ```jsx
 <div>
@@ -53,8 +51,8 @@ In these cases `null` is returned.
   <table>
     <tbody>
       <tr>
-        <th>undefined</th>
-        <th>404</th>
+        <th>Undefined</th>
+        <th>Invalid Name</th>
       </tr>
       <tr>
         <td><SVGIcon /></td>
