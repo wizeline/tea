@@ -7,8 +7,8 @@ import type {
   SVGFillProps,
   ContainerSizeProps,
   ContainerTopProps,
-} from './SquareIconTypes';
-import constants from './SquareIconConstants';
+} from './SVGIconTypes';
+import constants from './SVGIconConstants';
 
 const getSVGFill = ({
   iconFillColor: iconFillColor = constants.defaultFillColor,
@@ -18,7 +18,7 @@ const getContainerTop = ({ top }: ContainerTopProps) => top;
 const getContainerSize = ({ size }: ContainerSizeProps) =>
   constants.sizes[size] || constants.sizes[constants.defaultSizeKey];
 
-const SquareIconDivStyled = styled.div`
+const SVGIconDivStyled = styled.div`
   display: inline-block;
   position: relative;
   height: ${getContainerSize}px;
@@ -26,10 +26,10 @@ const SquareIconDivStyled = styled.div`
   top: ${getContainerTop}px;
 `;
 
-const SquareIconSvgStyled = styled.svg`
+const SVGIconSvgStyled = styled.svg`
   fill: ${getSVGFill};
   user-select: none;
   margin: 0 auto;
 `;
 
-export { SquareIconDivStyled, SquareIconSvgStyled };
+export { SVGIconDivStyled, SVGIconSvgStyled };

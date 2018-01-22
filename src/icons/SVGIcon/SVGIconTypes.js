@@ -4,10 +4,11 @@ export type SVGFillProps = {
   [fill: string]: string,
 };
 
-export type SquareIconProps = {
+export type SVGIconProps = {
   name: string,
-  color: string,
   size: string,
+  color?: string,
+  top?: number,
 };
 
 export type ContainerSizeProps = {

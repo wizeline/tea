@@ -18,13 +18,13 @@ The default size is currently set to `xsmall`.
         <th>404</th>
       </tr>
       <tr>
-        <td><SquareIcon name="plus" /></td>
-        <td><SquareIcon name="plus" size="xlarge" /></td>
-        <td><SquareIcon name="plus" size="large" /></td>
-        <td><SquareIcon name="plus" size="medium" /></td>
-        <td><SquareIcon name="plus" size="small" /></td>
-        <td><SquareIcon name="plus" size="xsmall" /></td>
-        <td><SquareIcon name="plus" size="MISSINGNO" /></td>
+        <td><SVGIcon name="plus" /></td>
+        <td><SVGIcon name="plus" size="xlarge" /></td>
+        <td><SVGIcon name="plus" size="large" /></td>
+        <td><SVGIcon name="plus" size="medium" /></td>
+        <td><SVGIcon name="plus" size="small" /></td>
+        <td><SVGIcon name="plus" size="xsmall" /></td>
+        <td><SVGIcon name="plus" size="MISSINGNO" /></td>
         <td>plus</td>
       </tr>
     </tbody>
@@ -46,8 +46,8 @@ In these cases `null` is returned.
         <th>404</th>
       </tr>
       <tr>
-        <td><SquareIcon /></td>
-        <td><SquareIcon name="MISSINGNO" /></td>
+        <td><SVGIcon /></td>
+        <td><SVGIcon name="MISSINGNO" /></td>
       </tr>
     </tbody>
   </table>

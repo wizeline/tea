@@ -24,8 +24,8 @@ const isSizeValid = (size: ?string): boolean =>
   size === undefined || circleDiameters.hasOwnProperty(size);
 const parseSize = (size: ?string): string => (!size ? defaultSize : size);
 const getDiameter = (parsedSize: string): number => circleDiameters[parsedSize];
-const getSquareIconSize = (parsedSize: string): string =>
+const getSVGIconSize = (parsedSize: string): string =>
   sizeReductions[parsedSize];
 const getTopOffset = (parsedSize: string): number => tops[parsedSize];
 
-export { isSizeValid, parseSize, getDiameter, getSquareIconSize, getTopOffset };
+export { isSizeValid, parseSize, getDiameter, getSVGIconSize, getTopOffset };

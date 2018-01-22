@@ -3,7 +3,7 @@
 /* eslint flowtype-errors/enforce-min-coverage: 0 */
 
 import React from 'react';
-import SquareIcon from '../SquareIcon';
+import SVGIcon from '../SVGIcon';
 
 import CircleIconProps, { type Props } from './CircleIconProps';
 import CircleIconStyled from './CircleIconStyled';
@@ -11,7 +11,7 @@ import {
   isSizeValid,
   parseSize,
   getDiameter,
-  getSquareIconSize,
+  getSVGIconSize,
   getTopOffset,
 } from './CircleIconHelpers';
 
@@ -25,9 +25,9 @@ const CircleIcon = (props: Props) => {
       diameter={getDiameter(parsedSize)}
       background={props.background}
     >
-      <SquareIcon
+      <SVGIcon
         name={props.name}
-        size={getSquareIconSize(parsedSize)}
+        size={getSVGIconSize(parsedSize)}
         top={getTopOffset(parsedSize)}
       />
     </CircleIconStyled>
