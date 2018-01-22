@@ -4,32 +4,28 @@
 
 import React from 'react';
 
-import SquareIconProps, { type Props } from './SquareIconProps';
-import { getContainerSize, getPreserveAspectRatio } from './SquareIconHelpers';
+import constants from './SquareIconConstants';
+import type { SquareIconProps } from './SquareIconTypes';
 import { SquareIconDivStyled, SquareIconSvgStyled } from './SquareIconStyled';
-
 import getSVG from './data';
 
-const SquareIcon = (props: Props) => {
+const SquareIcon = (props: SquareIconProps) => {
   const { name, size } = props;
   const svg = getSVG(name);
   if (!svg) return null;
-  const { viewBox } = svg.props;
-  const iconChildren = svg.props.children;
+  const svgViewBox = svg.props.viewBox || constants.defaultViewBox;
+  const svgChildren = svg.props.children;
   return (
-    <SquareIconDivStyled iconSize={getContainerSize(size)} top={props.top}>
+    <SquareIconDivStyled size={size}>
       <SquareIconSvgStyled
         iconFillColor={props.color}
-        viewBox={viewBox}
-        preserveAspectRatio={getPreserveAspectRatio()}
-        inverse={props.inverse}
+        viewBox={svgViewBox}
+        preserveAspectRatio={constants.preserveAspectRatio}
       >
-        {iconChildren}
+        {svgChildren}
       </SquareIconSvgStyled>
     </SquareIconDivStyled>
   );
 };
-
-SquareIcon.defaultProps = SquareIconProps.defaultProps;
 
 export default SquareIcon;

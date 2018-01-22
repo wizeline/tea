@@ -3,26 +3,20 @@
 /* eslint flowtype-errors/enforce-min-coverage: 0 */
 
 import styled from 'styled-components';
-import * as colors from '../../styles/themes/colors';
-
-type SVGFillProps = {
-  [fill: string]: string,
-};
-
-type ContainerSizeProps = {
-  [iconSize: string]: number,
-};
-
-type ContainerTopProps = {
-  [top: string]: number,
-};
+import type {
+  SVGFillProps,
+  ContainerSizeProps,
+  ContainerTopProps,
+} from './SquareIconTypes';
+import constants from './SquareIconConstants';
 
 const getSVGFill = ({
-  iconFillColor: iconFillColor = colors.text.iconDefaultInverse,
+  iconFillColor: iconFillColor = constants.defaultFillColor,
 }: SVGFillProps) => iconFillColor;
 
-const getContainerSize = ({ iconSize }: ContainerSizeProps) => iconSize;
 const getContainerTop = ({ top }: ContainerTopProps) => top;
+const getContainerSize = ({ size }: ContainerSizeProps) =>
+  constants.sizes[size] || constants.sizes[constants.defaultSizeKey];
 
 const SquareIconDivStyled = styled.div`
   display: inline-block;
