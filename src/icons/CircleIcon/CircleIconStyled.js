@@ -4,8 +4,11 @@
 
 import styled from 'styled-components';
 import type { DiameterProps, BackgroundProps } from './CircleIconTypes';
+import constants from './CircleIconConstants';
 
-const getContainerDiameter = ({ diameter }: DiameterProps) => diameter;
+const getContainerDiameter = ({ size }: DiameterProps) =>
+  constants.circleDiameters[size];
+
 const getContainerBackground = (props: BackgroundProps) =>
   props.background || props.theme.backgroundPrimary;
 

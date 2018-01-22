@@ -8,7 +8,7 @@ export type CircleIconProps = {
 };
 
 export type DiameterProps = {
-  diameter: number,
+  size: string,
 };
 
 export type BackgroundProps = {

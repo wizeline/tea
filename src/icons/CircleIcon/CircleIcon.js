@@ -6,24 +6,22 @@ import React from 'react';
 import SVGIcon from '../SVGIcon';
 import type { CircleIconProps } from './CircleIconTypes';
 import CircleIconStyled from './CircleIconStyled';
-import {
-  isSizeValid,
-  parseSize,
-  getDiameter,
-  getSVGIconSize,
-  getTopOffset,
-} from './CircleIconConstants';
+import constants from './CircleIconConstants';
+import parseSize from './CircleIconUtils';
+
+const isSizeInvalid = (size: ?string): boolean =>
+  size !== undefined && !constants.circleDiameters.hasOwnProperty(size);
+
+const getTopOffset = (parsedSize: string): number => constants.tops[parsedSize];
+
+const getSVGIconSize = (parsedSize: string): string =>
+  constants.sizeReductions[parsedSize];
 
 const CircleIcon = ({ name, size, background, color }: CircleIconProps) => {
-  if (!isSizeValid(size)) {
-    return null;
-  }
-  const parsedSize: string = parseSize(size);
+  if (isSizeInvalid(size)) return null;
+  const parsedSize = parseSize(size);
   return (
-    <CircleIconStyled
-      diameter={getDiameter(parsedSize)}
-      background={background}
-    >
+    <CircleIconStyled size={parsedSize} background={background}>
       <SVGIcon
         name={name}
         color={color}

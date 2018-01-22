@@ -3,9 +3,8 @@
 /* eslint flowtype-errors/enforce-min-coverage: 0 */
 
 import React from 'react';
-
-import constants from './SVGIconConstants';
 import type { SVGIconProps } from './SVGIconTypes';
+import constants from './SVGIconConstants';
 import { SVGIconDivStyled, SVGIconSvgStyled } from './SVGIconStyled';
 import getSVG from './data';
 
