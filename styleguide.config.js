@@ -4,6 +4,7 @@ const COMPONENTS_PATH = './src';
 
 const componentGroups = {
   Icon: 'Icon',
+  Text: 'Text',
 };
 
 const componentSections = Object.entries(componentGroups).map(
@@ -32,7 +33,7 @@ module.exports = {
       link: styleGuideColors.themeColorLink,
       linkHover: styleGuideColors.themeColorLinkHover,
     },
-    font: ['proxima-nova', 'sans-serif'],
+    font: ['ProximaNova Regular', 'sans-serif'],
   },
   styles: {
     Playground: {
@@ -42,14 +43,14 @@ module.exports = {
         paddingRight: 0,
         borderWidth: [[0, 0, 1, 0]],
         borderRadius: 0,
-        fontFamily: ['proxima-nova', 'sans-serif'],
+        fontFamily: ['ProximaNova Regular', 'sans-serif'],
       },
     },
     Markdown: {
       pre: {
         border: 0,
         background: 'none',
-        fontFamily: ['proxima-nova', 'sans-serif'],
+        fontFamily: ['ProximaNova Regular', 'sans-serif'],
       },
       code: {
         fontSize: 14,
@@ -71,6 +72,10 @@ module.exports = {
         {
           test: /\.css$/,
           loader: 'style-loader!css-loader',
+        },
+        {
+          test: /\.(ttf|eot|woff|woff2)(#[a-zA-Z]+)?$/,
+          loader: 'file-loader',
         },
       ],
     },
