@@ -3,7 +3,8 @@
 import colors from './colors';
 
 export default {
-  textPrimary: colors.white,
+  textPrimary: colors.charcoalGrey,
+  textPrimaryInvert: colors.white,
   textPrimaryHover: colors.white,
   textPrimaryDisabled: colors.coolGrey,
   textSecondary: colors.charcoalGrey,

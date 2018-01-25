@@ -7,8 +7,9 @@ import type { SVGFillProps, ContainerSizeProps } from './IconTypes';
 import constants from './IconConstants';
 
 const getSVGFill = ({
-  iconFillColor: iconFillColor = constants.defaultFillColor,
-}: SVGFillProps) => iconFillColor;
+  iconFillColor,
+  theme: { textPrimaryInvert },
+}: SVGFillProps) => iconFillColor || textPrimaryInvert;
 
 const getContainerSize = ({ size }: ContainerSizeProps) =>
   constants.sizes[size] || constants.sizes[constants.defaultSizeKey];
