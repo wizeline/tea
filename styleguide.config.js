@@ -19,7 +19,7 @@ const componentSections = Object.entries(componentGroups).map(
 const styleGuideColors = {
   themeColorLink: 'firebrick',
   themeColorLinkHover: 'salmon',
-  previewBackground: '#a2abaf',
+  previewBackground: '#fafbfc',
 };
 
 const path = require('path');
