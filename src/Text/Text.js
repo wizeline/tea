@@ -4,12 +4,7 @@ import React from 'react';
 import TextSpanStyled from './TextStyled';
 import constants from './TextConstants';
 import type { TextProps } from './TextTypes';
-
-const singleTruthyKey = (obj: Object) => {
-  const truthyKeys = Object.keys(obj).filter(key => !!obj[key]);
-  // we have an implementation in another branch...
-  return truthyKeys.length > 0 ? truthyKeys[0] : undefined;
-};
+import singleTruthyKey from './TextUtils';
 
 const Text = (props: TextProps) => {
   const {

@@ -2,6 +2,8 @@
 
 const constants = {
   defaultPreset: 'b50',
+  multipleTruthyKeyError:
+    'ERROR: Multiple keys associated with a truthy value, offending keys:',
   h600: {
     fontFamily: 'ProximaNova Regular',
     fontSize: 32,
