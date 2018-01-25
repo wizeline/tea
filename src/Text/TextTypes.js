@@ -14,3 +14,10 @@ export type TextProps = {
   b100?: boolean,
   b50?: boolean,
 };
+
+export type ColorProps = {
+  color: string,
+  theme: {
+    textPrimary: string,
+  },
+};
