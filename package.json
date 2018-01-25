@@ -16,6 +16,7 @@
     "lint-staged": "lint-staged",
     "lint": "eslint ./",
     "precommit": "lint-staged",
+    "start": "styleguidist server",
     "styleguide:build": "styleguidist build",
     "styleguide": "styleguidist server",
     "test-debug": "jest --coverage --debug",
