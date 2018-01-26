@@ -7,12 +7,17 @@ export type SVGFillProps = {
   },
 };
 
+export type SVGIconProps = {
+  name: string,
+  size?: string,
+  color?: string,
+  top?: number,
+};
+
 export type ContainerSizeProps = {
   size: number,
 };
 
-export type IconProps = {
-  name: string,
-  color?: string,
-  size?: string,
+export type ContainerTopProps = {
+  top: number,
 };

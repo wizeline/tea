@@ -3,30 +3,34 @@
 /* eslint flowtype-errors/enforce-min-coverage: 0 */
 
 import styled from 'styled-components';
-import type { SVGFillProps, ContainerSizeProps } from './IconTypes';
-import constants from './IconConstants';
+import type {
+  SVGFillProps,
+  ContainerSizeProps,
+  ContainerTopProps,
+} from './SVGIconTypes';
+import constants from './SVGIconConstants';
 
 const getSVGFill = ({
   iconFillColor,
   theme: { textPrimaryInvert },
 }: SVGFillProps) => iconFillColor || textPrimaryInvert;
 
+const getContainerTop = ({ top }: ContainerTopProps) => top;
 const getContainerSize = ({ size }: ContainerSizeProps) =>
   constants.sizes[size] || constants.sizes[constants.defaultSizeKey];
 
-const IconDivStyled = styled.div`
+const SVGIconDivStyled = styled.div`
   display: inline-block;
   position: relative;
   height: ${getContainerSize}px;
   width: ${getContainerSize}px;
-  vertical-align: middle;
-  text-align: center;
+  top: ${getContainerTop}px;
 `;
 
-const IconSvgStyled = styled.svg`
+const SVGIconSvgStyled = styled.svg`
   fill: ${getSVGFill};
   user-select: none;
   margin: 0 auto;
 `;
 
-export { getSVGFill, IconDivStyled, IconSvgStyled };
+export { SVGIconDivStyled, SVGIconSvgStyled };
