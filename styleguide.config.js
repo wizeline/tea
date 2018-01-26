@@ -17,8 +17,8 @@ const componentSections = Object.entries(componentGroups).map(
 );
 
 const styleGuideColors = {
-  themeColorLink: 'firebrick',
-  themeColorLinkHover: 'salmon',
+  themeColorLink: '#5f65aa',
+  themeColorLinkHover: '#5f65aa',
   previewBackground: '#fafbfc',
 };
 
