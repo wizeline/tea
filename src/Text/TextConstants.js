@@ -8,7 +8,7 @@ const constants = {
     fontFamily: 'ProximaNova Regular',
     fontSize: 32,
     fontWeight: 400,
-    lineHeight: '30px',
+    lineHeight: '40px',
   },
   h500: {
     fontFamily: 'ProximaNova Semibold',
@@ -44,13 +44,13 @@ const constants = {
     fontFamily: 'ProximaNova Regular',
     fontSize: 14,
     fontWeight: 400,
-    lineHeight: 'auto',
+    lineHeight: 'normal',
   },
   b50: {
     fontFamily: 'ProximaNova Regular',
     fontSize: 12,
     fontWeight: 400,
-    lineHeight: 'auto',
+    lineHeight: 'normal',
   },
 };
 
