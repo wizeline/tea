@@ -2,6 +2,7 @@
 
 const constants = {
   defaultSize: 'small',
+  defaultSVGIconColor: '#ffffff',
   circleDiameters: {
     small: 32,
     medium: 48,
