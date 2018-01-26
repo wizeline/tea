@@ -14,7 +14,7 @@ const getSVGFill = ({
   iconFillColor: iconFillColor = constants.defaultFillColor,
 }: SVGFillProps) => iconFillColor;
 
-const getContainerTop = ({ top }: ContainerTopProps) => top;
+const getContainerTop = ({ top }: ContainerTopProps) => top || '0';
 const getContainerSize = ({ size }: ContainerSizeProps) =>
   constants.sizes[size] || constants.sizes[constants.defaultSizeKey];
 

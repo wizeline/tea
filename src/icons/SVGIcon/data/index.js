@@ -17,6 +17,7 @@ import heart from './heart';
 import info from './info';
 import lock from './lock';
 import magnifier from './magnifier';
+import missingViewBox from './missingViewBox';
 import pencil from './pencil';
 import people from './people';
 import plus from './plus';
@@ -48,6 +49,7 @@ const data = {
   info,
   lock,
   magnifier,
+  missingViewBox,
   pencil,
   people,
   plus,
