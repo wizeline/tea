@@ -3,7 +3,8 @@
 const COMPONENTS_PATH = './src';
 
 const componentGroups = {
-  Icon: 'Icon',
+  'icons/SVGIcon': 'SVGIcon',
+  'icons/CircleIcon': 'CircleIcon',
 };
 
 const componentSections = Object.entries(componentGroups).map(

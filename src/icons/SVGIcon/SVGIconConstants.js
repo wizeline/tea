@@ -1,6 +1,6 @@
 // @flow
 
-import defaultTheme from '../themes';
+import defaultTheme from '../../themes';
 
 const constants: {
   preserveAspectRatio: string,
