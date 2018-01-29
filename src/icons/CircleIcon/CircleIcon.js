@@ -10,7 +10,7 @@ import constants from './CircleIconConstants';
 import parseSize from './CircleIconUtils';
 
 const isSizeInvalid = (size: ?string): boolean =>
-  size !== undefined && !constants.circleDiameters.hasOwnProperty(size);
+  size ? !constants.circleDiameters[size] : false;
 
 const getTopOffset = (parsedSize: string): number => constants.tops[parsedSize];
 

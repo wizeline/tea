@@ -8,10 +8,13 @@ import constants from './SVGIconConstants';
 import { SVGIconDivStyled, SVGIconSvgStyled } from './SVGIconStyled';
 import getSVG from './data';
 
+const isSizeInvalid = (size: ?string): boolean =>
+  size ? !constants.sizes[size] : false;
+
 const SVGIcon = (props: SVGIconProps) => {
   const { name, size, top, color } = props;
   const svg = getSVG(name);
-  if (!svg) return null;
+  if (!svg || isSizeInvalid(size)) return null;
   const svgViewBox = svg.props.viewBox || constants.defaultViewBox;
   const svgChildren = svg.props.children;
   return (

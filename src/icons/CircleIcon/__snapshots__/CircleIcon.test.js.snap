@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CircleIcon renders correctly with undefined size attribute 1`] = `
+<styled.div
+  size="small"
+>
+  <SVGIcon
+    name="cross"
+    size="xsmall"
+    top={8}
+  />
+</styled.div>
+`;
+
+exports[`CircleIcon renders correctly with valid size 1`] = `
+<styled.div
+  size="large"
+>
+  <SVGIcon
+    name="cross"
+    size="medium"
+    top={12}
+  />
+</styled.div>
+`;
+
+exports[`CircleIcon renders nothing with invalid size 1`] = `""`;
