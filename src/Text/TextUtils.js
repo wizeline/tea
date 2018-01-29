@@ -3,7 +3,7 @@
 import constants from './TextConstants';
 
 const singleTruthyKey = (obj: Object) => {
-  const truthyKeys = Object.keys(obj).filter(key => !!obj[key]);
+  const truthyKeys = Object.keys(obj).filter(key => Boolean(obj[key]));
   if (truthyKeys.length > 1) {
     const reason = truthyKeys.map(key => `'${key}'`).join(', ');
     const errorMessage = `${constants.multipleTruthyKeyError} [${reason}]`;
