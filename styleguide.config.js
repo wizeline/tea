@@ -3,6 +3,7 @@
 const COMPONENTS_PATH = './src';
 
 const componentGroups = {
+  'icons/Icon': 'Icon',
   'icons/SVGIcon': 'SVGIcon',
   'icons/CircleIcon': 'CircleIcon',
 };
