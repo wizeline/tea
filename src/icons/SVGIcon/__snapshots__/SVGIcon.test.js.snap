@@ -45,6 +45,50 @@ exports[`SVGIcon renders nothing with an undefined name and undefined size 1`] =
 
 exports[`SVGIcon renders nothing with invalid name and invalid size 1`] = `""`;
 
+exports[`SVGIconDivStyled renders correctly with defined invalid container size 1`] = `
+.c0 {
+  display: inline-block;
+  position: relative;
+  height: 16px;
+  width: 16px;
+  top: 0px;
+}
+
+<div
+  className="c0"
+  size="invalidSize"
+/>
+`;
+
+exports[`SVGIconDivStyled renders correctly with defined top 1`] = `
+.c0 {
+  display: inline-block;
+  position: relative;
+  height: 16px;
+  width: 16px;
+  top: 10px;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`SVGIconDivStyled renders correctly with defined valid container size 1`] = `
+.c0 {
+  display: inline-block;
+  position: relative;
+  height: 48px;
+  width: 48px;
+  top: 0px;
+}
+
+<div
+  className="c0"
+  size="large"
+/>
+`;
+
 exports[`SVGIconSvgStyled renders correctly without any defined attributes 1`] = `
 .c0 {
   fill: #ffffff;

@@ -2,8 +2,8 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import SVGIcon from './SVGIcon';
-import { SVGIconSvgStyled } from './SVGIconStyled';
-import shallowExpectInvalid from '../../utils/testHelpers.test';
+import { SVGIconSvgStyled, SVGIconDivStyled } from './SVGIconStyled';
+import shallowExpectInvalid from '../../utils/testHelpers';
 
 describe('SVGIcon', () => {
   it('renders correctly with an undefined size and a valid name that references an SVG with a defined viewBox', () => {
@@ -32,6 +32,21 @@ describe('SVGIcon', () => {
 describe('SVGIconSvgStyled', () => {
   it('renders correctly without any defined attributes', () => {
     const wrapper = shallow(<SVGIconSvgStyled />);
+    expect(toJson(wrapper)).toMatchSnapshot();
+  });
+});
+
+describe('SVGIconDivStyled', () => {
+  it('renders correctly with defined valid container size', () => {
+    const wrapper = shallow(<SVGIconDivStyled size="large" />);
+    expect(toJson(wrapper)).toMatchSnapshot();
+  });
+  it('renders correctly with defined invalid container size', () => {
+    const wrapper = shallow(<SVGIconDivStyled size="invalidSize" />);
+    expect(toJson(wrapper)).toMatchSnapshot();
+  });
+  it('renders correctly with defined top', () => {
+    const wrapper = shallow(<SVGIconDivStyled top={10} />);
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 });
