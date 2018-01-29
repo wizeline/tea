@@ -9,7 +9,7 @@ import { SVGIconDivStyled, SVGIconSvgStyled } from './SVGIconStyled';
 import getSVG from './data';
 
 const isSizeInvalid = (size: ?string): boolean =>
-  !!size && !constants.sizes[size];
+  size ? !constants.sizes[size] : false;
 
 const SVGIcon = (props: SVGIconProps) => {
   const { name, size, top, color } = props;
