@@ -91,7 +91,6 @@ exports[`SVGIconDivStyled renders correctly with defined valid container size 1`
 
 exports[`SVGIconSvgStyled renders correctly without any defined attributes 1`] = `
 .c0 {
-  fill: #ffffff;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
