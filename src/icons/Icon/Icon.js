@@ -4,8 +4,8 @@ import React from 'react';
 import { pick, pipe, getTruthyKey } from '../../utils/coreUtils';
 import CircleIcon from '../CircleIcon/CircleIcon';
 import SVGIcon from '../SVGIcon/SVGIcon';
-import type { IconProps } from './IconTypes';
-import attributes from './IconConstants';
+import type { IconPropTypes } from './IconTypes';
+import propKeys from './IconConstants';
 
 const pickSizes = ({ xsmall, small, medium, large, xlarge }) => ({
   xsmall,
@@ -15,14 +15,14 @@ const pickSizes = ({ xsmall, small, medium, large, xlarge }) => ({
   xlarge,
 });
 
-const Icon = (props: IconProps) => {
-  const { NAME, ROUND, COLOR, BACKGROUND } = attributes;
-  const { name } = pick(props, NAME);
-  const { round } = pick(props, ROUND);
-  const size: ?string = pipe(props, pickSizes, getTruthyKey);
-  const colors = pick(props, COLOR, BACKGROUND);
-  const iconProps = { name, size, ...colors };
-  return round ? <CircleIcon {...iconProps} /> : <SVGIcon {...iconProps} />;
+const Icon = (iconProps: IconPropTypes) => {
+  const { NAME, ROUND, COLOR, BACKGROUND } = propKeys;
+  const { name } = pick(iconProps, NAME);
+  const { round } = pick(iconProps, ROUND);
+  const size: ?string = pipe(iconProps, pickSizes, getTruthyKey);
+  const colors = pick(iconProps, COLOR, BACKGROUND);
+  const childProps = { name, size, ...colors };
+  return round ? <CircleIcon {...childProps} /> : <SVGIcon {...childProps} />;
 };
 
 export default Icon;

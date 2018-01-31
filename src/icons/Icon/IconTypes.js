@@ -1,6 +1,6 @@
 // @flow
 
-export type IconProps = {
+export type IconPropTypes = {
   name: string,
   round?: boolean,
   // ...sizeProps,
