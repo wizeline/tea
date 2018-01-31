@@ -1,17 +1,15 @@
 // @flow
 
 export type IconProps = {
-  // SVG
   name: string,
-  // shape
   round?: boolean,
-  // sizes
+  // ...sizeProps,
   xsmall?: boolean,
   small?: boolean,
   medium?: boolean,
   large?: boolean,
   xlarge?: boolean,
-  // colors
+  // ...colorProps,
   color?: string,
   background?: string,
 };

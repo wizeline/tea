@@ -1,34 +1,28 @@
 // @flow
 
 import React from 'react';
+import { pick, pipe, getTruthyKey } from '../../utils/coreUtils';
 import CircleIcon from '../CircleIcon/CircleIcon';
 import SVGIcon from '../SVGIcon/SVGIcon';
-import singleTruthyKey from './IconUtils';
 import type { IconProps } from './IconTypes';
+import attributes from './IconConstants';
+
+const pickSizes = ({ xsmall, small, medium, large, xlarge }) => ({
+  xsmall,
+  small,
+  medium,
+  large,
+  xlarge,
+});
 
 const Icon = (props: IconProps) => {
-  const {
-    // SVG
-    name,
-    // shape
-    round,
-    // sizes
-    xsmall,
-    small,
-    medium,
-    large,
-    xlarge,
-    // colors
-    color,
-    background,
-  } = props;
-  const sizes = { xsmall, small, medium, large, xlarge };
-  const colorBooleans = { color, background };
-  return round ? (
-    <CircleIcon name={name} size={singleTruthyKey(sizes)} {...colorBooleans} />
-  ) : (
-    <SVGIcon name={name} size={singleTruthyKey(sizes)} {...colorBooleans} />
-  );
+  const { NAME, ROUND, COLOR, BACKGROUND } = attributes;
+  const { name } = pick(props, NAME);
+  const { round } = pick(props, ROUND);
+  const size: ?string = pipe(props, pickSizes, getTruthyKey);
+  const colors = pick(props, COLOR, BACKGROUND);
+  const iconProps = { name, size, ...colors };
+  return round ? <CircleIcon {...iconProps} /> : <SVGIcon {...iconProps} />;
 };
 
 export default Icon;
