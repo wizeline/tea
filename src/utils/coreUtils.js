@@ -13,14 +13,4 @@ const getTruthyKey = (obj: Object): ?string => {
   return truthyKeys[0];
 };
 
-type sizeProps = { [key: string]: boolean };
-
-const pickSizes = ({ xsmall, small, medium, large, xlarge }: sizeProps) => ({
-  xsmall,
-  small,
-  medium,
-  large,
-  xlarge,
-});
-
-export { getTruthyKey, pickSizes };
+export default getTruthyKey;
