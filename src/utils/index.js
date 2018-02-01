@@ -1,5 +1,5 @@
 // @flow
 
-import supportSizes from './supportSizes';
+import supportSizes from './sizes/supportSizes';
 
 export default supportSizes;

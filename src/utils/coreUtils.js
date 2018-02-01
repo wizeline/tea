@@ -13,4 +13,12 @@ const getTruthyKey = (obj: Object): ?string => {
   return truthyKeys[0];
 };
 
-export default getTruthyKey;
+const curryPropParsers = (...parsers: Array<Function>) => (props: Object) => {
+  const reducer = (accumulator, currentValue) => ({
+    ...accumulator,
+    ...currentValue,
+  });
+  return parsers.map(parser => parser(props)).reduce(reducer, {});
+};
+
+export { getTruthyKey, curryPropParsers };
