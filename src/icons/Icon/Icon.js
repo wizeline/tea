@@ -23,11 +23,11 @@ const Icon = (props: IconProps) => {
     background,
   } = props;
   const sizes = { xsmall, small, medium, large, xlarge };
-  const colorBooleans = { color, background };
+  const colorProps = { color, background };
   return round ? (
-    <CircleIcon name={name} size={singleTruthyKey(sizes)} {...colorBooleans} />
+    <CircleIcon name={name} size={singleTruthyKey(sizes)} {...colorProps} />
   ) : (
-    <SVGIcon name={name} size={singleTruthyKey(sizes)} {...colorBooleans} />
+    <SVGIcon name={name} size={singleTruthyKey(sizes)} {...colorProps} />
   );
 };
 
