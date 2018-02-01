@@ -3,13 +3,13 @@
 export type IconPropTypes = {
   name: string,
   round?: boolean,
-  // ...sizeProps,
+  // Size Props
   xsmall?: boolean,
   small?: boolean,
   medium?: boolean,
   large?: boolean,
   xlarge?: boolean,
-  // ...colorProps,
+  // Color Props
   color?: string,
   background?: string,
 };
