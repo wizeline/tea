@@ -10,7 +10,7 @@ const pickSizes = (props: sizeProps) => pick(baseSizes, props);
 const getSize = pipe(pickSizes, getTruthyKey);
 const parseSizes = (props: sizeProps) => ({ size: getSize(props) });
 
-const supportSizes = (baseParser: Function) =>
+const supportSizes = (baseParser: Function): Function =>
   curryPropParsers(baseParser, parseSizes);
 
 export default supportSizes;
