@@ -3,15 +3,20 @@
 /* eslint flowtype-errors/enforce-min-coverage: 0 */
 
 import pick from 'ramda/src/pick';
-import propKeys from './IconConstants';
-import { supportSizes } from '../../utils';
+import { propNames, supportSizes } from '../../utils';
 import type { IconPropTypes } from './IconPropTypes';
 
-const getChildProps = (iconProps: IconPropTypes) => {
-  const { NAME, COLOR, BACKGROUND } = propKeys;
-  const { name } = pick([NAME], iconProps);
-  const colors = pick([COLOR, BACKGROUND], iconProps);
-  return { name, ...colors };
+const { name, color, background } = propNames;
+
+const getChildProps = (iconProps: IconPropTypes): Object => {
+  const nameSupport = pick([name], iconProps);
+  const colorSupport = pick([color, background], iconProps);
+  return {
+    ...nameSupport,
+    ...colorSupport,
+  };
 };
 
-export default supportSizes(getChildProps);
+const enhanced = supportSizes(getChildProps);
+
+export default enhanced;

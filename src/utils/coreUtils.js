@@ -52,21 +52,32 @@ const propOrTheme = (themeName: string, propName: string): Function => (
   props: Object,
 ) => (props[propName] ? props[propName] : props.theme[themeName]);
 
-const propOr = (defaultValue: string, propName: string) => (props: Object) =>
-  props[propName] ? props[propName] : defaultValue;
+const toPixels = (val: any) => (val ? `${val}px` : '0px');
 
-const toPixels = (val: any) => `${val}px`;
 const supportOr = (
   input: string,
-  defaultOut: any,
+  defaultOutput: any,
   mapping: Function,
   ...outputs: Array<string>
 ) => (props: Object) => {
-  const value = props[input] ? props[input] : defaultOut;
-  const mappedValue = mapping ? mapping(value) : value;
+  const value = props[input] || defaultOutput;
+  const mappedValue = mapping(value);
   const targets = outputs.length ? outputs : [input];
   const generated = targets
     .map(target => `${target}: ${mappedValue};`)
+    .join('\n');
+
+  return css`
+    ${generated};
+  `;
+};
+
+const supportOrTheme = (input: string, defaultThemePropName: string) => (
+  props: Object,
+) => {
+  const propertyValue = props[input] || props.theme[defaultThemePropName];
+  const generated = [input]
+    .map(propertyName => `${propertyName}: ${propertyValue};`)
     .join('\n');
 
   return css`
@@ -80,8 +91,8 @@ export {
   getTruthyKey,
   lispToCamelCase,
   propNames,
-  propOr,
   propOrTheme,
   supportOr,
+  supportOrTheme,
   toPixels,
 };

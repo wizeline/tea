@@ -15,18 +15,15 @@ const { sizes, defaultSizeKey, defaultTop } = constants;
 const { top, width, height } = cssProperties;
 const { size } = propNames;
 
-const sizeMapping = sizeName => toPixels(sizes[sizeName]);
-const sizeSupport = supportOr(
-  size,
-  sizes[defaultSizeKey],
-  sizeMapping,
-  width,
-  height,
-);
 const topSupport = supportOr(top, defaultTop, toPixels);
+const sizeMapping = sizeName =>
+  toPixels(sizes[sizeName] || sizes[defaultSizeKey]);
+
+const sizeSupport = supportOr(size, defaultSizeKey, sizeMapping, width, height);
 
 const SVGIconDivStyled = SVGIconDivBase.extend`
-  ${sizeSupport} ${topSupport};
+  ${sizeSupport};
+  ${topSupport};
 `;
 
 export default SVGIconDivStyled;

@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import CircleIcon from './CircleIcon';
-import shallowExpectInvalid from '../../utils/testHelpers';
+import { shallowExpectInvalid } from '../../utils/testHelpers';
 
 describe('CircleIcon', () => {
   it('renders correctly with undefined size attribute', () => {

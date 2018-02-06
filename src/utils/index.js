@@ -5,9 +5,9 @@ import {
   cssProperties,
   lispToCamelCase,
   propNames,
-  propOr,
   propOrTheme,
   supportOr,
+  supportOrTheme,
   toPixels,
 } from './coreUtils';
 
@@ -15,9 +15,9 @@ export {
   cssProperties,
   lispToCamelCase,
   propNames,
-  propOr,
   propOrTheme,
   supportOr,
+  supportOrTheme,
   supportSizes,
   toPixels,
 };

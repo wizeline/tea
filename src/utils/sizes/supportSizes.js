@@ -6,9 +6,9 @@ import { getTruthyKey, curryPropParsers } from '../coreUtils';
 import baseSizes from './sizeConstants';
 import type { sizeProps } from './sizeTypes';
 
-const pickSizes = (props: sizeProps) => pick(baseSizes, props);
+const pickSizes = (props: sizeProps): Object => pick(baseSizes, props);
 const getSize = pipe(pickSizes, getTruthyKey);
-const parseSizes = (props: sizeProps) => ({ size: getSize(props) });
+const parseSizes = (props: sizeProps): Object => ({ size: getSize(props) });
 
 const supportSizes = (baseParser: Function): Function =>
   curryPropParsers(baseParser, parseSizes);
