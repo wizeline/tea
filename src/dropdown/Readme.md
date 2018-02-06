@@ -13,15 +13,15 @@ const handleChange = (value) => {
 };
 
 <Select
-	onChange={handleChange}
+  onChange={handleChange}
 >
-	<Select.Option value="01">Value 01</Select.Option>
-	<Select.Option value="02">Value 02</Select.Option>
-	<Select.Option value="03">Value 03</Select.Option>
-	<Select.Option value="04">Value 04</Select.Option>
-	<Select.Option value="05">Value 05</Select.Option>
+  <Select.Option value="01">Value 01</Select.Option>
+  <Select.Option value="02">Value 02</Select.Option>
+  <Select.Option value="03">Value 03</Select.Option>
+  <Select.Option value="04">Value 04</Select.Option>
+  <Select.Option value="05">Value 05</Select.Option>
 </Select>
-	
+  
 ```
 
 ### example 2: Icon dropdown with groups
@@ -35,16 +35,16 @@ const handleChange = (value) => {
 };
 
 <Select
-	onChange={handleChange}
-	icon={IconComponent}
+  onChange={handleChange}
+  icon={IconComponent}
 >
-	<Select.Option value="01">Value 01</Select.Option>
-	<Select.Option value="02">Value 02</Select.Option>
-	<Select.Option value="03">Value 03</Select.Option>
-	<Select.Option value="04">Value 04</Select.Option>
-	<Select.Option value="05">Value 05</Select.Option>
+  <Select.Option value="01">Value 01</Select.Option>
+  <Select.Option value="02">Value 02</Select.Option>
+  <Select.Option value="03">Value 03</Select.Option>
+  <Select.Option value="04">Value 04</Select.Option>
+  <Select.Option value="05">Value 05</Select.Option>
 </Select>
-	
+  
 ```
 
 ### example 3: Only icon dropdown with groups
@@ -58,18 +58,17 @@ const handleChange = (value) => {
 };
 
 <Select
-	onChange={handleChange}
-	icon={IconComponent}
-	onlyIcon
+  onChange={handleChange}
+  icon={IconComponent}
+  onlyIcon
 >
-   <Select.Group title="Notifications">
-		<Select.Option value="01">Value 01</Select.Option>
-		<Select.Option value="02">Value 02</Select.Option>
-		<Select.Option value="03">Value 03</Select.Option>
-		<Select.Option value="04">Value 04</Select.Option>
-		<Select.Option value="05">Value 05</Select.Option>
-	</Select.Group>
+  <Select.Group title="Notifications">
+    <Select.Option value="01">Value 01</Select.Option>
+    <Select.Option value="02">Value 02</Select.Option>
+    <Select.Option value="03">Value 03</Select.Option>
+    <Select.Option value="04">Value 04</Select.Option>
+    <Select.Option value="05">Value 05</Select.Option>
+  </Select.Group>
 </Select>
-	
 ```
 
