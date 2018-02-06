@@ -3,6 +3,7 @@
 const multipleTruthyKeyError =
   'ERROR: Multiple keys associated with a truthy value, offending keys:';
 
-const supportedCssProps = ['top', 'background', 'fill'];
+const supportedPropNames = ['size'];
+const supportedCssProps = ['background', 'fill', 'height', 'top', 'width'];
 
-export { multipleTruthyKeyError, supportedCssProps };
+export { multipleTruthyKeyError, supportedCssProps, supportedPropNames };

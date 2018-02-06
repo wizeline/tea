@@ -2,31 +2,31 @@
 
 /* eslint flowtype-errors/enforce-min-coverage: 0 */
 
-import propOr from 'ramda/src/propOr';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import constants from '../SVGIconConstants';
-import { cssProperties } from '../../../utils';
-
-const { defaultSizeKey, defaultTop, sizes } = constants;
-const { top } = cssProperties;
-
-const sizeSupport = ({ size }) => {
-  const sizeValue = sizes[size] || sizes[defaultSizeKey];
-  return () =>
-    css`
-      width: ${sizeValue}px;
-      height: ${sizeValue}px;
-    `;
-};
+import { cssProperties, propNames, supportOr, toPixels } from '../../../utils';
 
 const SVGIconDivBase = styled.div`
   display: inline-block;
   position: relative;
-  top: ${propOr(defaultTop, top)}px;
 `;
 
+const { sizes, defaultSizeKey, defaultTop } = constants;
+const { top, width, height } = cssProperties;
+const { size } = propNames;
+
+const sizeMapping = sizeName => toPixels(sizes[sizeName]);
+const sizeSupport = supportOr(
+  size,
+  sizes[defaultSizeKey],
+  sizeMapping,
+  width,
+  height,
+);
+const topSupport = supportOr(top, defaultTop, toPixels);
+
 const SVGIconDivStyled = SVGIconDivBase.extend`
-  ${sizeSupport};
+  ${sizeSupport} ${topSupport};
 `;
 
 export default SVGIconDivStyled;
