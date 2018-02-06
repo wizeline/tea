@@ -1,5 +1,6 @@
 // @flow
 
 import supportSizes from './sizes/supportSizes';
+import { cssProperties, lispToCamelCase, propOrTheme } from './coreUtils';
 
-export default supportSizes;
+export { supportSizes, cssProperties, lispToCamelCase, propOrTheme };

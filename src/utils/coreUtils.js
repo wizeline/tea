@@ -1,6 +1,20 @@
 // @flow
 
-import multipleTruthyKeyError from './coreUtilsConstants';
+import {
+  multipleTruthyKeyError,
+  supportedCssProps,
+} from './coreUtilsConstants';
+
+const lispToCamelCase = (word: string) =>
+  word
+    .split('-')
+    .reduce(
+      (result, token) =>
+        result + token.replace(/^\w/, chr => chr.toUpperCase()),
+    );
+
+const camelToLispCase = (word: string) =>
+  word.replace(/([A-Z])/g, '-($1).toLowerCase()');
 
 const getTruthyKey = (obj: Object): ?string => {
   const truthyKeys = Object.keys(obj).filter(key => Boolean(obj[key]));
@@ -21,4 +35,24 @@ const curryPropParsers = (...parsers: Array<Function>) => (props: Object) => {
   return parsers.map(parser => parser(props)).reduce(reducer, {});
 };
 
-export { getTruthyKey, curryPropParsers };
+const getSupportedCssProps = () => {
+  const result = {};
+  supportedCssProps.forEach(prop => {
+    result[prop] = camelToLispCase(prop);
+  });
+  return result;
+};
+
+const cssProperties = getSupportedCssProps();
+
+const propOrTheme = (themeName: string, propName: string): Function => (
+  props: Object,
+) => (props[propName] ? props[propName] : props.theme[themeName]);
+
+export {
+  getTruthyKey,
+  curryPropParsers,
+  cssProperties,
+  lispToCamelCase,
+  propOrTheme,
+};

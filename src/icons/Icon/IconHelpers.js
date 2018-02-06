@@ -4,7 +4,7 @@
 
 import pick from 'ramda/src/pick';
 import propKeys from './IconConstants';
-import supportSizes from '../../utils';
+import { supportSizes } from '../../utils';
 import type { IconPropTypes } from './IconPropTypes';
 
 const getChildProps = (iconProps: IconPropTypes) => {
