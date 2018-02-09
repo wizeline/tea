@@ -1,6 +1,5 @@
-// Keep this list ordered
+// @flow
+
 import Button from './Button';
 
-export {
-  Button,
-};
+export default Button;

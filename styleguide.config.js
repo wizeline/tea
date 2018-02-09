@@ -6,6 +6,7 @@ const componentGroups = {
   'icons/Icon': 'Icon',
   'icons/SVGIcon': 'SVGIcon',
   'icons/CircleIcon': 'CircleIcon',
+  'buttons/Button': 'Button',
 };
 
 const componentSections = Object.entries(componentGroups).map(

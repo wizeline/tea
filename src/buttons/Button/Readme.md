@@ -16,8 +16,8 @@
 ```jsx
 <div>
   <Button>Create</Button>
-  <Button icon={<AddIcon />} >Create</Button>
-  <Button icon={<AddIcon />} />
+  <Button icon={<Icon name="plus" />} >Create</Button>
+  <Button icon={<Icon name="plus" />} />
 </div>
 ```
 
@@ -35,8 +35,8 @@
 
 ```jsx
 <div>
-  <Button icon={<DeleteIcon />} destructive >Delete</Button>
-  <Button icon={<DeleteIcon />} destructive disabled >Delete</Button>
+  <Button icon={<Icon name="trash" />} destructive >Delete</Button>
+  <Button icon={<Icon name="trash" />} destructive disabled >Delete</Button>
 </div>
 ```
 
@@ -64,8 +64,8 @@ Small
 
 ```jsx
 <div>
-  <Button secondary small icon={<MoreHorizIcon />} />
-  <Button secondary small disabled icon={<MoreHorizIcon />} />
+  <Button secondary small icon={<Icon name="dots-h" />} />
+  <Button secondary small disabled icon={<Icon name="dots-h" />} />
 </div>
 ```
 

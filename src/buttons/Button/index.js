@@ -1,2 +1,5 @@
-import { Button } from './Button';
+// @flow
+
+import Button from './Button';
+
 export default Button;

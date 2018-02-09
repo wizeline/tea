@@ -1,29 +1,31 @@
-import React, { Component } from 'react';
-import { ButtonStyled, IconWrapperStyled, TextWrapperStyled, getButtonStyle  } from './Button.styled.js';
-import { Icon } from '../../icons/Icon';
+// @flow
 
-const Button = (props) => {
-  const { buttonStyleProps, iconStyleProps, iconWrapperStyleProps } = getButtonStyle(props);
-  const { icon, children, ...otherProps } = props;
-  let label = null;
-  if (children) {
-    label = <TextWrapperStyled>{ children }</TextWrapperStyled>;
-  }
-  let iconStyled = null;
-  if (icon) {
-    iconStyled = React.cloneElement(icon, iconStyleProps);
-  }
+import React from 'react';
+import {
+  ButtonStyled,
+  IconWrapperStyled,
+  TextWrapperStyled,
+  getButtonStyle,
+} from './Button.styled';
+import type { ButtonPropTypes } from './Button.types';
+
+const Button = (props: ButtonPropTypes) => {
+  const { iconStyleProps, iconWrapperStyleProps } = getButtonStyle(props);
+  const { icon, children } = props;
+  const label = children ? (
+    <TextWrapperStyled>{children}</TextWrapperStyled>
+  ) : null;
+  const iconStyled = icon ? (
+    <IconWrapperStyled {...iconWrapperStyleProps}>
+      {React.cloneElement(icon, iconStyleProps)}
+    </IconWrapperStyled>
+  ) : null;
   return (
-    <ButtonStyled {...buttonStyleProps} >
-    {
-      iconStyled &&
-      <IconWrapperStyled {...iconWrapperStyleProps} >
-        { iconStyled }
-      </IconWrapperStyled>
-    }
-    { label }
+    <ButtonStyled>
+      {iconStyled}
+      {label}
     </ButtonStyled>
   );
 };
 
-export { Button };
+export default Button;
