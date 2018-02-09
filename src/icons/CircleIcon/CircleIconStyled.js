@@ -34,7 +34,8 @@ const CircleIconBase = styled.div`
 `;
 
 const CircleIconStyled = CircleIconBase.extend`
-  ${sizeSupport} ${backgroundSupport};
+  ${sizeSupport};
+  ${backgroundSupport};
 `;
 
 export default CircleIconStyled;
