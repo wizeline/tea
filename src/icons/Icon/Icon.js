@@ -1,37 +1,34 @@
-import React, { Component } from 'react';
-import { getContainerSize } from '../../utils';
-import { viewBox, preserveAspectRatio } from './Icon.constants.js';
-import { IconDivStyled, IconSvgStyled, CircleIconStyled } from './Icon.styled.js';
+// @flow
 
-const CircleIconWrapper = (props) => {
-  const { background, children } = props;
-  return (
-    <CircleIconStyled background={ background } >{ children }</CircleIconStyled>
+import React from 'react';
+import CircleIcon from '../CircleIcon/CircleIcon';
+import SVGIcon from '../SVGIcon/SVGIcon';
+import singleTruthyKey from './IconUtils';
+import type { IconProps } from './IconTypes';
+
+const Icon = (props: IconProps) => {
+  const {
+    // SVG
+    name,
+    // shape
+    round,
+    // sizes
+    xsmall,
+    small,
+    medium,
+    large,
+    xlarge,
+    // colors
+    color,
+    background,
+  } = props;
+  const sizes = { xsmall, small, medium, large, xlarge };
+  const colorProps = { color, background };
+  return round ? (
+    <CircleIcon name={name} size={singleTruthyKey(sizes)} {...colorProps} />
+  ) : (
+    <SVGIcon name={name} size={singleTruthyKey(sizes)} {...colorProps} />
   );
 };
 
-const Icon = (props) => {
-  const { icon, circle, background, ...otherProps } = props;
-  const IconWithoutCircle = (
-    <IconDivStyled
-      size={ getContainerSize(otherProps) }
-      isWrapped={ Boolean(circle) }
-    >
-      <IconSvgStyled
-        viewBox={ viewBox }
-        preserveAspectRatio={ preserveAspectRatio }
-        fill={ props.fill }
-        hoverFill={ props.hoverFill }
-      >
-        { icon }
-      </IconSvgStyled>
-    </IconDivStyled>
-  );
-  return (
-    circle ?
-      <CircleIconWrapper>{ IconWithoutCircle }</CircleIconWrapper> :
-      IconWithoutCircle
-  );
-};
-
-export { Icon };
+export default Icon;

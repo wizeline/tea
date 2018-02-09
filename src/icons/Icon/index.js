@@ -1,2 +1,5 @@
-import { Icon } from './Icon';
+// @flow
+
+import Icon from './Icon';
+
 export default Icon;

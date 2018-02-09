@@ -1,35 +1,45 @@
+// @flow
 
 const COMPONENTS_PATH = './src';
 
 const componentGroups = {
-  icons: 'Icons',
-  buttons: 'Buttons',
+  'icons/Icon': 'Icon',
+  'icons/SVGIcon': 'SVGIcon',
+  'icons/CircleIcon': 'CircleIcon',
 };
 
-const componentSections = Object
-  .entries(componentGroups)
-  .map(([folder, sectionName]) => {
-    return {
-      name: sectionName,
-      content: `${COMPONENTS_PATH}/${folder}/Readme.md`,
-      components: `${COMPONENTS_PATH}/${folder}/*/index.js`,
-      ignore: `${COMPONENTS_PATH}/${folder}/*/index.js`,
-    };
-  });
+const componentSections = Object.entries(componentGroups).map(
+  ([folder, sectionName]) => ({
+    name: sectionName,
+    content: `${COMPONENTS_PATH}/${folder}/Readme.md`,
+    components: `${COMPONENTS_PATH}/${folder}/*/index.js`,
+    ignore: `${COMPONENTS_PATH}/${folder}/*/index.js`,
+  }),
+);
+
+const styleGuideColors = {
+  themeColorLink: 'firebrick',
+  themeColorLinkHover: 'salmon',
+  previewBackground: '#a2abaf',
+};
 
 const path = require('path');
+
 module.exports = {
+  styleguideComponents: {
+    Wrapper: path.join(__dirname, './styleguide/TestWrapper'),
+  },
   theme: {
     color: {
-      link: 'firebrick',
-      linkHover: 'salmon',
+      link: styleGuideColors.themeColorLink,
+      linkHover: styleGuideColors.themeColorLinkHover,
     },
     font: ['proxima-nova', 'sans-serif'],
   },
   styles: {
     Playground: {
       preview: {
-        backgroundColor: '#fafbfc',
+        backgroundColor: styleGuideColors.previewBackground,
         paddingLeft: '74px',
         paddingRight: 0,
         borderWidth: [[0, 0, 1, 0]],
