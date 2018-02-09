@@ -1,6 +1,6 @@
 // @flow
 
-import { lispToCamelCase } from '../../../utils';
+import { camelToLispCase } from '../../../utils';
 
 import addItem from './add-item';
 import addPeople from './add-people';
@@ -25,7 +25,7 @@ import people from './people';
 import plus from './plus';
 import trash from './trash';
 
-const data = {
+const internalData = {
   addItem,
   addPeople,
   arrowDown,
@@ -50,7 +50,17 @@ const data = {
   trash,
 };
 
+const exposeObject = (obj: Object) => {
+  const results = {};
+  Object.entries(obj).forEach(([key, value]) => {
+    results[camelToLispCase(key)] = value;
+  });
+  return results;
+};
+
+const exposedData = exposeObject(internalData);
+
 const getSVG = (name: string) =>
-  name === undefined ? null : data[lispToCamelCase(name)];
+  name === undefined ? null : exposedData[name];
 
 export default getSVG;
