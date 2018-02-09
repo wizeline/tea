@@ -19,7 +19,7 @@ import heart from './heart';
 import info from './info';
 import lock from './lock';
 import magnifier from './magnifier';
-import missingViewBox from './missingViewBox';
+import missingViewBox from './missing-view-box';
 import pencil from './pencil';
 import people from './people';
 import plus from './plus';
