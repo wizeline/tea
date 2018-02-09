@@ -13,8 +13,8 @@ const isSizeInvalid = (size: ?string): boolean =>
   size ? !constants.sizes[size] : false;
 
 const SVGIcon = (props: SVGIconProps) => {
-  const { name, size, top, color } = props;
-  const svg = getSVG(name);
+  const { name, size, top, color, svgData } = props;
+  const svg = svgData || getSVG(name);
   if (!svg || isSizeInvalid(size)) return null;
   const svgViewBox = svg.props.viewBox || constants.defaultViewBox;
   const svgChildren = svg.props.children;

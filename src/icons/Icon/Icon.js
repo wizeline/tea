@@ -9,9 +9,9 @@ import getSVG from '../SVGIcon/data';
 
 const Icon = (iconProps: IconPropTypes) => {
   const { name, round } = iconProps;
-  const childProps = getChildProps(iconProps);
   const svg = getSVG(name);
   if (!svg) return null;
+  const childProps = { ...getChildProps(iconProps), svgData: svg };
   return round ? <CircleIcon {...childProps} /> : <SVGIcon {...childProps} />;
 };
 

@@ -5,7 +5,7 @@ export type SVGFillProps = {
 };
 
 export type SVGIconProps = {
-  name: string,
+  name?: string,
   size?: string,
   color?: string,
   top?: number,

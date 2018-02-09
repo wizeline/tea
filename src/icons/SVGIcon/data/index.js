@@ -60,7 +60,6 @@ const exposeObject = (obj: Object) => {
 
 const exposedData = exposeObject(internalData);
 
-const getSVG = (name: string) =>
-  name === undefined ? null : exposedData[name];
+const getSVG = (name: ?string) => (name ? exposedData[name] : null);
 
 export default getSVG;
