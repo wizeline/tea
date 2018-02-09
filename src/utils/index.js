@@ -3,7 +3,6 @@
 import supportSizes from './sizes/supportSizes';
 import {
   cssProperties,
-  lispToCamelCase,
   camelToLispCase,
   propNames,
   propOrTheme,
@@ -14,7 +13,6 @@ import {
 
 export {
   cssProperties,
-  lispToCamelCase,
   camelToLispCase,
   propNames,
   propOrTheme,

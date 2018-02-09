@@ -9,6 +9,7 @@ export type SVGIconProps = {
   size?: string,
   color?: string,
   top?: number,
+  svgData?: React.Node,
 };
 
 export type ContainerSizeProps = {

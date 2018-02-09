@@ -7,14 +7,6 @@ import {
   supportedPropNames,
 } from './coreUtilsConstants';
 
-const lispToCamelCase = (word: string) =>
-  word
-    .split('-')
-    .reduce(
-      (result, token) =>
-        result + token.replace(/^\w/, chr => chr.toUpperCase()),
-    );
-
 const camelToLispCase = (word: string) =>
   word.replace(/([A-Z])/g, captureGroup => `-${captureGroup.toLowerCase()}`);
 
@@ -89,7 +81,6 @@ export {
   cssProperties,
   curryPropParsers,
   getTruthyKey,
-  lispToCamelCase,
   camelToLispCase,
   propNames,
   propOrTheme,
