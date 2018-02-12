@@ -55,18 +55,18 @@ const danger = css`
 `;
 
 const small = css`
-  width: '72px';
-  height: '24px';
+  width: 72px;
+  height: 24px;
 `;
 
 const medium = css`
-  width: '100px';
-  height: '32px';
+  width: 100px;
+  height: 32px;
 `;
 
 const large = css`
-  width: '164px';
-  height: '48px';
+  width: 164px;
+  height: 48px;
 `;
 
 const cssSupport = {
@@ -98,7 +98,6 @@ const ButtonBaseStyled = css`
   font-size: ${props => props.fontSize /* || fonts.size.default */}px;
   font-weight: ${props => props.fontWeight || 600};
   height: ${props => props.height || 32}px;
-  min-width: ${props => props.minWidth || null}px;
   padding-left: 16px;
   padding-right: 16px;
   position: relative;
@@ -110,7 +109,8 @@ const ButtonBaseStyled = css`
 const supportProp = (propName: string) => props => {
   if (props) {
     const propStyle = props[propName];
-    return propStyle ? cssSupport[propStyle] : null;
+    const isPropSupported = propStyle;
+    return isPropSupported ? cssSupport[propStyle] : null;
   }
   return null;
 };
