@@ -33,7 +33,7 @@ The proposed naming convention for theme variables draws inspiration from the [D
 To produce example theme variable names concatenate examples below from left to right columns.
 
 * Surface Type (mandatory): { background, text, border, shadow }
-* Function Type (optional): { Primary, Secondary, Destructive }
+* Function Type (optional): { Primary, Secondary, Danger }
 * Component Type (optional): { Icon, CircleIcon, Input, Select, Button, CircleButton }
 * Sub-Component Type (optional): See Component Set Above
 * Component State (optional): { Active, Disabled, Focus, Hover, Invalid }

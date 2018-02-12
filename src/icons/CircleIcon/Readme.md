@@ -4,13 +4,13 @@
 ```jsx
   <div>
     Default (Small)
-    <br /><CircleIcon name="add-people" />add-item
+    <br /><CircleIcon name="add-people" />add-people
     <br /><br />Small
-    <br /><CircleIcon name="add-people" size="small" />add-item
+    <br /><CircleIcon name="add-people" size="small" />add-people
     <br /><br />Medium
-    <br /><CircleIcon name="add-people" size="medium" />add-item
+    <br /><CircleIcon name="add-people" size="medium" />add-people
     <br /><br />Large
-    <br /><CircleIcon name="add-people" size="large" />add-item
+    <br /><CircleIcon name="add-people" size="large" />add-people
   </div>
 ```
 

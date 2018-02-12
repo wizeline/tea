@@ -6,8 +6,8 @@
 
 ```jsx
 <div>
-  <Button medium>Create</Button>
-  <Button disabled>Create</Button>
+  <Button medium text="Create" />
+  <Button disabled text="Create" />
 </div>
 ```
 
@@ -15,9 +15,9 @@
 
 ```jsx
 <div>
-  <Button>Create</Button>
-  <Button icon={<Icon name="plus" />} >Create</Button>
-  <Button icon={<Icon name="plus" />} />
+  <Button text="Create" />
+  <Button iconName="plus" text="Create" />
+  <Button iconName="plus" />
 </div>
 ```
 
@@ -25,18 +25,18 @@
 
 ```jsx
 <div>
-  <Button large >Sign up</Button>
-  <Button large disabled >Sign up</Button>
+  <Button large text="Sign up" />
+  <Button large disabled text="Sign up" />
 </div>
 ```
 
 
-## Destructive
+## Danger
 
 ```jsx
 <div>
-  <Button icon={<Icon name="trash" />} destructive >Delete</Button>
-  <Button icon={<Icon name="trash" />} destructive disabled >Delete</Button>
+  <Button danger iconName="trash" text="Delete" />
+  <Button danger disabled iconName="trash" text="Delete" />
 </div>
 ```
 
@@ -46,8 +46,8 @@ Medium (default)
 
 ```jsx
 <div>
-  <Button secondary >Create</Button>
-  <Button secondary disabled >Create</Button>
+  <Button secondary text="Create" />
+  <Button secondary disabled text="Create" />
 </div>
 ```
 
@@ -55,8 +55,8 @@ Small
 
 ```jsx
 <div>
-  <Button secondary small>Expand</Button>
-  <Button secondary small disabled >Expand</Button>
+  <Button secondary small text="Expand" />
+  <Button secondary small disabled text="Expand" />
 </div>
 ```
 
@@ -64,8 +64,8 @@ Small
 
 ```jsx
 <div>
-  <Button secondary small icon={<Icon name="dots-h" />} />
-  <Button secondary small disabled icon={<Icon name="dots-h" />} />
+  <Button secondary small iconName="dots-h" />
+  <Button secondary small disabled iconName="dots-h" />
 </div>
 ```
 
