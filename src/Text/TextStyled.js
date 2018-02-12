@@ -3,8 +3,8 @@
 import styled from 'styled-components';
 import { getStyleSupport } from './TextSupport';
 
-const TextStyled = styled.div`
+const TextSpanStyled = styled.span`
   ${getStyleSupport};
 `;
 
-export default TextStyled;
+export default TextSpanStyled;

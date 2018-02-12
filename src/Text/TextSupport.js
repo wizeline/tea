@@ -1,20 +1,27 @@
 // @flow
 
+import { css } from 'styled-components';
 import pick from 'ramda/src/pick';
-import css from './css';
+import cssConstants from './css';
 import type { TextProps, ChildrenRelatedProps, StyleProps } from './TextTypes';
+
+const arrayToObject = (arr: Array<string>) => {
+  const result = {};
+  arr.forEach(name => {
+    result[name] = true;
+  });
+  return result;
+};
 
 const priorityGroupName = 'priority';
 
+const supportedHeadings = ['h600', 'h500', 'h400', 'h300', 'h200'];
+
+const supportedBodies = ['b150', 'b100', 'b50'];
+
 const priorityBooleanAttributeGroup = [
-  'h600',
-  'h500',
-  'h400',
-  'h300',
-  'h200',
-  'b150',
-  'b100',
-  'b50',
+  ...supportedHeadings,
+  ...supportedBodies,
   'error',
   'short',
   'long',
@@ -56,10 +63,22 @@ const getPropSupport = (props: TextProps) => {
   };
 };
 
+const headingsObject = arrayToObject(supportedHeadings);
+const isHeading = (priorityName: string) => headingsObject[priorityName];
+const { heading } = cssConstants;
+
 const getStyleSupport = (props: StyleProps) => {
   const key = props[priorityGroupName];
-  const cssSupport = pick(priorityBooleanAttributeGroup, css);
-  return cssSupport[key];
+  const picked = pick(priorityBooleanAttributeGroup, cssConstants);
+  const cssSupport = Object(picked[key]);
+
+  if (isHeading(key)) {
+    return css`
+      ${cssSupport};
+      ${heading};
+    `;
+  }
+  return cssSupport;
 };
 
 export { getPropSupport, getStyleSupport };

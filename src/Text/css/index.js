@@ -11,6 +11,7 @@ import h600 from './h600';
 import error from './error';
 import short from './short';
 import long from './long';
+import heading from './heading';
 
 export default {
   b50,
@@ -24,4 +25,5 @@ export default {
   error,
   short,
   long,
+  heading,
 };
