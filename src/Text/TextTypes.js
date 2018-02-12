@@ -21,3 +21,12 @@ export type ColorProps = {
     textPrimary: string,
   },
 };
+
+export type ChildrenRelatedProps = {
+  h200?: boolean,
+  children?: React.Node,
+};
+
+export type StyleProps = {
+  priority: string,
+};
