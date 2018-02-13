@@ -4,14 +4,7 @@ import { css } from 'styled-components';
 import pick from 'ramda/src/pick';
 import cssConstants from './css';
 import type { TextProps, ChildrenRelatedProps, StyleProps } from './TextTypes';
-
-const arrayToObject = (arr: Array<string>) => {
-  const result = {};
-  arr.forEach(name => {
-    result[name] = true;
-  });
-  return result;
-};
+import { arrayToObject, supportBooleanNameGroup } from '../utils';
 
 const priorityGroupName = 'priority';
 const supportedHeadings = ['h600', 'h500', 'h400', 'h300', 'h200'];
@@ -33,26 +26,12 @@ const themeMapping = {
   subtitle: 'textSubtitle',
 };
 
-const supportBooleanNameGroup = (groupName: string, names: Array<string>) => (
-  props: Object,
-) => {
-  let activeName;
-  names.some(name => {
-    if (props[name]) {
-      activeName = name;
-      return true;
-    }
-    return false;
-  });
-  return activeName ? { [groupName]: activeName } : {};
-};
-
 const getPriorityPropObject = supportBooleanNameGroup(
   priorityGroupName,
   priorityBooleanAttributeGroup,
 );
 
-const getChildren = (props: ChildrenRelatedProps) => {
+const getChildSupport = (props: ChildrenRelatedProps) => {
   const { h200, subtitle, children } = props;
   if (h200 || subtitle) {
     return String(children).toUpperCase();
@@ -62,7 +41,7 @@ const getChildren = (props: ChildrenRelatedProps) => {
 
 const getPropSupport = (props: TextProps) => {
   const priority = getPriorityPropObject(props);
-  const children = getChildren(props);
+  const children = getChildSupport(props);
   return {
     priority,
     children,

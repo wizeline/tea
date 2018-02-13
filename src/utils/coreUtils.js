@@ -90,13 +90,37 @@ const warn = (warning: string) => {
   /* eslint-enable no-console */
 };
 
+const supportBooleanNameGroup = (groupName: string, names: Array<string>) => (
+  props: Object,
+) => {
+  let activeName;
+  names.some(name => {
+    if (props[name]) {
+      activeName = name;
+      return true;
+    }
+    return false;
+  });
+  return activeName ? { [groupName]: activeName } : {};
+};
+
+const arrayToObject = (arr: Array<string>) => {
+  const result = {};
+  arr.forEach(name => {
+    result[name] = true;
+  });
+  return result;
+};
+
 export {
+  arrayToObject,
   cssProperties,
   curryPropParsers,
   getTruthyKey,
   lispToCamelCase,
   propNames,
   propOrTheme,
+  supportBooleanNameGroup,
   supportOr,
   supportOrTheme,
   toPixels,
