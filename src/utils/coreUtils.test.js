@@ -1,8 +1,3 @@
-// import React from 'react';
-// import TestComponent from './components/TestComponent';
-// import defaultTheme from './themes';
-// import { shallowWithTheme } from '../src/utils/testHelpers';
-
 import { arrayToObject, supportBooleanNameGroup } from './coreUtils';
 
 describe('coreUtils', () => {
