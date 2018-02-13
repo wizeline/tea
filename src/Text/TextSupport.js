@@ -3,7 +3,12 @@
 import { css } from 'styled-components';
 import pick from 'ramda/src/pick';
 import cssConstants from './css';
-import type { TextProps, ChildrenRelatedProps, StyleProps } from './TextTypes';
+import type {
+  TextProps,
+  ChildrenRelatedProps,
+  StyleProps,
+  ColorProps,
+} from './TextTypes';
 import { arrayToObject, supportBooleanNameGroup } from '../utils';
 
 const priorityGroupName = 'priority';
@@ -47,8 +52,14 @@ const getChildSupport = (props: ChildrenRelatedProps) => {
 const getPropSupport = (props: TextProps) => {
   const priority = getPriorityPropObject(props);
   const children = getChildSupport(props);
+  const { color, isLink } = props;
+  const textSpanStyledProps = {
+    color,
+    isLink,
+    ...priority,
+  };
   return {
-    priority,
+    textSpanStyledProps,
     children,
   };
 };
@@ -79,16 +90,34 @@ const { heading } = cssConstants;
 const getHeadingSupport = (priorityName: string) =>
   isHeading(priorityName) ? heading : null;
 
+const getColorSupport = (props: ColorProps) => {
+  const { color, isLink } = props;
+  let result;
+  if (color) {
+    result = color;
+  } else if (isLink) {
+    result = props.theme.textLink;
+  }
+  return result
+    ? css`
+        color: ${result};
+      `
+    : null;
+};
+
 const getStyleSupport = (props: StyleProps) => {
   const priorityName = props[priorityGroupName];
   const picked = pick(priorityBooleanAttributeGroup, cssConstants);
   const baseSupport = Object(picked[priorityName]);
   const themeSupport = getThemeSupport(props, priorityName);
   const headingSupport = getHeadingSupport(priorityName);
+  const colorSupport = getColorSupport(props);
+
   return css`
     ${baseSupport};
     ${themeSupport};
     ${headingSupport};
+    ${colorSupport};
   `;
 };
 

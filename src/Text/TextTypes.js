@@ -17,12 +17,15 @@ export type TextProps = {
   error?: boolean,
   short?: boolean,
   long?: boolean,
+  isLink?: boolean,
 };
 
 export type ColorProps = {
   color: string,
+  isLink: boolean,
   theme: {
     textPrimary: string,
+    textLink: string,
   },
 };
 
@@ -34,4 +37,7 @@ export type ChildrenRelatedProps = {
 
 export type StyleProps = {
   priority: string,
+  color: string,
+  theme: Object,
+  isLink: boolean,
 };
