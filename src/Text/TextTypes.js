@@ -13,6 +13,10 @@ export type TextProps = {
   b150?: boolean,
   b100?: boolean,
   b50?: boolean,
+  subtitle?: boolean,
+  error?: boolean,
+  short?: boolean,
+  long?: boolean,
 };
 
 export type ColorProps = {
@@ -24,6 +28,7 @@ export type ColorProps = {
 
 export type ChildrenRelatedProps = {
   h200?: boolean,
+  subtitle?: boolean,
   children?: React.Node,
 };
 

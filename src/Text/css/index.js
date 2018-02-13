@@ -9,6 +9,7 @@ import h400 from './h400';
 import h500 from './h500';
 import h600 from './h600';
 import error from './error';
+import subtitle from './subtitle';
 import short from './short';
 import long from './long';
 import heading from './heading';
@@ -23,6 +24,7 @@ export default {
   h500,
   h600,
   error,
+  subtitle,
   short,
   long,
   heading,
