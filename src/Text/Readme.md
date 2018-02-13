@@ -19,6 +19,7 @@
   <br />
   <Text subtitle >H200 – 11px, Semibold, Uppercase: Sub-section Title</Text>
   <br />
+  <br />
   <div style={{width: '278px', height: '60px'}}>
     <Text short >Short paragraphs: We spend a huge amount of our time at work. So the more that time doesn’t feel like “work,” the better.</Text>
   </div>
