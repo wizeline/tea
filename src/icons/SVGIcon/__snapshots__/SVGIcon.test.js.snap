@@ -49,8 +49,8 @@ exports[`SVGIconDivStyled renders correctly with defined invalid container size 
 .c0 {
   display: inline-block;
   position: relative;
-  height: 16px;
   width: 16px;
+  height: 16px;
   top: 0px;
 }
 
@@ -64,8 +64,8 @@ exports[`SVGIconDivStyled renders correctly with defined top 1`] = `
 .c0 {
   display: inline-block;
   position: relative;
-  height: 16px;
   width: 16px;
+  height: 16px;
   top: 10px;
 }
 
@@ -78,8 +78,8 @@ exports[`SVGIconDivStyled renders correctly with defined valid container size 1`
 .c0 {
   display: inline-block;
   position: relative;
-  height: 48px;
   width: 48px;
+  height: 48px;
   top: 0px;
 }
 
@@ -89,9 +89,24 @@ exports[`SVGIconDivStyled renders correctly with defined valid container size 1`
 />
 `;
 
+exports[`SVGIconSvgStyled renders correctly with defined color 1`] = `
+.c0 {
+  fill: red;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0 auto;
+}
+
+<svg
+  className="c0"
+  fill="red"
+/>
+`;
+
 exports[`SVGIconSvgStyled renders correctly without any defined attributes 1`] = `
 .c0 {
-  fill: #ffffff;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;

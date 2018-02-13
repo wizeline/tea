@@ -2,8 +2,9 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import SVGIcon from './SVGIcon';
-import { SVGIconSvgStyled, SVGIconDivStyled } from './SVGIconStyled';
-import shallowExpectInvalid from '../../utils/testHelpers';
+import SVGIconDivStyled from './styled/div';
+import SVGIconSvgStyled from './styled/svg';
+import { shallowExpectInvalid } from '../../utils/testHelpers';
 
 describe('SVGIcon', () => {
   it('renders correctly with an undefined size and a valid name that references an SVG with a defined viewBox', () => {
@@ -32,6 +33,10 @@ describe('SVGIcon', () => {
 describe('SVGIconSvgStyled', () => {
   it('renders correctly without any defined attributes', () => {
     const wrapper = shallow(<SVGIconSvgStyled />);
+    expect(toJson(wrapper)).toMatchSnapshot();
+  });
+  it('renders correctly with defined color', () => {
+    const wrapper = shallow(<SVGIconSvgStyled fill="red" />);
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 });
