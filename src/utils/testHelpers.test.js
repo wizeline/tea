@@ -1,12 +1,12 @@
 import React from 'react';
-import shallowWithTheme from './ShallowWithTheme';
+import { shallowWithTheme } from './testHelpers';
 
 describe('ShallowWithTheme', () => {
-  it('Does contain children', () => {
+  it('works correctly with a child element', () => {
     const wrapper = shallowWithTheme(<div />);
     expect(wrapper.contains(<div />)).toBeTruthy();
   });
-  it('Does not contain children', () => {
+  it('works correctly without a child element', () => {
     const wrapper = shallowWithTheme();
     expect(wrapper.contains(<div />)).toBeFalsy();
   });

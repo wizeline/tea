@@ -1,5 +1,7 @@
 // @flow
 
+import { lispToCamelCase } from '../../../utils';
+
 import addItem from './add-item';
 import addPeople from './add-people';
 import arrowDown from './arrow-down';
@@ -22,14 +24,6 @@ import pencil from './pencil';
 import people from './people';
 import plus from './plus';
 import trash from './trash';
-
-const lispToPascalCase = (word: string) =>
-  word
-    .split('-')
-    .reduce(
-      (result, token) =>
-        result + token.replace(/^\w/, chr => chr.toUpperCase()),
-    );
 
 const data = {
   addItem,
@@ -57,6 +51,6 @@ const data = {
 };
 
 const getSVG = (name: string) =>
-  name === undefined ? null : data[lispToPascalCase(name)];
+  name === undefined ? null : data[lispToCamelCase(name)];
 
 export default getSVG;
