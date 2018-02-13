@@ -31,10 +31,15 @@ const getPriorityPropObject = supportBooleanNameGroup(
   priorityBooleanAttributeGroup,
 );
 
+const toUpperCase = (str: string) => str.toUpperCase();
+
 const getChildSupport = (props: ChildrenRelatedProps) => {
   const { h200, subtitle, children } = props;
   if (h200 || subtitle) {
-    return String(children).toUpperCase();
+    if (Array.isArray(children)) {
+      return children.map(toUpperCase);
+    }
+    return toUpperCase(String(children));
   }
   return children;
 };
