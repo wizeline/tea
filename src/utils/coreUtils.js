@@ -17,7 +17,6 @@ const getTruthyKey = (obj: Object): ?string => {
     const errorMessage = `${multipleTruthyKeyError} [${reason}]`;
     throw new Error(errorMessage);
   }
-  if (truthyKeys.length === 0) return undefined;
   return truthyKeys[0];
 };
 
@@ -77,6 +76,12 @@ const supportOrTheme = (input: string, defaultThemePropName: string) => (
   `;
 };
 
+const warn = (warning: string) => {
+  /* eslint-disable no-console */
+  console.warn(warning);
+  /* eslint-enable no-console */
+};
+
 export {
   cssProperties,
   curryPropParsers,
@@ -87,4 +92,5 @@ export {
   supportOr,
   supportOrTheme,
   toPixels,
+  warn,
 };

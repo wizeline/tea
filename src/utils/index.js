@@ -9,6 +9,7 @@ import {
   supportOr,
   supportOrTheme,
   toPixels,
+  warn,
 } from './coreUtils';
 
 export {
@@ -20,4 +21,5 @@ export {
   supportOrTheme,
   supportSizes,
   toPixels,
+  warn,
 };
