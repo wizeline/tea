@@ -36,4 +36,25 @@ describe('TextSupport', () => {
     expect(result.children[0]).toBe('CHILDA');
     expect(result.children[1]).toBe('CHILDB');
   });
+  it('getPropSupport: functions correctly with color prop set', () => {
+    const props = {
+      theme: { textSubtitle: 'black' },
+      children: ['childA', 'childB'],
+      color: 'red',
+      isLink: true,
+    };
+    const result = getStyleSupport(props);
+    const containsCorrectColor = result.some(str => str.includes('red'));
+    expect(containsCorrectColor).toBeTruthy();
+  });
+  it('getPropSupport: functions correctly with color prop set', () => {
+    const props = {
+      theme: { textSubtitle: 'black', textLink: 'yellow' },
+      children: ['childA', 'childB'],
+      isLink: true,
+    };
+    const result = getStyleSupport(props);
+    const containsCorrectColor = result.some(str => str.includes('yellow'));
+    expect(containsCorrectColor).toBeTruthy();
+  });
 });
