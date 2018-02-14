@@ -26,12 +26,6 @@ export type ColorProps = {
   },
 };
 
-export type ChildrenRelatedProps = {
-  h200?: boolean,
-  subtitle?: boolean,
-  children?: React.Node,
-};
-
 export type StyleProps = {
   priority: string,
 };
