@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon renders correctly 1`] = `
+<SVGIcon
+  name="cross"
+/>
+`;
+
+exports[`Icon renders correctly with round, large and background 1`] = `
+<CircleIcon
+  background="yellow"
+  name="cross"
+  size="large"
+/>
+`;
+
+exports[`Icon renders correctly with round, large and undefined background 1`] = `
+<CircleIcon
+  name="cross"
+  size="large"
+/>
+`;
+
+exports[`Icon renders correctly without defined size or background 1`] = `
+<CircleIcon
+  name="cross"
+/>
+`;
+
+exports[`Icon renders correctly, invalid size ignored 1`] = `
+<CircleIcon
+  name="cross"
+  size="xlarge"
+/>
+`;
+
+exports[`Icon renders nothing with an invalid name and undefined size attribute 1`] = `""`;
+
+exports[`Icon renders nothing with an invalid name and undefined size attribute 2`] = `""`;
+
+exports[`Icon renders nothing with an undefined name and undefined size 1`] = `""`;
+
+exports[`Icon renders nothing with invalid name and invalid size 1`] = `""`;
+
+exports[`Icon renders nothing with round, invalid name and invalid size 1`] = `""`;

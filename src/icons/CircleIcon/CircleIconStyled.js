@@ -3,22 +3,39 @@
 /* eslint flowtype-errors/enforce-min-coverage: 0 */
 
 import styled from 'styled-components';
-import type { DiameterProps, BackgroundProps } from './CircleIconTypes';
 import constants from './CircleIconConstants';
+import {
+  supportOr,
+  propNames,
+  cssProperties,
+  supportOrTheme,
+  toPixels,
+} from '../../utils';
 
-const getContainerDiameter = ({ size }: DiameterProps) =>
-  constants.circleDiameters[size];
+const { circleDiameters, defaultSize } = constants;
+const { size, background } = propNames;
+const { width, height } = cssProperties;
 
-const getContainerBackground = (props: BackgroundProps) =>
-  props.background || props.theme.backgroundPrimary;
+const sizeMapping = sizeName => toPixels(circleDiameters[sizeName]);
+const sizeSupport = supportOr(
+  size,
+  circleDiameters[defaultSize],
+  sizeMapping,
+  width,
+  height,
+);
 
-const CircleIconStyled = styled.div`
+const backgroundSupport = supportOrTheme(background, 'backgroundPrimary');
+
+const CircleIconBase = styled.div`
   display: inline-block;
-  height: ${getContainerDiameter}px;
-  width: ${getContainerDiameter}px;
   text-align: center;
-  background: ${getContainerBackground};
   border-radius: 50%;
+`;
+
+const CircleIconStyled = CircleIconBase.extend`
+  ${sizeSupport};
+  ${backgroundSupport};
 `;
 
 export default CircleIconStyled;

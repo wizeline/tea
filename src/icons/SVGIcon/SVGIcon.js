@@ -5,7 +5,8 @@
 import React from 'react';
 import type { SVGIconProps } from './SVGIconTypes';
 import constants from './SVGIconConstants';
-import { SVGIconDivStyled, SVGIconSvgStyled } from './SVGIconStyled';
+import SVGIconDivStyled from './styled/div';
+import SVGIconSvgStyled from './styled/svg';
 import getSVG from './data';
 
 const isSizeInvalid = (size: ?string): boolean =>
@@ -20,7 +21,7 @@ const SVGIcon = (props: SVGIconProps) => {
   return (
     <SVGIconDivStyled size={size} top={top}>
       <SVGIconSvgStyled
-        iconFillColor={color}
+        fill={color}
         viewBox={svgViewBox}
         preserveAspectRatio={constants.preserveAspectRatio}
       >
