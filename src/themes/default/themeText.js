@@ -3,7 +3,8 @@
 import colors from './colors';
 
 export default {
-  textPrimary: colors.white,
+  textPrimary: colors.charcoalGrey,
+  textPrimaryInvert: colors.white,
   textPrimaryHover: colors.white,
   textPrimaryDisabled: colors.coolGrey,
   textSecondary: colors.charcoalGrey,
@@ -18,4 +19,9 @@ export default {
   textInputInvalid: colors.tomato,
   textIcon: colors.white,
   textIconInvert: colors.darkGrey,
+  textBody: colors.charcoalGrey,
+  textHeading: colors.charcoalGrey,
+  textError: colors.rosyPink,
+  textSubtitle: colors.coolGrey,
+  textLink: colors.darkSkyBlue,
 };

@@ -1,7 +1,10 @@
 // @flow
 
 export type SVGFillProps = {
-  [fill: string]: string,
+  iconFillColor: string,
+  theme: {
+    textPrimaryInvert: string,
+  },
 };
 
 export type SVGIconProps = {

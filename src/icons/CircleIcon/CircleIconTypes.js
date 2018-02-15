@@ -1,11 +1,13 @@
 // @flow
 
+import type { Node } from 'react';
+
 export type CircleIconProps = {
   name?: string,
   size?: string,
   color?: string,
   background?: string,
-  svgData?: React.Node,
+  svgData?: Node,
 };
 
 export type DiameterProps = {

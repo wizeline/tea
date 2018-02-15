@@ -17,6 +17,8 @@ exports[`CircleIcon renders correctly with undefined size attribute 1`] = `
   size="small"
 >
   <SVGIcon
+    color="#ffffff"
+    name="cross"
     size="xsmall"
     svgData={
       <svg
@@ -43,6 +45,8 @@ exports[`CircleIcon renders correctly with valid size 1`] = `
   size="large"
 >
   <SVGIcon
+    color="#ffffff"
+    name="cross"
     size="medium"
     svgData={
       <svg

@@ -1,7 +1,10 @@
 // @flow
 
+import colors from '../../themes/default/colors';
+
 const constants = {
   defaultSize: 'small',
+  defaultSVGIconColor: colors.white,
   circleDiameters: {
     small: 32,
     medium: 48,

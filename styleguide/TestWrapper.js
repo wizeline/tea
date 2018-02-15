@@ -1,11 +1,16 @@
 // @flow
 
 import * as React from 'react';
+import colors from '../src/themes/default/colors';
 import ThemeProvider from '../src/ThemeProvider';
 import type { Props } from './TestWrapperTypes';
 
+const altTheme = {
+  textPrimaryInvert: colors.charcoalGrey,
+};
+
 const TestWrapper = (props: Props) => (
-  <ThemeProvider>{props.children}</ThemeProvider>
+  <ThemeProvider theme={altTheme}>{props.children}</ThemeProvider>
 );
 
 export default TestWrapper;

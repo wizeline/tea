@@ -1,5 +1,6 @@
 // @flow
 
+import reduce from 'ramda/src/reduce';
 import { css } from 'styled-components';
 import {
   multipleTruthyKeyError,
@@ -82,13 +83,27 @@ const warn = (warning: string) => {
   /* eslint-enable no-console */
 };
 
+const supportBooleanNameGroup = (groupName: string, names: Array<string>) => (
+  props: Object,
+) => {
+  const activeName = names.find(name => props[name]);
+  return activeName ? { [groupName]: activeName } : {};
+};
+
+const arrayToObject = (array: Array<string>) => {
+  const accumulator = (a, b) => ({ ...a, [b]: true });
+  return reduce(accumulator, {}, array);
+};
+
 export {
+  arrayToObject,
   cssProperties,
   curryPropParsers,
   getTruthyKey,
   camelToLispCase,
   propNames,
   propOrTheme,
+  supportBooleanNameGroup,
   supportOr,
   supportOrTheme,
   toPixels,
