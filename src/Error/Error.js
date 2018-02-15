@@ -3,10 +3,17 @@
 /* eslint flowtype-errors/enforce-min-coverage: 0 */
 
 import React from 'react';
+import { warn } from '../utils/';
 import type { ErrorProps } from './ErrorTypes';
 import Text from '../Text';
 
-const Error = ({ children }: ErrorProps) =>
-  children ? <Text error>{children}</Text> : null;
+const missingChildrenPropWarningMessage = '`Error` is missing `children` prop';
+
+const Error = ({ children }: ErrorProps) => {
+  if (!children) {
+    return warn(missingChildrenPropWarningMessage);
+  }
+  return <Text error>{children}</Text>;
+};
 
 export default Error;
