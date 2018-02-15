@@ -11,6 +11,6 @@ describe('Error', () => {
   it('functions correctly without children', () => {
     const component = <Error />;
     const wrapper = shallow(component);
-    expect(wrapper.html()).toBeFalsy();
+    expect(wrapper.html()).toBeTruthy();
   });
 });

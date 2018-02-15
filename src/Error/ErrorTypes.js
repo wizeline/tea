@@ -1,7 +1,7 @@
 // @flow
 
-import * as React from 'react';
+import type { Node } from 'react';
 
 export type ErrorProps = {
-  children?: React.Node,
+  children?: Node,
 };

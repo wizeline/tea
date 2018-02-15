@@ -1,5 +1,6 @@
 // @flow
 
+import reduce from 'ramda/src/reduce';
 import { css } from 'styled-components';
 import {
   multipleTruthyKeyError,
@@ -103,12 +104,9 @@ const supportBooleanNameGroup = (
   return defaultName ? { [groupName]: defaultName } : {};
 };
 
-const arrayToObject = (arr: Array<string>) => {
-  const result = {};
-  arr.forEach(name => {
-    result[name] = true;
-  });
-  return result;
+const arrayToObject = (array: Array<string>) => {
+  const accumulator = (a, b) => ({ ...a, [b]: true });
+  return reduce(accumulator, {}, array);
 };
 
 export {

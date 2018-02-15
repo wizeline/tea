@@ -1,9 +1,9 @@
 // @flow
 
-import * as React from 'react';
+import type { Node } from 'react';
 
 export type TextProps = {
-  children?: React.Node,
+  children?: Node,
   color?: string,
   h600?: boolean,
   h500?: boolean,
@@ -25,12 +25,6 @@ export type ColorProps = {
     textPrimary: string,
     textLink: string,
   },
-};
-
-export type ChildrenRelatedProps = {
-  h200?: boolean,
-  subtitle?: boolean,
-  children?: React.Node,
 };
 
 export type StyleProps = {

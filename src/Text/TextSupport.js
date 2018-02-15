@@ -3,12 +3,7 @@
 import { css } from 'styled-components';
 import pick from 'ramda/src/pick';
 import cssConstants from './css';
-import type {
-  TextProps,
-  ChildrenRelatedProps,
-  StyleProps,
-  ColorProps,
-} from './TextTypes';
+import type { TextProps, StyleProps, ColorProps } from './TextTypes';
 import { arrayToObject, supportBooleanNameGroup } from '../utils';
 
 const priorityGroupName = 'priority';
@@ -36,23 +31,21 @@ const getPriorityPropObject = supportBooleanNameGroup(
   priorityBooleanAttributeGroup,
 );
 
-const toUpperCase = (str: string) => str.toUpperCase();
+const supportedUpperCasedPriorities = ['h200', 'subtitle'];
+const upperCasedPriorities = arrayToObject(supportedUpperCasedPriorities);
 
-const getChildSupport = (props: ChildrenRelatedProps) => {
-  const { h200, subtitle, children } = props;
-  if (h200 || subtitle) {
-    if (Array.isArray(children)) {
-      return children.map(toUpperCase);
-    }
-    return toUpperCase(String(children));
-  }
-  return children;
+const getTextTransformSupport = (priorityName: string) => {
+  const isUpperCased = upperCasedPriorities[priorityName];
+  return isUpperCased
+    ? css`
+        text-transform: uppercase;
+      `
+    : null;
 };
 
 const getTextPropSupport = (props: TextProps) => {
   const priority = getPriorityPropObject(props);
-  const children = getChildSupport(props);
-  const { color } = props;
+  const { children, color } = props;
   const textSpanStyledProps = {
     color,
     ...priority,
@@ -105,12 +98,13 @@ const getTextStyleSupport = (props: StyleProps) => {
   const themeSupport = getThemeSupport(props, priorityName);
   const headingSupport = getHeadingSupport(priorityName);
   const colorSupport = getColorSupport(props);
-
+  const textTransformSupport = getTextTransformSupport(priorityName);
   return css`
     ${baseSupport};
     ${themeSupport};
     ${headingSupport};
     ${colorSupport};
+    ${textTransformSupport};
   `;
 };
 
