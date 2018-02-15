@@ -10,12 +10,16 @@ describe('TextSupport', () => {
     expect(containsDisplayBlock).toBeFalsy();
   });
   it('getStyleSupport: functions correctly with heading-based prop set', () => {
-    const props = { theme: { textHeading: 'black' }, priority: 'h300' };
+    const props = { theme: { textHeading: 'black' }, priority: 'h200' };
     const result = getStyleSupport(props);
     const containsDisplayBlock = result.some(str =>
       str.includes('display: block;'),
     );
+    const containsTextTransform = result.some(str =>
+      str.includes('text-transform: uppercase;'),
+    );
     expect(containsDisplayBlock).toBeTruthy();
+    expect(containsTextTransform).toBeTruthy();
   });
   it('getPropSupport: functions correctly with h200 prop set', () => {
     const props = {
@@ -24,16 +28,6 @@ describe('TextSupport', () => {
       children: 'some child',
     };
     const result = getPropSupport(props);
-    expect(result.children).toBe('SOME CHILD');
-  });
-  it('getPropSupport: functions correctly with subtitle prop set', () => {
-    const props = {
-      theme: { textSubtitle: 'black' },
-      subtitle: true,
-      children: ['childA', 'childB'],
-    };
-    const result = getPropSupport(props);
-    expect(result.children[0]).toBe('CHILDA');
-    expect(result.children[1]).toBe('CHILDB');
+    expect(result.children).toBe('some child');
   });
 });

@@ -31,10 +31,8 @@ const getPriorityPropObject = supportBooleanNameGroup(
   priorityBooleanAttributeGroup,
 );
 
-const upperCasedPriorities = {
-  h200: true,
-  subtitle: true,
-};
+const supportedUpperCasedPriorities = ['h200', 'subtitle'];
+const upperCasedPriorities = arrayToObject(supportedUpperCasedPriorities);
 
 const getTextTransformSupport = (priorityName: string) => {
   const isUpperCased = upperCasedPriorities[priorityName];
