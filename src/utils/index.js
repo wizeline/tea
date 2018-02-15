@@ -2,10 +2,12 @@
 
 import supportSizes from './sizes/supportSizes';
 import {
+  arrayToObject,
   cssProperties,
   lispToCamelCase,
   propNames,
   propOrTheme,
+  supportBooleanNameGroup,
   supportOr,
   supportOrTheme,
   toPixels,
@@ -13,10 +15,12 @@ import {
 } from './coreUtils';
 
 export {
+  arrayToObject,
   cssProperties,
   lispToCamelCase,
   propNames,
   propOrTheme,
+  supportBooleanNameGroup,
   supportOr,
   supportOrTheme,
   supportSizes,

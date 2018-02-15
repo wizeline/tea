@@ -8,6 +8,7 @@ module.exports = {
   testMatch: ['**/*.test.js'],
   moduleNameMapper: {
     '\\.(css|scss)$': '<rootDir>/__mocks__/styleMock.js',
+    '\\.(eot|woff|woff2|ttf|eot#[a-z]+)$': '<rootDir>/__mocks__/fontMock.js',
   },
   coverageThreshold: {
     global: {

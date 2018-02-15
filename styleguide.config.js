@@ -6,6 +6,7 @@ const componentGroups = {
   'icons/Icon': 'Icon',
   'icons/SVGIcon': 'SVGIcon',
   'icons/CircleIcon': 'CircleIcon',
+  Text: 'Text',
 };
 
 const componentSections = Object.entries(componentGroups).map(
@@ -18,9 +19,9 @@ const componentSections = Object.entries(componentGroups).map(
 );
 
 const styleGuideColors = {
-  themeColorLink: 'firebrick',
-  themeColorLinkHover: 'salmon',
-  previewBackground: '#a2abaf',
+  themeColorLink: '#5f65aa',
+  themeColorLinkHover: '#5f65aa',
+  previewBackground: '#fafbfc',
 };
 
 const path = require('path');
@@ -34,7 +35,7 @@ module.exports = {
       link: styleGuideColors.themeColorLink,
       linkHover: styleGuideColors.themeColorLinkHover,
     },
-    font: ['proxima-nova', 'sans-serif'],
+    font: ['ProximaNova Regular', 'sans-serif'],
   },
   styles: {
     Playground: {
@@ -44,14 +45,14 @@ module.exports = {
         paddingRight: 0,
         borderWidth: [[0, 0, 1, 0]],
         borderRadius: 0,
-        fontFamily: ['proxima-nova', 'sans-serif'],
+        fontFamily: ['ProximaNova Regular', 'sans-serif'],
       },
     },
     Markdown: {
       pre: {
         border: 0,
         background: 'none',
-        fontFamily: ['proxima-nova', 'sans-serif'],
+        fontFamily: ['ProximaNova Regular', 'sans-serif'],
       },
       code: {
         fontSize: 14,
@@ -73,6 +74,10 @@ module.exports = {
         {
           test: /\.css$/,
           loader: 'style-loader!css-loader',
+        },
+        {
+          test: /\.(ttf|eot|woff|woff2)(#[a-zA-Z]+)?$/,
+          loader: 'file-loader',
         },
       ],
     },
