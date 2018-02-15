@@ -52,10 +52,9 @@ const getChildSupport = (props: ChildrenRelatedProps) => {
 const getTextPropSupport = (props: TextProps) => {
   const priority = getPriorityPropObject(props);
   const children = getChildSupport(props);
-  const { color, isLink } = props;
+  const { color } = props;
   const textSpanStyledProps = {
     color,
-    isLink,
     ...priority,
   };
   return {
@@ -91,16 +90,10 @@ const getHeadingSupport = (priorityName: string) =>
   isHeading(priorityName) ? heading : null;
 
 const getColorSupport = (props: ColorProps) => {
-  const { color, isLink } = props;
-  let result;
-  if (color) {
-    result = color;
-  } else if (isLink) {
-    result = props.theme.textLink;
-  }
-  return result
+  const { color } = props;
+  return color
     ? css`
-        color: ${result};
+        color: ${color};
       `
     : null;
 };

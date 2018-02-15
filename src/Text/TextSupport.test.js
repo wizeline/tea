@@ -41,7 +41,6 @@ describe('TextSupport', () => {
       theme: { textSubtitle: 'black' },
       children: ['childA', 'childB'],
       color: 'red',
-      isLink: true,
     };
     const result = getTextStyleSupport(props);
     const containsCorrectColor = result.some(str => str.includes('red'));
@@ -51,7 +50,6 @@ describe('TextSupport', () => {
     const props = {
       theme: { textSubtitle: 'black', textLink: 'yellow' },
       children: ['childA', 'childB'],
-      isLink: true,
     };
     const result = getTextStyleSupport(props);
     const containsCorrectColor = result.some(str => str.includes('yellow'));
