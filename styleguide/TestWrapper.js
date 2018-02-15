@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 import colors from '../src/themes/default/colors';
-import ThemeProvider from '../src/themes/ThemeProvider';
+import ThemeProvider from '../src/ThemeProvider';
 import type { Props } from './TestWrapperTypes';
 
 const altTheme = {

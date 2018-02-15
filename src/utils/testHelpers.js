@@ -5,7 +5,7 @@
 import * as React from 'react';
 import { shallow, ShallowWrapper } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import ThemeProvider from '../themes/ThemeProvider';
+import ThemeProvider from '../ThemeProvider';
 
 const shallowExpectInvalid = (component: React.Node) => {
   const wrapper: ShallowWrapper = shallow(component);
