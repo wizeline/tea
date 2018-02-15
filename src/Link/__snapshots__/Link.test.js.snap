@@ -3,13 +3,9 @@
 exports[`Link functions correctly with children 1`] = `
 <styled.a
   href="http://wizeline.com/"
+  priority="b150"
 >
-  <Text
-    b150={true}
-    isLink={true}
-  >
-    hello
-  </Text>
+  hello
 </styled.a>
 `;
 

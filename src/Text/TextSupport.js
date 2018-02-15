@@ -49,7 +49,7 @@ const getChildSupport = (props: ChildrenRelatedProps) => {
   return children;
 };
 
-const getPropSupport = (props: TextProps) => {
+const getTextPropSupport = (props: TextProps) => {
   const priority = getPriorityPropObject(props);
   const children = getChildSupport(props);
   const { color, isLink } = props;
@@ -105,7 +105,7 @@ const getColorSupport = (props: ColorProps) => {
     : null;
 };
 
-const getStyleSupport = (props: StyleProps) => {
+const getTextStyleSupport = (props: StyleProps) => {
   const priorityName = props[priorityGroupName];
   const picked = pick(priorityBooleanAttributeGroup, cssConstants);
   const baseSupport = Object(picked[priorityName]);
@@ -121,4 +121,4 @@ const getStyleSupport = (props: StyleProps) => {
   `;
 };
 
-export { getPropSupport, getStyleSupport };
+export { getTextPropSupport, getTextStyleSupport };

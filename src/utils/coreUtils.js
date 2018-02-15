@@ -91,18 +91,16 @@ const warn = (warning: string) => {
   return null;
 };
 
-const supportBooleanNameGroup = (groupName: string, names: Array<string>) => (
-  props: Object,
-) => {
-  let activeName;
-  names.some(name => {
-    if (props[name]) {
-      activeName = name;
-      return true;
-    }
-    return false;
-  });
-  return activeName ? { [groupName]: activeName } : {};
+const supportBooleanNameGroup = (
+  groupName: string,
+  names: Array<string>,
+  defaultName?: string,
+) => (props: Object) => {
+  const activeName = names.find(name => props[name]);
+  if (activeName) {
+    return { [groupName]: activeName };
+  }
+  return defaultName ? { [groupName]: defaultName } : {};
 };
 
 const arrayToObject = (arr: Array<string>) => {
