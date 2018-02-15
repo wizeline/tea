@@ -27,7 +27,7 @@ const getLinkPropSupport = (props: LinkProps) => {
 };
 
 const getLinkStyleSupport = (props: LinkProps) => {
-  const color = props.theme ? props.theme.textLink : undefined;
+  const color = props.theme ? props.theme.textLink : null;
   const colorOverride = color ? `color: ${color};` : '';
   return css`
     ${getTextStyleSupport};

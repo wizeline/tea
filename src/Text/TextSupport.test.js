@@ -46,13 +46,4 @@ describe('TextSupport', () => {
     const containsCorrectColor = result.some(str => str.includes('red'));
     expect(containsCorrectColor).toBeTruthy();
   });
-  it('getTextPropSupport: functions correctly with color prop set', () => {
-    const props = {
-      theme: { textSubtitle: 'black', textLink: 'yellow' },
-      children: ['childA', 'childB'],
-    };
-    const result = getTextStyleSupport(props);
-    const containsCorrectColor = result.some(str => str.includes('yellow'));
-    expect(containsCorrectColor).toBeTruthy();
-  });
 });
