@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 import type { LinkProps } from './LinkTypes';
-import LinkAnchorStyled from './LinkAnchorStyled';
+import LinkAnchorStyled from './LinkStyled';
 import { getLinkPropSupport } from './LinkSupport';
 import { warn } from '../utils';
 

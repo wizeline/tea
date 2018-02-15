@@ -1,5 +1,5 @@
 import React from 'react';
-import LinkAnchorStyled from './LinkAnchorStyled';
+import LinkAnchorStyled from './LinkStyled';
 import { shallowExpectToMatchSnapShot } from '../utils/testHelpers';
 
 describe('LinkAnchorStyled', () => {
