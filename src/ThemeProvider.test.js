@@ -1,7 +1,7 @@
 import React from 'react';
-import TestComponent from '../../TestComponent';
-import defaultTheme from '../';
-import { shallowWithTheme } from '../../utils/testHelpers';
+import TestComponent from './components/TestComponent';
+import defaultTheme from './themes';
+import { shallowWithTheme } from '../src/utils/testHelpers';
 
 describe('ThemeProvider', () => {
   it('Uses default theme when an alternative theme is not provided', () => {
