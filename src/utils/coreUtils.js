@@ -89,13 +89,19 @@ const warn = (warning: string) => {
   /* eslint-disable no-console */
   console.warn(warning);
   /* eslint-enable no-console */
+  return null;
 };
 
-const supportBooleanNameGroup = (groupName: string, names: Array<string>) => (
-  props: Object,
-) => {
+const supportBooleanNameGroup = (
+  groupName: string,
+  names: Array<string>,
+  defaultName?: string,
+) => (props: Object) => {
   const activeName = names.find(name => props[name]);
-  return activeName ? { [groupName]: activeName } : {};
+  if (activeName) {
+    return { [groupName]: activeName };
+  }
+  return defaultName ? { [groupName]: defaultName } : {};
 };
 
 const arrayToObject = (array: Array<string>) => {

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link functions correctly with children 1`] = `
+<styled.a
+  href="http://wizeline.com/"
+  priority="b150"
+>
+  hello
+</styled.a>
+`;
+
+exports[`Link functions correctly without children 1`] = `
+<styled.a
+  href="http://wizeline.com/"
+  priority="b150"
+/>
+`;

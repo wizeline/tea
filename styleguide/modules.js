@@ -8,6 +8,7 @@ import SVGIcon from '../src/icons/SVGIcon';
 import SVGIconRow from './SVGIconRow';
 import Text from '../src/Text';
 import Error from '../src/Error';
+import Link from '../src/Link';
 
 const modules: Object = {
   CircleIcon,
@@ -16,6 +17,7 @@ const modules: Object = {
   SVGIconRow,
   Text,
   Error,
+  Link,
 };
 
 export default modules;

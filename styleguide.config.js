@@ -6,6 +6,7 @@ const componentGroups = {
   'icons/Icon': 'Icon',
   'icons/SVGIcon': 'SVGIcon',
   'icons/CircleIcon': 'CircleIcon',
+  Link: 'Link',
   Error: 'Error',
   Text: 'Text',
 };

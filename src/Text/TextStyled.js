@@ -1,10 +1,10 @@
 // @flow
 
 import styled from 'styled-components';
-import { getStyleSupport } from './TextSupport';
+import { getTextStyleSupport } from './TextSupport';
 
 const TextSpanStyled = styled.span`
-  ${getStyleSupport};
+  ${getTextStyleSupport};
 `;
 
 export default TextSpanStyled;

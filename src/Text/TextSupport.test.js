@@ -1,17 +1,17 @@
-import { getPropSupport, getStyleSupport } from './TextSupport';
+import { getTextPropSupport, getTextStyleSupport } from './TextSupport';
 
 describe('TextSupport', () => {
-  it('getStyleSupport: functions correctly with body-based prop set', () => {
+  it('getTextStyleSupport: functions correctly with body-based prop set', () => {
     const props = { theme: { textBody: 'black' }, priority: 'b150' };
-    const result = getStyleSupport(props);
+    const result = getTextStyleSupport(props);
     const containsDisplayBlock = result.some(str =>
       str.includes('display: block;'),
     );
     expect(containsDisplayBlock).toBeFalsy();
   });
-  it('getStyleSupport: functions correctly with heading-based prop set', () => {
+  it('getTextStyleSupport: functions correctly with heading-based prop set', () => {
     const props = { theme: { textHeading: 'black' }, priority: 'h200' };
-    const result = getStyleSupport(props);
+    const result = getTextStyleSupport(props);
     const containsDisplayBlock = result.some(str =>
       str.includes('display: block;'),
     );
@@ -21,13 +21,33 @@ describe('TextSupport', () => {
     expect(containsDisplayBlock).toBeTruthy();
     expect(containsTextTransform).toBeTruthy();
   });
-  it('getPropSupport: functions correctly with h200 prop set', () => {
+  it('getTextPropSupport: functions correctly with subtitle prop set', () => {
     const props = {
-      theme: { textHeading: 'black' },
-      h200: true,
+      theme: { textSubtitle: 'black' },
+      subtitle: true,
       children: 'some child',
     };
-    const result = getPropSupport(props);
+    const result = getTextPropSupport(props);
     expect(result.children).toBe('some child');
+  });
+  it('getTextPropSupport: functions correctly with multiple children', () => {
+    const props = {
+      theme: { textSubtitle: 'black' },
+      subtitle: true,
+      children: ['childA', 'childB'],
+    };
+    const result = getTextPropSupport(props);
+    expect(result.children[0]).toBe('childA');
+    expect(result.children[1]).toBe('childB');
+  });
+  it('getTextPropSupport: functions correctly with color prop set', () => {
+    const props = {
+      theme: { textSubtitle: 'black' },
+      children: ['childA', 'childB'],
+      color: 'red',
+    };
+    const result = getTextStyleSupport(props);
+    const containsCorrectColor = result.some(str => str.includes('red'));
+    expect(containsCorrectColor).toBeTruthy();
   });
 });

@@ -3,7 +3,7 @@
 import { css } from 'styled-components';
 import pick from 'ramda/src/pick';
 import cssConstants from './css';
-import type { TextProps, StyleProps } from './TextTypes';
+import type { TextProps, StyleProps, ColorProps } from './TextTypes';
 import { arrayToObject, supportBooleanNameGroup } from '../utils';
 
 const priorityGroupName = 'priority';
@@ -43,11 +43,15 @@ const getTextTransformSupport = (priorityName: string) => {
     : null;
 };
 
-const getPropSupport = (props: TextProps) => {
+const getTextPropSupport = (props: TextProps) => {
   const priority = getPriorityPropObject(props);
-  const { children } = props;
+  const { children, color } = props;
+  const textSpanStyledProps = {
+    color,
+    ...priority,
+  };
   return {
-    priority,
+    textSpanStyledProps,
     children,
   };
 };
@@ -78,19 +82,30 @@ const { heading } = cssConstants;
 const getHeadingSupport = (priorityName: string) =>
   isHeading(priorityName) ? heading : null;
 
-const getStyleSupport = (props: StyleProps) => {
+const getColorSupport = (props: ColorProps) => {
+  const { color } = props;
+  return color
+    ? css`
+        color: ${color};
+      `
+    : null;
+};
+
+const getTextStyleSupport = (props: StyleProps) => {
   const priorityName = props[priorityGroupName];
   const picked = pick(priorityBooleanAttributeGroup, cssConstants);
   const baseSupport = Object(picked[priorityName]);
   const themeSupport = getThemeSupport(props, priorityName);
   const headingSupport = getHeadingSupport(priorityName);
+  const colorSupport = getColorSupport(props);
   const textTransformSupport = getTextTransformSupport(priorityName);
   return css`
     ${baseSupport};
     ${themeSupport};
     ${headingSupport};
+    ${colorSupport};
     ${textTransformSupport};
   `;
 };
 
-export { getPropSupport, getStyleSupport };
+export { getTextPropSupport, getTextStyleSupport };

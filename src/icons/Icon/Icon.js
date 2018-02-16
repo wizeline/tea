@@ -9,7 +9,7 @@ import getSVG from '../SVGIcon/data';
 import { warn } from '../../utils';
 
 const getInvalidIconNameWarningMessage = (name: string) =>
-  `An invalid \`name\` prop \`${name}\` was supplied to <Icon />.`;
+  `An invalid \`name\` prop with value \`${name}\` was supplied to <Icon />.`;
 
 const Icon = (iconProps: IconPropTypes) => {
   const { name, round } = iconProps;
@@ -17,8 +17,7 @@ const Icon = (iconProps: IconPropTypes) => {
   const svg = getSVG(name);
   if (!svg) {
     const warningMessage = getInvalidIconNameWarningMessage(name);
-    warn(warningMessage);
-    return null;
+    return warn(warningMessage);
   }
   return round ? <CircleIcon {...childProps} /> : <SVGIcon {...childProps} />;
 };
