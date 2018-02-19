@@ -1,4 +1,4 @@
-import { arrayToObject, supportBooleanNameGroup } from './coreUtils';
+import { arrayToObject, supportBooleanNameGroup } from './objectUtils';
 
 describe('coreUtils', () => {
   it('arrayToObject functions correctly', () => {
