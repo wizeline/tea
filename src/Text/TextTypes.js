@@ -23,9 +23,12 @@ export type ColorProps = {
   color: string,
   theme: {
     textPrimary: string,
+    textLink: string,
   },
 };
 
 export type StyleProps = {
   priority: string,
+  color: string,
+  theme: Object,
 };
