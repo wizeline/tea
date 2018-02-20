@@ -1,5 +1,6 @@
 // @flow
 
+import reduce from 'ramda/src/reduce';
 import { camelToLispCase } from '../../../utils';
 
 import addItem from './add-item';
@@ -50,13 +51,15 @@ const internalData = {
   trash,
 };
 
-const exposeObject = (obj: Object) => {
-  const results = {};
-  Object.entries(obj).forEach(([key, value]) => {
-    results[camelToLispCase(key)] = value;
-  });
-  return results;
-};
+const exposeObject = (obj: Object) =>
+  reduce(
+    (acc, [key, value]) => ({
+      ...acc,
+      [camelToLispCase(key)]: value,
+    }),
+    {},
+    Object.entries(obj),
+  );
 
 const exposedData = exposeObject(internalData);
 
