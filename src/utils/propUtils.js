@@ -10,11 +10,11 @@ const propOrTheme = (themeName: string, propName: string): Function => (
 ) => (props[propName] ? props[propName] : props.theme[themeName]);
 
 const curryPropParsers = (...parsers: Array<Function>) => (props: Object) => {
-  const reducer = (accumulator, currentValue) => ({
-    ...accumulator,
-    ...currentValue,
+  const toObject = (previousObject, parsedProps) => ({
+    ...previousObject,
+    ...parsedProps,
   });
-  return parsers.map(parser => parser(props)).reduce(reducer, {});
+  return parsers.map(parser => parser(props)).reduce(toObject, {});
 };
 
 export { curryPropParsers, propNames, propOrTheme };
