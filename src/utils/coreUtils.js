@@ -8,16 +8,8 @@ import {
   supportedPropNames,
 } from './coreUtilsConstants';
 
-const lispToCamelCase = (word: string) =>
-  word
-    .split('-')
-    .reduce(
-      (result, token) =>
-        result + token.replace(/^\w/, chr => chr.toUpperCase()),
-    );
-
 const camelToLispCase = (word: string) =>
-  word.replace(/([A-Z])/g, '-($1).toLowerCase()');
+  word.replace(/([A-Z])/g, captureGroup => `-${captureGroup.toLowerCase()}`);
 
 const getTruthyKey = (obj: Object): ?string => {
   const truthyKeys = Object.keys(obj).filter(key => Boolean(obj[key]));
@@ -114,7 +106,7 @@ export {
   cssProperties,
   curryPropParsers,
   getTruthyKey,
-  lispToCamelCase,
+  camelToLispCase,
   propNames,
   propOrTheme,
   supportBooleanNameGroup,

@@ -10,6 +10,10 @@ describe('CircleIcon', () => {
     expect(toJson(wrapper)).toMatchSnapshot();
     expect(wrapper).toHaveStyleRule('border-radius', '50%');
   });
+  it('renders correctly when given svgData', () => {
+    const wrapper = shallow(<CircleIcon svgData={<g />} />);
+    expect(toJson(wrapper)).toMatchSnapshot();
+  });
   it('renders correctly with valid size', () => {
     const wrapper = shallow(<CircleIcon name="cross" size="large" />);
     expect(toJson(wrapper)).toMatchSnapshot();

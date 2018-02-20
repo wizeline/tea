@@ -4,7 +4,7 @@ import supportSizes from './sizes/supportSizes';
 import {
   arrayToObject,
   cssProperties,
-  lispToCamelCase,
+  camelToLispCase,
   propNames,
   propOrTheme,
   supportBooleanNameGroup,
@@ -17,7 +17,7 @@ import {
 export {
   arrayToObject,
   cssProperties,
-  lispToCamelCase,
+  camelToLispCase,
   propNames,
   propOrTheme,
   supportBooleanNameGroup,

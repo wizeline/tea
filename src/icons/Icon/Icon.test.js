@@ -5,7 +5,7 @@ import Icon from './Icon';
 import {
   shallowExpectInvalid,
   shallowExpectToMatchSnapShot,
-  shallowExpectToThrow,
+  mountExpectToThrow,
 } from '../../utils/testHelpers';
 
 describe('Icon', () => {
@@ -28,7 +28,7 @@ describe('Icon', () => {
     shallowExpectToMatchSnapShot(<Icon round xlarge name="cross" />);
   });
   it('throws an error with multiple truthy sizes', () => {
-    shallowExpectToThrow(<Icon round xlarge large name="cross" />);
+    mountExpectToThrow(<Icon round xlarge large name="cross" />);
   });
   it('renders nothing with an invalid name and undefined size attribute', () => {
     shallowExpectInvalid(<Icon name="InvalidIconName" />);

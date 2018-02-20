@@ -19,6 +19,10 @@ describe('SVGIcon', () => {
     expect(toJson(wrapper)).toMatchSnapshot();
     expect(wrapper).toHaveStyleRule('top', '20px');
   });
+  it('renders correctly when given svgData', () => {
+    const wrapper = shallow(<SVGIcon svgData={<g />} />);
+    expect(toJson(wrapper)).toMatchSnapshot();
+  });
   it('renders nothing with an invalid name and undefined size attribute', () => {
     shallowExpectInvalid(<SVGIcon name="InvalidIconName" />);
   });
