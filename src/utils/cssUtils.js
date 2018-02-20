@@ -5,7 +5,7 @@ import { getObjectSupport } from './objectUtils';
 import { supportedCssProps } from './constants';
 import { camelToLispCase } from './stringUtils';
 
-const toPixels = (val: any) => (val ? `${val}px` : '0px');
+const toPixels = (val: string) => (val ? `${val}px` : '0px');
 const cssProperties = getObjectSupport(supportedCssProps, camelToLispCase);
 
 const supportOr = (

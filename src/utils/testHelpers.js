@@ -7,6 +7,8 @@ import { shallow, ShallowWrapper } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import ThemeProvider from '../ThemeProvider';
 
+const { expect } = global;
+
 const shallowExpectInvalid = (component: React.Node) => {
   const wrapper: ShallowWrapper = shallow(component);
   expect(toJson(wrapper)).toMatchSnapshot();
