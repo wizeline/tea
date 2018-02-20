@@ -5,7 +5,7 @@
 import * as React from 'react';
 import { shallow, ShallowWrapper } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import ThemeProvider from '../ThemeProvider';
+import ThemeProvider from '../themes/ThemeProvider';
 
 const { expect } = global;
 

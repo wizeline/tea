@@ -9,8 +9,8 @@ export default {
   backgroundSecondary: colors.white,
   backgroundSecondaryHover: colors.white,
   backgroundSecondaryDisabled: colors.white,
-  backgroundDestructive: colors.rosyPink,
-  backgroundDestructiveHover: colors.tomato,
-  backgroundDestructiveDisabled: colors.paleGrey3,
+  backgroundDanger: colors.rosyPink,
+  backgroundDangerHover: colors.tomato,
+  backgroundDangerDisabled: colors.paleGrey3,
   backgroundInput: colors.white,
 };

@@ -1,5 +1,5 @@
 // @flow
 
-import defaultTheme from './default';
+import defaultTheme from './defaultTheme';
 
 export default defaultTheme;
