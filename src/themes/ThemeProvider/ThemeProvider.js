@@ -2,9 +2,9 @@
 
 import * as React from 'react';
 import { ThemeProvider } from 'styled-components';
-import defaultTheme from './themes';
+import defaultTheme from '../';
 import type { Props } from './ThemeProviderTypes';
-import './base.styled';
+import './baseStyled';
 
 const PhoenixThemeProvider = (props: Props) => {
   const theme: Object = { ...defaultTheme, ...props.theme };
