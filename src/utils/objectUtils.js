@@ -4,8 +4,8 @@ import reduce from 'ramda/src/reduce';
 import { multipleTruthyKeyError } from './constants';
 
 const arrayToObject = (array: Array<string>) => {
-  const accumulator = (a, b) => ({ ...a, [b]: true });
-  return reduce(accumulator, {}, array);
+  const toObject = (acc, arrayElement) => ({ ...acc, [arrayElement]: true });
+  return reduce(toObject, {}, array);
 };
 
 const getTruthyKey = (obj: Object): ?string => {
@@ -18,13 +18,14 @@ const getTruthyKey = (obj: Object): ?string => {
   return truthyKeys[0];
 };
 
-const getObjectSupport = (names: Array<string>, mapping?: Function): Object => {
-  const result = {};
-  names.forEach((name: string) => {
-    result[name] = mapping ? mapping(name) : name;
-  });
-  return result;
-};
+const getObjectSupport = (names: Array<string>, mapping?: Function): Object =>
+  names.reduce(
+    (acc: Object, name: string) => ({
+      ...acc,
+      [name]: mapping ? mapping(name) : name,
+    }),
+    {},
+  );
 
 const supportBooleanNameGroup = (
   groupName: string,

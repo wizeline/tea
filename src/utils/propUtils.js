@@ -10,8 +10,8 @@ const propOrTheme = (themeName: string, propName: string): Function => (
 ) => (props[propName] ? props[propName] : props.theme[themeName]);
 
 const curryPropParsers = (...parsers: Array<Function>) => (props: Object) => {
-  const toObject = (previousObject, parsedProps) => ({
-    ...previousObject,
+  const toObject = (acc, parsedProps) => ({
+    ...acc,
     ...parsedProps,
   });
   return parsers.map(parser => parser(props)).reduce(toObject, {});
