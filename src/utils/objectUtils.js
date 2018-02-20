@@ -18,14 +18,13 @@ const getTruthyKey = (obj: Object): ?string => {
   return truthyKeys[0];
 };
 
-const getObjectSupport = (names: Array<string>, mapping?: Function): Object =>
-  names.reduce(
-    (acc: Object, name: string) => ({
-      ...acc,
-      [name]: mapping ? mapping(name) : name,
-    }),
-    {},
-  );
+const getObjectSupport = (names: Array<string>, mapping?: Function): Object => {
+  const toObjectWithMapping = (acc: Object, name: string) => ({
+    ...acc,
+    [name]: mapping ? mapping(name) : name,
+  });
+  return reduce(toObjectWithMapping, {}, names);
+};
 
 const supportBooleanNameGroup = (
   groupName: string,
