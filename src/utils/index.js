@@ -9,11 +9,12 @@ import { arrayToObject, supportBooleanNameGroup } from './objectUtils';
 
 import { propNames, propOrTheme } from './propUtils';
 
-import { lispToCamelCase } from './stringUtils';
+import { camelToLispCase, lispToCamelCase } from './stringUtils';
 
 export {
   arrayToObject,
   cssProperties,
+  camelToLispCase,
   lispToCamelCase,
   propNames,
   propOrTheme,

@@ -1,5 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`SVGIcon renders correctly when given svgData 1`] = `
+<styled.div>
+  <styled.svg
+    preserveAspectRatio="xMidYMid meet"
+    viewBox="0 0 24 24"
+  />
+</styled.div>
+`;
+
 exports[`SVGIcon renders correctly with a valid size and a valid name that references an SVG without a defined viewBox 1`] = `
 <styled.div
   size="large"

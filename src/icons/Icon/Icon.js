@@ -13,12 +13,12 @@ const getInvalidIconNameWarningMessage = (name: string) =>
 
 const Icon = (iconProps: IconPropTypes) => {
   const { name, round } = iconProps;
-  const childProps = getChildProps(iconProps);
   const svg = getSVG(name);
   if (!svg) {
     const warningMessage = getInvalidIconNameWarningMessage(name);
     return warn(warningMessage);
   }
+  const childProps = { ...getChildProps(iconProps), svgData: svg };
   return round ? <CircleIcon {...childProps} /> : <SVGIcon {...childProps} />;
 };
 
