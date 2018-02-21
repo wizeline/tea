@@ -1,7 +1,5 @@
 // @flow
 
-/* eslint flowtype-errors/enforce-min-coverage: 0 */
-
 import * as React from 'react';
 import { shallow, ShallowWrapper } from 'enzyme';
 import toJson from 'enzyme-to-json';

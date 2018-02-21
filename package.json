@@ -1,12 +1,15 @@
 {
   "name": "wizeline-phoenix",
-  "version": "0.0.0",
+  "version": "0.0.5",
   "private": true,
+  "main": "./index.js",
+  "package-name": "wizeline-phoenix",
   "repository": {
     "type": "git",
     "url": "https://github.com/wizeline/phoenix.git"
   },
   "scripts": {
+    "build": "rm -rf ./lib && babel --quiet src --out-dir lib && babel --quiet index.es6.js --out-file index.js",
     "danger": "danger",
     "flow-typed": "flow-typed install --overwrite",
     "flow:check": "flow check ./",
@@ -23,13 +26,13 @@
     "test": "yarn flow-typed && yarn lint && yarn jest"
   },
   "dependencies": {
-    "ramda": "^0.25.0",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "styled-components": "^2.3.3",
-    "styled-reset": "^0.1.3"
+    "react-dom": "^16.2.0"
   },
   "devDependencies": {
+    "ramda": "^0.25.0",
+    "styled-components": "^2.3.3",
+    "styled-reset": "^0.1.3",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.1.1",
