@@ -3,14 +3,17 @@
 /* eslint flowtype-errors/enforce-min-coverage: 0 */
 
 import * as React from 'react';
-import ThemeProvider from '../themes/ThemeProvider';
+import { withTheme, ThemeProvider } from 'styled-components';
+import defaultTheme from '../themes/defaultTheme';
 
-const withTheme = (Component: React.ComponentType<Object>) => (
-  props: Object,
-) => (
-  <ThemeProvider>
-    <Component {...props} />
-  </ThemeProvider>
-);
+const withPhoenixTheme = (Component: React.ComponentType<Object>) =>
+  withTheme((props: Object) => {
+    const theme = { ...defaultTheme, ...props.theme };
+    return (
+      <ThemeProvider theme={theme}>
+        <Component {...props} />
+      </ThemeProvider>
+    );
+  });
 
-export default withTheme;
+export default withPhoenixTheme;
