@@ -21,17 +21,18 @@ const getSVGIconSize = (parsedSize: string): string =>
 const getSVGIconColor = (color: ?string) =>
   color || constants.defaultSVGIconColor;
 
-const CircleIcon = ({ name, size, background, color }: CircleIconProps) => {
-  const svg = getSVG(name);
+const CircleIcon = (props: CircleIconProps) => {
+  const { name, size, background, color, svgData } = props;
+  const svg = svgData || getSVG(name);
   if (!svg || isSizeInvalid(size)) return null;
   const parsedSize = parseSize(size);
   return (
     <CircleIconStyled size={parsedSize} background={background}>
       <SVGIcon
-        name={name}
         color={getSVGIconColor(color)}
         size={getSVGIconSize(parsedSize)}
         top={getTopOffset(parsedSize)}
+        svgData={svg}
       />
     </CircleIconStyled>
   );

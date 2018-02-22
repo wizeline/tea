@@ -5,10 +5,10 @@
 import { injectGlobal, css } from 'styled-components';
 import reset from 'styled-reset';
 
-import ProximaNovaBold from './fonts/ProximaNova-Bold';
-import ProximaNovaLight from './fonts/ProximaNova-Light';
-import ProximaNovaRegular from './fonts/ProximaNova-Regular';
-import ProximaNovaSemibold from './fonts/ProximaNova-Semibold';
+import ProximaNovaBold from '../../fonts/ProximaNova-Bold';
+import ProximaNovaLight from '../../fonts/ProximaNova-Light';
+import ProximaNovaRegular from '../../fonts/ProximaNova-Regular';
+import ProximaNovaSemibold from '../../fonts/ProximaNova-Semibold';
 
 const injectFontFace = (fontFamily, font) => css`
   @font-face {

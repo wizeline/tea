@@ -1,9 +1,9 @@
 // @flow
 
 import * as React from 'react';
-import { shallow, ShallowWrapper } from 'enzyme';
+import { shallow, mount, ShallowWrapper } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import ThemeProvider from '../ThemeProvider';
+import ThemeProvider from '../themes/ThemeProvider';
 
 const shallowExpectInvalid = (component: React.Node) => {
   const wrapper: ShallowWrapper = shallow(component);
@@ -11,9 +11,9 @@ const shallowExpectInvalid = (component: React.Node) => {
   expect(toJson(wrapper)).toBe('');
 };
 
-const shallowExpectToThrow = (component: React.Node) => {
+const mountExpectToThrow = (component: React.Node) => {
   expect(() => {
-    shallow(component);
+    mount(component);
   }).toThrow();
 };
 
@@ -33,6 +33,6 @@ const shallowWithTheme = (children: ?React.Node, theme?: Object) => {
 export {
   shallowExpectInvalid,
   shallowExpectToMatchSnapShot,
-  shallowExpectToThrow,
+  mountExpectToThrow,
   shallowWithTheme,
 };

@@ -1,6 +1,6 @@
 // @flow
 
-import colors from '../../themes/default/colors';
+import colors from '../../themes/defaultTheme/colors';
 
 const constants = {
   defaultSize: 'small',
