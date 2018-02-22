@@ -1,5 +1,7 @@
 // @flow
 
+import type { Element } from 'react';
+
 export type SVGFillProps = {
   iconFillColor: string,
   theme: {
@@ -12,7 +14,7 @@ export type SVGIconProps = {
   size?: string,
   color?: string,
   top?: number,
-  svgData?: React.Node,
+  svgData?: Element<any>,
 };
 
 export type ContainerSizeProps = {

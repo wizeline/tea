@@ -3,7 +3,7 @@
 /* eslint flowtype-errors/enforce-min-coverage: 0 */
 
 import * as React from 'react';
-import ThemeProvider from '../ThemeProvider';
+import ThemeProvider from '../themes/ThemeProvider';
 
 const withTheme = (Component: React.ComponentType<Object>) => (
   props: Object,
