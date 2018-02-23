@@ -3,7 +3,7 @@
 import type { Element } from 'react';
 
 export type CircleIconProps = {
-  name?: string,
+  name: string,
   size?: string,
   color?: string,
   background?: string,

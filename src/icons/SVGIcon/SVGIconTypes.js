@@ -10,9 +10,9 @@ export type SVGFillProps = {
 };
 
 export type SVGIconProps = {
+  color?: string,
   name?: string,
   size?: string,
-  color?: string,
   top?: number,
   svgData?: Element<any>,
 };
