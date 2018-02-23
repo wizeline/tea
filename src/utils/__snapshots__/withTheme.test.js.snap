@@ -1,3 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`withTheme functions correctly without an overriding theme object 1`] = `"<div></div>"`;
+exports[`withTheme functions correctly WITH a theme prop 1`] = `"<div></div>"`;
+
+exports[`withTheme functions correctly WITHOUT a theme prop 1`] = `"<div></div>"`;
