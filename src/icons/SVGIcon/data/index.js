@@ -1,5 +1,7 @@
 // @flow
 
+/* eslint flowtype-errors/enforce-min-coverage: 0 */
+
 import reduce from 'ramda/src/reduce';
 import { camelToLispCase } from '../../../utils';
 

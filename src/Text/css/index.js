@@ -1,5 +1,7 @@
 // @flow
 
+/* eslint flowtype-errors/enforce-min-coverage: 0 */
+
 import b50 from './b50';
 import b100 from './b100';
 import b150 from './b150';
