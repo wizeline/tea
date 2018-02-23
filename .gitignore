@@ -64,7 +64,3 @@ typings/
 # flow files
 /flow-typed
 /flow-typed/npm
-
-# Generated build files
-/lib
-index.js
