@@ -3,6 +3,7 @@
 exports[`Link functions correctly with children 1`] = `
 <styled.a
   href="http://wizeline.com/"
+  onClick={[Function]}
   priority="b150"
 >
   hello
@@ -12,6 +13,7 @@ exports[`Link functions correctly with children 1`] = `
 exports[`Link functions correctly without children 1`] = `
 <styled.a
   href="http://wizeline.com/"
+  onClick={[Function]}
   priority="b150"
 />
 `;

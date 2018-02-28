@@ -9,7 +9,6 @@ describe('LinkSupport', () => {
       children: childrenString,
     };
     const { children, linkAnchorStyledProps } = getLinkPropSupport(props);
-    expect(linkAnchorStyledProps.href).toBeTruthy();
     expect(linkAnchorStyledProps.priority).toBe('b150');
     expect(children).toBe(childrenString);
   });
@@ -26,7 +25,6 @@ describe('LinkSupport', () => {
     const { children, linkAnchorStyledProps } = getLinkPropSupport(props);
     expect(children).toBe(childrenString);
     expect(linkAnchorStyledProps.priority).toBe('b100');
-    expect(linkAnchorStyledProps.href).toBeTruthy();
   });
   it('getLinkStyleSupport: Undefined props.theme.textLink', () => {
     const childrenString = 'hello';
