@@ -10,6 +10,7 @@ const Link = (props: LinkProps) => {
   return (
     <LinkAnchorStyled
       {...linkAnchorStyledProps}
+      {...props}
       href={props.href}
       target={props.target}
       onClick={props.onClick || (() => {})}
