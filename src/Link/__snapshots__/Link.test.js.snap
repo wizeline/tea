@@ -5,6 +5,7 @@ exports[`Link functions correctly with children 1`] = `
   href="http://wizeline.com/"
   onClick={[Function]}
   priority="b150"
+  target="_blank"
 >
   hello
 </styled.a>

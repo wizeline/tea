@@ -8,6 +8,7 @@ describe('Link', () => {
     const childrenString = 'hello';
     const props = {
       href: 'http://wizeline.com/',
+      target: '_blank',
       b150: true,
       children: childrenString,
     };
@@ -37,13 +38,5 @@ describe('Link', () => {
     const link = shallow(<Link {...props} />);
     link.simulate('click');
     expect(link.props().onClick).toBeTruthy();
-  });
-
-  it('has the correct href', () => {
-    const props = {
-      href: 'http://wizeline.com/',
-    };
-    const link = shallow(<Link {...props} />);
-    expect(link.props().href).toEqual('http://wizeline.com/');
   });
 });
