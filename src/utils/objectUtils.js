@@ -38,9 +38,12 @@ const supportBooleanNameGroup = (
   return defaultName ? { [groupName]: defaultName } : {};
 };
 
+const noop = () => {};
+
 export {
   arrayToObject,
   getTruthyKey,
   getObjectSupport,
   supportBooleanNameGroup,
+  noop,
 };

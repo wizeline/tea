@@ -37,6 +37,6 @@ describe('Link', () => {
     const props = {};
     const link = shallow(<Link {...props} />);
     link.simulate('click');
-    expect(link.props().onClick).toBeTruthy();
+    expect(link.props().onClick).toBeDefined();
   });
 });
