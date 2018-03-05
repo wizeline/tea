@@ -3,4 +3,4 @@
 import withTheme from '../utils/withTheme';
 import Error from './Error';
 
-export default withTheme(Error);
+export default Error;
