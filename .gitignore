@@ -64,3 +64,6 @@ typings/
 # flow files
 /flow-typed
 /flow-typed/npm
+
+# Ignore Lib/
+lib/
