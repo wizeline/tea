@@ -1,9 +1,7 @@
 // @flow
 
-import textTheme from '../components/Text';
-
-const { textError } = textTheme;
+import colors from '../../styles/colors';
 
 export default {
-  textError,
+  textError: colors.rosyPink,
 };

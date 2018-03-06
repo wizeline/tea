@@ -1,8 +1,6 @@
 // @flow
-import textTheme from '../components/Text';
-
-const { textLink } = textTheme;
+import colors from '../../styles/colors';
 
 export default {
-  textLink,
+  textLink: colors.darkSkyBlue,
 };

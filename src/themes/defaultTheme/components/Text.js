@@ -21,7 +21,5 @@ export default {
   textIconInvert: colors.darkGrey,
   textBody: colors.charcoalGrey,
   textHeading: colors.charcoalGrey,
-  textError: colors.rosyPink,
   textSubtitle: colors.coolGrey,
-  textLink: colors.darkSkyBlue,
 };
