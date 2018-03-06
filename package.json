@@ -18,6 +18,7 @@
     "jest": "jest --coverage --maxWorkers=6",
     "lint-staged": "lint-staged",
     "lint": "eslint ./",
+    "postinstall": "npm run build",
     "precommit": "lint-staged",
     "start": "styleguidist server",
     "styleguide:build": "styleguidist build",
