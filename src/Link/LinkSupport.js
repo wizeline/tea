@@ -10,7 +10,7 @@ const supportedPriorities = ['b50', 'b100', 'b150', 'h300'];
 const defaultPriority = 'b100';
 
 const getLinkPropSupport = (props: LinkProps) => {
-  const { children, href, ...otherProps } = props;
+  const { children, ...otherProps } = props;
   const priority = supportBooleanNameGroup(
     priorityPropName,
     supportedPriorities,
@@ -18,7 +18,6 @@ const getLinkPropSupport = (props: LinkProps) => {
   )(otherProps);
   const linkAnchorStyledProps = {
     ...priority,
-    href,
   };
   return {
     children,
