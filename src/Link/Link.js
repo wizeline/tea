@@ -10,9 +10,7 @@ import defaultLinkTheme from '../themes/defaultTheme/components/Link';
 const Link = (props: LinkProps) => {
   const { children, linkAnchorStyledProps } = getLinkPropSupport(props);
   return (
-    <LinkAnchorStyled {...linkAnchorStyledProps} theme={props.theme}>
-      {children}
-    </LinkAnchorStyled>
+    <LinkAnchorStyled {...linkAnchorStyledProps}>{children}</LinkAnchorStyled>
   );
 };
 
