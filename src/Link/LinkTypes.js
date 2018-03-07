@@ -10,4 +10,6 @@ export type LinkProps = {
   h300?: boolean,
   href?: string,
   theme?: Object,
+  onClick: Function,
+  target?: string,
 };

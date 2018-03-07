@@ -1,4 +1,4 @@
-import { arrayToObject, supportBooleanNameGroup } from './objectUtils';
+import { arrayToObject, supportBooleanNameGroup, noop } from './objectUtils';
 
 describe('coreUtils', () => {
   it('arrayToObject functions correctly', () => {
@@ -7,6 +7,7 @@ describe('coreUtils', () => {
     expect(object.b).toBeTruthy();
     expect(object.c).toBeFalsy();
   });
+
   it('supportBooleanNameGroup functions correctly with set boolean flag', () => {
     const groupName = 'priority';
     const names = ['primary', 'secondary', 'danger'];
@@ -15,6 +16,7 @@ describe('coreUtils', () => {
     const result = func(props);
     expect(result.priority).toBe('primary');
   });
+
   it('supportBooleanNameGroup functions correctly without set boolean flag', () => {
     const groupName = 'priority';
     const names = ['primary', 'secondary', 'danger'];
@@ -22,5 +24,11 @@ describe('coreUtils', () => {
     const props = { warning: true };
     const result = func(props);
     expect(result.priority).not.toBe('primary');
+  });
+
+  it('noop is a function', () => {
+    expect(noop).toBeDefined();
+    expect(typeof noop).toEqual('function');
+    expect(noop()).toBeUndefined();
   });
 });

@@ -5,7 +5,7 @@ import warn from './consoleUtils';
 
 import { cssProperties, toPixels, supportOr, supportOrTheme } from './cssUtils';
 
-import { arrayToObject, supportBooleanNameGroup } from './objectUtils';
+import { arrayToObject, supportBooleanNameGroup, noop } from './objectUtils';
 
 import { propNames, propOrTheme } from './propUtils';
 
@@ -24,4 +24,5 @@ export {
   supportSizes,
   toPixels,
   warn,
+  noop,
 };
