@@ -20,6 +20,7 @@ const priorityBooleanAttributeGroup = [
 
 const themeMapping = {
   body: 'textBody',
+  error: 'textError',
   heading: 'textHeading',
   subtitle: 'textSubtitle',
 };
