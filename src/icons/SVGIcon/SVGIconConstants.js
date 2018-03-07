@@ -5,6 +5,7 @@ const constants: {
   preserveAspectRatio: string,
   defaultViewBox: string,
   defaultFillColorThemeName: string,
+  defaultInvertFillColorThemeName: string,
   defaultSizeKey: string,
   sizes: Object,
 } = {
@@ -12,6 +13,7 @@ const constants: {
   preserveAspectRatio: 'xMidYMid meet',
   defaultViewBox: '0 0 24 24',
   defaultFillColorThemeName: 'textPrimary',
+  defaultInvertFillColorThemeName: 'textPrimaryInvert',
   defaultSizeKey: 'xsmall',
   sizes: {
     xlarge: 56,
