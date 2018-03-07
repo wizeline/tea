@@ -7,6 +7,7 @@ import type { IconPropTypes } from './IconPropTypes';
 import getChildProps from './IconHelpers';
 import getSVG from '../SVGIcon/data';
 import { warn } from '../../utils';
+import defaultIconTheme from '../../themes/defaultTheme/components/Icon';
 
 const getInvalidIconNameWarningMessage = (name: string) =>
   `An invalid \`name\` prop with value \`${name}\` was supplied to <Icon />.`;
@@ -20,6 +21,10 @@ const Icon = (iconProps: IconPropTypes) => {
   }
   const childProps = { ...getChildProps(iconProps), svgData: svg };
   return round ? <CircleIcon {...childProps} /> : <SVGIcon {...childProps} />;
+};
+
+Icon.defaultProps = {
+  theme: defaultIconTheme,
 };
 
 export default Icon;
