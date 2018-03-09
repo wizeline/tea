@@ -3,7 +3,6 @@
 /* eslint flowtype-errors/enforce-min-coverage: 0 */
 
 import React from 'react';
-import PropTypes from 'prop-types';
 import type { SVGIconProps } from './SVGIconTypes';
 import constants from './SVGIconConstants';
 import SVGIconDivStyled from './styled/div';
@@ -33,20 +32,6 @@ const SVGIcon = (props: SVGIconProps) => {
       </SVGIconSvgStyled>
     </SVGIconDivStyled>
   );
-};
-
-SVGIcon.propTypes = {
-  color: PropTypes.string,
-  invert: PropTypes.bool,
-  name: PropTypes.string,
-  size: PropTypes.string,
-  svgData: PropTypes.element,
-  theme: PropTypes.shape({
-    textPrimary: PropTypes.string,
-    textPrimaryInvert: PropTypes.string,
-    backgroundPrimary: PropTypes.string,
-  }),
-  top: PropTypes.number,
 };
 
 SVGIcon.defaultProps = {

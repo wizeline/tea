@@ -3,7 +3,6 @@
 /* eslint flowtype-errors/enforce-min-coverage: 0 */
 
 import React from 'react';
-import PropTypes from 'prop-types';
 import SVGIcon from '../SVGIcon/SVGIcon';
 import type { CircleIconProps } from './CircleIconTypes';
 import CircleIconStyled from './CircleIconStyled';
@@ -38,19 +37,6 @@ const CircleIcon = (props: CircleIconProps) => {
       />
     </CircleIconStyled>
   );
-};
-
-CircleIcon.propTypes = {
-  background: PropTypes.string,
-  color: PropTypes.string,
-  name: PropTypes.string,
-  size: PropTypes.string,
-  svgData: PropTypes.element,
-  theme: PropTypes.shape({
-    textPrimary: PropTypes.string,
-    textPrimaryInvert: PropTypes.string,
-    backgroundPrimary: PropTypes.string,
-  }),
 };
 
 CircleIcon.defaultProps = {
