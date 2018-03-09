@@ -40,7 +40,7 @@ SVGIcon.propTypes = {
   invert: PropTypes.bool,
   name: PropTypes.string,
   size: PropTypes.string,
-  svgData: PropTypes.object, // eslint-disable-line react/forbid-prop-types
+  svgData: PropTypes.element,
   theme: PropTypes.shape({
     textPrimary: PropTypes.string,
     textPrimaryInvert: PropTypes.string,

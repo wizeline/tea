@@ -45,7 +45,7 @@ CircleIcon.propTypes = {
   color: PropTypes.string,
   name: PropTypes.string,
   size: PropTypes.string,
-  svgData: PropTypes.object, // eslint-disable-line react/forbid-prop-types
+  svgData: PropTypes.element,
   theme: PropTypes.shape({
     textPrimary: PropTypes.string,
     textPrimaryInvert: PropTypes.string,
