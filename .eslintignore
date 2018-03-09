@@ -2,6 +2,3 @@
 /lib/
 /node_modules/
 /flow-typed/
-index.js
-index.es6.js
-src/utils/testHelpers.js

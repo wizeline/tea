@@ -2,14 +2,14 @@
   "name": "wizeline-phoenix",
   "version": "0.0.5",
   "private": true,
-  "main": "./index.js",
+  "main": "./lib/index.js",
   "package-name": "wizeline-phoenix",
   "repository": {
     "type": "git",
     "url": "https://github.com/wizeline/phoenix.git"
   },
   "scripts": {
-    "build": "rm -rf ./lib && babel --quiet src --out-dir lib && babel --quiet index.es6.js --out-file index.js",
+    "build": "rm -rf ./lib && babel --quiet src --out-dir lib",
     "danger": "danger",
     "flow-typed": "flow-typed install --overwrite",
     "flow:check": "flow check ./",

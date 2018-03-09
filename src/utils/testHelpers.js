@@ -1,4 +1,5 @@
 // @flow
+/* eslint flowtype-errors/enforce-min-coverage: 0 */
 
 import * as React from 'react';
 import { shallow, mount, ShallowWrapper } from 'enzyme';
