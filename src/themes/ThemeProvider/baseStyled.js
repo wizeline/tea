@@ -32,7 +32,6 @@ injectGlobal`
   html {
     box-sizing: border-box;
     font-family: "ProximaNova Regular";
-    background: 'blue';
   }
 
   *, *:before, *:after {

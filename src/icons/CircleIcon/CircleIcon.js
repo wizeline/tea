@@ -3,7 +3,7 @@
 /* eslint flowtype-errors/enforce-min-coverage: 0 */
 
 import React from 'react';
-import SVGIcon from '../SVGIcon';
+import SVGIcon from '../SVGIcon/SVGIcon';
 import type { CircleIconProps } from './CircleIconTypes';
 import CircleIconStyled from './CircleIconStyled';
 import constants from './CircleIconConstants';

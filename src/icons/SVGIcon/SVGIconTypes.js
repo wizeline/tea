@@ -13,8 +13,8 @@ export type SVGIconProps = {
   color?: string,
   name?: string,
   size?: string,
-  svgData?: Element<'svg'>,
   top?: number,
+  svgData?: Element<*>,
 };
 
 export type ContainerSizeProps = {

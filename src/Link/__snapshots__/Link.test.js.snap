@@ -7,6 +7,11 @@ exports[`Link functions correctly with children 1`] = `
   onClick={[Function]}
   priority="b150"
   target="_blank"
+  theme={
+    Object {
+      "textLink": "#50a5e7",
+    }
+  }
 >
   hello
 </styled.a>
@@ -19,5 +24,10 @@ exports[`Link functions correctly without children 1`] = `
   onClick={[Function]}
   priority="b150"
   target=""
+  theme={
+    Object {
+      "textLink": "#50a5e7",
+    }
+  }
 />
 `;

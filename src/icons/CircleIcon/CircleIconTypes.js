@@ -7,7 +7,7 @@ export type CircleIconProps = {
   size?: string,
   color?: string,
   background?: string,
-  svgData?: Element<'svg'>,
+  svgData?: Element<any>,
 };
 
 export type DiameterProps = {

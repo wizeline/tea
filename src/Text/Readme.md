@@ -15,8 +15,6 @@
   <br />
   <Text b50 >B50 – 12px, Regular: SUPPORT BASE</Text>
   <br />
-  <Text error >B50 – 12px, Regular: ERROR TEXT</Text>
-  <br />
   <Text subtitle >H200 – 11px, Semibold, Uppercase: Sub-section Title</Text>
   <br />
   <br />
