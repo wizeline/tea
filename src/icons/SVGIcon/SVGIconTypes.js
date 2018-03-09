@@ -14,7 +14,7 @@ export type SVGIconProps = {
   name?: string,
   size?: string,
   top?: number,
-  svgData?: Element<any>,
+  svgData?: Element<*>,
 };
 
 export type ContainerSizeProps = {
