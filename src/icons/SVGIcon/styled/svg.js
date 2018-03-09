@@ -16,9 +16,11 @@ const fillWithInvertDefault = propOrTheme(
   defaultInvertFillColorThemeName,
   fill,
 );
+const getFill = ({ invert }) =>
+  invert ? fillWithInvertDefault : fillWithDefault;
 
 const SVGIconSvgStyled = styled.svg`
-  fill: ${props => (props.invert ? fillWithInvertDefault : fillWithDefault)};
+  fill: ${getFill};
   user-select: none;
   margin: 0 auto;
 `;
