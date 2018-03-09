@@ -11,7 +11,6 @@ const Error = ({ children }: ErrorProps) => <Text error>{children}</Text>;
 
 Error.defaultProps = {
   theme: defaultErrorTheme,
-  children: '',
 };
 
 export default Error;

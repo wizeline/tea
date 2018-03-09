@@ -40,12 +40,7 @@ const CircleIcon = (props: CircleIconProps) => {
 };
 
 CircleIcon.defaultProps = {
-  background: undefined,
-  color: undefined,
-  name: undefined,
   theme: defaultIconTheme,
-  size: undefined,
-  svgData: undefined,
 };
 
 export default CircleIcon;

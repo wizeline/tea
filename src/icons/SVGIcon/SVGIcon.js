@@ -35,13 +35,7 @@ const SVGIcon = (props: SVGIconProps) => {
 };
 
 SVGIcon.defaultProps = {
-  color: undefined,
-  invert: undefined,
-  name: undefined,
   theme: defaultIconTheme,
-  top: undefined,
-  size: undefined,
-  svgData: undefined,
 };
 
 export default SVGIcon;
