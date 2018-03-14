@@ -9,6 +9,7 @@ const componentGroups = {
   Link: 'Link',
   Error: 'Error',
   Text: 'Text',
+  Button: 'Button',
 };
 
 const componentSections = Object.entries(componentGroups).map(
@@ -29,9 +30,6 @@ const styleGuideColors = {
 const path = require('path');
 
 module.exports = {
-  styleguideComponents: {
-    Wrapper: path.join(__dirname, './styleguide/TestWrapper'),
-  },
   theme: {
     color: {
       link: styleGuideColors.themeColorLink,
