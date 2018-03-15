@@ -1,4 +1,5 @@
 // @flow
+import type { Node } from 'react';
 
 export type ButtonProps = {
   // Color
@@ -12,5 +13,7 @@ export type ButtonProps = {
   // Other types
   disabled?: boolean,
   icon?: string,
-  text?: boolean,
+  round?: boolean,
+  text?: string,
+  children: [Node, Node],
 };
