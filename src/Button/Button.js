@@ -7,10 +7,8 @@ import {
   SecondaryButton,
 } from './ButtonStyled';
 import type { ButtonProps } from './ButtonTypes';
-import defaultThemeBackground from '../themes/styles/backgrounds';
-import defaultThemeBorder from '../themes/styles/borders';
-import defaultThemeText from '../themes/defaultTheme/components/Text';
 import Icon from '../icons/SVGIcon';
+import defaultButtonTheme from '../themes/defaultTheme/components/Button';
 
 const getIcon = (icon, invert = true) => (
   <div className="svgContainer">
@@ -45,11 +43,7 @@ const Button = (props: ButtonProps) => {
 };
 
 Button.defaultProps = {
-  theme: {
-    ...defaultThemeBackground,
-    ...defaultThemeBorder,
-    ...defaultThemeText,
-  },
+  theme: defaultButtonTheme,
 };
 
 export default Button;
