@@ -22,7 +22,7 @@ const roundSizeSuport = (small, big) => {
     padding: 0;
     width: ${size}rem;
 
-    .svgContainer {
+    & > .svgContainer {
       align-items: center;
       height: ${svgSize}rem;
       justify-content: center;
@@ -69,7 +69,7 @@ const iconButtonSupport = ({ round, icon, children }: ButtonProps) => {
   }
   if (!round && icon && children[1]) {
     return css`
-      .svgContainer {
+      & > .svgContainer {
         height: 16px;
         margin-right: 8px;
         width: 16px;
