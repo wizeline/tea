@@ -3,6 +3,9 @@
   "env": {
     "jest": true
   },
+  "rules": {
+    "react/default-props-match-prop-types": 0
+  },
   "overrides": [
     {
       "files": "**/*.test.js",

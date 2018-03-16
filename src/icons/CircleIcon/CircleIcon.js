@@ -9,6 +9,7 @@ import CircleIconStyled from './CircleIconStyled';
 import constants from './CircleIconConstants';
 import parseSize from './CircleIconUtils';
 import getSVG from '../SVGIcon/data';
+import defaultIconTheme from '../../themes/defaultTheme/components/Icon';
 
 const isSizeInvalid = (size: ?string): boolean =>
   size ? !constants.circleDiameters[size] : false;
@@ -18,8 +19,7 @@ const getTopOffset = (parsedSize: string): number => constants.tops[parsedSize];
 const getSVGIconSize = (parsedSize: string): string =>
   constants.sizeReductions[parsedSize];
 
-const getSVGIconColor = (color: ?string) =>
-  color || constants.defaultSVGIconColor;
+const getSVGIconColor = (color: ?string) => color || undefined;
 
 const CircleIcon = (props: CircleIconProps) => {
   const { name, size, background, color, svgData } = props;
@@ -29,6 +29,7 @@ const CircleIcon = (props: CircleIconProps) => {
   return (
     <CircleIconStyled size={parsedSize} background={background}>
       <SVGIcon
+        invert
         color={getSVGIconColor(color)}
         size={getSVGIconSize(parsedSize)}
         top={getTopOffset(parsedSize)}
@@ -36,6 +37,10 @@ const CircleIcon = (props: CircleIconProps) => {
       />
     </CircleIconStyled>
   );
+};
+
+CircleIcon.defaultProps = {
+  theme: defaultIconTheme,
 };
 
 export default CircleIcon;

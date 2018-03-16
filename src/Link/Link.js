@@ -1,7 +1,6 @@
 // @flow
 
 import React from 'react';
-import PropTypes from 'prop-types';
 import type { LinkProps } from './LinkTypes';
 import LinkAnchorStyled from './LinkStyled';
 import { getLinkPropSupport } from './LinkSupport';
@@ -21,13 +20,6 @@ const Link = (props: LinkProps) => {
       {children}
     </LinkAnchorStyled>
   );
-};
-
-Link.propTypes = {
-  theme: PropTypes.shape({ textLink: PropTypes.string }),
-  onClick: PropTypes.func,
-  href: PropTypes.string,
-  target: PropTypes.string,
 };
 
 Link.defaultProps = {
