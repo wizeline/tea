@@ -11,8 +11,6 @@ import {
   supportOrTheme,
   toPixels,
 } from '../../utils';
-import SVGIconSvgStyled from '../SVGIcon/styled/svg';
-import defaultIconTheme from '../../themes/defaultTheme/components/Icon';
 
 const { circleDiameters, defaultSize } = constants;
 const { size, background } = propNames;
@@ -39,13 +37,5 @@ const CircleIconStyled = CircleIconBase.extend`
   ${sizeSupport};
   ${backgroundSupport};
 `;
-
-CircleIconBase.defaultProps = {
-  theme: defaultIconTheme,
-};
-
-SVGIconSvgStyled.defaultProps = {
-  theme: defaultIconTheme,
-};
 
 export default CircleIconStyled;
