@@ -30,6 +30,9 @@ const styleGuideColors = {
 const path = require('path');
 
 module.exports = {
+  styleguideComponents: {
+    Wrapper: path.join(__dirname, './styleguide/TestWrapper'),
+  },
   theme: {
     color: {
       link: styleGuideColors.themeColorLink,
