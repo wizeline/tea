@@ -1,12 +1,12 @@
 // @flow
 
 import * as React from 'react';
-import colors from '../src/themes/defaultTheme/colors';
+import colors from '../src/themes/styles/colors';
 import ThemeProvider from '../src/themes/ThemeProvider';
 import type { Props } from './TestWrapperTypes';
 
 const altTheme = {
-  textPrimaryInvert: colors.charcoalGrey,
+  textPrimaryInvert: colors.white,
 };
 
 const TestWrapper = (props: Props) => (

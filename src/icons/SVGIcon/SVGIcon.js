@@ -8,12 +8,14 @@ import constants from './SVGIconConstants';
 import SVGIconDivStyled from './styled/div';
 import SVGIconSvgStyled from './styled/svg';
 import getSVG from './data';
+import defaultIconTheme from '../../themes/defaultTheme/components/Icon';
 
 const isSizeInvalid = (size: ?string): boolean =>
   size ? !constants.sizes[size] : false;
 
 const SVGIcon = (props: SVGIconProps) => {
-  const { name, size, top, color, svgData } = props;
+  const { name, size, top, color, svgData, invert } = props;
+  const fillColor = invert && !color ? undefined : color;
   const svg = svgData || getSVG(name);
   if (!svg || isSizeInvalid(size)) return null;
   const svgViewBox = svg.props.viewBox || constants.defaultViewBox;
@@ -21,7 +23,8 @@ const SVGIcon = (props: SVGIconProps) => {
   return (
     <SVGIconDivStyled size={size} top={top}>
       <SVGIconSvgStyled
-        fill={color}
+        invert={invert}
+        fill={fillColor}
         viewBox={svgViewBox}
         preserveAspectRatio={constants.preserveAspectRatio}
       >
@@ -29,6 +32,10 @@ const SVGIcon = (props: SVGIconProps) => {
       </SVGIconSvgStyled>
     </SVGIconDivStyled>
   );
+};
+
+SVGIcon.defaultProps = {
+  theme: defaultIconTheme,
 };
 
 export default SVGIcon;

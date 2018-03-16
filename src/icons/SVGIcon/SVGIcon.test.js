@@ -12,6 +12,7 @@ describe('SVGIcon', () => {
     expect(toJson(wrapper)).toMatchSnapshot();
     expect(wrapper).toHaveStyleRule('top', '0px');
   });
+
   it('renders correctly with a valid size and a valid name that references an SVG without a defined viewBox', () => {
     const wrapper = shallow(
       <SVGIcon name="missing-view-box" size="large" top={20} />,
@@ -19,16 +20,25 @@ describe('SVGIcon', () => {
     expect(toJson(wrapper)).toMatchSnapshot();
     expect(wrapper).toHaveStyleRule('top', '20px');
   });
+
   it('renders correctly when given svgData', () => {
     const wrapper = shallow(<SVGIcon svgData={<g />} />);
     expect(toJson(wrapper)).toMatchSnapshot();
   });
+
+  it('renders correctly when given invert flag', () => {
+    const wrapper = shallow(<SVGIcon invert />);
+    expect(toJson(wrapper)).toMatchSnapshot();
+  });
+
   it('renders nothing with an invalid name and undefined size attribute', () => {
     shallowExpectInvalid(<SVGIcon name="InvalidIconName" />);
   });
+
   it('renders nothing with invalid name and invalid size', () => {
     shallowExpectInvalid(<SVGIcon name="InvalidIconName" size="InvalidSize" />);
   });
+
   it('renders nothing with an undefined name and undefined size', () => {
     shallowExpectInvalid(<SVGIcon />);
   });
@@ -39,8 +49,14 @@ describe('SVGIconSvgStyled', () => {
     const wrapper = shallow(<SVGIconSvgStyled />);
     expect(toJson(wrapper)).toMatchSnapshot();
   });
+
   it('renders correctly with defined color', () => {
     const wrapper = shallow(<SVGIconSvgStyled fill="red" />);
+    expect(toJson(wrapper)).toMatchSnapshot();
+  });
+
+  it('renders correctly with invert flag', () => {
+    const wrapper = shallow(<SVGIconSvgStyled invert />);
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 });
@@ -50,10 +66,12 @@ describe('SVGIconDivStyled', () => {
     const wrapper = shallow(<SVGIconDivStyled size="large" />);
     expect(toJson(wrapper)).toMatchSnapshot();
   });
+
   it('renders correctly with defined invalid container size', () => {
     const wrapper = shallow(<SVGIconDivStyled size="invalidSize" />);
     expect(toJson(wrapper)).toMatchSnapshot();
   });
+
   it('renders correctly with defined top', () => {
     const wrapper = shallow(<SVGIconDivStyled top={10} />);
     expect(toJson(wrapper)).toMatchSnapshot();
