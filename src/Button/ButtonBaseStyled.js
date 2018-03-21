@@ -3,6 +3,7 @@
 
 import styled from 'styled-components';
 import { buttonSizeSupport, iconButtonSupport } from './ButtonSupport';
+import { themeProp } from '../utils';
 
 const BaseButtonStyled = styled.button`
   align-items: center;
@@ -19,36 +20,36 @@ const BaseButtonStyled = styled.button`
 `;
 
 const DarkerButton = BaseButtonStyled.extend`
-  color: ${({ theme }) => theme.textPrimaryInvert};
+  color: ${themeProp('textPrimaryInvert')};
 
   &:disabled,
   &:disabled:hover,
   &:disabled:active {
-    background-color: ${({ theme }) => theme.backgroundPrimaryDisabled};
-    border: ${({ theme }) => theme.backgroundPrimaryDisabled};
+    background-color: ${themeProp('backgroundPrimaryDisabled')};
+    border: ${themeProp('backgroundPrimaryDisabled')};
     box-shadow: none;
-    color: ${({ theme }) => theme.textPrimaryDisabled};
+    color: ${themeProp('textPrimaryDisabled')};
 
     & > .svgContainer {
       svg {
-        fill: ${({ theme }) => theme.textPrimaryDisabled};
+        fill: ${themeProp('textPrimaryDisabled')};
       }
     }
   }
 `;
 
 const LighterButton = BaseButtonStyled.extend`
-  color: ${({ theme }) => theme.textPrimary};
+  color: ${themeProp('textPrimary')};
 
   &:disabled,
   &:disabled:hover,
   &:disabled:active {
-    border: solid 1px ${({ theme }) => theme.borderSecondaryDisabled};
-    color: ${({ theme }) => theme.textSecondaryDisabled};
+    border: solid 1px ${themeProp('borderSecondaryDisabled')};
+    color: ${themeProp('textSecondaryDisabled')};
 
     & > .svgContainer {
       svg {
-        fill: ${({ theme }) => theme.textSecondaryDisabled};
+        fill: ${themeProp('textSecondaryDisabled')};
       }
     }
   }
