@@ -39,4 +39,6 @@ const supportOrTheme = (input: string, defaultThemePropName: string) => (
   `;
 };
 
-export { cssProperties, toPixels, supportOr, supportOrTheme };
+const themeProp = (prop: string) => ({ theme }: any) => theme[prop];
+
+export { cssProperties, toPixels, supportOr, supportOrTheme, themeProp };

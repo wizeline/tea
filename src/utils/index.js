@@ -3,7 +3,13 @@
 import supportSizes from './sizes/supportSizes';
 import warn from './consoleUtils';
 
-import { cssProperties, toPixels, supportOr, supportOrTheme } from './cssUtils';
+import {
+  cssProperties,
+  supportOr,
+  supportOrTheme,
+  themeProp,
+  toPixels,
+} from './cssUtils';
 
 import { arrayToObject, supportBooleanNameGroup, noop } from './objectUtils';
 
@@ -13,16 +19,17 @@ import { camelToLispCase, lispToCamelCase } from './stringUtils';
 
 export {
   arrayToObject,
-  cssProperties,
   camelToLispCase,
+  cssProperties,
   lispToCamelCase,
+  noop,
   propNames,
   propOrTheme,
   supportBooleanNameGroup,
   supportOr,
   supportOrTheme,
   supportSizes,
+  themeProp,
   toPixels,
   warn,
-  noop,
 };
