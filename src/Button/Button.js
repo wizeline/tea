@@ -17,26 +17,27 @@ const getIcon = (icon, invert = true) => (
 );
 
 const Button = (props: ButtonProps) => {
-  const newText = props.round ? undefined : props.text;
-  if (props.secondary) {
+  const { destructive, icon, round, secondary, text } = props;
+  const newText = round ? undefined : text;
+  if (secondary) {
     return (
       <SecondaryButton {...props}>
-        {getIcon(props.icon, false)}
+        {getIcon(icon, false)}
         {newText}
       </SecondaryButton>
     );
   }
-  if (props.destructive) {
+  if (destructive) {
     return (
       <DestructiveButton {...props}>
-        {getIcon(props.icon)}
+        {getIcon(icon)}
         {newText}
       </DestructiveButton>
     );
   }
   return (
     <PrimaryButton {...props}>
-      {getIcon(props.icon)}
+      {getIcon(icon)}
       {newText}
     </PrimaryButton>
   );
