@@ -27,8 +27,8 @@ const getButton = (secondary, destructive) => {
 };
 
 const Button = (props: ButtonProps) => {
-  const { destructive, icon, round, secondary, text } = props;
-  const newText = round ? undefined : text;
+  const { destructive, icon, circle, secondary, text } = props;
+  const newText = circle ? undefined : text;
   const FinalButton = getButton(secondary, destructive);
   return (
     <FinalButton {...props}>
