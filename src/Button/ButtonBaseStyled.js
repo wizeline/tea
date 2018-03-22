@@ -4,6 +4,7 @@
 import styled from 'styled-components';
 import { buttonSizeSupport, iconButtonSupport } from './ButtonSupport';
 import { themeProp } from '../utils';
+import defaultButtonTheme from '../themes/defaultTheme/components/Button';
 
 const BaseButtonStyled = styled.button`
   align-items: center;
@@ -54,5 +55,9 @@ const LighterButton = BaseButtonStyled.extend`
     }
   }
 `;
+
+BaseButtonStyled.defaultProps = {
+  theme: defaultButtonTheme,
+};
 
 export { DarkerButton, LighterButton };

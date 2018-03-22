@@ -8,7 +8,6 @@ import {
 } from './ButtonStyled';
 import type { ButtonProps } from './ButtonTypes';
 import Icon from '../icons/SVGIcon';
-import defaultButtonTheme from '../themes/defaultTheme/components/Button';
 
 const getIcon = (icon, invert) => (
   <div className="svgContainer">
@@ -36,10 +35,6 @@ const Button = (props: ButtonProps) => {
       {newText}
     </FinalButton>
   );
-};
-
-Button.defaultProps = {
-  theme: defaultButtonTheme,
 };
 
 export default Button;
