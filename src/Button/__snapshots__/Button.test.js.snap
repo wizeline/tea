@@ -8,45 +8,6 @@ ShallowWrapper {
     disabled={true}
     icon="dots-h"
     text="Test Text"
-    theme={
-      Object {
-        "backgroundDanger": "#ec5659",
-        "backgroundDangerDisabled": "#e2e8ea",
-        "backgroundDangerHover": "#e62a2a",
-        "backgroundInput": "#ffffff",
-        "backgroundPrimary": "#50a5e7",
-        "backgroundPrimaryDisabled": "#e2e8ea",
-        "backgroundPrimaryHover": "#4793cd",
-        "backgroundSecondary": "#ffffff",
-        "backgroundSecondaryDisabled": "#ffffff",
-        "backgroundSecondaryHover": "#ffffff",
-        "borderInput": "#e2e8ea",
-        "borderInputFocus": "#50a5e7",
-        "borderInputInvalid": "#ec5659",
-        "borderSecondary": "#a2abaf",
-        "borderSecondaryDisabled": "#e2e8ea",
-        "borderSecondaryHover": "#50a5e7",
-        "textBody": "#3f484b",
-        "textDanger": "#ffffff",
-        "textDangerDisabled": "#c3cbcf",
-        "textDangerHover": "#ffffff",
-        "textHeading": "#3f484b",
-        "textIcon": "#ffffff",
-        "textIconInvert": "#1b2224",
-        "textInput": "#3f484b",
-        "textInputFocus": "#a2abaf",
-        "textInputInvalid": "#e62a2a",
-        "textInputPlaceholder": "#a2abaf",
-        "textPrimary": "#3f484b",
-        "textPrimaryDisabled": "#a2abaf",
-        "textPrimaryHover": "#ffffff",
-        "textPrimaryInvert": "#ffffff",
-        "textSecondary": "#3f484b",
-        "textSecondaryDisabled": "#c3cbcf",
-        "textSecondaryHover": "#ffffff",
-        "textSubtitle": "#a2abaf",
-      }
-    }
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],

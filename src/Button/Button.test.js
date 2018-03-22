@@ -39,22 +39,22 @@ describe('Button', () => {
     expect(wrapper).toHaveStyleRule('min-width', '4.5rem');
   });
 
-  it('renders correctly when given big and round props', () => {
-    const wrapper = shallow(<Button big round text="Test Text" />);
+  it('renders correctly when given big and circle props', () => {
+    const wrapper = shallow(<Button big circle text="Test Text" />);
     expect(wrapper).toHaveStyleRule('font-size', '1rem');
     expect(wrapper).toHaveStyleRule('height', '2.25rem');
     expect(wrapper).toHaveStyleRule('width', '2.25rem');
   });
 
-  it('renders correctly when given small and round props', () => {
-    const wrapper = shallow(<Button small round text="Test Text" />);
+  it('renders correctly when given small and circle props', () => {
+    const wrapper = shallow(<Button small circle text="Test Text" />);
     expect(wrapper).toHaveStyleRule('font-size', '0.75rem');
     expect(wrapper).toHaveStyleRule('height', '0.75rem');
     expect(wrapper).toHaveStyleRule('width', '0.75rem');
   });
 
-  it('renders correctly with round prop', () => {
-    const wrapper = shallow(<Button round />);
+  it('renders correctly with circle prop', () => {
+    const wrapper = shallow(<Button circle />);
     expect(wrapper).toHaveStyleRule('border-radius', '50%');
   });
 });
