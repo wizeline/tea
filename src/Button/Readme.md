@@ -16,15 +16,15 @@
       <tr>
         <td>
           <Button small text="Create" />
-          <Button small round icon="dots-h" text="Create" />
+          <Button small circle icon="dots-h" text="Create" />
         </td>
         <td>
           <Button text="Create" />
-          <Button round icon="dots-h" text="Create" />
+          <Button circle icon="dots-h" text="Create" />
         </td>
         <td>
           <Button big text="Create" />
-          <Button big round icon="dots-h" text="Create" />
+          <Button big circle icon="dots-h" text="Create" />
         </td>
         <td>
           <Button icon="plus" text="Create" />
@@ -44,15 +44,15 @@
       <tr>
         <td>
           <Button secondary small text="Create" />
-          <Button secondary small round icon="dots-h" text="Create" />
+          <Button secondary small circle icon="dots-h" text="Create" />
         </td>
         <td>
           <Button secondary text="Create" />
-          <Button secondary round icon="dots-h" text="Create" />
+          <Button secondary circle icon="dots-h" text="Create" />
         </td>
         <td>
           <Button secondary big text="Create" />
-          <Button secondary big round icon="dots-h" text="Create" />
+          <Button secondary big circle icon="dots-h" text="Create" />
         </td>
         <td>
           <Button secondary icon="plus" text="Create" />
@@ -72,15 +72,15 @@
       <tr>
         <td>
           <Button destructive small text="Create" />
-          <Button destructive small round icon="dots-h" text="Create" />
+          <Button destructive small circle icon="dots-h" text="Create" />
         </td>
         <td>
           <Button destructive text="Create" />
-          <Button destructive round icon="dots-h" text="Create" />
+          <Button destructive circle icon="dots-h" text="Create" />
         </td>
         <td>
           <Button destructive big text="Create" />
-          <Button destructive big round icon="dots-h" text="Create" />
+          <Button destructive big circle icon="dots-h" text="Create" />
         </td>
         <td>
           <Button destructive icon="plus" text="Create" />

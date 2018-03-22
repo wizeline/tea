@@ -3,7 +3,7 @@
 import { css } from 'styled-components';
 import type { ButtonProps } from './ButtonTypes';
 
-const roundSizeSuport = (small, big) => {
+const circleSizeSuport = (small, big) => {
   let size = 1.25;
   let svgSize = 0.5;
   if (small) {
@@ -31,7 +31,7 @@ const roundSizeSuport = (small, big) => {
   `;
 };
 
-const buttonSizeSupport = ({ small, big, round }: ButtonProps) => {
+const buttonSizeSupport = ({ small, big, circle }: ButtonProps) => {
   let borderRadius = 0.1875;
   let boxShadow = '0 0.125rem 0.0625rem 0 rgba(0, 0, 0, 0.03)';
   let fontSize = 0.875;
@@ -57,17 +57,17 @@ const buttonSizeSupport = ({ small, big, round }: ButtonProps) => {
     min-height: ${height}rem;
     min-width: ${width}rem;
     padding: 0 ${padding}rem;
-    ${round ? roundSizeSuport(small, big) : null};
+    ${circle ? circleSizeSuport(small, big) : null};
   `;
 };
 
-const iconButtonSupport = ({ round, icon, children }: ButtonProps) => {
-  if (!round && icon && !children[1]) {
+const iconButtonSupport = ({ circle, icon, children }: ButtonProps) => {
+  if (!circle && icon && !children[1]) {
     return css`
       min-width: 48px;
     `;
   }
-  if (!round && icon && children[1]) {
+  if (!circle && icon && children[1]) {
     return css`
       & > .svgContainer {
         height: 16px;

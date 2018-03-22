@@ -13,7 +13,7 @@ export type ButtonProps = {
   // Other types
   disabled?: boolean,
   icon?: string,
-  round?: boolean,
+  circle?: boolean,
   text?: string,
   children: [Node, Node],
 };

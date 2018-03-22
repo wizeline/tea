@@ -8,7 +8,6 @@ import {
 } from './ButtonStyled';
 import type { ButtonProps } from './ButtonTypes';
 import Icon from '../icons/SVGIcon';
-import defaultButtonTheme from '../themes/defaultTheme/components/Button';
 
 const getIcon = (icon, invert) => (
   <div className="svgContainer">
@@ -27,8 +26,8 @@ const getButton = (secondary, destructive) => {
 };
 
 const Button = (props: ButtonProps) => {
-  const { destructive, icon, round, secondary, text } = props;
-  const newText = round ? undefined : text;
+  const { destructive, icon, circle, secondary, text } = props;
+  const newText = circle ? undefined : text;
   const FinalButton = getButton(secondary, destructive);
   return (
     <FinalButton {...props}>
@@ -36,10 +35,6 @@ const Button = (props: ButtonProps) => {
       {newText}
     </FinalButton>
   );
-};
-
-Button.defaultProps = {
-  theme: defaultButtonTheme,
 };
 
 export default Button;
