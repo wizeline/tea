@@ -5,6 +5,7 @@
 import styled from 'styled-components';
 import constants from '../SVGIconConstants';
 import { propOrTheme, cssProperties } from '../../../utils';
+import defaultIconTheme from '../../../themes/defaultTheme/components/Icon';
 
 const {
   defaultFillColorThemeName,
@@ -24,5 +25,9 @@ const SVGIconSvgStyled = styled.svg`
   user-select: none;
   margin: 0 auto;
 `;
+
+SVGIconSvgStyled.defaultProps = {
+  theme: defaultIconTheme,
+};
 
 export default SVGIconSvgStyled;
