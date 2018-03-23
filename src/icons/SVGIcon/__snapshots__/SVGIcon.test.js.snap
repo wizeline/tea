@@ -6,6 +6,39 @@ exports[`SVGIcon renders correctly when given svgData 1`] = `
 <styled.div>
   <styled.svg
     preserveAspectRatio="xMidYMid meet"
+    theme={
+      Object {
+        "backgroundDanger": "#ec5659",
+        "backgroundDangerDisabled": "#e2e8ea",
+        "backgroundDangerHover": "#e62a2a",
+        "backgroundInput": "#ffffff",
+        "backgroundPrimary": "#50a5e7",
+        "backgroundPrimaryDisabled": "#e2e8ea",
+        "backgroundPrimaryHover": "#4793cd",
+        "backgroundSecondary": "#ffffff",
+        "backgroundSecondaryDisabled": "#ffffff",
+        "backgroundSecondaryHover": "#ffffff",
+        "textBody": "#3f484b",
+        "textDanger": "#ffffff",
+        "textDangerDisabled": "#c3cbcf",
+        "textDangerHover": "#ffffff",
+        "textHeading": "#3f484b",
+        "textIcon": "#ffffff",
+        "textIconInvert": "#1b2224",
+        "textInput": "#3f484b",
+        "textInputFocus": "#a2abaf",
+        "textInputInvalid": "#e62a2a",
+        "textInputPlaceholder": "#a2abaf",
+        "textPrimary": "#3f484b",
+        "textPrimaryDisabled": "#a2abaf",
+        "textPrimaryHover": "#ffffff",
+        "textPrimaryInvert": "#ffffff",
+        "textSecondary": "#3f484b",
+        "textSecondaryDisabled": "#c3cbcf",
+        "textSecondaryHover": "#ffffff",
+        "textSubtitle": "#a2abaf",
+      }
+    }
     viewBox="0 0 24 24"
   />
 </styled.div>
@@ -18,6 +51,39 @@ exports[`SVGIcon renders correctly with a valid size and a valid name that refer
 >
   <styled.svg
     preserveAspectRatio="xMidYMid meet"
+    theme={
+      Object {
+        "backgroundDanger": "#ec5659",
+        "backgroundDangerDisabled": "#e2e8ea",
+        "backgroundDangerHover": "#e62a2a",
+        "backgroundInput": "#ffffff",
+        "backgroundPrimary": "#50a5e7",
+        "backgroundPrimaryDisabled": "#e2e8ea",
+        "backgroundPrimaryHover": "#4793cd",
+        "backgroundSecondary": "#ffffff",
+        "backgroundSecondaryDisabled": "#ffffff",
+        "backgroundSecondaryHover": "#ffffff",
+        "textBody": "#3f484b",
+        "textDanger": "#ffffff",
+        "textDangerDisabled": "#c3cbcf",
+        "textDangerHover": "#ffffff",
+        "textHeading": "#3f484b",
+        "textIcon": "#ffffff",
+        "textIconInvert": "#1b2224",
+        "textInput": "#3f484b",
+        "textInputFocus": "#a2abaf",
+        "textInputInvalid": "#e62a2a",
+        "textInputPlaceholder": "#a2abaf",
+        "textPrimary": "#3f484b",
+        "textPrimaryDisabled": "#a2abaf",
+        "textPrimaryHover": "#ffffff",
+        "textPrimaryInvert": "#ffffff",
+        "textSecondary": "#3f484b",
+        "textSecondaryDisabled": "#c3cbcf",
+        "textSecondaryHover": "#ffffff",
+        "textSubtitle": "#a2abaf",
+      }
+    }
     viewBox="0 0 24 24"
   >
     <g
@@ -36,6 +102,39 @@ exports[`SVGIcon renders correctly with an undefined size and a valid name that 
 <styled.div>
   <styled.svg
     preserveAspectRatio="xMidYMid meet"
+    theme={
+      Object {
+        "backgroundDanger": "#ec5659",
+        "backgroundDangerDisabled": "#e2e8ea",
+        "backgroundDangerHover": "#e62a2a",
+        "backgroundInput": "#ffffff",
+        "backgroundPrimary": "#50a5e7",
+        "backgroundPrimaryDisabled": "#e2e8ea",
+        "backgroundPrimaryHover": "#4793cd",
+        "backgroundSecondary": "#ffffff",
+        "backgroundSecondaryDisabled": "#ffffff",
+        "backgroundSecondaryHover": "#ffffff",
+        "textBody": "#3f484b",
+        "textDanger": "#ffffff",
+        "textDangerDisabled": "#c3cbcf",
+        "textDangerHover": "#ffffff",
+        "textHeading": "#3f484b",
+        "textIcon": "#ffffff",
+        "textIconInvert": "#1b2224",
+        "textInput": "#3f484b",
+        "textInputFocus": "#a2abaf",
+        "textInputInvalid": "#e62a2a",
+        "textInputPlaceholder": "#a2abaf",
+        "textPrimary": "#3f484b",
+        "textPrimaryDisabled": "#a2abaf",
+        "textPrimaryHover": "#ffffff",
+        "textPrimaryInvert": "#ffffff",
+        "textSecondary": "#3f484b",
+        "textSecondaryDisabled": "#c3cbcf",
+        "textSecondaryHover": "#ffffff",
+        "textSubtitle": "#a2abaf",
+      }
+    }
     viewBox="0 0 16 16"
   >
     <g
@@ -118,6 +217,7 @@ exports[`SVGIconSvgStyled renders correctly with defined color 1`] = `
 
 exports[`SVGIconSvgStyled renders correctly with invert flag 1`] = `
 .c0 {
+  fill: #ffffff;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -132,6 +232,7 @@ exports[`SVGIconSvgStyled renders correctly with invert flag 1`] = `
 
 exports[`SVGIconSvgStyled renders correctly without any defined attributes 1`] = `
 .c0 {
+  fill: #3f484b;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
