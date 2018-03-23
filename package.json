@@ -1,7 +1,6 @@
 {
   "name": "wizeline-phoenix",
-  "version": "0.0.5",
-  "private": true,
+  "version": "0.5.0",
   "main": "./lib/index.js",
   "package-name": "wizeline-phoenix",
   "repository": {
