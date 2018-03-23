@@ -11,6 +11,7 @@ import {
   supportOrTheme,
   toPixels,
 } from '../../utils';
+import defaultIconTheme from '../../themes/defaultTheme/components/Icon';
 
 const { circleDiameters, defaultSize } = constants;
 const { size, background } = propNames;
@@ -37,5 +38,9 @@ const CircleIconStyled = CircleIconBase.extend`
   ${sizeSupport};
   ${backgroundSupport};
 `;
+
+CircleIconStyled.defaultProps = {
+  theme: defaultIconTheme,
+};
 
 export default CircleIconStyled;
