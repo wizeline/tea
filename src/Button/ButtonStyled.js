@@ -4,27 +4,20 @@
 import { DarkerButton, LighterButton } from './ButtonBaseStyled';
 import { themeProp } from '../utils';
 
-const PrimaryButton = DarkerButton.extend`
-  background-color: ${themeProp('backgroundPrimary')};
-  border: ${themeProp('backgroundPrimary')};
+const getDarkerButtonVariant = baseName => DarkerButton.extend`
+  background-color: ${themeProp(baseName)};
+  border: ${themeProp(baseName)};
 
   &:hover,
   &:active {
-    background-color: ${themeProp('backgroundPrimaryHover')};
-    border: ${themeProp('backgroundPrimary')};
+    background-color: ${themeProp(`${baseName}Hover`)};
+    border: ${themeProp(baseName)};
   }
 `;
 
-const DestructiveButton = DarkerButton.extend`
-  background-color: ${themeProp('backgroundDanger')};
-  border: ${themeProp('backgroundDanger')};
+const PrimaryButton = getDarkerButtonVariant('backgroundPrimary');
 
-  &:hover,
-  &:active {
-    background-color: ${themeProp('backgroundDangerHover')};
-    border: ${themeProp('backgroundDanger')};
-  }
-`;
+const DestructiveButton = getDarkerButtonVariant('backgroundDanger');
 
 const SecondaryButton = LighterButton.extend`
   background-color: ${themeProp('backgroundSecondary')};
