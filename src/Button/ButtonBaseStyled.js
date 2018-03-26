@@ -7,10 +7,9 @@ import { themeProp } from '../utils';
 import defaultButtonTheme from '../themes/defaultTheme/components/Button';
 
 const BaseButtonStyled = styled.button`
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
-  outline: none;
   transition: all 0.1s;
   ${buttonSizeSupport};
   ${iconButtonSupport};
