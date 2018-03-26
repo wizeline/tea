@@ -1,8 +1,7 @@
 {
-  "name": "wizeline-phoenix",
-  "version": "0.5.0",
+  "name": "@wizeline/phoenix",
+  "version": "0.5.0-rc.0",
   "main": "./lib/index.js",
-  "package-name": "wizeline-phoenix",
   "repository": {
     "type": "git",
     "url": "https://github.com/wizeline/phoenix.git"
@@ -15,9 +14,8 @@
     "flow": "yarn flow-typed && yarn check ./",
     "jest-watch": "jest --watch --debug",
     "jest": "jest --coverage --maxWorkers=6",
-    "lint-staged": "lint-staged",
     "lint": "eslint ./",
-    "postinstall": "npm run build",
+    "prepublishOnly": "yarn jest && yarn build",
     "precommit": "lint-staged",
     "start": "styleguidist server",
     "styleguide:build": "styleguidist build",
