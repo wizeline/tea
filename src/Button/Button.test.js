@@ -1,16 +1,17 @@
 import React from 'react';
 import { shallow } from 'enzyme';
+import toJson from 'enzyme-to-json';
 import Button from './Button';
 
 describe('Button', () => {
   it('renders correctly when given icon diabled and text props', () => {
     const wrapper = shallow(<Button icon="dots-h" disabled text="Test Text" />);
-    expect(wrapper).toMatchSnapshot();
+    expect(toJson(wrapper)).toMatchSnapshot();
   });
 
   it('renders correctly when given icon and no text props', () => {
     const wrapper = shallow(<Button icon="dots-h" />);
-    expect(wrapper).toHaveStyleRule('min-width', '48px');
+    expect(wrapper).toHaveStyleRule('min-width', '3rem');
   });
 
   it('renders correctly when given destructive prop', () => {
