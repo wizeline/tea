@@ -4,75 +4,101 @@ import { css } from 'styled-components';
 import type { ButtonProps } from './ButtonTypes';
 
 const circleSizeSuport = (small, big) => {
-  let size = 1.25;
-  let svgSize = 0.5;
-  if (small) {
-    size = 0.75;
-    svgSize = 0.375;
-  } else if (big) {
-    size = 2.25;
-    svgSize = 1;
-  }
-  return css`
+  const baseCSS = css`
     border-radius: 50%;
     box-shadow: unset;
-    height: ${size}rem;
     min-height: unset;
     min-width: unset;
     padding: 0;
-    width: ${size}rem;
 
     & > .svgContainer {
       align-items: center;
-      height: ${svgSize}rem;
       justify-content: center;
-      width: ${svgSize}rem;
+    }
+  `;
+  if (small) {
+    return css`
+      ${baseCSS};
+      height: 0.75rem;
+      width: 0.75rem;
+
+      & > .svgContainer {
+        height: 0.375rem;
+        width: 0.375rem;
+      }
+    `;
+  } else if (big) {
+    return css`
+      ${baseCSS};
+      height: 2.25rem;
+      width: 2.25rem;
+
+      & > .svgContainer {
+        height: 1rem;
+        width: 1rem;
+      }
+    `;
+  }
+  return css`
+    ${baseCSS};
+    height: 1.25rem;
+    width: 1.25rem;
+
+    & > .svgContainer {
+      height: 0.5rem;
+      width: 0.5rem;
     }
   `;
 };
 
 const buttonSizeSupport = ({ small, big, circle }: ButtonProps) => {
-  let borderRadius = 0.1875;
-  let boxShadow = '0 0.125rem 0.0625rem 0 rgba(0, 0, 0, 0.03)';
-  let fontSize = 0.875;
-  let height = 2;
-  let padding = 1;
-  let width = 6.25;
+  const circleStyles = circle ? circleSizeSuport(small, big) : null;
   if (small) {
-    fontSize = 0.75;
-    height = 1.4;
-    width = 4.5;
-  } else if (big) {
-    borderRadius = 0.3125;
-    boxShadow += ', inset 0 -0.1875rem 0 0 rgba(0, 0, 0, 0.08)';
-    fontSize = 1;
-    height = 3;
-    padding = 1.5;
-    width = 10.25;
+    return css`
+      border-radius: 0.1875rem;
+      box-shadow: 0 0.125rem 0.0625rem 0 rgba(0, 0, 0, 0.03);
+      font-size: 0.75rem;
+      min-height: 1.4rem;
+      min-width: 4.5rem;
+      padding: 0 1rem;
+      ${circleStyles};
+    `;
+  }
+  if (big) {
+    return css`
+      border-radius: 0.3125rem;
+      box-shadow: 0 0.125rem 0.0625rem 0 rgba(0, 0, 0, 0.03),
+        inset 0 -0.1875rem 0 0 rgba(0, 0, 0, 0.08);
+      font-size: 1rem;
+      min-height: 3rem;
+      min-width: 10.25rem;
+      padding: 0 1.5rem;
+      ${circleStyles};
+    `;
   }
   return css`
-    border-radius: ${borderRadius}rem;
-    box-shadow: ${boxShadow};
-    font-size: ${fontSize}rem;
-    min-height: ${height}rem;
-    min-width: ${width}rem;
-    padding: 0 ${padding}rem;
-    ${circle ? circleSizeSuport(small, big) : null};
+    border-radius: 0.1875rem;
+    box-shadow: 0 0.125rem 0.0625rem 0 rgba(0, 0, 0, 0.03);
+    font-size: 0.875rem;
+    min-height: 2rem;
+    min-width: 6.25rem;
+    padding: 0 1rem;
+    ${circleStyles};
   `;
 };
 
 const iconButtonSupport = ({ circle, icon, children }: ButtonProps) => {
   if (!circle && icon && !children[1]) {
     return css`
-      min-width: 48px;
+      min-width: 3rem;
     `;
   }
   if (!circle && icon && children[1]) {
     return css`
       & > .svgContainer {
-        height: 16px;
-        margin-right: 8px;
-        width: 16px;
+        height: 1rem;
+        margin-right: 0.5rem;
+        width: 1rem;
       }
     `;
   }
