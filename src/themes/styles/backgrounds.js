@@ -1,16 +1,30 @@
 // @flow
 
 import colors from './colors';
+import backgroundConstants from '../defaultTheme/constants';
+
+const {
+  BACKGROUND_PRIMARY,
+  BACKGROUND_PRIMARY_HOVER,
+  BACKGROUND_PRIMARY_DISABLED,
+  BACKGROUND_SECONDARY,
+  BACKGROUND_SECONDARY_HOVER,
+  BACKGROUND_SECONDARY_DISABLED,
+  BACKGROUND_DANGER,
+  BACKGROUND_DANGER_HOVER,
+  BACKGROUND_DANGER_DISABLED,
+  BACKGROUND_INPUT,
+} = backgroundConstants;
 
 export default {
-  backgroundPrimary: colors.darkSkyBlue,
-  backgroundPrimaryHover: colors.dullBlue,
-  backgroundPrimaryDisabled: colors.paleGrey3,
-  backgroundSecondary: colors.white,
-  backgroundSecondaryHover: colors.white,
-  backgroundSecondaryDisabled: colors.white,
-  backgroundDanger: colors.rosyPink,
-  backgroundDangerHover: colors.tomato,
-  backgroundDangerDisabled: colors.paleGrey3,
-  backgroundInput: colors.white,
+  [BACKGROUND_PRIMARY]: colors.darkSkyBlue,
+  [BACKGROUND_PRIMARY_HOVER]: colors.dullBlue,
+  [BACKGROUND_PRIMARY_DISABLED]: colors.paleGrey3,
+  [BACKGROUND_SECONDARY]: colors.white,
+  [BACKGROUND_SECONDARY_HOVER]: colors.white,
+  [BACKGROUND_SECONDARY_DISABLED]: colors.white,
+  [BACKGROUND_DANGER]: colors.rosyPink,
+  [BACKGROUND_DANGER_HOVER]: colors.tomato,
+  [BACKGROUND_DANGER_DISABLED]: colors.paleGrey3,
+  [BACKGROUND_INPUT]: colors.white,
 };
