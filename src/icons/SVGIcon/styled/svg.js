@@ -24,6 +24,8 @@ const SVGIconSvgStyled = styled.svg`
   fill: ${getFill};
   user-select: none;
   margin: 0 auto;
+  width: 100%;
+  height: auto;
 `;
 
 SVGIconSvgStyled.defaultProps = {
