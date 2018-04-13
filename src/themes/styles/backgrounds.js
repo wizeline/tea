@@ -1,4 +1,5 @@
 // @flow
+/* eslint flowtype-errors/enforce-min-coverage: 0 */
 
 import colors from './colors';
 import backgroundConstants from '../defaultTheme/constants';
@@ -17,14 +18,14 @@ const {
 } = backgroundConstants;
 
 export default {
-  [BACKGROUND_PRIMARY]: colors.darkSkyBlue,
-  [BACKGROUND_PRIMARY_HOVER]: colors.dullBlue,
-  [BACKGROUND_PRIMARY_DISABLED]: colors.paleGrey3,
-  [BACKGROUND_SECONDARY]: colors.white,
-  [BACKGROUND_SECONDARY_HOVER]: colors.white,
-  [BACKGROUND_SECONDARY_DISABLED]: colors.white,
-  [BACKGROUND_DANGER]: colors.rosyPink,
-  [BACKGROUND_DANGER_HOVER]: colors.tomato,
-  [BACKGROUND_DANGER_DISABLED]: colors.paleGrey3,
-  [BACKGROUND_INPUT]: colors.white,
+  [BACKGROUND_PRIMARY]: colors.blueBase.toString(),
+  [BACKGROUND_PRIMARY_HOVER]: colors.blueBase.lighten(0.1).toString(),
+  [BACKGROUND_PRIMARY_DISABLED]: colors.silverLighten40.toString(),
+  [BACKGROUND_SECONDARY]: colors.white.toString(),
+  [BACKGROUND_SECONDARY_HOVER]: colors.white.toString(),
+  [BACKGROUND_SECONDARY_DISABLED]: colors.white.toString(),
+  [BACKGROUND_DANGER]: colors.redLighten10.toString(),
+  [BACKGROUND_DANGER_HOVER]: colors.redLighten10.lighten(0.1).toString(),
+  [BACKGROUND_DANGER_DISABLED]: colors.silverLighten40.toString(),
+  [BACKGROUND_INPUT]: colors.white.toString(),
 };

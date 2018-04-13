@@ -1,12 +1,13 @@
 // @flow
+/* eslint flowtype-errors/enforce-min-coverage: 0 */
 
 import colors from './colors';
 
 export default {
-  borderSecondary: colors.coolGrey,
-  borderSecondaryHover: colors.darkSkyBlue,
-  borderSecondaryDisabled: colors.paleGrey3,
-  borderInput: colors.paleGrey3,
-  borderInputFocus: colors.darkSkyBlue,
-  borderInputInvalid: colors.rosyPink,
+  borderSecondary: colors.darkGrayLighten10.toString(),
+  borderSecondaryHover: colors.blueBase.toString(),
+  borderSecondaryDisabled: colors.silverLighten40.toString(),
+  borderInput: colors.silverLighten40.toString(),
+  borderInputFocus: colors.blueBase.toString(),
+  borderInputInvalid: colors.redLighten10.toString(),
 };

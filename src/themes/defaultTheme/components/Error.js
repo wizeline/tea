@@ -6,5 +6,5 @@ import otherConstants from '../constants';
 const { TEXT_ERROR } = otherConstants;
 
 export default {
-  [TEXT_ERROR]: colors.rosyPink,
+  [TEXT_ERROR]: colors.redLighten10.toString(),
 };
