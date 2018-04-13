@@ -29,8 +29,9 @@ const sizeSupport = supportOr(
 const backgroundSupport = supportOrTheme(background, 'backgroundPrimary');
 
 const CircleIconBase = styled.div`
-  display: inline-block;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
 `;
 
