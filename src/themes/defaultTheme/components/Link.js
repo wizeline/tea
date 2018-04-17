@@ -6,5 +6,5 @@ import otherConstants from '../constants';
 const { TEXT_LINK } = otherConstants;
 
 export default {
-  [TEXT_LINK]: colors.darkSkyBlue,
+  [TEXT_LINK]: colors.blueBase.hex(),
 };

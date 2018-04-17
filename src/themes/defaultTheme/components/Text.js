@@ -1,4 +1,5 @@
 // @flow
+/* eslint flowtype-errors/enforce-min-coverage: 0 */
 
 import colors from '../../styles/colors';
 import textConstants from '../constants';
@@ -26,23 +27,23 @@ const {
 } = textConstants;
 
 export default {
-  [TEXT_PRIMARY]: colors.charcoalGrey,
-  [TEXT_PRIMARY_INVERT]: colors.white,
-  [TEXT_PRIMARY_HOVER]: colors.white,
-  [TEXT_PRIMARY_DISABLED]: colors.coolGrey,
-  [TEXT_SECONDARY]: colors.charcoalGrey,
-  [TEXT_SECONDARY_HOVER]: colors.white,
-  [TEXT_SECONDARY_DISABLED]: colors.silver,
-  [TEXT_DANGER]: colors.white,
-  [TEXT_DANGER_HOVER]: colors.white,
-  [TEXT_DANGER_DISABLED]: colors.silver,
-  [TEXT_INPUT]: colors.charcoalGrey,
-  [TEXT_INPUT_PLACEHOLDER]: colors.coolGrey,
-  [TEXT_INPUT_FOCUS]: colors.coolGrey,
-  [TEXT_INPUT_INVALID]: colors.tomato,
-  [TEXT_ICON]: colors.white,
-  [TEXT_ICON_INVERT]: colors.darkGrey,
-  [TEXT_BODY]: colors.charcoalGrey,
-  [TEXT_HEADING]: colors.charcoalGrey,
-  [TEXT_SUBTITLE]: colors.coolGrey,
+  [TEXT_PRIMARY]: colors.darkGrayDarken10.hex(),
+  [TEXT_PRIMARY_INVERT]: colors.white.hex(),
+  [TEXT_PRIMARY_HOVER]: colors.white.hex(),
+  [TEXT_PRIMARY_DISABLED]: colors.darkGrayLighten10.hex(),
+  [TEXT_SECONDARY]: colors.darkGrayDarken10.hex(),
+  [TEXT_SECONDARY_HOVER]: colors.white.hex(),
+  [TEXT_SECONDARY_DISABLED]: colors.silverLighten30.hex(),
+  [TEXT_DANGER]: colors.white.hex(),
+  [TEXT_DANGER_HOVER]: colors.white.hex(),
+  [TEXT_DANGER_DISABLED]: colors.silverLighten30.hex(),
+  [TEXT_INPUT]: colors.darkGrayDarken10.hex(),
+  [TEXT_INPUT_PLACEHOLDER]: colors.darkGrayLighten10.hex(),
+  [TEXT_INPUT_FOCUS]: colors.darkGrayLighten10.hex(),
+  [TEXT_INPUT_INVALID]: colors.redBase.hex(),
+  [TEXT_ICON]: colors.white.hex(),
+  [TEXT_ICON_INVERT]: colors.darkGrayDarken20.hex(),
+  [TEXT_BODY]: colors.darkGrayDarken10.hex(),
+  [TEXT_HEADING]: colors.darkGrayDarken10.hex(),
+  [TEXT_SUBTITLE]: colors.darkGrayLighten10.hex(),
 };

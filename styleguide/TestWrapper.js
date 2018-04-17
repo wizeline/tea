@@ -6,7 +6,7 @@ import ThemeProvider from '../src/themes/ThemeProvider';
 import type { Props } from './TestWrapperTypes';
 
 const altTheme = {
-  textPrimaryInvert: colors.white,
+  textPrimaryInvert: colors.white.toString(),
 };
 
 const TestWrapper = (props: Props) => (
