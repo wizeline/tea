@@ -157,8 +157,18 @@ exports[`SVGIcon renders nothing with invalid name and invalid size 1`] = `""`;
 
 exports[`SVGIconDivStyled renders correctly with defined invalid container size 1`] = `
 .c0 {
-  display: inline-block;
-  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 16px;
   height: 16px;
   top: 0px;
@@ -172,8 +182,18 @@ exports[`SVGIconDivStyled renders correctly with defined invalid container size 
 
 exports[`SVGIconDivStyled renders correctly with defined top 1`] = `
 .c0 {
-  display: inline-block;
-  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 16px;
   height: 16px;
   top: 10px;
@@ -186,8 +206,18 @@ exports[`SVGIconDivStyled renders correctly with defined top 1`] = `
 
 exports[`SVGIconDivStyled renders correctly with defined valid container size 1`] = `
 .c0 {
-  display: inline-block;
-  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 48px;
   height: 48px;
   top: 0px;
@@ -207,6 +237,8 @@ exports[`SVGIconSvgStyled renders correctly with defined color 1`] = `
   -ms-user-select: none;
   user-select: none;
   margin: 0 auto;
+  width: 100%;
+  height: auto;
 }
 
 <svg
@@ -223,6 +255,8 @@ exports[`SVGIconSvgStyled renders correctly with invert flag 1`] = `
   -ms-user-select: none;
   user-select: none;
   margin: 0 auto;
+  width: 100%;
+  height: auto;
 }
 
 <svg
@@ -238,6 +272,8 @@ exports[`SVGIconSvgStyled renders correctly without any defined attributes 1`] =
   -ms-user-select: none;
   user-select: none;
   margin: 0 auto;
+  width: 100%;
+  height: auto;
 }
 
 <svg

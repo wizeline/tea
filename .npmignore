@@ -1,0 +1,6 @@
+coverage/
+flow-typed/
+jest/
+src/
+styleguide/
+dangerfile.js
