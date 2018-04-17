@@ -4,10 +4,10 @@
 import colors from './colors';
 
 export default {
-  borderSecondary: colors.darkGrayLighten10.toString(),
-  borderSecondaryHover: colors.blueBase.toString(),
-  borderSecondaryDisabled: colors.silverLighten40.toString(),
-  borderInput: colors.silverLighten40.toString(),
-  borderInputFocus: colors.blueBase.toString(),
-  borderInputInvalid: colors.redLighten10.toString(),
+  borderSecondary: colors.darkGrayLighten10.hex(),
+  borderSecondaryHover: colors.blueBase.hex(),
+  borderSecondaryDisabled: colors.silverLighten40.hex(),
+  borderInput: colors.silverLighten40.hex(),
+  borderInputFocus: colors.blueBase.hex(),
+  borderInputInvalid: colors.redLighten10.hex(),
 };
