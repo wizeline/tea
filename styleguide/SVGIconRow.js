@@ -5,28 +5,28 @@ import SVGIcon from '../src/icons/SVGIcon';
 
 const SVGIconRow = ({ name }: { name: string }) => (
   <tr>
-    <td>
+    <td className="border-cell">
       <SVGIcon name={name} />
     </td>
-    <td>
+    <td className="border-cell">
       <SVGIcon name={name} size="xlarge" />
     </td>
-    <td>
+    <td className="border-cell">
       <SVGIcon name={name} size="large" />
     </td>
-    <td>
+    <td className="border-cell">
       <SVGIcon name={name} size="medium" />
     </td>
-    <td>
+    <td className="border-cell">
       <SVGIcon name={name} size="small" />
     </td>
-    <td>
+    <td className="border-cell">
       <SVGIcon name={name} size="xsmall" />
     </td>
-    <td>
+    <td className="border-cell">
       <SVGIcon name={name} size="invalid-size" />
     </td>
-    <td>{name}</td>
+    <td className="border-cell">{name}</td>
   </tr>
 );
 
