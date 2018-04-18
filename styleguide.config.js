@@ -61,7 +61,10 @@ module.exports = {
       },
     },
   },
-  require: [path.resolve(__dirname, 'styleguide/setup.js')],
+  require: [
+    path.resolve(__dirname, 'styleguide/setup.js'),
+    path.resolve(__dirname, 'styleguide/styles.css'),
+  ],
   skipComponentsWithoutExample: true,
   title: 'Phoenix',
   sections: componentSections,
