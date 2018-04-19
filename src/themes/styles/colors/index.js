@@ -4,7 +4,7 @@
 import color from 'color';
 
 import blue from './blue';
-import darkGray from './darkGray';
+import ink from './ink';
 import green from './green';
 import orange from './orange';
 import purple from './purple';
@@ -15,7 +15,7 @@ const white = color('#FFFFFF');
 
 export default {
   ...blue,
-  ...darkGray,
+  ...ink,
   ...green,
   ...orange,
   ...purple,

@@ -4,7 +4,7 @@
 import colors from './colors';
 
 export default {
-  borderSecondary: colors.darkGrayLighten10.hex(),
+  borderSecondary: colors.inkLighten10.hex(),
   borderSecondaryHover: colors.blueBase.hex(),
   borderSecondaryDisabled: colors.silverLighten40.hex(),
   borderInput: colors.silverLighten40.hex(),
