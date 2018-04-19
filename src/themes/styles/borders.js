@@ -14,7 +14,7 @@ const {
 } = borderConstants;
 
 export default {
-  [BORDER_SECONDARY]: colors.darkGrayLighten10.hex(),
+  [BORDER_SECONDARY]: colors.inkLighten10.hex(),
   [BORDER_SECONDARY_HOVER]: colors.blueBase.hex(),
   [BORDER_SECONDARY_DISABLED]: colors.silverLighten40.hex(),
   [BORDER_INPUT]: colors.silverLighten40.hex(),
