@@ -90,7 +90,8 @@ const buttonSizeSupport = ({ small, big, circle }: ButtonProps) => {
 const iconButtonSupport = ({ circle, icon, children }: ButtonProps) => {
   if (!circle && icon && !children[1]) {
     return css`
-      min-width: 3rem;
+      min-width: 2rem;
+      padding: 0 0.5rem;
     `;
   }
   if (!circle && icon && children[1]) {
