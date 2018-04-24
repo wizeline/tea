@@ -24,7 +24,7 @@
     "test": "yarn flow-typed && yarn lint && yarn jest"
   },
   "dependencies": {
-    "color": "^3.0.0",
+    "polished": "^1.9.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },

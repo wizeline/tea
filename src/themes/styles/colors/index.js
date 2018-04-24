@@ -1,7 +1,4 @@
 // @flow
-/* eslint flowtype-errors/enforce-min-coverage: 0 */
-
-import color from 'color';
 
 import blue from './blue';
 import ink from './ink';
@@ -11,7 +8,7 @@ import purple from './purple';
 import red from './red';
 import silver from './silver';
 
-const white = color('#FFFFFF');
+const white = '#FFFFFF';
 
 export default {
   ...blue,
