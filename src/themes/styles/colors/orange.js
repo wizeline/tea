@@ -1,15 +1,12 @@
 // @flow
-/* eslint flowtype-errors/enforce-min-coverage: 0 */
 
-import color from 'color';
-
-const orangeBase = color('#FFA74D');
-const orangeDarken10 = color('#D9934C');
-const orangeDarken20 = color('#B2814C');
-const orangeLighten10 = color('#FFB870');
-const orangeLighten20 = color('#FFCA94');
-const orangeLighten30 = color('#FFDBB7');
-const orangeLighten40 = color('#FFEDDB');
+const orangeBase = '#FFA74D';
+const orangeDarken10 = '#D9934C';
+const orangeDarken20 = '#B2814C';
+const orangeLighten10 = '#FFB870';
+const orangeLighten20 = '#FFCA94';
+const orangeLighten30 = '#FFDBB7';
+const orangeLighten40 = '#FFEDDB';
 
 export default {
   orangeBase,

@@ -1,18 +1,15 @@
 // @flow
-/* eslint flowtype-errors/enforce-min-coverage: 0 */
 
-import color from 'color';
-
-const silverBase = color('#828A8F');
-const silverDarken10 = color('#757C81');
-const silverDarken20 = color('#676F73');
-const silverDarken30 = color('#5A6266');
-const silverDarken40 = color('#4C5558');
-const silverLighten10 = color('#9BA1A5');
-const silverLighten20 = color('#B4B8BB');
-const silverLighten30 = color('#CDD0D2');
-const silverLighten40 = color('#E6E7E8');
-const silverLighten50 = color('#FCFCFC');
+const silverBase = '#828A8F';
+const silverDarken10 = '#757C81';
+const silverDarken20 = '#676F73';
+const silverDarken30 = '#5A6266';
+const silverDarken40 = '#4C5558';
+const silverLighten10 = '#9BA1A5';
+const silverLighten20 = '#B4B8BB';
+const silverLighten30 = '#CDD0D2';
+const silverLighten40 = '#E6E7E8';
+const silverLighten50 = '#FCFCFC';
 
 export default {
   silverBase,
