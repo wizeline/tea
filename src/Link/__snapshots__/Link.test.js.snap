@@ -9,7 +9,7 @@ exports[`Link functions correctly with children 1`] = `
   target="_blank"
   theme={
     Object {
-      "textLink": "#50a5e7",
+      "textLink": "#50A5E7",
     }
   }
 >
@@ -26,7 +26,7 @@ exports[`Link functions correctly without children 1`] = `
   target=""
   theme={
     Object {
-      "textLink": "#50a5e7",
+      "textLink": "#50A5E7",
     }
   }
 />

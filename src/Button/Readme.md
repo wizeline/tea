@@ -1,9 +1,9 @@
 ```jsx
-<div>
-  <h1>Primary</h1>
+<div class="btn-table">
   <table>
     <thead>
       <tr>
+        <td>Type</td>
         <td>Small</td>
         <td>Normal</td>
         <td>Big</td>
@@ -14,6 +14,7 @@
     </thead>
     <tbody>
       <tr>
+        <td>Primary</td>
         <td>
           <Button small text="Create" />
           <Button small circle icon="dots-h" text="Create" />
@@ -36,12 +37,8 @@
           <Button disabled icon="plus" text="Create" />
         </td>
       </tr>
-    </tbody>
-  </table>
-  <h1>Secondary</h1>
-  <table>
-    <tbody>
       <tr>
+        <td>Secondary</td>
         <td>
           <Button secondary small text="Create" />
           <Button secondary small circle icon="dots-h" text="Create" />
@@ -64,12 +61,8 @@
           <Button disabled secondary icon="plus" text="Create" />
         </td>
       </tr>
-    </tbody>
-  </table>
-  <h1>Destructive</h1>
-  <table>
-    <tbody>
       <tr>
+        <td>Destructive</td>
         <td>
           <Button destructive small text="Create" />
           <Button destructive small circle icon="dots-h" text="Create" />

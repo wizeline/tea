@@ -5,6 +5,16 @@ import styled from 'styled-components';
 import { buttonSizeSupport, iconButtonSupport } from './ButtonSupport';
 import { themeProp } from '../utils';
 import defaultButtonTheme from '../themes/defaultTheme/components/Button';
+import themeConstants from '../themes/defaultTheme/constants';
+
+const {
+  BACKGROUND_PRIMARY_DISABLED,
+  BORDER_SECONDARY_DISABLED,
+  TEXT_PRIMARY_DISABLED,
+  TEXT_PRIMARY_INVERT,
+  TEXT_PRIMARY,
+  TEXT_SECONDARY_DISABLED,
+} = themeConstants;
 
 const BaseButtonStyled = styled.button`
   display: flex;
@@ -20,36 +30,36 @@ const BaseButtonStyled = styled.button`
 `;
 
 const DarkerButton = BaseButtonStyled.extend`
-  color: ${themeProp('textPrimaryInvert')};
+  color: ${themeProp(TEXT_PRIMARY_INVERT)};
 
   &:disabled,
   &:disabled:hover,
   &:disabled:active {
-    background-color: ${themeProp('backgroundPrimaryDisabled')};
-    border: ${themeProp('backgroundPrimaryDisabled')};
+    background-color: ${themeProp(BACKGROUND_PRIMARY_DISABLED)};
+    border: ${themeProp(BACKGROUND_PRIMARY_DISABLED)};
     box-shadow: none;
-    color: ${themeProp('textPrimaryDisabled')};
+    color: ${themeProp(TEXT_PRIMARY_DISABLED)};
 
     & > .svgContainer {
       svg {
-        fill: ${themeProp('textPrimaryDisabled')};
+        fill: ${themeProp(TEXT_PRIMARY_DISABLED)};
       }
     }
   }
 `;
 
 const LighterButton = BaseButtonStyled.extend`
-  color: ${themeProp('textPrimary')};
+  color: ${themeProp(TEXT_PRIMARY)};
 
   &:disabled,
   &:disabled:hover,
   &:disabled:active {
-    border: solid 1px ${themeProp('borderSecondaryDisabled')};
-    color: ${themeProp('textSecondaryDisabled')};
+    border: solid 1px ${themeProp(BORDER_SECONDARY_DISABLED)};
+    color: ${themeProp(TEXT_SECONDARY_DISABLED)};
 
     & > .svgContainer {
       svg {
-        fill: ${themeProp('textSecondaryDisabled')};
+        fill: ${themeProp(TEXT_SECONDARY_DISABLED)};
       }
     }
   }

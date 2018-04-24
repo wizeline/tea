@@ -8,35 +8,33 @@ exports[`SVGIcon renders correctly when given svgData 1`] = `
     preserveAspectRatio="xMidYMid meet"
     theme={
       Object {
-        "backgroundDanger": "#ec5659",
-        "backgroundDangerDisabled": "#e2e8ea",
-        "backgroundDangerHover": "#e62a2a",
-        "backgroundInput": "#ffffff",
-        "backgroundPrimary": "#50a5e7",
-        "backgroundPrimaryDisabled": "#e2e8ea",
-        "backgroundPrimaryHover": "#4793cd",
-        "backgroundSecondary": "#ffffff",
-        "backgroundSecondaryDisabled": "#ffffff",
-        "backgroundSecondaryHover": "#ffffff",
-        "textBody": "#3f484b",
-        "textDanger": "#ffffff",
-        "textDangerDisabled": "#c3cbcf",
-        "textDangerHover": "#ffffff",
-        "textHeading": "#3f484b",
-        "textIcon": "#ffffff",
-        "textIconInvert": "#1b2224",
-        "textInput": "#3f484b",
-        "textInputFocus": "#a2abaf",
-        "textInputInvalid": "#e62a2a",
-        "textInputPlaceholder": "#a2abaf",
-        "textPrimary": "#3f484b",
-        "textPrimaryDisabled": "#a2abaf",
-        "textPrimaryHover": "#ffffff",
-        "textPrimaryInvert": "#ffffff",
-        "textSecondary": "#3f484b",
-        "textSecondaryDisabled": "#c3cbcf",
-        "textSecondaryHover": "#ffffff",
-        "textSubtitle": "#a2abaf",
+        "backgroundDanger": "#ED524C",
+        "backgroundDangerDisabled": "#E6E7E8",
+        "backgroundInput": "#FFFFFF",
+        "backgroundPrimary": "#50A5E7",
+        "backgroundPrimaryDisabled": "#E6E7E8",
+        "backgroundSecondary": "#FFFFFF",
+        "backgroundSecondaryDisabled": "#FFFFFF",
+        "backgroundSecondaryHover": "#FFFFFF",
+        "textBody": "#3F484B",
+        "textDanger": "#FFFFFF",
+        "textDangerDisabled": "#CDD0D2",
+        "textDangerHover": "#FFFFFF",
+        "textHeading": "#3F484B",
+        "textIcon": "#FFFFFF",
+        "textIconInvert": "#222729",
+        "textInput": "#3F484B",
+        "textInputFocus": "#8B9193",
+        "textInputInvalid": "#E92720",
+        "textInputPlaceholder": "#8B9193",
+        "textPrimary": "#3F484B",
+        "textPrimaryDisabled": "#8B9193",
+        "textPrimaryHover": "#FFFFFF",
+        "textPrimaryInvert": "#FFFFFF",
+        "textSecondary": "#3F484B",
+        "textSecondaryDisabled": "#CDD0D2",
+        "textSecondaryHover": "#FFFFFF",
+        "textSubtitle": "#8B9193",
       }
     }
     viewBox="0 0 24 24"
@@ -53,35 +51,33 @@ exports[`SVGIcon renders correctly with a valid size and a valid name that refer
     preserveAspectRatio="xMidYMid meet"
     theme={
       Object {
-        "backgroundDanger": "#ec5659",
-        "backgroundDangerDisabled": "#e2e8ea",
-        "backgroundDangerHover": "#e62a2a",
-        "backgroundInput": "#ffffff",
-        "backgroundPrimary": "#50a5e7",
-        "backgroundPrimaryDisabled": "#e2e8ea",
-        "backgroundPrimaryHover": "#4793cd",
-        "backgroundSecondary": "#ffffff",
-        "backgroundSecondaryDisabled": "#ffffff",
-        "backgroundSecondaryHover": "#ffffff",
-        "textBody": "#3f484b",
-        "textDanger": "#ffffff",
-        "textDangerDisabled": "#c3cbcf",
-        "textDangerHover": "#ffffff",
-        "textHeading": "#3f484b",
-        "textIcon": "#ffffff",
-        "textIconInvert": "#1b2224",
-        "textInput": "#3f484b",
-        "textInputFocus": "#a2abaf",
-        "textInputInvalid": "#e62a2a",
-        "textInputPlaceholder": "#a2abaf",
-        "textPrimary": "#3f484b",
-        "textPrimaryDisabled": "#a2abaf",
-        "textPrimaryHover": "#ffffff",
-        "textPrimaryInvert": "#ffffff",
-        "textSecondary": "#3f484b",
-        "textSecondaryDisabled": "#c3cbcf",
-        "textSecondaryHover": "#ffffff",
-        "textSubtitle": "#a2abaf",
+        "backgroundDanger": "#ED524C",
+        "backgroundDangerDisabled": "#E6E7E8",
+        "backgroundInput": "#FFFFFF",
+        "backgroundPrimary": "#50A5E7",
+        "backgroundPrimaryDisabled": "#E6E7E8",
+        "backgroundSecondary": "#FFFFFF",
+        "backgroundSecondaryDisabled": "#FFFFFF",
+        "backgroundSecondaryHover": "#FFFFFF",
+        "textBody": "#3F484B",
+        "textDanger": "#FFFFFF",
+        "textDangerDisabled": "#CDD0D2",
+        "textDangerHover": "#FFFFFF",
+        "textHeading": "#3F484B",
+        "textIcon": "#FFFFFF",
+        "textIconInvert": "#222729",
+        "textInput": "#3F484B",
+        "textInputFocus": "#8B9193",
+        "textInputInvalid": "#E92720",
+        "textInputPlaceholder": "#8B9193",
+        "textPrimary": "#3F484B",
+        "textPrimaryDisabled": "#8B9193",
+        "textPrimaryHover": "#FFFFFF",
+        "textPrimaryInvert": "#FFFFFF",
+        "textSecondary": "#3F484B",
+        "textSecondaryDisabled": "#CDD0D2",
+        "textSecondaryHover": "#FFFFFF",
+        "textSubtitle": "#8B9193",
       }
     }
     viewBox="0 0 24 24"
@@ -104,35 +100,33 @@ exports[`SVGIcon renders correctly with an undefined size and a valid name that 
     preserveAspectRatio="xMidYMid meet"
     theme={
       Object {
-        "backgroundDanger": "#ec5659",
-        "backgroundDangerDisabled": "#e2e8ea",
-        "backgroundDangerHover": "#e62a2a",
-        "backgroundInput": "#ffffff",
-        "backgroundPrimary": "#50a5e7",
-        "backgroundPrimaryDisabled": "#e2e8ea",
-        "backgroundPrimaryHover": "#4793cd",
-        "backgroundSecondary": "#ffffff",
-        "backgroundSecondaryDisabled": "#ffffff",
-        "backgroundSecondaryHover": "#ffffff",
-        "textBody": "#3f484b",
-        "textDanger": "#ffffff",
-        "textDangerDisabled": "#c3cbcf",
-        "textDangerHover": "#ffffff",
-        "textHeading": "#3f484b",
-        "textIcon": "#ffffff",
-        "textIconInvert": "#1b2224",
-        "textInput": "#3f484b",
-        "textInputFocus": "#a2abaf",
-        "textInputInvalid": "#e62a2a",
-        "textInputPlaceholder": "#a2abaf",
-        "textPrimary": "#3f484b",
-        "textPrimaryDisabled": "#a2abaf",
-        "textPrimaryHover": "#ffffff",
-        "textPrimaryInvert": "#ffffff",
-        "textSecondary": "#3f484b",
-        "textSecondaryDisabled": "#c3cbcf",
-        "textSecondaryHover": "#ffffff",
-        "textSubtitle": "#a2abaf",
+        "backgroundDanger": "#ED524C",
+        "backgroundDangerDisabled": "#E6E7E8",
+        "backgroundInput": "#FFFFFF",
+        "backgroundPrimary": "#50A5E7",
+        "backgroundPrimaryDisabled": "#E6E7E8",
+        "backgroundSecondary": "#FFFFFF",
+        "backgroundSecondaryDisabled": "#FFFFFF",
+        "backgroundSecondaryHover": "#FFFFFF",
+        "textBody": "#3F484B",
+        "textDanger": "#FFFFFF",
+        "textDangerDisabled": "#CDD0D2",
+        "textDangerHover": "#FFFFFF",
+        "textHeading": "#3F484B",
+        "textIcon": "#FFFFFF",
+        "textIconInvert": "#222729",
+        "textInput": "#3F484B",
+        "textInputFocus": "#8B9193",
+        "textInputInvalid": "#E92720",
+        "textInputPlaceholder": "#8B9193",
+        "textPrimary": "#3F484B",
+        "textPrimaryDisabled": "#8B9193",
+        "textPrimaryHover": "#FFFFFF",
+        "textPrimaryInvert": "#FFFFFF",
+        "textSecondary": "#3F484B",
+        "textSecondaryDisabled": "#CDD0D2",
+        "textSecondaryHover": "#FFFFFF",
+        "textSubtitle": "#8B9193",
       }
     }
     viewBox="0 0 16 16"
@@ -157,8 +151,18 @@ exports[`SVGIcon renders nothing with invalid name and invalid size 1`] = `""`;
 
 exports[`SVGIconDivStyled renders correctly with defined invalid container size 1`] = `
 .c0 {
-  display: inline-block;
-  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 16px;
   height: 16px;
   top: 0px;
@@ -172,8 +176,18 @@ exports[`SVGIconDivStyled renders correctly with defined invalid container size 
 
 exports[`SVGIconDivStyled renders correctly with defined top 1`] = `
 .c0 {
-  display: inline-block;
-  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 16px;
   height: 16px;
   top: 10px;
@@ -186,8 +200,18 @@ exports[`SVGIconDivStyled renders correctly with defined top 1`] = `
 
 exports[`SVGIconDivStyled renders correctly with defined valid container size 1`] = `
 .c0 {
-  display: inline-block;
-  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 48px;
   height: 48px;
   top: 0px;
@@ -207,6 +231,8 @@ exports[`SVGIconSvgStyled renders correctly with defined color 1`] = `
   -ms-user-select: none;
   user-select: none;
   margin: 0 auto;
+  width: 100%;
+  height: auto;
 }
 
 <svg
@@ -217,12 +243,14 @@ exports[`SVGIconSvgStyled renders correctly with defined color 1`] = `
 
 exports[`SVGIconSvgStyled renders correctly with invert flag 1`] = `
 .c0 {
-  fill: #ffffff;
+  fill: #FFFFFF;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   margin: 0 auto;
+  width: 100%;
+  height: auto;
 }
 
 <svg
@@ -232,12 +260,14 @@ exports[`SVGIconSvgStyled renders correctly with invert flag 1`] = `
 
 exports[`SVGIconSvgStyled renders correctly without any defined attributes 1`] = `
 .c0 {
-  fill: #3f484b;
+  fill: #3F484B;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   margin: 0 auto;
+  width: 100%;
+  height: auto;
 }
 
 <svg

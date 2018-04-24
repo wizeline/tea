@@ -7,8 +7,9 @@ import constants from '../SVGIconConstants';
 import { cssProperties, propNames, supportOr, toPixels } from '../../../utils';
 
 const SVGIconDivBase = styled.div`
-  display: inline-block;
-  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const { sizes, defaultSizeKey, defaultTop } = constants;
