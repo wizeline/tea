@@ -11,19 +11,19 @@ describe('Button', () => {
 
   it('renders correctly when given icon and no text props', () => {
     const wrapper = shallow(<Button icon="dots-h" />);
-    expect(wrapper).toHaveStyleRule('min-width', '3rem');
+    expect(wrapper).toHaveStyleRule('min-width', '2rem');
   });
 
   it('renders correctly when given destructive prop', () => {
     const wrapper = shallow(<Button destructive text="Test Text" />);
-    expect(wrapper).toHaveStyleRule('background-color', '#ec5659');
-    expect(wrapper).toHaveStyleRule('border', '#ec5659');
+    expect(wrapper).toHaveStyleRule('background-color', '#ED524C');
+    expect(wrapper).toHaveStyleRule('border', '#ED524C');
   });
 
   it('renders correctly when given secondary prop', () => {
     const wrapper = shallow(<Button secondary text="Test Text" />);
-    expect(wrapper).toHaveStyleRule('background-color', '#ffffff');
-    expect(wrapper).toHaveStyleRule('border', 'solid 1px #a2abaf');
+    expect(wrapper).toHaveStyleRule('background-color', '#FFFFFF');
+    expect(wrapper).toHaveStyleRule('border', 'solid 1px #8B9193');
   });
 
   it('renders correctly when given big prop', () => {
