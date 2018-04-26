@@ -13,18 +13,29 @@ import {
 } from '../../utils';
 import defaultIconTheme from '../../themes/defaultTheme/components/Icon';
 
-const { circleDiameters, defaultSize } = constants;
+const { circleDiameters, sizes } = constants;
 const { size, background } = propNames;
 const { width, height } = cssProperties;
 
 const sizeMapping = sizeName => toPixels(circleDiameters[sizeName]);
 const sizeSupport = supportOr(
   size,
-  circleDiameters[defaultSize],
+  circleDiameters[sizes.small],
   sizeMapping,
   width,
   height,
 );
+
+const booleanSizeSupport = props => {
+  const { medium, large } = props;
+  if (medium) {
+    return sizeSupport({ size: sizes.medium });
+  }
+  if (large) {
+    return sizeSupport({ size: sizes.large });
+  }
+  return sizeSupport({ size: sizes.small });
+};
 
 const backgroundSupport = supportOrTheme(background, 'backgroundPrimary');
 
@@ -36,7 +47,8 @@ const CircleIconBase = styled.div`
 `;
 
 const CircleIconStyled = CircleIconBase.extend`
-  ${sizeSupport};
+  /* ${sizeSupport}; */
+  ${booleanSizeSupport};
   ${backgroundSupport};
 `;
 
