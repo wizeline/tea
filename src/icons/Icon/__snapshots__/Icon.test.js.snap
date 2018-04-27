@@ -2,6 +2,7 @@
 
 exports[`Icon renders correctly 1`] = `
 <SVGIcon
+  small={true}
   svgData={
     <svg
       viewBox="0 0 16 16"
@@ -164,6 +165,62 @@ exports[`Icon renders correctly with round, medium and undefined background 1`] 
 />
 `;
 
+exports[`Icon renders correctly with xmall size 1`] = `
+<SVGIcon
+  background="yellow"
+  size="xsmall"
+  svgData={
+    <svg
+      viewBox="0 0 16 16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        fillRule="evenodd"
+        transform="translate(1 1)"
+      >
+        <path
+          d="M7 5.77L12.77 0 14 1.23 8.23 7 14 12.77 12.77 14 7 8.23 1.23 14 0 12.77 5.77 7 0 1.23 1.23 0 7 5.77z"
+        />
+      </g>
+    </svg>
+  }
+  theme={
+    Object {
+      "backgroundDanger": "#ec5659",
+      "backgroundDangerDisabled": "#e2e8ea",
+      "backgroundDangerHover": "#e62a2a",
+      "backgroundInput": "#ffffff",
+      "backgroundPrimary": "#50a5e7",
+      "backgroundPrimaryDisabled": "#e2e8ea",
+      "backgroundPrimaryHover": "#4793cd",
+      "backgroundSecondary": "#ffffff",
+      "backgroundSecondaryDisabled": "#ffffff",
+      "backgroundSecondaryHover": "#ffffff",
+      "textBody": "#3f484b",
+      "textDanger": "#ffffff",
+      "textDangerDisabled": "#c3cbcf",
+      "textDangerHover": "#ffffff",
+      "textHeading": "#3f484b",
+      "textIcon": "#ffffff",
+      "textIconInvert": "#1b2224",
+      "textInput": "#3f484b",
+      "textInputFocus": "#a2abaf",
+      "textInputInvalid": "#e62a2a",
+      "textInputPlaceholder": "#a2abaf",
+      "textPrimary": "#3f484b",
+      "textPrimaryDisabled": "#a2abaf",
+      "textPrimaryHover": "#ffffff",
+      "textPrimaryInvert": "#ffffff",
+      "textSecondary": "#3f484b",
+      "textSecondaryDisabled": "#c3cbcf",
+      "textSecondaryHover": "#ffffff",
+      "textSubtitle": "#a2abaf",
+    }
+  }
+  xmall={true}
+/>
+`;
+
 exports[`Icon renders correctly without defined size or background 1`] = `
 <CircleIcon
   small={true}
@@ -221,7 +278,6 @@ exports[`Icon renders correctly without defined size or background 1`] = `
 exports[`Icon renders correctly, invalid size ignored 1`] = `
 <CircleIcon
   size="xlarge"
-  small={true}
   svgData={
     <svg
       viewBox="0 0 16 16"
@@ -270,6 +326,7 @@ exports[`Icon renders correctly, invalid size ignored 1`] = `
       "textSubtitle": "#a2abaf",
     }
   }
+  xlarge={true}
 />
 `;
 
