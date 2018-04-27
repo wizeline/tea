@@ -12,19 +12,34 @@ const SVGIconDivBase = styled.div`
   justify-content: center;
 `;
 
-const { sizes, defaultSizeKey, defaultTop } = constants;
+const { sizes, defaultSizeKey, defaultTop, sizeNames } = constants;
 const { top, width, height } = cssProperties;
 const { size } = propNames;
 
 const topSupport = supportOr(top, defaultTop, toPixels);
-const sizeMapping = sizeName =>
-  toPixels(sizes[sizeName] || sizes[defaultSizeKey]);
+const sizeMapping = sizeName => toPixels(sizes[sizeName]);
 
 const sizeSupport = supportOr(size, defaultSizeKey, sizeMapping, width, height);
 
+const booleanSizeSupport = ({ xlarge, large, medium, small }) => {
+  if (small) {
+    return sizeSupport({ size: sizeNames.small });
+  }
+  if (medium) {
+    return sizeSupport({ size: sizeNames.medium });
+  }
+  if (large) {
+    return sizeSupport({ size: sizeNames.large });
+  }
+  if (xlarge) {
+    return sizeSupport({ size: sizeNames.xlarge });
+  }
+  return sizeSupport({ size: sizeNames.xmall });
+};
+
 const SVGIconDivStyled = SVGIconDivBase.extend`
-  ${sizeSupport};
   ${topSupport};
+  ${booleanSizeSupport};
 `;
 
 export default SVGIconDivStyled;
