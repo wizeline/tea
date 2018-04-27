@@ -47,7 +47,6 @@ const CircleIconBase = styled.div`
 `;
 
 const CircleIconStyled = CircleIconBase.extend`
-  /* ${sizeSupport}; */
   ${booleanSizeSupport};
   ${backgroundSupport};
 `;

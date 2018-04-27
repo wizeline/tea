@@ -13,7 +13,7 @@ import defaultIconTheme from '../../themes/defaultTheme/components/Icon';
 
 const getTopOffset = (parsedSize: string): number => constants.tops[parsedSize];
 
-const getSVGIconSize = (parsedSize: string): string =>
+const getSVGIconSize = (parsedSize: string): Object =>
   constants.sizeReductions[parsedSize];
 
 const getSVGIconColor = (color: ?string) => color || undefined;
@@ -33,9 +33,9 @@ const CircleIcon = (props: CircleIconProps) => {
       <SVGIcon
         invert
         color={getSVGIconColor(color)}
-        size={getSVGIconSize(parsedSize)}
         top={getTopOffset(parsedSize)}
         svgData={svg}
+        {...getSVGIconSize(parsedSize)}
       />
     </CircleIconStyled>
   );

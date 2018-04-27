@@ -20,9 +20,9 @@ const constants = {
     large: 12,
   },
   sizeReductions: {
-    small: 'xsmall',
-    medium: 'small',
-    large: 'medium',
+    small: { xsmall: true },
+    medium: { small: true },
+    large: { medium: true },
   },
 };
 
