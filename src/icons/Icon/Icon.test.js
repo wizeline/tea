@@ -24,6 +24,12 @@ describe('Icon', () => {
     );
   });
 
+  it('renders correctly with xmall size', () => {
+    shallowExpectToMatchSnapShot(
+      <Icon xsmall name="cross" background="yellow" />,
+    );
+  });
+
   it('renders correctly with round, medium and undefined background', () => {
     shallowExpectToMatchSnapShot(<Icon round medium name="cross" />);
   });
