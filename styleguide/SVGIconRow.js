@@ -9,19 +9,19 @@ const SVGIconRow = ({ name }: { name: string }) => (
       <SVGIcon name={name} />
     </td>
     <td>
-      <SVGIcon name={name} size="xlarge" />
+      <SVGIcon name={name} xlarge />
     </td>
     <td>
-      <SVGIcon name={name} size="large" />
+      <SVGIcon name={name} large />
     </td>
     <td>
-      <SVGIcon name={name} size="medium" />
+      <SVGIcon name={name} medium />
     </td>
     <td>
-      <SVGIcon name={name} size="small" />
+      <SVGIcon name={name} small />
     </td>
     <td>
-      <SVGIcon name={name} size="xsmall" />
+      <SVGIcon name={name} xsmall />
     </td>
     <td>
       <SVGIcon name={name} size="invalid-size" />
