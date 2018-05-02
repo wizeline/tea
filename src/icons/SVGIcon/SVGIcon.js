@@ -10,16 +10,16 @@ import defaultIconTheme from '../../themes/defaultTheme/components/Icon';
 
 const SVGIcon = (props: SVGIconProps) => {
   const {
-    name,
-    top,
     color,
-    svgData,
     invert,
-    xmall,
-    small,
-    medium,
     large,
+    medium,
+    name,
+    small,
+    svgData,
+    top,
     xlarge,
+    xmall,
   } = props;
   const fillColor = invert && !color ? undefined : color;
   const svg = svgData || getSVG(name);
