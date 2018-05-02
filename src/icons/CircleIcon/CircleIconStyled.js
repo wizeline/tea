@@ -1,7 +1,5 @@
 // @flow
 
-/* eslint flowtype-errors/enforce-min-coverage: 0 */
-
 import styled from 'styled-components';
 import constants from './CircleIconConstants';
 import {
@@ -12,6 +10,7 @@ import {
   toPixels,
 } from '../../utils';
 import defaultIconTheme from '../../themes/defaultTheme/components/Icon';
+import type { CircleIconProps } from './CircleIconTypes';
 
 const { circleDiameters, sizes } = constants;
 const { size, background } = propNames;
@@ -26,7 +25,7 @@ const sizeSupport = supportOr(
   height,
 );
 
-const booleanSizeSupport = props => {
+const booleanSizeSupport = (props: CircleIconProps) => {
   const { medium, large } = props;
   if (medium) {
     return sizeSupport({ size: sizes.medium });
