@@ -4,7 +4,7 @@
 
 import React from 'react';
 import SVGIcon from '../SVGIcon/SVGIcon';
-import type { CircleIconProps } from './CircleIconTypes';
+import type { CircleIconProps, iconSizeMappingsTypes } from './CircleIconTypes';
 import CircleIconStyled from './CircleIconStyled';
 import constants from './CircleIconConstants';
 import parseSize from './CircleIconUtils';
@@ -13,8 +13,8 @@ import defaultIconTheme from '../../themes/defaultTheme/components/Icon';
 
 const getTopOffset = (parsedSize: string): number => constants.tops[parsedSize];
 
-const getSVGIconSize = (parsedSize: string): Object =>
-  constants.sizeReductions[parsedSize];
+const getSVGIconSize = (parsedSize: string): iconSizeMappingsTypes =>
+  constants.iconSizeMappings[parsedSize];
 
 const getSVGIconColor = (color: ?string) => color || undefined;
 

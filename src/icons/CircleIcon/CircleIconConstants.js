@@ -19,7 +19,7 @@ const constants = {
     medium: 12,
     large: 12,
   },
-  sizeReductions: {
+  iconSizeMappings: {
     small: { xsmall: true },
     medium: { small: true },
     large: { medium: true },
