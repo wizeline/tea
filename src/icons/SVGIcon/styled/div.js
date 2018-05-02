@@ -1,10 +1,9 @@
 // @flow
 
-/* eslint flowtype-errors/enforce-min-coverage: 0 */
-
 import styled from 'styled-components';
 import constants from '../SVGIconConstants';
 import { cssProperties, propNames, supportOr, toPixels } from '../../../utils';
+import type { SVGIconProps } from '../SVGIconTypes';
 
 const SVGIconDivBase = styled.div`
   display: flex;
@@ -21,7 +20,7 @@ const sizeMapping = sizeName => toPixels(sizes[sizeName]);
 
 const sizeSupport = supportOr(size, defaultSizeKey, sizeMapping, width, height);
 
-const booleanSizeSupport = ({ xlarge, large, medium, small }) => {
+const booleanSizeSupport = ({ xlarge, large, medium, small }: SVGIconProps) => {
   if (small) {
     return sizeSupport({ size: sizeNames.small });
   }
@@ -34,7 +33,7 @@ const booleanSizeSupport = ({ xlarge, large, medium, small }) => {
   if (xlarge) {
     return sizeSupport({ size: sizeNames.xlarge });
   }
-  return sizeSupport({ size: sizeNames.xmall });
+  return sizeSupport({ size: sizeNames.xsmall });
 };
 
 const SVGIconDivStyled = SVGIconDivBase.extend`

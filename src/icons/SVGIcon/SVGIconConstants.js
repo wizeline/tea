@@ -7,8 +7,20 @@ const constants: {
   defaultFillColorThemeName: string,
   defaultInvertFillColorThemeName: string,
   defaultSizeKey: string,
-  sizes: Object,
-  sizeNames: Object,
+  sizes: {
+    xlarge: number,
+    large: number,
+    medium: number,
+    small: number,
+    xsmall: number,
+  },
+  sizeNames: {
+    xlarge: string,
+    large: string,
+    medium: string,
+    small: string,
+    xsmall: string,
+  },
 } = {
   defaultTop: 0,
   preserveAspectRatio: 'xMidYMid meet',

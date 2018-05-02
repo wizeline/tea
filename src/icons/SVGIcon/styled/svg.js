@@ -1,11 +1,10 @@
 // @flow
 
-/* eslint flowtype-errors/enforce-min-coverage: 0 */
-
 import styled from 'styled-components';
 import constants from '../SVGIconConstants';
 import { propOrTheme, cssProperties } from '../../../utils';
 import defaultIconTheme from '../../../themes/defaultTheme/components/Icon';
+import type { SVGIconProps } from '../SVGIconTypes';
 
 const {
   defaultFillColorThemeName,
@@ -17,7 +16,7 @@ const fillWithInvertDefault = propOrTheme(
   defaultInvertFillColorThemeName,
   fill,
 );
-const getFill = ({ invert }) =>
+const getFill = ({ invert }: SVGIconProps): Function =>
   invert ? fillWithInvertDefault : fillWithDefault;
 
 const SVGIconSvgStyled = styled.svg`
