@@ -16,7 +16,8 @@ const fillWithInvertDefault = propOrTheme(
   defaultInvertFillColorThemeName,
   fill,
 );
-const getFill = ({ invert }: SVGIconProps): Function =>
+
+const getFill = ({ invert }: SVGIconProps): ((props: SVGIconProps) => string) =>
   invert ? fillWithInvertDefault : fillWithDefault;
 
 const SVGIconSvgStyled = styled.svg`
