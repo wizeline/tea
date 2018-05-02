@@ -19,7 +19,7 @@ const SVGIcon = (props: SVGIconProps) => {
     svgData,
     top,
     xlarge,
-    xmall,
+    xsmall,
   } = props;
   const fillColor = invert && !color ? undefined : color;
   const svg = svgData || getSVG(name);
@@ -29,7 +29,7 @@ const SVGIcon = (props: SVGIconProps) => {
   return (
     <SVGIconDivStyled
       top={top}
-      xmall={xmall}
+      xsmall={xsmall}
       small={small}
       medium={medium}
       large={large}

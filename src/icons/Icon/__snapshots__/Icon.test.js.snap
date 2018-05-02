@@ -165,7 +165,7 @@ exports[`Icon renders correctly with round, medium and undefined background 1`] 
 />
 `;
 
-exports[`Icon renders correctly with xmall size 1`] = `
+exports[`Icon renders correctly with xsmall size 1`] = `
 <SVGIcon
   background="yellow"
   size="xsmall"
@@ -217,7 +217,7 @@ exports[`Icon renders correctly with xmall size 1`] = `
       "textSubtitle": "#a2abaf",
     }
   }
-  xmall={true}
+  xsmall={true}
 />
 `;
 

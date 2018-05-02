@@ -16,7 +16,7 @@ export type SVGIconProps = {
   top?: number,
   svgData?: Element<*>,
   invert?: boolean,
-  xmall?: boolean,
+  xsmall?: boolean,
   small?: boolean,
   medium?: boolean,
   large?: boolean,

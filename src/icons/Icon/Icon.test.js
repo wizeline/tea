@@ -24,7 +24,7 @@ describe('Icon', () => {
     );
   });
 
-  it('renders correctly with xmall size', () => {
+  it('renders correctly with xsmall size', () => {
     shallowExpectToMatchSnapShot(
       <Icon xsmall name="cross" background="yellow" />,
     );

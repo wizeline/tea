@@ -15,7 +15,7 @@ const getInvalidIconNameWarningMessage = (name: string) =>
 const getSizeProps = ({ size }) => {
   switch (size) {
     case 'xsmall':
-      return { xmall: true };
+      return { xsmall: true };
     case 'medium':
       return { medium: true };
     case 'large':
