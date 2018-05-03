@@ -1,31 +1,33 @@
 // @flow
-/* eslint flowtype-errors/enforce-min-coverage: 0 */
 
 import * as React from 'react';
 import { shallow, mount, ShallowWrapper } from 'enzyme';
 import toJson from 'enzyme-to-json';
+import type { Node } from 'react';
 import ThemeProvider from '../themes/ThemeProvider';
 
-const { expect } = global;
+/* eslint-disable no-use-before-define */
+const { expect }: { expect: Function } = global;
+/* eslint-enable no-use-before-define */
 
-const shallowExpectInvalid = (component: React.Node) => {
+const shallowExpectInvalid = (component: Node) => {
   const wrapper: ShallowWrapper = shallow(component);
   expect(toJson(wrapper)).toMatchSnapshot();
   expect(toJson(wrapper)).toBe('');
 };
 
-const mountExpectToThrow = (component: React.Node) => {
+const mountExpectToThrow = (component: Node) => {
   expect(() => {
     mount(component);
   }).toThrow();
 };
 
-const shallowExpectToMatchSnapShot = (component: React.Node) => {
+const shallowExpectToMatchSnapShot = (component: Node) => {
   const wrapper: ShallowWrapper = shallow(component);
   expect(toJson(wrapper)).toMatchSnapshot();
 };
 
-const shallowWithTheme = (children: ?React.Node, theme?: Object) => {
+const shallowWithTheme = (children: Node, theme?: Object) => {
   const wrapper = shallow(
     <ThemeProvider theme={theme}>{children}</ThemeProvider>,
   );

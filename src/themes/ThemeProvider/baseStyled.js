@@ -1,7 +1,5 @@
 // @flow
 
-/* eslint flowtype-errors/enforce-min-coverage: 0 */
-
 import { injectGlobal, css } from 'styled-components';
 import reset from 'styled-reset';
 
