@@ -19,10 +19,10 @@ const constants = {
     medium: 12,
     large: 12,
   },
-  sizeReductions: {
-    small: 'xsmall',
-    medium: 'small',
-    large: 'medium',
+  iconSizeMappings: {
+    small: { xsmall: true },
+    medium: { small: true },
+    large: { medium: true },
   },
 };
 

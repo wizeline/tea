@@ -8,20 +8,20 @@ const SVGIconRow = ({ name }: { name: string }) => (
     <td className="border-cell">
       <SVGIcon name={name} />
     </td>
-    <td className="border-cell">
-      <SVGIcon name={name} size="xlarge" />
+    <td>
+      <SVGIcon name={name} xlarge />
     </td>
-    <td className="border-cell">
-      <SVGIcon name={name} size="large" />
+    <td>
+      <SVGIcon name={name} large />
     </td>
-    <td className="border-cell">
-      <SVGIcon name={name} size="medium" />
+    <td>
+      <SVGIcon name={name} medium />
     </td>
-    <td className="border-cell">
-      <SVGIcon name={name} size="small" />
+    <td>
+      <SVGIcon name={name} small />
     </td>
-    <td className="border-cell">
-      <SVGIcon name={name} size="xsmall" />
+    <td>
+      <SVGIcon name={name} xsmall />
     </td>
     <td className="border-cell">
       <SVGIcon name={name} size="invalid-size" />

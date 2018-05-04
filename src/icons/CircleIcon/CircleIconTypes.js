@@ -22,3 +22,8 @@ export type BackgroundProps = {
     backgroundPrimary: string,
   },
 };
+
+export type iconSizeMappingsTypes =
+  | { xsmall: boolean }
+  | { small: boolean }
+  | { medium: boolean };

@@ -36,7 +36,6 @@ exports[`CircleIcon renders correctly when given svgData 1`] = `
 >
   <SVGIcon
     invert={true}
-    size="xsmall"
     svgData={<g />}
     theme={
       Object {
@@ -70,6 +69,7 @@ exports[`CircleIcon renders correctly when given svgData 1`] = `
       }
     }
     top={8}
+    xsmall={true}
   />
 </styled.div>
 `;
@@ -110,7 +110,6 @@ exports[`CircleIcon renders correctly with undefined size attribute 1`] = `
 >
   <SVGIcon
     invert={true}
-    size="xsmall"
     svgData={
       <svg
         viewBox="0 0 16 16"
@@ -158,6 +157,7 @@ exports[`CircleIcon renders correctly with undefined size attribute 1`] = `
       }
     }
     top={8}
+    xsmall={true}
   />
 </styled.div>
 `;
@@ -199,7 +199,7 @@ exports[`CircleIcon renders correctly with valid size 1`] = `
 >
   <SVGIcon
     invert={true}
-    size="medium"
+    medium={true}
     svgData={
       <svg
         viewBox="0 0 16 16"
@@ -290,7 +290,7 @@ exports[`CircleIcon renders correctly with valid size 2`] = `
 >
   <SVGIcon
     invert={true}
-    size="small"
+    small={true}
     svgData={
       <svg
         viewBox="0 0 16 16"
@@ -383,7 +383,6 @@ exports[`CircleIcon renders correctly with valid size 3`] = `
 >
   <SVGIcon
     invert={true}
-    size="xsmall"
     svgData={
       <svg
         viewBox="0 0 16 16"
@@ -433,6 +432,7 @@ exports[`CircleIcon renders correctly with valid size 3`] = `
       }
     }
     top={8}
+    xsmall={true}
   />
 </styled.div>
 `;
