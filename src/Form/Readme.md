@@ -10,12 +10,11 @@
 - `required: boolean` specifies that an input field must be filled out before submitting the form 
 - `onChange: (event) => void` a callback function on the `onchange` `html` event
 - `type: string` to choose the type of input, as to v1.0.0 the supported types will be:
-  - `checkbox`
-  - `radio`
   - `text`
   - `password`
 
 ##### Checkbox, Radio
+- All of the `<Input>` props sans `type`
 - `checked: boolean` to know whether to show the input as checked or not
 
 ##### Text, Password
