@@ -4,7 +4,9 @@ import type { Element } from 'react';
 
 export type CircleIconProps = {
   name: string,
-  size?: string,
+  small?: boolean,
+  medium?: boolean,
+  large?: boolean,
   color?: string,
   background?: string,
   svgData?: Element<any>,

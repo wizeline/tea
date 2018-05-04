@@ -54,6 +54,7 @@ exports[`Icon renders correctly 1`] = `
 exports[`Icon renders correctly with round, large and background 1`] = `
 <CircleIcon
   background="yellow"
+  large={true}
   size="large"
   svgData={
     <svg
@@ -104,9 +105,10 @@ exports[`Icon renders correctly with round, large and background 1`] = `
 />
 `;
 
-exports[`Icon renders correctly with round, large and undefined background 1`] = `
+exports[`Icon renders correctly with round, medium and undefined background 1`] = `
 <CircleIcon
-  size="large"
+  medium={true}
+  size="medium"
   svgData={
     <svg
       viewBox="0 0 16 16"
@@ -158,6 +160,7 @@ exports[`Icon renders correctly with round, large and undefined background 1`] =
 
 exports[`Icon renders correctly without defined size or background 1`] = `
 <CircleIcon
+  small={true}
   svgData={
     <svg
       viewBox="0 0 16 16"
@@ -210,6 +213,7 @@ exports[`Icon renders correctly without defined size or background 1`] = `
 exports[`Icon renders correctly, invalid size ignored 1`] = `
 <CircleIcon
   size="xlarge"
+  small={true}
   svgData={
     <svg
       viewBox="0 0 16 16"
