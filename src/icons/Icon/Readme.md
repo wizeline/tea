@@ -1,6 +1,6 @@
 ### Icons without any background or padding
 ```jsx
-<div>
+<div class="flex-icon separate">
   <Icon name="add-item" xlarge color="red" />
   <Icon name="add-item" large />
   <Icon name="add-item" medium />
@@ -11,7 +11,7 @@
 
 ### Icons with a circle background and padding
 ```jsx
-<div>
+<div class="flex-icon separate">
   <Icon large round name="add-item" />
   <Icon medium round name="add-item"/>
   <Icon small round name="add-item"/>
@@ -20,7 +20,7 @@
 
 ### Color overrides
 ```jsx
-<div>
+<div class="flex-icon close">
   <Icon
     large
     round

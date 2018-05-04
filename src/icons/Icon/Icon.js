@@ -14,10 +14,14 @@ const getInvalidIconNameWarningMessage = (name: string) =>
 
 const getSizeProps = ({ size }) => {
   switch (size) {
+    case 'xsmall':
+      return { xsmall: true };
     case 'medium':
       return { medium: true };
     case 'large':
       return { large: true };
+    case 'xlarge':
+      return { xlarge: true };
     default:
       return { small: true };
   }
@@ -35,7 +39,7 @@ const Icon = (iconProps: IconPropTypes) => {
   return round ? (
     <CircleIcon {...childProps} {...sizeProps} />
   ) : (
-    <SVGIcon {...childProps} />
+    <SVGIcon {...childProps} {...sizeProps} />
   );
 };
 

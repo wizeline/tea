@@ -1,7 +1,8 @@
 // @flow
 
 import colors from '../../styles/colors';
+import otherConstants from '../constants';
 
 export default {
-  textError: colors.rosyPink,
+  [otherConstants.TEXT_ERROR]: colors.redLighten10,
 };
