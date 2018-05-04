@@ -5,7 +5,7 @@ import SVGIcon from '../src/icons/SVGIcon';
 
 const SVGIconRow = ({ name }: { name: string }) => (
   <tr>
-    <td>
+    <td className="border-cell">
       <SVGIcon name={name} />
     </td>
     <td>
@@ -23,10 +23,10 @@ const SVGIconRow = ({ name }: { name: string }) => (
     <td>
       <SVGIcon name={name} xsmall />
     </td>
-    <td>
+    <td className="border-cell">
       <SVGIcon name={name} size="invalid-size" />
     </td>
-    <td>{name}</td>
+    <td className="border-cell">{name}</td>
   </tr>
 );
 

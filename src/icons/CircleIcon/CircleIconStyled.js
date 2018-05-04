@@ -39,7 +39,7 @@ const booleanSizeSupport = (props: CircleIconProps) => {
 const backgroundSupport = supportOrTheme(background, 'backgroundPrimary');
 
 const CircleIconBase = styled.div`
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;

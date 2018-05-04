@@ -1,6 +1,8 @@
 // @flow
+
 import colors from '../../styles/colors';
+import otherConstants from '../constants';
 
 export default {
-  textLink: colors.darkSkyBlue,
+  [otherConstants.TEXT_LINK]: colors.blueBase,
 };

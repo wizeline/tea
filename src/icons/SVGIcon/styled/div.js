@@ -6,7 +6,7 @@ import { cssProperties, propNames, supportOr, toPixels } from '../../../utils';
 import type { SVGIconProps } from '../SVGIconTypes';
 
 const SVGIconDivBase = styled.div`
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 `;
