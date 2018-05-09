@@ -15,7 +15,7 @@ export default {
   [themeConstants.TEXT_DANGER_HOVER]: colors.white,
   [themeConstants.TEXT_DANGER_DISABLED]: colors.silverLighten30,
   [themeConstants.TEXT_INPUT]: colors.inkDarken10,
-  [themeConstants.TEXT_INPUT_PLACEHOLDER]: colors.inkLighten10,
+  [themeConstants.TEXT_INPUT_PLACEHOLDER]: colors.inkLighten20,
   [themeConstants.TEXT_INPUT_FOCUS]: colors.inkLighten10,
   [themeConstants.TEXT_INPUT_INVALID]: colors.redBase,
   [themeConstants.TEXT_ICON]: colors.white,
