@@ -36,13 +36,13 @@ const DestructiveButton = getDarkerButtonVariant(BACKGROUND_DANGER);
 
 const SecondaryButton = LighterButton.extend`
   background-color: ${themeProp(BACKGROUND_SECONDARY)};
-  border: solid 1px ${themeProp(BORDER_SECONDARY)};
+  border: solid 0.0625rem ${themeProp(BORDER_SECONDARY)};
   box-shadow: 0 0.125rem 0.0625rem 0 rgba(0, 0, 0, 0.03);
 
   &:hover,
   &:active {
     background-color: ${themeProp(BACKGROUND_SECONDARY_HOVER)};
-    border: solid 1px ${themeProp(BORDER_SECONDARY_HOVER)};
+    border: solid 0.0625rem ${themeProp(BORDER_SECONDARY_HOVER)};
   }
 `;
 
