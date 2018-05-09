@@ -26,3 +26,8 @@
 ##### Button
 - Buttons created with the `html` `<button>` element are equal and richer than those created with a `<input type="submit" />` [[more info]](https://stackoverflow.com/questions/7117639/input-type-submit-vs-button-tag-are-they-interchangeable)
 - The default type for a `<button>` is `submit`, so it is not necessary to add another element, Phoenix's `<Button>` component should work as expected in forms, with the option to add another prop to change its type e.g. `reset`
+
+#### Text / Password input
+```jsx
+<Input />
+```
