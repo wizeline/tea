@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonLink functions correctly with children 1`] = `
+<styled.button
+  b150={true}
+  onClick={[Function]}
+  priority="b150"
+  theme={
+    Object {
+      "textLink": "#50A5E7",
+    }
+  }
+>
+  hello
+</styled.button>
+`;
+
+exports[`ButtonLink functions correctly with svg child 1`] = `
+<styled.button
+  b150={true}
+  onClick={[Function]}
+  priority="b150"
+  theme={
+    Object {
+      "textLink": "#50A5E7",
+    }
+  }
+/>
+`;
+
+exports[`ButtonLink functions correctly without children 1`] = `
+<styled.button
+  b150={true}
+  onClick={[Function]}
+  priority="b150"
+  theme={
+    Object {
+      "textLink": "#50A5E7",
+    }
+  }
+/>
+`;
