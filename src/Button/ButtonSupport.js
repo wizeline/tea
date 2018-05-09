@@ -88,13 +88,10 @@ const buttonSizeSupport = ({ small, big, circle }: ButtonProps) => {
 };
 
 const iconButtonSupport = ({ circle, icon, children }: ButtonProps) => {
-  if (!circle && icon && !children[1]) {
-    return css`
-      min-width: 2rem;
-      padding: 0 0.5rem;
-    `;
+  if (circle || !icon) {
+    return null;
   }
-  if (!circle && icon && children[1]) {
+  if (children[1]) {
     return css`
       & > .svgContainer {
         height: 1rem;
@@ -102,8 +99,12 @@ const iconButtonSupport = ({ circle, icon, children }: ButtonProps) => {
         width: 1rem;
       }
     `;
+  } else {
+    return css`
+      min-width: 2rem;
+      padding: 0 0.5rem;
+    `;
   }
-  return null;
 };
 
 export { buttonSizeSupport, iconButtonSupport };
