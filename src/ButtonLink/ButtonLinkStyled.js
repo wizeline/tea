@@ -9,12 +9,11 @@ const getSVGFill = ({ color, theme }: ButtonLinkProps): string =>
 const BaseButtonLinkStyled = Link.withComponent('button');
 
 const ButtonLinkStyled = BaseButtonLinkStyled.extend`
-  border: none;
-  display: inline;
-  background: transparent;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  border: none;
+  background: transparent;
 
   & svg {
     fill: ${getSVGFill};
