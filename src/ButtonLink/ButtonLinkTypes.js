@@ -10,7 +10,8 @@ export type ButtonLinkProps = {
   color?: string,
   h300?: boolean,
   href?: string,
-  onClick: Function,
-  target?: string,
-  theme?: Object,
+  onClick: () => mixed,
+  theme: {
+    textLink: string,
+  },
 };
