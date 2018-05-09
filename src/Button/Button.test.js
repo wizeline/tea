@@ -23,7 +23,7 @@ describe('Button', () => {
   it('renders correctly when given secondary prop', () => {
     const wrapper = shallow(<Button secondary text="Test Text" />);
     expect(wrapper).toHaveStyleRule('background-color', '#FFFFFF');
-    expect(wrapper).toHaveStyleRule('border', 'solid 1px #8B9193');
+    expect(wrapper).toHaveStyleRule('border', 'solid 0.0625rem #8B9193');
   });
 
   it('renders correctly when given big prop', () => {
