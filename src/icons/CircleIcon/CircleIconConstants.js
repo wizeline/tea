@@ -4,7 +4,7 @@ import colors from '../../themes/styles/colors';
 
 const constants = {
   defaultSize: 'small',
-  defaultSVGIconColor: colors.white.toString(),
+  defaultSVGIconColor: colors.white,
   circleDiameters: {
     small: 32,
     medium: 48,
