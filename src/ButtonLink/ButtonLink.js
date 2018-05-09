@@ -1,9 +1,10 @@
 // @flow
 
 import React from 'react';
-import { getButtonLinkPropSupport } from './ButtonLinkSupport';
-import ButtonLinkStyled from './ButtonLinkStyled';
 import defaultLinkTheme from '../themes/defaultTheme/components/Link';
+import { noop } from '../utils';
+import ButtonLinkStyled from './ButtonLinkStyled';
+import { getButtonLinkPropSupport } from './ButtonLinkSupport';
 import type { ButtonLinkProps } from './ButtonLinkTypes';
 
 const ButtonLink = (props: ButtonLinkProps) => {
@@ -14,6 +15,7 @@ const ButtonLink = (props: ButtonLinkProps) => {
 
 ButtonLink.defaultProps = {
   theme: defaultLinkTheme,
+  onClick: noop,
 };
 
 export default ButtonLink;

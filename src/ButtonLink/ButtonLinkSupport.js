@@ -1,9 +1,9 @@
 // @flow
 
 import { css } from 'styled-components';
-import type { ButtonLinkProps } from './ButtonLinkTypes';
-import { supportBooleanNameGroup } from '../utils';
 import { getTextStyleSupport } from '../Text/TextSupport';
+import { supportBooleanNameGroup } from '../utils';
+import type { ButtonLinkProps } from './ButtonLinkTypes';
 
 const priorityPropName = 'priority';
 const supportedPriorities = ['b50', 'b100', 'b150', 'h300'];
