@@ -8,19 +8,19 @@ const SVGIconRow = ({ name }: { name: string }) => (
     <td className="border-cell">
       <SVGIcon name={name} />
     </td>
-    <td>
+    <td className="border-cell">
       <SVGIcon name={name} xlarge />
     </td>
-    <td>
+    <td className="border-cell">
       <SVGIcon name={name} large />
     </td>
-    <td>
+    <td className="border-cell">
       <SVGIcon name={name} medium />
     </td>
-    <td>
+    <td className="border-cell">
       <SVGIcon name={name} small />
     </td>
-    <td>
+    <td className="border-cell">
       <SVGIcon name={name} xsmall />
     </td>
     <td className="border-cell">
