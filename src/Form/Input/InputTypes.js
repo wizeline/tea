@@ -1,10 +1,13 @@
 // @flow
 
+import type { Node } from 'react';
+
 export type BaseInputProps = {
   autofocus: boolean,
   disabled: boolean,
   name: string,
   onChange: () => void,
+  readOnly: boolean,
   required: boolean,
   type: string,
   value: string,
@@ -45,4 +48,11 @@ export type InputProps = BaseInputProps & {
   maxLenght: number,
   placeholder: string,
   size: number,
+};
+
+export type InputLabelProps = {
+  children: Node,
+  error?: boolean,
+  errorMessage?: string,
+  label?: string,
 };
