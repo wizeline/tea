@@ -30,19 +30,10 @@ const Input = (props: InputProps) => {
     type && type === inputTypes.PASSWORD
       ? inputTypes.PASSWORD
       : inputTypes.TEXT;
-  return error ? (
-    <InputWithLabels error label={label} errorMessage={errorMessage}>
-      <ErrorInputStyled
-        {...props}
-        onchange={onChange}
-        type={typeStr}
-        readonly={readOnly}
-      />
-      <Icon xsmall name={icon} />
-    </InputWithLabels>
-  ) : (
-    <InputWithLabels label={label} errorMessage={errorMessage}>
-      <InputStyled
+  const FinalInput = error ? ErrorInputStyled : InputStyled;
+  return (
+    <InputWithLabels error={error} label={label} errorMessage={errorMessage}>
+      <FinalInput
         {...props}
         onchange={onChange}
         type={typeStr}
