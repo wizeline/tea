@@ -7,15 +7,17 @@ import { cssProperties, toPixels, supportOr, supportOrTheme } from './cssUtils';
 
 import { arrayToObject, supportBooleanNameGroup, noop } from './objectUtils';
 
-import { propNames, propOrTheme } from './propUtils';
+import { propNames, propOrTheme, getThemeProp } from './propUtils';
 
 import { camelToLispCase, lispToCamelCase } from './stringUtils';
 
 export {
   arrayToObject,
-  cssProperties,
   camelToLispCase,
+  cssProperties,
+  getThemeProp,
   lispToCamelCase,
+  noop,
   propNames,
   propOrTheme,
   supportBooleanNameGroup,
@@ -24,5 +26,4 @@ export {
   supportSizes,
   toPixels,
   warn,
-  noop,
 };

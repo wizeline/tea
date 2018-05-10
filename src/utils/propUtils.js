@@ -17,4 +17,7 @@ const curryPropParsers = (...parsers: Array<Function>) => (props: Object) => {
   return parsers.map(parser => parser(props)).reduce(toObject, {});
 };
 
-export { curryPropParsers, propNames, propOrTheme };
+const getThemeProp = (prop: string) => ({ theme }: { theme: Object }): string =>
+  theme[prop];
+
+export { curryPropParsers, propNames, propOrTheme, getThemeProp };
