@@ -25,6 +25,20 @@ const ErrorLabelStyled = BaseLabelStyled.extend`
   margin: 0.125rem 0 0 0;
 `;
 
+const InputContainer = styled.div`
+  position: relative;
+  & > div {
+    position: absolute;
+    top: calc(50% + 0.2125rem);
+    left: 1rem;
+    transform: translateY(-50%);
+
+    & > svg {
+      fill: ${getThemeProp(textConstants.TEXT_INPUT_PLACEHOLDER)};
+    }
+  }
+`;
+
 LabelStyled.defaultProps = {
   theme: {
     ...defaultTextTheme,
@@ -37,4 +51,4 @@ ErrorLabelStyled.defaultProps = {
   },
 };
 
-export { LabelStyled, ErrorLabelStyled };
+export { LabelStyled, ErrorLabelStyled, InputContainer };

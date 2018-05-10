@@ -48,6 +48,7 @@ export type InputProps = BaseInputProps & {
   maxLenght: number,
   placeholder: string,
   size: number,
+  icon: string,
 };
 
 export type InputLabelProps = {

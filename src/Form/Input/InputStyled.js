@@ -13,6 +13,7 @@ import type { InputProps } from './InputTypes';
 const getWidth = ({ size }: InputProps): number => size || 18.75;
 const getPlaceholder = (prop: string) => (props: InputProps) =>
   placeholder({ color: getThemeProp(prop)(props) });
+const getPaddingLeft = ({ icon }: InputProps): number => (icon ? 2.5 : 1);
 
 const BaseInputStyled = styled.input`
   border-radius: 0.1875rem;
@@ -21,7 +22,7 @@ const BaseInputStyled = styled.input`
   font-size: 0.875rem;
   height: 2.5rem;
   outline: none;
-  padding: 0 1rem;
+  padding: 0 1rem 0 ${getPaddingLeft}rem;
   transition: all 0.1s;
   width: ${getWidth}rem;
   ${getPlaceholder(textConstants.TEXT_INPUT_PLACEHOLDER)};
