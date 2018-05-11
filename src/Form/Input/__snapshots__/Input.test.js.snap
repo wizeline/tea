@@ -1,0 +1,153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input functions correctly with props 1`] = `
+<InputWithLabels
+  error={true}
+  errorMessage="Text input error message"
+  label="Text input label"
+>
+  <styled.input
+    error={true}
+    errorMessage="Text input error message"
+    label="Text input label"
+    placeholder="Placeholder"
+    theme={
+      Object {
+        "borderInput": "#E6E7E8",
+        "borderInputFocus": "#50A5E7",
+        "borderInputInvalid": "#ED524C",
+        "borderSecondary": "#8B9193",
+        "borderSecondaryDisabled": "#E6E7E8",
+        "borderSecondaryHover": "#50A5E7",
+        "textBody": "#3F484B",
+        "textDanger": "#FFFFFF",
+        "textDangerDisabled": "#CDD0D2",
+        "textDangerHover": "#FFFFFF",
+        "textError": "#ED524C",
+        "textHeading": "#3F484B",
+        "textIcon": "#FFFFFF",
+        "textIconInvert": "#222729",
+        "textInput": "#3F484B",
+        "textInputFocus": "#8B9193",
+        "textInputInvalid": "#E92720",
+        "textInputPlaceholder": "#B2B5B7",
+        "textPrimary": "#3F484B",
+        "textPrimaryDisabled": "#8B9193",
+        "textPrimaryHover": "#FFFFFF",
+        "textPrimaryInvert": "#FFFFFF",
+        "textSecondary": "#3F484B",
+        "textSecondaryDisabled": "#CDD0D2",
+        "textSecondaryHover": "#FFFFFF",
+        "textSubtitle": "#8B9193",
+      }
+    }
+    type="password"
+  />
+  <Icon
+    theme={
+      Object {
+        "backgroundDanger": "#ED524C",
+        "backgroundDangerDisabled": "#E6E7E8",
+        "backgroundInput": "#FFFFFF",
+        "backgroundPrimary": "#50A5E7",
+        "backgroundPrimaryDisabled": "#E6E7E8",
+        "backgroundSecondary": "#FFFFFF",
+        "backgroundSecondaryDisabled": "#FFFFFF",
+        "backgroundSecondaryHover": "#FFFFFF",
+        "textBody": "#3F484B",
+        "textDanger": "#FFFFFF",
+        "textDangerDisabled": "#CDD0D2",
+        "textDangerHover": "#FFFFFF",
+        "textHeading": "#3F484B",
+        "textIcon": "#FFFFFF",
+        "textIconInvert": "#222729",
+        "textInput": "#3F484B",
+        "textInputFocus": "#8B9193",
+        "textInputInvalid": "#E92720",
+        "textInputPlaceholder": "#B2B5B7",
+        "textPrimary": "#3F484B",
+        "textPrimaryDisabled": "#8B9193",
+        "textPrimaryHover": "#FFFFFF",
+        "textPrimaryInvert": "#FFFFFF",
+        "textSecondary": "#3F484B",
+        "textSecondaryDisabled": "#CDD0D2",
+        "textSecondaryHover": "#FFFFFF",
+        "textSubtitle": "#8B9193",
+      }
+    }
+    xsmall={true}
+  />
+</InputWithLabels>
+`;
+
+exports[`Input functions correctly without props 1`] = `
+<InputWithLabels>
+  <styled.input
+    theme={
+      Object {
+        "borderInput": "#E6E7E8",
+        "borderInputFocus": "#50A5E7",
+        "borderInputInvalid": "#ED524C",
+        "borderSecondary": "#8B9193",
+        "borderSecondaryDisabled": "#E6E7E8",
+        "borderSecondaryHover": "#50A5E7",
+        "textBody": "#3F484B",
+        "textDanger": "#FFFFFF",
+        "textDangerDisabled": "#CDD0D2",
+        "textDangerHover": "#FFFFFF",
+        "textError": "#ED524C",
+        "textHeading": "#3F484B",
+        "textIcon": "#FFFFFF",
+        "textIconInvert": "#222729",
+        "textInput": "#3F484B",
+        "textInputFocus": "#8B9193",
+        "textInputInvalid": "#E92720",
+        "textInputPlaceholder": "#B2B5B7",
+        "textPrimary": "#3F484B",
+        "textPrimaryDisabled": "#8B9193",
+        "textPrimaryHover": "#FFFFFF",
+        "textPrimaryInvert": "#FFFFFF",
+        "textSecondary": "#3F484B",
+        "textSecondaryDisabled": "#CDD0D2",
+        "textSecondaryHover": "#FFFFFF",
+        "textSubtitle": "#8B9193",
+      }
+    }
+    type="text"
+  />
+  <Icon
+    theme={
+      Object {
+        "backgroundDanger": "#ED524C",
+        "backgroundDangerDisabled": "#E6E7E8",
+        "backgroundInput": "#FFFFFF",
+        "backgroundPrimary": "#50A5E7",
+        "backgroundPrimaryDisabled": "#E6E7E8",
+        "backgroundSecondary": "#FFFFFF",
+        "backgroundSecondaryDisabled": "#FFFFFF",
+        "backgroundSecondaryHover": "#FFFFFF",
+        "textBody": "#3F484B",
+        "textDanger": "#FFFFFF",
+        "textDangerDisabled": "#CDD0D2",
+        "textDangerHover": "#FFFFFF",
+        "textHeading": "#3F484B",
+        "textIcon": "#FFFFFF",
+        "textIconInvert": "#222729",
+        "textInput": "#3F484B",
+        "textInputFocus": "#8B9193",
+        "textInputInvalid": "#E92720",
+        "textInputPlaceholder": "#B2B5B7",
+        "textPrimary": "#3F484B",
+        "textPrimaryDisabled": "#8B9193",
+        "textPrimaryHover": "#FFFFFF",
+        "textPrimaryInvert": "#FFFFFF",
+        "textSecondary": "#3F484B",
+        "textSecondaryDisabled": "#CDD0D2",
+        "textSecondaryHover": "#FFFFFF",
+        "textSubtitle": "#8B9193",
+      }
+    }
+    xsmall={true}
+  />
+</InputWithLabels>
+`;
