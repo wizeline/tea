@@ -1,5 +1,3 @@
 // @flow
 
-import ButtonLink from './ButtonLink';
-
-export default ButtonLink;
+export { default } from './ButtonLink';
