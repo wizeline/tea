@@ -22,6 +22,10 @@
 - `maxLength: number` number of max characters that the input value should be in length
 - `placeholder: string` place holder text to be shown
 - `autocomplete: boolean` specifies whether a form or input field should have autocomplete on or off
+- `label: string` the label of the input
+- `errorMessage: string` the error meesage to display
+- `error: boolean` specifies that th einput should be in a error state, showing the error message
+- `icon: string` the name of the `<Icon />` to be shown in 
 
 ##### Button
 - Buttons created with the `html` `<button>` element are equal and richer than those created with a `<input type="submit" />` [[more info]](https://stackoverflow.com/questions/7117639/input-type-submit-vs-button-tag-are-they-interchangeable)
@@ -29,5 +33,13 @@
 
 #### Text / Password input
 ```jsx
-<Input />
+<div>
+  Simple Input
+  <Input placeholder="Placeholder" label="Text input label" errorMessage="Text input error message" />
+  <Input error placeholder="Placeholder" label="Text input label" errorMessage="Text input error message"/>
+  <br />
+  Input with Icon
+  <Input icon="magnifier" placeholder="Placeholder" label="Text input label" errorMessage="Text input error message" />
+  <Input icon="magnifier" error placeholder="Placeholder" label="Text input label" errorMessage="Text input error message"/>
+</div>
 ```
