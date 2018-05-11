@@ -16,6 +16,11 @@ export type SVGIconProps = {
   top?: number,
   svgData?: Element<*>,
   invert?: boolean,
+  xsmall?: boolean,
+  small?: boolean,
+  medium?: boolean,
+  large?: boolean,
+  xlarge?: boolean,
 };
 
 export type ContainerSizeProps = {

@@ -4,7 +4,9 @@ import type { Element } from 'react';
 
 export type CircleIconProps = {
   name: string,
-  size?: string,
+  small?: boolean,
+  medium?: boolean,
+  large?: boolean,
   color?: string,
   background?: string,
   svgData?: Element<any>,
@@ -20,3 +22,8 @@ export type BackgroundProps = {
     backgroundPrimary: string,
   },
 };
+
+export type iconSizeMappingsTypes =
+  | { xsmall: boolean }
+  | { small: boolean }
+  | { medium: boolean };

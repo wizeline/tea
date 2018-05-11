@@ -3,7 +3,11 @@
 import colors from '../../themes/styles/colors';
 
 const constants = {
-  defaultSize: 'small',
+  sizes: {
+    small: 'small',
+    medium: 'medium',
+    large: 'large',
+  },
   defaultSVGIconColor: colors.white,
   circleDiameters: {
     small: 32,
@@ -15,10 +19,10 @@ const constants = {
     medium: 12,
     large: 12,
   },
-  sizeReductions: {
-    small: 'xsmall',
-    medium: 'small',
-    large: 'medium',
+  iconSizeMappings: {
+    small: { xsmall: true },
+    medium: { small: true },
+    large: { medium: true },
   },
 };
 

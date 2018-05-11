@@ -12,6 +12,21 @@ import defaultIconTheme from '../../themes/defaultTheme/components/Icon';
 const getInvalidIconNameWarningMessage = (name: string) =>
   `An invalid \`name\` prop with value \`${name}\` was supplied to <Icon />.`;
 
+const getSizeProps = ({ size }) => {
+  switch (size) {
+    case 'xsmall':
+      return { xsmall: true };
+    case 'medium':
+      return { medium: true };
+    case 'large':
+      return { large: true };
+    case 'xlarge':
+      return { xlarge: true };
+    default:
+      return { small: true };
+  }
+};
+
 const Icon = (iconProps: IconPropTypes) => {
   const { name, round } = iconProps;
   const svg = getSVG(name);
@@ -20,7 +35,12 @@ const Icon = (iconProps: IconPropTypes) => {
     return warn(warningMessage);
   }
   const childProps = { ...getChildProps(iconProps), svgData: svg };
-  return round ? <CircleIcon {...childProps} /> : <SVGIcon {...childProps} />;
+  const sizeProps = getSizeProps(childProps);
+  return round ? (
+    <CircleIcon {...childProps} {...sizeProps} />
+  ) : (
+    <SVGIcon {...childProps} {...sizeProps} />
+  );
 };
 
 Icon.defaultProps = {
