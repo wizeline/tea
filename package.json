@@ -1,9 +1,18 @@
 {
   "private": true,
   "workspaces": ["packages/*"],
+  "scripts": {
+    "danger": "danger",
+    "precommit": "lint-staged",
+    "build": "lerna run build",
+    "test": "jest --coverage --maxWorkers=6 --env=jsdom",
+    "test:debug": "yarn jest --coverage --debug",
+    "precommit": "lint-staged",
+    "lint": "lerna run lint",
+    "danger-local": "NODE_ENV='development' yarn danger"
+  },
   "devDependencies": {
     "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-to-json": "^3.3.1",
     "eslint": "^4.13.1",
     "eslint-plugin-prettier": "^2.4.0",
