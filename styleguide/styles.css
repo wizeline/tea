@@ -16,3 +16,11 @@
   border: solid 1px;
   text-align: center;
 }
+
+.btn-table {
+  text-align: center;
+}
+
+.btn-table > table > tbody > tr > td > button {
+  margin: 0.5rem auto;
+}

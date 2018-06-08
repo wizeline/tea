@@ -9,6 +9,7 @@ const componentGroups = {
   Link: 'Link',
   Error: 'Error',
   Text: 'Text',
+  Button: 'Button',
   ButtonLink: 'ButtonLink',
   Form: 'Form',
 };

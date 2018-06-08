@@ -2,6 +2,7 @@
 
 /* eslint flowtype-errors/enforce-min-coverage: 0 */
 
+import Button from '../src/Button';
 import ButtonLink from '../src/ButtonLink';
 import CircleIcon from '../src/icons/CircleIcon';
 import Error from '../src/Error';
@@ -12,6 +13,7 @@ import SVGIconRow from './SVGIconRow';
 import Text from '../src/Text';
 
 const modules: Object = {
+  Button,
   ButtonLink,
   CircleIcon,
   Error,

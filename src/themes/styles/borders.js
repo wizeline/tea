@@ -1,12 +1,13 @@
 // @flow
 
 import colors from './colors';
+import { borderConstants } from '../defaultTheme/constants';
 
 export default {
-  borderSecondary: colors.inkLighten10,
-  borderSecondaryHover: colors.blueBase,
-  borderSecondaryDisabled: colors.silverLighten40,
-  borderInput: colors.silverLighten40,
-  borderInputFocus: colors.blueBase,
-  borderInputInvalid: colors.redLighten10,
+  [borderConstants.BORDER_SECONDARY]: colors.inkLighten10,
+  [borderConstants.BORDER_SECONDARY_HOVER]: colors.blueBase,
+  [borderConstants.BORDER_SECONDARY_DISABLED]: colors.silverLighten40,
+  [borderConstants.BORDER_INPUT]: colors.silverLighten40,
+  [borderConstants.BORDER_INPUT_FOCUS]: colors.blueBase,
+  [borderConstants.BORDER_INPUT_INVALID]: colors.redLighten10,
 };

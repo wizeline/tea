@@ -10,6 +10,7 @@ const BACKGROUND_DANGER = 'backgroundDanger';
 const BACKGROUND_DANGER_HOVER = 'backgroundDangerHover';
 const BACKGROUND_DANGER_DISABLED = 'backgroundDangerDisabled';
 const BACKGROUND_INPUT = 'backgroundInput';
+const LIGHTEN_BACKGROUND_PERCENTAGE = 0.1;
 
 export default {
   BACKGROUND_PRIMARY,
@@ -22,4 +23,5 @@ export default {
   BACKGROUND_DANGER_HOVER,
   BACKGROUND_DANGER_DISABLED,
   BACKGROUND_INPUT,
+  LIGHTEN_BACKGROUND_PERCENTAGE,
 };
