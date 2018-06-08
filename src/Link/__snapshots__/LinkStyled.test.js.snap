@@ -19,6 +19,7 @@ exports[`LinkAnchorStyled renders correctly with undefined theme 1`] = `
 .c0 {
   text-decoration: none;
   font-size: 14px;
+  color: undefined;
 }
 
 <a
