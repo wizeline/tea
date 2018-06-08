@@ -1,9 +1,0 @@
-// @flow
-
-import { css } from 'styled-components';
-
-export default css`
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 1.25;
-`;
