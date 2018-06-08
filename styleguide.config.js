@@ -10,6 +10,8 @@ const componentGroups = {
   Error: 'Error',
   Text: 'Text',
   Button: 'Button',
+  ButtonLink: 'ButtonLink',
+  Form: 'Form',
 };
 
 const componentSections = Object.entries(componentGroups).map(

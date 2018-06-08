@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 
-export type LinkProps = {
+export type ButtonLinkProps = {
   b100?: boolean,
   b150?: boolean,
   b50?: boolean,
@@ -10,8 +10,7 @@ export type LinkProps = {
   color?: string,
   h300?: boolean,
   href?: string,
-  onClick: Function,
-  target?: string,
+  onClick: () => mixed,
   theme: {
     textLink: string,
   },

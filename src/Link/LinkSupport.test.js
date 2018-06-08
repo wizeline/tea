@@ -26,16 +26,6 @@ describe('LinkSupport', () => {
     expect(children).toBe(childrenString);
     expect(linkAnchorStyledProps.priority).toBe('b100');
   });
-  it('getLinkStyleSupport: Undefined props.theme.textLink', () => {
-    const childrenString = 'hello';
-    const props = {
-      href: 'http://wizeline.com/',
-      b500: true,
-      children: childrenString,
-    };
-    const css = getLinkStyleSupport(props);
-    expect(css).toBeTruthy();
-  });
   it('getLinkStyleSupport: Defined props.theme.textLink', () => {
     const childrenString = 'hello';
     const props = {
