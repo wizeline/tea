@@ -2,21 +2,19 @@ const sass = require('@stencil/sass');
 
 exports.config = {
   namespace: 'stencil-components-spike',
-  outputTargets:[
+  outputTargets: [
     {
-      type: 'dist'
+      type: 'dist',
     },
     {
       type: 'www',
-      serviceWorker: false
-    }
+      serviceWorker: false,
+    },
   ],
-  plugins: [
-    sass()
-  ]
+  plugins: [sass()],
 };
 
 exports.devServer = {
   root: 'www',
-  watchGlob: '**/**'
-}
+  watchGlob: '**/**',
+};
