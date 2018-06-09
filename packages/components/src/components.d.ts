@@ -60,4 +60,37 @@ declare global {
   }
 }
 
+
+declare global {
+
+  namespace StencilComponents {
+    interface WlText {
+
+    }
+  }
+
+  interface HTMLWlTextElement extends StencilComponents.WlText, HTMLStencilElement {}
+
+  var HTMLWlTextElement: {
+    prototype: HTMLWlTextElement;
+    new (): HTMLWlTextElement;
+  };
+  interface HTMLElementTagNameMap {
+    'wl-text': HTMLWlTextElement;
+  }
+  interface ElementTagNameMap {
+    'wl-text': HTMLWlTextElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'wl-text': JSXElements.WlTextAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface WlTextAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
 declare global { namespace JSX { interface StencilJSX {} } }

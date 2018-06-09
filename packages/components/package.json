@@ -1,5 +1,5 @@
 {
-  "name": "stencil-components-spike",
+  "name": "@wizeline/tea",
   "version": "0.0.1",
   "description": "Stencil Component Starter",
   "main": "dist/stencil-components-spike.js",
@@ -10,15 +10,13 @@
   ],
   "browser": "dist/stencil-components-spike.js",
   "scripts": {
-    "build": "stencil build",
+    "start": "yarn dev",
+    "build": "stencil build && yarn build-storybook",
     "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
     "serve": "stencil-dev-server",
-    "start": "npm run dev",
     "test": "jest --no-cache",
     "test.watch": "jest --watch --no-cache",
-    "storybook-2": "start-storybook -p 6006",
-    "storybook": "start-storybook -p 9001 -c .storybook -s www",
-    "storybook-test": "start-storybook -p 9000",
+    "storybook": "start-storybook -p 6006 -s www",
     "build-storybook": "build-storybook"
   },
   "dependencies": {},
