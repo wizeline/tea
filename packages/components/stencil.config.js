@@ -1,7 +1,7 @@
 const sass = require('@stencil/sass');
 
 exports.config = {
-  namespace: 'stencil-components-spike',
+  namespace: 'wizeline-tea',
   outputTargets: [
     {
       type: 'dist',
