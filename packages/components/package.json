@@ -8,7 +8,7 @@
   "files": [
     "dist/"
   ],
-  "browser": "dist/stencil-components-spike.js",
+  "browser": "dist/wizeline-tea.js",
   "scripts": {
     "start": "yarn dev",
     "build": "stencil build && yarn build-storybook",
