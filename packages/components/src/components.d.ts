@@ -27,35 +27,33 @@ declare global {
 declare global {
 
   namespace StencilComponents {
-    interface CsButton {
-      'csDisabled': boolean;
-      'csName': string;
-      'csType': string;
+    interface WlButton {
+      'destructive': boolean;
+      'primary': boolean;
     }
   }
 
-  interface HTMLCsButtonElement extends StencilComponents.CsButton, HTMLStencilElement {}
+  interface HTMLWlButtonElement extends StencilComponents.WlButton, HTMLStencilElement {}
 
-  var HTMLCsButtonElement: {
-    prototype: HTMLCsButtonElement;
-    new (): HTMLCsButtonElement;
+  var HTMLWlButtonElement: {
+    prototype: HTMLWlButtonElement;
+    new (): HTMLWlButtonElement;
   };
   interface HTMLElementTagNameMap {
-    'cs-button': HTMLCsButtonElement;
+    'wl-button': HTMLWlButtonElement;
   }
   interface ElementTagNameMap {
-    'cs-button': HTMLCsButtonElement;
+    'wl-button': HTMLWlButtonElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      'cs-button': JSXElements.CsButtonAttributes;
+      'wl-button': JSXElements.WlButtonAttributes;
     }
   }
   namespace JSXElements {
-    export interface CsButtonAttributes extends HTMLAttributes {
-      'csDisabled'?: boolean;
-      'csName'?: string;
-      'csType'?: string;
+    export interface WlButtonAttributes extends HTMLAttributes {
+      'destructive'?: boolean;
+      'primary'?: boolean;
     }
   }
 }
