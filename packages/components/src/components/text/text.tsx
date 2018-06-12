@@ -24,7 +24,6 @@ export class Text {
 
   render() {
     const typographyClass = this.getTypography();
-    console.log(typographyClass)
 
     return (
       <div class={typographyClass}>
