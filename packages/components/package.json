@@ -1,0 +1,69 @@
+{
+  "name": "@wizeline/tea",
+  "version": "0.0.1",
+  "description": "Wizeline's Design System",
+  "main": "dist/wizeline-tea.js",
+  "types": "dist/types/components.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "files": ["dist/"],
+  "browser": "dist/wizeline-tea.js",
+  "scripts": {
+    "start": "yarn dev",
+    "build": "stencil build && yarn build-storybook",
+    "createBlock": "node ./createBlock.js",
+    "dev":
+      "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
+    "serve": "stencil-dev-server",
+    "test": "jest --no-cache",
+    "test.watch": "jest --watch --no-cache",
+    "storybook": "start-storybook -p 6006 -s www",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "z": "^1.0.8"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.41",
+    "@babel/core": "^7.0.0-beta.41",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.41",
+    "@babel/plugin-proposal-decorators": "^7.0.0-beta.41",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.41",
+    "@babel/plugin-syntax-jsx": "^7.0.0-beta.41",
+    "@babel/preset-env": "^7.0.0-beta.41",
+    "@babel/preset-typescript": "^7.0.0-beta.41",
+    "@stencil/core": "^0.7.22",
+    "@stencil/dev-server": "latest",
+    "@stencil/sass": "0.0.3",
+    "@stencil/utils": "latest",
+    "@storybook/html": "^4.0.0-alpha.8",
+    "@types/jest": "^21.1.1",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0",
+    "jest": "^21.2.1",
+    "jsdoc": "^3.5.5",
+    "jsdoc-babel": "^0.4.0-alpha.0",
+    "jsdoc-to-markdown": "^4.0.1",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "velocity-react": "^1.4.1",
+    "watch": "^1.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ionic-team/stencil-component-starter.git"
+  },
+  "author": "Ionic Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ionic-team/stencil"
+  },
+  "homepage": "https://github.com/ionic-team/stencil",
+  "jest": {
+    "transform": {
+      "^.+\\.(ts|tsx)$":
+        "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(tsx?|jsx?)$",
+    "moduleFileExtensions": ["ts", "tsx", "js", "json", "jsx"]
+  }
+}
