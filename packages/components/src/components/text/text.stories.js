@@ -3,5 +3,5 @@ import { storiesOf } from '@storybook/html';
 
 storiesOf('Text', module).add(
   'default',
-  () => '<wl-text>yellow and bold</wl-text>',
+  () => '<wz-text h600="true" h-700="true">Cute Text</wz-text>',
 );

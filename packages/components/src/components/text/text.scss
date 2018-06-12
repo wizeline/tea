@@ -1,7 +1,32 @@
-wl-text {
-  span {
-    font-weight: bold;
-    color: yellow;
+wz-text {
+  div {
+    .h200 {
+      font-size: 11px;
+      font-weight: 600;
+      line-height: 1.55;
+      letter-spacing: 0.2px;
+    }
+
+    .h300 {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    .h400 {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.28;
+    }
+
+    .h500 {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1.25;
+    }
+
+    .h600 {
+      font-size: 300px;
+      line-height: 1.25;
+    }
   }
 }
-

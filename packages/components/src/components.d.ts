@@ -27,31 +27,31 @@ declare global {
 declare global {
 
   namespace StencilComponents {
-    interface WlButton {
+    interface WzButton {
       'destructive': boolean;
       'primary': boolean;
     }
   }
 
-  interface HTMLWlButtonElement extends StencilComponents.WlButton, HTMLStencilElement {}
+  interface HTMLWzButtonElement extends StencilComponents.WzButton, HTMLStencilElement {}
 
-  var HTMLWlButtonElement: {
-    prototype: HTMLWlButtonElement;
-    new (): HTMLWlButtonElement;
+  var HTMLWzButtonElement: {
+    prototype: HTMLWzButtonElement;
+    new (): HTMLWzButtonElement;
   };
   interface HTMLElementTagNameMap {
-    'wl-button': HTMLWlButtonElement;
+    'wz-button': HTMLWzButtonElement;
   }
   interface ElementTagNameMap {
-    'wl-button': HTMLWlButtonElement;
+    'wz-button': HTMLWzButtonElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      'wl-button': JSXElements.WlButtonAttributes;
+      'wz-button': JSXElements.WzButtonAttributes;
     }
   }
   namespace JSXElements {
-    export interface WlButtonAttributes extends HTMLAttributes {
+    export interface WzButtonAttributes extends HTMLAttributes {
       'destructive'?: boolean;
       'primary'?: boolean;
     }
@@ -62,31 +62,41 @@ declare global {
 declare global {
 
   namespace StencilComponents {
-    interface WlText {
-
+    interface WzText {
+      'h200': boolean;
+      'h300': boolean;
+      'h400': string;
+      'h500': boolean;
+      'h600': boolean;
+      'h700': boolean;
     }
   }
 
-  interface HTMLWlTextElement extends StencilComponents.WlText, HTMLStencilElement {}
+  interface HTMLWzTextElement extends StencilComponents.WzText, HTMLStencilElement {}
 
-  var HTMLWlTextElement: {
-    prototype: HTMLWlTextElement;
-    new (): HTMLWlTextElement;
+  var HTMLWzTextElement: {
+    prototype: HTMLWzTextElement;
+    new (): HTMLWzTextElement;
   };
   interface HTMLElementTagNameMap {
-    'wl-text': HTMLWlTextElement;
+    'wz-text': HTMLWzTextElement;
   }
   interface ElementTagNameMap {
-    'wl-text': HTMLWlTextElement;
+    'wz-text': HTMLWzTextElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      'wl-text': JSXElements.WlTextAttributes;
+      'wz-text': JSXElements.WzTextAttributes;
     }
   }
   namespace JSXElements {
-    export interface WlTextAttributes extends HTMLAttributes {
-
+    export interface WzTextAttributes extends HTMLAttributes {
+      'h200'?: boolean;
+      'h300'?: boolean;
+      'h400'?: string;
+      'h500'?: boolean;
+      'h600'?: boolean;
+      'h700'?: boolean;
     }
   }
 }
