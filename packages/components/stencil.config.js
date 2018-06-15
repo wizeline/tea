@@ -11,7 +11,15 @@ exports.config = {
       serviceWorker: false,
     },
   ],
-  plugins: [sass()],
+  plugins: [
+    sass({
+      injectGlobalPaths: [
+        'src/css/globals/mixins.scss',
+        'src/css/globals/variables.scss',
+      ],
+      includePaths: ['src/css/colors/gray.scss'],
+    }),
+  ],
 };
 
 exports.devServer = {
