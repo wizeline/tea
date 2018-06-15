@@ -1,0 +1,9 @@
+@mixin fontWeight {
+  &.bold {
+    font-weight: bold;
+  }
+
+  &.semibold {
+    font-weight: 600;
+  }
+}

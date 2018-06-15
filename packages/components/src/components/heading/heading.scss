@@ -1,0 +1,25 @@
+wz-heading span {
+  &.small {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  &.base {
+    font-size: 16px;
+  }
+
+  &.medium {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  &.large {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  &.xlarge {
+    font-size: 32px;
+  }
+}

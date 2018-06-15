@@ -1,34 +1,26 @@
 import { Component, Prop } from '@stencil/core';
+import sizeMatcher from '../../matchers/size';
+import fontWeightMatcher from '../../matchers/fontWeight';
 
 @Component({
   tag: 'wz-text',
   styleUrl: 'text.scss',
+  shadow: false,
 })
-
 export class Text {
-  @Prop() h200: boolean;
-  @Prop() h300: boolean;
-  @Prop() h400: string;
-  @Prop() h500: boolean;
-  @Prop() h600: boolean;
-  @Prop() h700: boolean;
-
-  getTypography() {
-    if (this.h300) { return 'h300'; }
-    if (this.h400) { return 'h400'; }
-    if (this.h500) { return 'h500'; }
-    if (this.h600) { return 'h600'; }
-
-    return 'h200';
-  }
+  @Prop() small: boolean;
+  @Prop() semibold: boolean;
+  @Prop() bold: boolean;
 
   render() {
-    const typographyClass = this.getTypography();
+    const componentClass = [sizeMatcher(this), fontWeightMatcher(this)].join(
+      ' ',
+    );
 
     return (
-      <div class={typographyClass}>
-        <slot></slot>
-      </div>
+      <span class={componentClass}>
+        <slot />
+      </span>
     );
   }
 }
