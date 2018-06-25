@@ -45,7 +45,7 @@ wz-button {
 
     &.secondary {
       box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
-      background-color: #ffffff;
+      background-color: var(--button-secondary-background-color);
       color: var(--button-secondary-text-color);
       border: solid 1px transparent;
       &:hover {
