@@ -16,8 +16,8 @@ exports.config = {
       injectGlobalPaths: [
         'src/css/globals/mixins.scss',
         'src/css/globals/variables.scss',
+        'src/css/reset.scss',
       ],
-      includePaths: ['src/css/colors/gray.scss'],
     }),
   ],
 };
