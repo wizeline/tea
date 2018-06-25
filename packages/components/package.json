@@ -21,6 +21,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@ctrl/tinycolor": "^2.0.0",
     "z": "^1.0.8"
   },
   "devDependencies": {
