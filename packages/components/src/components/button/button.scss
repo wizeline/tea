@@ -6,7 +6,7 @@ wz-button {
     padding: 0 16px;
     border: none;
     border-radius: 3px;
-    color: var(--button-text-color);
+    color: var(--ink-clear);
     font-size: 14px;
     cursor: pointer;
     transition: ease 100ms all;
@@ -31,25 +31,26 @@ wz-button {
     }
 
     &.primary {
-      background-color: var(--button-primary-background-color);
+      background-color: var(--primary-light);
+      &:hover {
+        background-color: var(--primary-base);
+      }
     }
 
     &.destructive {
-      background-color: var(--button-destructive-background-color);
-    }
-
-    &.primary:hover,
-    &.destructive:hover {
-      background-color: var(--button-hover-background-color);
+      background-color: var(--negative-light);
+      &:hover {
+        background-color: var(--negative-base);
+      }
     }
 
     &.secondary {
-      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
-      background-color: var(--button-secondary-background-color);
-      color: var(--button-secondary-text-color);
-      border: solid 1px transparent;
+      color: var(--ink-base);
+      background-color: var(--surface-base);
+      border: solid 1px var(--neutral-dark);
+      box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.03);
       &:hover {
-        border-color: var(--button-secondary-border-color);
+        border-color: var(--primary-light);
       }
     }
 
