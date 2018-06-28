@@ -9,6 +9,7 @@ import fontWeightMatcher from '../../matchers/fontWeight';
 })
 export class Text {
   @Prop() small: boolean;
+  @Prop() base: boolean;
   @Prop() semibold: boolean;
   @Prop() bold: boolean;
 

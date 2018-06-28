@@ -1,6 +1,6 @@
 wz-text span {
   @include fontWeight;
-  color: var(--gray-darken-10);
+  color: var(--ink-base);
 
   &.small {
     font-size: 12px;
