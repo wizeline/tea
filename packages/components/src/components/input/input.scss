@@ -1,0 +1,16 @@
+wz-input, wz-validator {
+  .input-container {
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 1px solid grey;
+    width: 200px;
+
+    input {
+      outline: none !important;
+      border: none;
+      width: 100%;
+      font-size: 0.8rem;
+    }
+  }
+
+}
