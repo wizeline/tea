@@ -20,7 +20,7 @@ export class Input {
   render() {    
     return (
       <div class="input-container">
-        <input value={this.value} onInput={(ev) => this.handleChange(ev) } />
+        <input value={this.value} onInput={this.handleChange} />
       </div>
     );
   }
