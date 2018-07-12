@@ -1,6 +1,6 @@
 {
   "name": "@wizeline/tea",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Wizeline's Design System",
   "main": "dist/wizeline-tea.js",
   "types": "dist/types/components.d.ts",
