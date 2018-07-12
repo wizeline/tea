@@ -1,0 +1,22 @@
+wz-input {
+  .input-container {
+    border-radius: 3px;
+    background-color: var(--ink-clear);
+    border: solid 1px;
+    height: 40px;
+    padding: 8px;
+    border-color:  var(--neutral-base);
+
+    &:focus-within {
+      border-color:  var(--primary-light);
+    }
+
+    input {
+      outline: none !important;
+      border: none;
+      font-size: 14px;
+      width: 100%;
+    }
+  }
+
+}
