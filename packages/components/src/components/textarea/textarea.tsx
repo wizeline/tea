@@ -1,6 +1,5 @@
 import { Component, Prop, Event, EventEmitter } from '@stencil/core';
 
-
 @Component({
   tag: 'wz-textarea',
   styleUrl: 'textarea.scss',
@@ -12,8 +11,8 @@ export class TextArea {
 
   @Event() changed: EventEmitter<string>;
 
-  handleChange(ev) { 
-    this.value = ev.target ? ev.target.value : null;
+  handleChange(ev) {
+    this.value = ev.target.value;
     this.changed.emit(this.value);
   }
 
