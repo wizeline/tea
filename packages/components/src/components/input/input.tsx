@@ -13,7 +13,7 @@ export class Input {
   @Event() changed: EventEmitter<string>;
 
   handleChange(ev) { 
-    this.value = ev.target ? ev.target.value : null;
+    this.value = ev.target.value;
     this.changed.emit(this.value);
   }
 

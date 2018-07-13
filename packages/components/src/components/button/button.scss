@@ -1,4 +1,6 @@
 wz-button {
+  display: inline-block;
+
   button {
     @include transition;
     display: flex;
