@@ -8,11 +8,12 @@ import { Component, Prop } from '@stencil/core';
 export class Input {
   @Prop({ mutable: true })
   value: string;
+  @Prop() disabled: boolean = false;
 
   render() {
     return (
       <div class="input-container">
-        <input value={this.value} />
+        <input value={this.value} disabled={this.disabled} />
       </div>
     );
   }
