@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`wz-input renders disabled 1`] = `
+<wz-input
+  class="hydrated"
+  disabled="false"
+>
+  
+  <div
+    class="input-container"
+  >
+    <input />
+  </div>
+</wz-input>
+`;
+
+exports[`wz-input renders value 1`] = `
+<wz-input
+  class="hydrated"
+  value="Hello, my name is Marty McFly"
+>
+  
+  <div
+    class="input-container"
+  >
+    <input />
+  </div>
+</wz-input>
+`;
