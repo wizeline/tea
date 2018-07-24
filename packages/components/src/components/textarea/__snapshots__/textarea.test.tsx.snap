@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`wz-textarea renders value 1`] = `
+<wz-textarea
+  class="hydrated"
+  value="Hello, my name is Marty McFly"
+>
+  
+  <div
+    class="textarea-container"
+  >
+    <textarea
+      rows="3"
+    />
+  </div>
+</wz-textarea>
+`;
