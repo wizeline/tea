@@ -5,11 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
   <title>Stencil Component Starter</title>
   <script src="/build/wizeline-tea.js"></script>
+  <script>
+    function test() {
+      console.log('test test uf ', this.event.target.value)
+    }
+  </script>
 
 </head>
 <body>
   <div style="width: 200px">
-    <wz-input value="banana"></wz-input>
+    <wz-input value="banana" onkeydown="test()"></wz-input>
   </div>
 </body>
 </html>

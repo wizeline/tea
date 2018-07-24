@@ -1,5 +1,4 @@
-import { Component, Prop, Event, EventEmitter } from '@stencil/core';
-
+import { Component, Prop } from '@stencil/core';
 
 @Component({
   tag: 'wz-input',
@@ -7,20 +6,14 @@ import { Component, Prop, Event, EventEmitter } from '@stencil/core';
   shadow: false,
 })
 export class Input {
+  @Prop({ mutable: true })
+  value: string;
+  @Prop() disabled: boolean = false;
 
-  @Prop({ mutable: true }) value: string;
-
-  @Event() changed: EventEmitter<string>;
-
-  handleChange(ev) { 
-    this.value = ev.target.value;
-    this.changed.emit(this.value);
-  }
-
-  render() {    
+  render() {
     return (
       <div class="input-container">
-        <input value={this.value} onInput={this.handleChange} />
+        <input value={this.value} disabled={this.disabled} />
       </div>
     );
   }
