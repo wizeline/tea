@@ -1,0 +1,27 @@
+wz-select {
+  position: relative;
+  select {
+    appearance: none;
+    height: 40px;
+    padding: 12px;
+    padding-right: 28px;
+    border-radius: 3px;
+    border: solid 1px var(--ink-light);
+    background-color: var(--ink-clear);
+    font-size: 14px;
+    line-height: 10px;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    right: 8px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 4px 4px;
+    border-color: transparent transparent var(--ink-base) transparent;
+    transform: rotateX(180deg);
+    pointer-events: none;
+  }
+}
