@@ -41,6 +41,7 @@
     "@types/jest": "^23.3.0",
     "babel-core": "^6.26.3",
     "babel-runtime": "^6.26.0",
+    "danger": "^3.8.3",
     "jest": "^21.2.1",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
