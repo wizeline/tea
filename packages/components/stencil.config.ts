@@ -1,6 +1,7 @@
-const sass = require('@stencil/sass');
+import { Config } from '@stencil/core';
+import { sass } from '@stencil/sass';
 
-exports.config = {
+export const config: Config = {
   namespace: 'wizeline-tea',
   outputTargets: [
     {
@@ -22,7 +23,7 @@ exports.config = {
   ],
 };
 
-exports.devServer = {
+export const devServer = {
   root: 'www',
   watchGlob: '**/**',
 };
