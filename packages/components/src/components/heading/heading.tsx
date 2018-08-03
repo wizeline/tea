@@ -13,7 +13,6 @@ export class Heading {
   @Prop() xlarge: boolean;
 
   render() {
-    console.log('test test ', this);
     return (
       <span class={sizeMatcher(this)}>
         <slot />
