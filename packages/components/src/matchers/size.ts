@@ -1,12 +1,23 @@
-import { matches } from 'z';
+function sizeMatcher(props) {
+  const { small, medium, large, xlarge } = props;
 
-const sizeMatcher = props =>
-  matches(props)(
-    (_ = { small: true }) => 'small',
-    (_ = { medium: true }) => 'medium',
-    (_ = { large: true }) => 'large',
-    (_ = { xlarge: true }) => 'xlarge',
-    _ => 'base',
-  );
+  if (small) {
+    return 'small';
+  }
+
+  if (medium) {
+    return 'medium';
+  }
+
+  if (large) {
+    return 'large';
+  }
+
+  if (xlarge) {
+    return 'xlarge';
+  }
+
+  return 'base';
+}
 
 export default sizeMatcher;
