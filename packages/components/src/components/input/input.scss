@@ -1,17 +1,20 @@
 wz-input {
   .input-container {
+    display: flex;
+    align-items: center;
     border-radius: 3px;
     background-color: var(--ink-clear);
     border: solid 1px;
     height: 40px;
-    padding: 8px 16px;
-    border-color:  var(--ink-light);
+    overflow: hidden;
+    border-color: var(--ink-light);
 
     &:focus-within {
-      border-color:  var(--primary-base);
+      border-color: var(--primary-base);
     }
 
     input {
+      padding: 8px 16px;
       outline: none !important;
       border: none;
       font-size: 14px;
@@ -22,5 +25,4 @@ wz-input {
       }
     }
   }
-
 }
