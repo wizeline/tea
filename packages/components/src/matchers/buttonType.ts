@@ -1,9 +1,17 @@
-import { matches } from 'z';
+export default props => {
+  const { primary, secondary, destructive } = props;
 
-export default props =>
-  matches(props)(
-    (_ = { primary: true }) => 'primary',
-    (_ = { secondary: true }) => 'secondary',
-    (_ = { destructive: true }) => 'destructive',
-    _ => 'secondary',
-  );
+  if (primary) {
+    return 'primary';
+  }
+
+  if (secondary) {
+    return 'secondary';
+  }
+
+  if (destructive) {
+    return 'destructive';
+  }
+
+  return 'secondary';
+};

@@ -1,13 +1,15 @@
-import { matches } from 'z';
+function fontWeight(props) {
+  const { semibold, bold } = props;
 
-type Props = {
-  semibold?: boolean;
-  bold?: boolean;
-};
+  if (semibold) {
+    return 'semibold';
+  }
 
-export default (props: Props): String =>
-  matches(props)(
-    (_ = { semibold: true }) => 'semibold',
-    (_ = { bold: true }) => 'bold',
-    _ => 'regular',
-  );
+  if (bold) {
+    return 'bold';
+  }
+
+  return 'regular';
+}
+
+export default fontWeight;
