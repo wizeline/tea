@@ -1,5 +1,8 @@
 {
   "private": true,
+  "scripts": {
+    "test": "lerna exec -- jest"
+  },
   "devDependencies": {
     "lerna": "^2.11.0"
   }
