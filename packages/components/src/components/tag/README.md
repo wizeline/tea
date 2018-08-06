@@ -15,5 +15,14 @@ I would like to have a tag component that supports:
 
 [ This is a tag ]
 ```
+### Color scheme
 
+> primary | info | warning | negative | positive
+```
+<wz-tag info >
+  This is a tag
+</wz-tag>
+
+[ This is a tag ] // imagine it has color
+```
 
