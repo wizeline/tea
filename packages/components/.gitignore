@@ -10,7 +10,6 @@ storybook-static
 log.txt
 *.sublime-project
 *.sublime-workspace
-*.md
 src/components.d.ts
 
 .idea/
