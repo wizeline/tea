@@ -1,7 +1,7 @@
 import { Select } from './select';
 import { TestWindow } from '@stencil/core/testing';
 
-describe('wz-select', () => {
+describe.skip('wz-select', () => {
   it('renders value', async () => {
     const window = new TestWindow();
     const element = await window.load({
