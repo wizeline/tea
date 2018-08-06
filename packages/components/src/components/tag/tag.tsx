@@ -7,12 +7,15 @@ import tagTypeMatcher from '../../matchers/tagType';
   shadow: false,
 })
 export class Tag {
-  // filled types
+  // tag types
   @Prop() primary: boolean;
   @Prop() info: boolean;
   @Prop() warning: boolean;
   @Prop() negative: boolean;
   @Prop() positive: boolean;
+
+  // tag states
+  @Prop() removable: boolean;
 
   render() {
     const componentClass = [tagTypeMatcher(this)].join(' ');
@@ -20,6 +23,7 @@ export class Tag {
     return (
       <div class={['tag-container', componentClass].join(' ')}>
         <slot />
+        { this.removable && <span>×</span> }
       </div>
     );
   }

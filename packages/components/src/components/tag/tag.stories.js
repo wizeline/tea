@@ -15,4 +15,15 @@ storiesOf('Tag', module)
       <wz-tag negative>Cool Tag</wz-tag>
       <wz-tag positive>Cool Tag</wz-tag>
   `,
+  )
+  .add(
+    'removable',
+    () => `
+      <wz-tag removable>Cool Tag</wz-tag>
+      <wz-tag primary removable>Cool Tag</wz-tag>
+      <wz-tag info removable>Cool Tag</wz-tag>
+      <wz-tag warning removable>Cool Tag</wz-tag>
+      <wz-tag negative removable>Cool Tag</wz-tag>
+      <wz-tag positive removable>Cool Tag</wz-tag>
+  `,
   );

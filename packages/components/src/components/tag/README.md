@@ -26,3 +26,13 @@ I would like to have a tag component that supports:
 [ This is a tag ] // imagine it has color
 ```
 
+### Action option
+
+> removable
+```
+<wz-tag removable >
+  This is a tag
+</wz-tag>
+
+[ This is a tag | x ]
+```

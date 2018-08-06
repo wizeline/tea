@@ -1,13 +1,14 @@
 wz-tag {
   .tag-container {
     cursor: default;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     height: 28px;
     padding: 4px 8px;
     font-size: 14px;
     border-radius: 3px;
     box-shadow: 0 2px 4px 0 rgba(60, 66, 69, 0.16);
-    color:  var(--ink-dark);
+    color:  var(--ink-base);
 
     &.regular {
       background-color: var(--ink-clear);
@@ -33,5 +34,16 @@ wz-tag {
     &.positive {
       background-color: var(--positive-light);
     }
+
+    >span {
+      font-size: 22px;
+      margin-left: 8px;
+      cursor: pointer;
+
+      &:hover {
+        color: var(--ink-dark);
+      }
+    }
+
   }
 }
