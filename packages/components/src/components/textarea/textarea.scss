@@ -2,7 +2,6 @@ wz-textarea {
   .textarea-container {
     background-color: var(--ink-clear);
     border: solid 1px;
-    padding: 8px 16px;
     border-color:  var(--neutral-base);
 
     &:focus-within {
@@ -10,6 +9,7 @@ wz-textarea {
     }
 
     textarea {
+      padding: 8px 16px;
       border: none;
       font-size: 14px;
       resize: none;
