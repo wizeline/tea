@@ -2,11 +2,12 @@ wz-text span {
   @include fontWeight;
   color: var(--ink-base);
 
+  &.default {
+    font-size: 14px;
+  }
+
   &.small {
     font-size: 12px;
   }
 
-  &.base {
-    font-size: 14px;
-  }
 }
