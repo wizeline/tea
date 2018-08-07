@@ -1,9 +1,8 @@
 # wz-tag
 ## Description
 I would like to have a tag component that supports:
-- many design systems color scheme (primary, positive, secondary, info, negatie, warning)
-- checked state
-- removable state
+- many design systems state (primary, positive, secondary, info, negatie, warning)
+- removable ability
 
 ## DEVX
 ### Default
@@ -15,18 +14,19 @@ I would like to have a tag component that supports:
 
 [ This is a tag ]
 ```
-### Color scheme
 
-> primary | info | warning | negative | positive
+### State
+
+> filled= primary | info | warning | negative | positive
 ```
-<wz-tag info >
+<wz-tag filled="info" >
   This is a tag
 </wz-tag>
 
 [ This is a tag ] // imagine it has color
 ```
 
-### Action option
+### Ability
 
 > removable
 ```

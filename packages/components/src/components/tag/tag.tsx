@@ -1,6 +1,5 @@
 import { Component, Prop } from '@stencil/core';
-import statusMatcher from '../../matchers/status';
-import buttonType from '../../matchers/buttonType';
+import statusMatcher, { NEUTRAL_STATUS } from '../../matchers/status';
 
 @Component({
   tag: 'wz-tag',
@@ -8,20 +7,19 @@ import buttonType from '../../matchers/buttonType';
   shadow: false,
 })
 export class Tag {
-  // hierarchical
-  @Prop() primary: boolean;
 
-  // status
-  @Prop() info: boolean;
-  @Prop() warning: boolean;
-  @Prop() negative: boolean;
-  @Prop() positive: boolean;
+  // theming
+  @Prop() filled: string;
 
   // ability
   @Prop() removable: boolean;
 
+  getClass() {
+    return statusMatcher({ [this.filled]: this.filled }) || NEUTRAL_STATUS;
+  }
+
   render() {
-    const componentClass = [statusMatcher(this), buttonType(this)].join(' ');
+    const componentClass = this.getClass();
 
     return (
       <div class={['tag-container', componentClass].join(' ')}>

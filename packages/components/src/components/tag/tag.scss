@@ -7,10 +7,10 @@ wz-tag {
     padding: 4px 8px;
     font-size: 14px;
     border-radius: 3px;
-    box-shadow: 0 2px 4px 0 rgba(60, 66, 69, 0.16);
     color:  var(--ink-base);
 
     &.neutral {
+      box-shadow: 0 2px 4px 0 rgba(60, 66, 69, 0.16);
       background-color: var(--ink-clear);
       border: solid 1px var(--ink-light);
     }

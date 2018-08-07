@@ -1,21 +1,37 @@
+export const PRIMARY_STATUS = 'primary';
+export const NEUTRAL_STATUS = 'neutral';
+export const INFO_STATUS = 'info';
+export const WARNING_STATUS = 'warning';
+export const NEGATIVE_STATUS = 'negative';
+export const POSITIVE_STATUS = 'positive';
+
 export default props => {
-  const { info, warning, negative, positive } = props;
+  const { primary, info, warning, negative, positive, neutral } = props;
+
+  // placeholder bc missing alias for primary color
+  if (primary) {
+    return PRIMARY_STATUS;
+  }
 
   if (info) {
-    return 'info';
+    return INFO_STATUS;
   }
 
   if (warning) {
-    return 'warning';
+    return WARNING_STATUS;
   }
 
   if (negative) {
-    return 'negative';
+    return NEGATIVE_STATUS;
   }
 
   if (positive) {
-    return 'positive';
+    return POSITIVE_STATUS;
   }
 
-  return 'neutral';
+  if (neutral) {
+    return NEUTRAL_STATUS;;
+  }
+
+  return '';
 };

@@ -9,21 +9,21 @@ storiesOf('Tag', module)
   .add(
     'filled',
     () => `
-      <wz-tag primary>Cool Tag</wz-tag>
-      <wz-tag info>Cool Tag</wz-tag>
-      <wz-tag warning>Cool Tag</wz-tag>
-      <wz-tag negative>Cool Tag</wz-tag>
-      <wz-tag positive>Cool Tag</wz-tag>
+      <wz-tag filled="primary" >Cool Tag</wz-tag>
+      <wz-tag filled="info" >Cool Tag</wz-tag>
+      <wz-tag filled="warning" >Cool Tag</wz-tag>
+      <wz-tag filled="negative" >Cool Tag</wz-tag>
+      <wz-tag filled="positive" >Cool Tag</wz-tag>
   `,
   )
   .add(
     'removable',
     () => `
-      <wz-tag removable>Cool Tag</wz-tag>
-      <wz-tag primary removable>Cool Tag</wz-tag>
-      <wz-tag info removable>Cool Tag</wz-tag>
-      <wz-tag warning removable>Cool Tag</wz-tag>
-      <wz-tag negative removable>Cool Tag</wz-tag>
-      <wz-tag positive removable>Cool Tag</wz-tag>
+      <wz-tag removable >Cool Tag</wz-tag>
+      <wz-tag filled="primary" removable>Cool Tag</wz-tag>
+      <wz-tag filled="info" removable>Cool Tag</wz-tag>
+      <wz-tag filled="warning" removable>Cool Tag</wz-tag>
+      <wz-tag filled="negative" removable>Cool Tag</wz-tag>
+      <wz-tag filled="positive" removable>Cool Tag</wz-tag>
   `,
   );
