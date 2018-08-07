@@ -1,4 +1,5 @@
 import { Component, Prop } from '@stencil/core';
+import { CLASS_DEFAULT } from '../../constants';
 import sizeMatcher from '../../matchers/size';
 import fontWeightMatcher from '../../matchers/fontWeight';
 
@@ -13,10 +14,14 @@ export class Text {
   @Prop() semibold: boolean;
   @Prop() bold: boolean;
 
+  getClass() {
+    const fontWeight = fontWeightMatcher(this);
+    const size = sizeMatcher(this) || CLASS_DEFAULT;
+
+    return [fontWeight, size].join(' ');
+  }
   render() {
-    const componentClass = [sizeMatcher(this), fontWeightMatcher(this)].join(
-      ' ',
-    );
+    const componentClass = this.getClass();
 
     return (
       <span class={componentClass}>
