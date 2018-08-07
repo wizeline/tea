@@ -1,0 +1,49 @@
+wz-tag {
+  .tag-container {
+    cursor: default;
+    display: inline-flex;
+    align-items: center;
+    height: 28px;
+    padding: 4px 8px;
+    font-size: 14px;
+    border-radius: 3px;
+    color:  var(--ink-base);
+
+    &.neutral {
+      box-shadow: 0 2px 4px 0 rgba(60, 66, 69, 0.16);
+      background-color: var(--ink-clear);
+      border: solid 1px var(--ink-light);
+    }
+
+    &.primary {
+      background-color: var(--primary-light);
+    }
+
+    &.info {
+      background-color: var(--info-light);
+    }
+
+    &.warning {
+        background-color: var(--warning-light);
+    }
+
+    &.negative {
+      background-color: var(--negative-light);
+    }
+
+    &.positive {
+      background-color: var(--positive-light);
+    }
+
+    >span {
+      font-size: 22px;
+      margin-left: 8px;
+      cursor: pointer;
+
+      &:hover {
+        color: var(--ink-dark);
+      }
+    }
+
+  }
+}
