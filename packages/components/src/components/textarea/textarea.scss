@@ -1,21 +1,18 @@
 wz-textarea {
-  .textarea-container {
+  textarea {
+    padding: 8px 16px;
+    border: none;
     background-color: var(--ink-clear);
     border: solid 1px;
-    padding: 8px 16px;
     border-color:  var(--neutral-base);
+    font-size: 14px;
+    resize: none;
+    outline: none !important;
+    width: 100%;
+    overflow: hidden;
 
-    &:focus-within {
+    &:focus {
       border-color:  var(--primary-light);
-    }
-
-    textarea {
-      border: none;
-      font-size: 14px;
-      resize: none;
-      outline: none !important;
-      width: 100%;
-      overflow: hidden;
     }
   }
 

@@ -12,10 +12,6 @@ export class TextArea {
   render() {
     const DEFAULT_ROWS = 3;
 
-    return (
-      <div class="textarea-container">
-        <textarea rows={DEFAULT_ROWS} value={this.value} />
-      </div>
-    );
+    return <textarea rows={DEFAULT_ROWS} value={this.value} />;
   }
 }
