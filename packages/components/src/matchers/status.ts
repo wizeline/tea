@@ -1,9 +1,5 @@
 export default props => {
-  const { primary, info, warning, negative, positive } = props;
-
-  if (primary) {
-    return 'primary';
-  }
+  const { info, warning, negative, positive } = props;
 
   if (info) {
     return 'info';
@@ -21,5 +17,5 @@ export default props => {
     return 'positive';
   }
 
-  return 'regular';
+  return 'neutral';
 };

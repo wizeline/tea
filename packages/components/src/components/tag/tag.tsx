@@ -1,5 +1,6 @@
 import { Component, Prop } from '@stencil/core';
-import tagTypeMatcher from '../../matchers/tagType';
+import statusMatcher from '../../matchers/status';
+import buttonType from '../../matchers/buttonType';
 
 @Component({
   tag: 'wz-tag',
@@ -7,23 +8,25 @@ import tagTypeMatcher from '../../matchers/tagType';
   shadow: false,
 })
 export class Tag {
-  // tag types
+  // hierarchical
   @Prop() primary: boolean;
+
+  // status
   @Prop() info: boolean;
   @Prop() warning: boolean;
   @Prop() negative: boolean;
   @Prop() positive: boolean;
 
-  // tag states
+  // ability
   @Prop() removable: boolean;
 
   render() {
-    const componentClass = [tagTypeMatcher(this)].join(' ');
+    const componentClass = [statusMatcher(this), buttonType(this)].join(' ');
 
     return (
       <div class={['tag-container', componentClass].join(' ')}>
         <slot />
-        { this.removable && <span>×</span> }
+        {this.removable && <span>×</span>}
       </div>
     );
   }
