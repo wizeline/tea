@@ -8,14 +8,26 @@ import { Component, Prop } from '@stencil/core';
 export class Input {
   @Prop({ mutable: true })
   value: string;
-  @Prop() name: string;
-  @Prop() type: string = 'text';
-  @Prop() disabled: boolean = false;
+  @Prop()
+  name: string;
+  @Prop()
+  type: string = 'text';
+  @Prop()
+  disabled: boolean = false;
 
   render() {
+    if (this.type === 'file') {
+      return <wz-input-file {...this} />;
+    }
+
     return (
       <div class="input-container">
-        <input disabled={this.disabled} name={this.name} value={this.value} type={this.type} />
+        <input
+          disabled={this.disabled}
+          name={this.name}
+          value={this.value}
+          type={this.type}
+        />
       </div>
     );
   }
