@@ -11,6 +11,22 @@ const pages = [
     content: pageLoader(() => import('./WELCOME.md')),
   },
   {
+    path: '/quickstart',
+    title: 'QuickStart',
+    pages: [
+      {
+        path: '/installation',
+        title: 'Installation',
+        content: pageLoader(() => import('./installation.md')),
+      },
+      {
+        path: '/react',
+        title: 'React',
+        content: pageLoader(() => import('./configuration.react.md')),
+      },
+    ],
+  },
+  {
     path: '/colors',
     title: 'Colors',
     content: pageLoader(() => import('../pages/colors.md')),
@@ -64,7 +80,7 @@ const pages = [
 ];
 
 ReactDOM.render(
-  <Catalog title="Catalog" pages={pages} theme={theme} />,
+  <Catalog title="Wizeline Tea" pages={pages} theme={theme} />,
   document.getElementById('catalog'),
 );
 
