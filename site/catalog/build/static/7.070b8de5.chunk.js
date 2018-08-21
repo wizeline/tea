@@ -1,0 +1,2 @@
+webpackJsonp([7],{800:function(e,n,t){var o=t(15),r=t(45),a=t(290).PageRenderer;a.__esModule&&(a=a.default);var c=r({displayName:"WrappedPageRenderer",getInitialState:function(){return{content:t(812)}},componentWillMount:function(){},render:function(){return o.createElement(a,Object.assign({},this.props,{content:this.state.content}))}});c.__catalog_loader__=!0,e.exports=c},812:function(e,n){e.exports='```html\nshowSource: true\n---\n<wz-input placeholder="Write something" />\n```\n'}});
+//# sourceMappingURL=7.070b8de5.chunk.js.map

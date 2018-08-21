@@ -6,7 +6,7 @@ import { defineCustomElements } from '@wizeline/tea/dist/esm/es5/wizeline-tea.de
 const pages = [
   {
     path: '/',
-    title: 'Welcome',
+    title: 'Wizeline Tea',
     content: pageLoader(() => import('./WELCOME.md')),
   },
   {
@@ -23,6 +23,42 @@ const pages = [
     path: '/link',
     title: 'Link',
     content: pageLoader(() => import('../pages/link.md')),
+  },
+  {
+    path: '/heading',
+    title: 'Heading',
+    content: pageLoader(() => import('../pages/heading.md')),
+  },
+  {
+    path: '/text',
+    title: 'Text',
+    content: pageLoader(() => import('../pages/text.md')),
+  },
+  {
+    path: '/tag',
+    title: 'Tag',
+    content: pageLoader(() => import('../pages/tag.md')),
+  },
+  {
+    path: '/forms',
+    title: 'Forms',
+    pages: [
+      {
+        path: '/input',
+        title: 'Input',
+        content: pageLoader(() => import('../pages/input.md')),
+      },
+      {
+        path: '/input-file',
+        title: 'Input File',
+        content: pageLoader(() => import('../pages/input-file.md')),
+      },
+      {
+        path: '/textarea',
+        title: 'TextArea',
+        content: pageLoader(() => import('../pages/textarea.md')),
+      },
+    ],
   },
 ];
 

@@ -1,0 +1,2 @@
+webpackJsonp([3],{802:function(e,t,n){var r=n(15),o=n(45),a=n(290).PageRenderer;a.__esModule&&(a=a.default);var c=o({displayName:"WrappedPageRenderer",getInitialState:function(){return{content:n(814)}},componentWillMount:function(){},render:function(){return r.createElement(a,Object.assign({},this.props,{content:this.state.content}))}});c.__catalog_loader__=!0,e.exports=c},814:function(e,t){e.exports='```html\nshowSource: true\n---\n<wz-textarea placeholder="Write something" />\n```\n'}});
+//# sourceMappingURL=3.6f102fbe.chunk.js.map
