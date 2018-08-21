@@ -7,7 +7,7 @@ wz-tag {
     padding: 4px 8px;
     font-size: 14px;
     border-radius: 3px;
-    color:  var(--ink-base);
+    color: var(--ink-base);
 
     &.neutral {
       box-shadow: 0 2px 4px 0 rgba(60, 66, 69, 0.16);
@@ -24,7 +24,7 @@ wz-tag {
     }
 
     &.warning {
-        background-color: var(--warning-light);
+      background-color: var(--warning-light);
     }
 
     &.negative {
@@ -35,7 +35,7 @@ wz-tag {
       background-color: var(--positive-light);
     }
 
-    >span {
+    > span {
       font-size: 22px;
       margin-left: 8px;
       cursor: pointer;
@@ -44,6 +44,5 @@ wz-tag {
         color: var(--ink-dark);
       }
     }
-
   }
 }
