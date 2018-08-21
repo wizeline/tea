@@ -11,6 +11,8 @@ showSource: true
 ### Filled
 
 ```html|span-2
+showSource: true
+---
 <wz-tag filled="primary">
   I'm a tag
 </wz-tag>
@@ -48,7 +50,7 @@ showSource: true
 </wz-tag>
 ```
 
-### Filled
+### Removable
 
 ```html|span-2
 showSource: true
