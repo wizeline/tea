@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Catalog, pageLoader } from 'catalog';
 import { defineCustomElements } from '@wizeline/tea/dist/esm/es5/wizeline-tea.define';
+import theme from './theme';
 
 const pages = [
   {
@@ -63,7 +64,7 @@ const pages = [
 ];
 
 ReactDOM.render(
-  <Catalog title="Catalog" pages={pages} />,
+  <Catalog title="Catalog" pages={pages} theme={theme} />,
   document.getElementById('catalog'),
 );
 

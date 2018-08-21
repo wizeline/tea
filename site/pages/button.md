@@ -3,7 +3,7 @@
 showSource: true
 ---
 <wz-button primary>
-  primary button
+  Primary button
 </wz-button>
 ```
 
