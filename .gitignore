@@ -60,6 +60,7 @@ typings/
 # Ignore Lib/
 lib/
 
-design-system/catalog/build/
+site/catalog/build/*
+
 
 
