@@ -24,6 +24,11 @@ const pages = [
         title: 'React',
         content: pageLoader(() => import('./configuration.react.md')),
       },
+      {
+        path: '/vue',
+        title: 'Vue',
+        content: pageLoader(() => import('./configuration.vue.md')),
+      },
     ],
   },
   {
