@@ -2,7 +2,7 @@ wz-button {
   display: inline-block;
 
   button {
-    @include transition;
+    @include transition(background);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +13,6 @@ wz-button {
     font-size: 14px;
     cursor: pointer;
     box-shadow: 0 2px 4px 0 rgba(24, 33, 35, 0.16);
-    box-sizing: border-box;
     font-weight: 600;
 
     &.small {
@@ -35,14 +34,14 @@ wz-button {
 
     &.primary {
       background-color: var(--primary-base);
-      &:hover {
+      &:hover:enabled {
         background-color: var(--primary-dark);
       }
     }
 
     &.destructive {
       background-color: var(--negative-base);
-      &:hover {
+      &:hover:enabled {
         background-color: var(--negative-dark);
       }
     }
@@ -53,16 +52,22 @@ wz-button {
       border: solid 1px var(--neutral-dark);
       box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.03);
 
-      &:hover:not(:active) {
+      &:hover:not(:focus):enabled {
         color: var(--primary-base);
+        border-color: var(--ink-base);
+      }
+
+      &:active {
+        color: var(--primary-dark);
         border-color: currentColor;
       }
 
-      &:active,
-      &:focus:active {
-        box-shadow: inset 0 2px 4px 0 rgba(24, 33, 35, 0.32);
-        color: var(--primary-dark);
-        border-color: currentColor;
+      &:focus:not(:active) {
+        color: var(--ink-base);
+
+        // avoid border to increase the size of the button
+        margin-left: -1px;
+        margin-right: -1px;
       }
     }
 
@@ -76,10 +81,13 @@ wz-button {
     &:focus:not(:active) {
       outline: none;
       border: solid 2px var(--primary-light);
+
+      // avoid border to increase the size of the button
+      margin-left: -2px;
+      margin-right: -2px;
     }
 
-    &:active,
-    &:focus:not(:active){
+    &:active {
       box-shadow: inset 0 2px 4px 0 rgba(24, 33, 35, 0.32);
       outline: none;
     }
