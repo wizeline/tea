@@ -13,7 +13,6 @@ export class Icon {
   size: number = 40;
   render() {
     const SelectedIcon = IconSet(this);
-    debugger;
     return <div>{SelectedIcon}</div>;
   }
 }
