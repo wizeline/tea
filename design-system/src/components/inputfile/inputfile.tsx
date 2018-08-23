@@ -23,11 +23,15 @@ export class InputFile {
     this.inputFile.forceUpdate();
   }
 
+  byPassOnClick() {
+    document.getElementById('file').click();
+  }
+
   render() {
     return [
       <input type="file" name="file" id="file" class="inputfile" />,
       <label htmlFor="file">
-        <wz-button>{this.placeholder}</wz-button>
+        <wz-button onClick={this.byPassOnClick}>{this.placeholder}</wz-button>
         <span>{this.label}</span>
       </label>,
     ];

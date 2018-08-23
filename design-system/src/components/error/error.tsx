@@ -6,10 +6,9 @@ import { Component } from '@stencil/core';
   shadow: false,
 })
 export class Error {
-
   render() {
     return (
-      <wz-text>
+      <wz-text small>
         <slot />
       </wz-text>
     );

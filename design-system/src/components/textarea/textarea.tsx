@@ -6,12 +6,20 @@ import { Component, Prop } from '@stencil/core';
   shadow: false,
 })
 export class TextArea {
-
-  @Prop({ mutable: true }) value: string;
+  @Prop({ mutable: true })
+  value: string;
+  @Prop()
+  placeholder: string;
 
   render() {
     const DEFAULT_ROWS = 3;
 
-    return <textarea rows={DEFAULT_ROWS} value={this.value} />;
+    return (
+      <textarea
+        placeholder={this.placeholder}
+        rows={DEFAULT_ROWS}
+        value={this.value}
+      />
+    );
   }
 }
