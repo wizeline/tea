@@ -9,7 +9,6 @@ wz-textarea {
     resize: none;
     outline: none !important;
     width: 100%;
-    overflow: hidden;
 
     &:focus {
       border-color:  var(--primary-light);
