@@ -20,9 +20,6 @@ wz-input-file {
     wz-button button {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
-      &:active {
-        pointer-events: none;
-      }
     }
 
     span {
