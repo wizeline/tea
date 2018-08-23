@@ -7,7 +7,7 @@ import { Component, Prop, Element, Listen } from '@stencil/core';
 })
 export class InputFile {
   @Prop()
-  name: string;
+  name: string = 'file';
   @Prop()
   placeholder: string = 'Choose a file';
   @Prop()
@@ -25,7 +25,7 @@ export class InputFile {
 
   render() {
     return [
-      <input type="file" name="file" id="file" class="inputfile" />,
+      <input type="file" name={this.name} id="file" class="inputfile" />,
       <label htmlFor="file">
         <wz-button>{this.placeholder}</wz-button>
         <span>{this.label}</span>
