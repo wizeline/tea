@@ -14,6 +14,8 @@ export class Input {
   type: string = 'text';
   @Prop()
   disabled: boolean = false;
+  @Prop()
+  placeholder: string;
 
   render() {
     if (this.type === 'file') {
@@ -23,6 +25,7 @@ export class Input {
     return (
       <div class="input-container">
         <input
+          placeholder={this.placeholder}
           disabled={this.disabled}
           name={this.name}
           value={this.value}
