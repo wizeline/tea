@@ -6,12 +6,8 @@ exports[`wz-textarea renders value 1`] = `
   value="Hello, my name is Marty McFly"
 >
   
-  <div
-    class="textarea-container"
-  >
-    <textarea
-      rows="3"
-    />
-  </div>
+  <textarea
+    rows="3"
+  />
 </wz-textarea>
 `;
