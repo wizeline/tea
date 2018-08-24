@@ -1,15 +1,9 @@
 version: 2
 
 jobs:
-  cd_to_dir:
+  dependency_install:
     docker: &yarn_defaults
     - image: node:8.7.0
-    steps:
-    - run:
-        name: Change to Design System directory
-        command: ls && cd ./
-  dependency_install:
-    docker: *yarn_defaults
     steps:
     - checkout
     - run:
@@ -35,7 +29,7 @@ jobs:
     - restore_cache: *restore_yarn_cache
     - run:
         name: Unit test
-        command: yarn run test
+        command: cd design-system && yarn run test
   dangerjs:
     docker: *yarn_defaults
     environment:
@@ -45,18 +39,14 @@ jobs:
     - restore_cache: *restore_yarn_cache
     - run:
         name: DangerJS
-        command: yarn danger ci
+        command: cd design-system && yarn danger ci
 
 workflows:
   version: 2
   continuous_integration:
     jobs:
-    - cd_to_dir:
-        context: ppm-js
     - dependency_install:
         context: ppm-js
-        requires:
-        - cd_to_dir
     - test:
         context: ppm-js
         requires:
