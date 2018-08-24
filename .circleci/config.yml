@@ -7,7 +7,7 @@ jobs:
     steps:
     - run:
         name: Change to Design System directory
-        command: cd ./design-system
+        command: ls && cd ./
   dependency_install:
     docker: *yarn_defaults
     steps:
