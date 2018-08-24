@@ -2,12 +2,13 @@ version: 2
 
 jobs:
   cd_to_dir:
+    docker: &yarn_defaults
     steps:
     - run:
         name: Change to Design System directory
         command: cd design-system/
   dependency_install:
-    docker: &yarn_defaults
+    docker: *yarn_defaults
     - image: node:8.7.0
     steps:
     - checkout
