@@ -1,7 +1,19 @@
-export default ({ icon, ...otherProps }) => {
+export default ({ icon }) => {
   switch (icon) {
+    case 'arrow-back': {
+      return <icon-arrow-back />;
+    }
+    case 'access-time': {
+      return <icon-access-time />;
+    }
+    case 'check': {
+      return <icon-check />;
+    }
+    case 'edit': {
+      return <icon-edit />;
+    }
     case 'search': {
-      return <icon-search {...otherProps} />;
+      return <icon-search />;
     }
     default:
       break;

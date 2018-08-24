@@ -1,4 +1,5 @@
-import { Component, Prop } from '@stencil/core';
+import { Component, Prop, Element } from '@stencil/core';
+import sizeMatcher, { MEDIUM_SIZE } from '../../matchers/size';
 import IconSet from '../icons';
 
 @Component({
@@ -7,12 +8,28 @@ import IconSet from '../icons';
   shadow: false,
 })
 export class Icon {
+  // Size props
+  @Prop()
+  small: boolean;
+  @Prop()
+  medium: boolean;
+  @Prop()
+  large: boolean;
+  @Prop()
+  color: string;
   @Prop()
   icon: string;
-  @Prop()
-  size: number = 40;
+
+  @Element()
+  el: HTMLElement;
   render() {
     const SelectedIcon = IconSet(this);
-    return <div>{SelectedIcon}</div>;
+    const size = sizeMatcher(this) || MEDIUM_SIZE;
+
+    this.el.style.setProperty('--icon-fill', this.color);
+
+    const className = ['icon-container', size].join(' ');
+
+    return <div class={className}>{SelectedIcon}</div>;
   }
 }

@@ -1,10 +1,15 @@
+export const XSMALL_SIZE = 'xsmall';
 export const SMALL_SIZE = 'small';
 export const MEDIUM_SIZE = 'medium';
 export const LARGE_SIZE = 'large';
 export const XLARGE_SIZE = 'xlarge';
 
 export default props => {
-  const { small, medium, large, xlarge } = props;
+  const { xsmall, small, medium, large, xlarge } = props;
+
+  if (xsmall) {
+    return XSMALL_SIZE;
+  }
 
   if (small) {
     return SMALL_SIZE;
