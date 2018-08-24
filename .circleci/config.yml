@@ -17,7 +17,7 @@ jobs:
         - v2-yarn-cache-{{ .Branch }}
         - v2-yarn-cache-master
         - v2-yarn-cache
-    - run: yarn
+    - run: cd desing-system && yarn
     - save_cache:
         key: v2-yarn-cache-{{ .Branch }}-{{ checksum "yarn.lock" }}
         paths:
