@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`wz-tag renders value 1`] = `
+<wz-tag
+  class="hydrated"
+>
+  
+  
+  <div
+    class="tag-container neutral"
+  >
+    
+    Hello, my name is Marty McFly
+    
+  </div>
+</wz-tag>
+`;
