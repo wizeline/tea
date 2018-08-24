@@ -55,7 +55,7 @@ workflows:
     - dependency_install:
         context: ppm-js
         requires:
-        - cd_to_di
+        - cd_to_dir
     - test:
         context: ppm-js
         requires:
