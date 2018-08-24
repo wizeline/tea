@@ -3,7 +3,7 @@ version: 2
 jobs:
   cd_to_dir:
     steps:
-      run:
+    - run:
         name: Change to Design System directory
         command: cd design-system/
   dependency_install:
