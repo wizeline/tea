@@ -1,5 +1,8 @@
 version: 2
 
+defaults:
+  working_directory: /design-system
+
 jobs:
   dependency_install:
     docker: &yarn_defaults
