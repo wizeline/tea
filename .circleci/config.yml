@@ -17,7 +17,7 @@ jobs:
         - v2-yarn-cache-{{ .Branch }}
         - v2-yarn-cache-master
         - v2-yarn-cache
-    - run: yarn
+    - run: cd desing-system && yarn
     - save_cache:
         key: v2-yarn-cache-{{ .Branch }}-{{ checksum "yarn.lock" }}
         paths:
@@ -29,7 +29,7 @@ jobs:
     - restore_cache: *restore_yarn_cache
     - run:
         name: Unit test
-        command: yarn run test
+        command: cd design-system && yarn run test
   dangerjs:
     docker: *yarn_defaults
     environment:
@@ -39,7 +39,7 @@ jobs:
     - restore_cache: *restore_yarn_cache
     - run:
         name: DangerJS
-        command: yarn danger ci
+        command: cd design-system && yarn danger ci
 
 workflows:
   version: 2
