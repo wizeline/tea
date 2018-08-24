@@ -1,9 +1,9 @@
 version: 2
 
-defaults:
-  working_directory: /design-system
-
 jobs:
+  cd_to_dir:
+    name: Change to Design System directory
+    command: cd design-system/
   dependency_install:
     docker: &yarn_defaults
     - image: node:8.7.0
@@ -48,8 +48,12 @@ workflows:
   version: 2
   continuous_integration:
     jobs:
+    - cd_to_dir:
+        context: ppm-js
     - dependency_install:
         context: ppm-js
+        requires:
+        - cd_to_di
     - test:
         context: ppm-js
         requires:
