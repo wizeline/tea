@@ -7,26 +7,86 @@
 
 ## Properties
 
+#### color
+
+string
+
+
 #### icon
 
 string
 
 
-#### size
+#### large
 
-number
+boolean
+
+
+#### medium
+
+boolean
+
+
+#### small
+
+boolean
+
+
+#### xlarge
+
+boolean
+
+
+#### xsmall
+
+boolean
+
+
+#### xxsmall
+
+boolean
 
 
 ## Attributes
 
+#### color
+
+string
+
+
 #### icon
 
 string
 
 
-#### size
+#### large
 
-number
+boolean
+
+
+#### medium
+
+boolean
+
+
+#### small
+
+boolean
+
+
+#### xlarge
+
+boolean
+
+
+#### xsmall
+
+boolean
+
+
+#### xxsmall
+
+boolean
 
 
 

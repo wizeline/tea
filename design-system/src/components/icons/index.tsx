@@ -9,6 +9,9 @@ export default ({ icon }) => {
     case 'check': {
       return <icon-check />;
     }
+    case 'clear': {
+      return <icon-clear />;
+    }
     case 'edit': {
       return <icon-edit />;
     }

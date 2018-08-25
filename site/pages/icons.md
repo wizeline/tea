@@ -21,6 +21,12 @@ showSource: true
 ```html|span-2
 showSource: true
 ---
+<wz-icon icon="clear" />
+```
+
+```html|span-2
+showSource: true
+---
 <wz-icon icon="edit" />
 ```
 

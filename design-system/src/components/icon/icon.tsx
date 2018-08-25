@@ -10,11 +10,17 @@ import IconSet from '../icons';
 export class Icon {
   // Size props
   @Prop()
+  xxsmall: boolean;
+  @Prop()
+  xsmall: boolean;
+  @Prop()
   small: boolean;
   @Prop()
   medium: boolean;
   @Prop()
   large: boolean;
+  @Prop()
+  xlarge: boolean;
   @Prop()
   color: string;
   @Prop()
