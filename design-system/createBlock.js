@@ -2,7 +2,7 @@ const fs = require('fs-extra');
 
 const createEmptyFile = path => fs.outputFile(path, '');
 
-const extensions = ['tsx', 'scss', 'test.js', 'stories.js'];
+const extensions = ['tsx', 'scss', 'test.tsx'];
 
 const prompt = (question, callback) => {
   const stdin = process.stdin,
