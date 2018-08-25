@@ -8,7 +8,6 @@ describe('wz-icon', () => {
       components: [Icon],
       html: '<wz-icon icon="clear" />',
     });
-    const tagDiv = element.querySelector('div');
 
     expect(element).toMatchSnapshot();
   });
