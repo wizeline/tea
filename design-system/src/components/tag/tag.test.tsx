@@ -1,17 +1,16 @@
-import { Tag } from './tag';
-
 import { TestWindow } from '@stencil/core/testing';
+import { Tag } from './tag';
 
 describe('wz-tag', () => {
   it('renders value', async () => {
     const window = new TestWindow();
     const element = await window.load({
       components: [Tag],
-      html: "<wz-tag value='Hello, my name is Marty McFly'></wz-tag>",
+      html: "<wz-tag>Hello, my name is Marty McFly</wz-tag>",
     });
-    const input = element.querySelector('input');
+    const tagDiv = element.querySelector('div');
 
-    expect(input.value).toEqual('Hello, my name is Marty McFly');
+    expect(tagDiv.textContent).toEqual('Hello, my name is Marty McFly');
     expect(element).toMatchSnapshot();
   });
 });

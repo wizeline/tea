@@ -7,11 +7,18 @@ exports[`wz-input renders disabled 1`] = `
 >
   
   <div
-    class="input-container"
+    class=""
   >
-    <input
-      type="text"
-    />
+    <div
+      class="input-container"
+    >
+      <input
+        type="text"
+      />
+    </div>
+    <wz-error>
+      
+    </wz-error>
   </div>
 </wz-input>
 `;
@@ -23,11 +30,18 @@ exports[`wz-input renders value 1`] = `
 >
   
   <div
-    class="input-container"
+    class=""
   >
-    <input
-      type="text"
-    />
+    <div
+      class="input-container"
+    >
+      <input
+        type="text"
+      />
+    </div>
+    <wz-error>
+      
+    </wz-error>
   </div>
 </wz-input>
 `;
