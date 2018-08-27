@@ -1,0 +1,15 @@
+# Description
+
+{A description so people without context can understand your work.}
+
+{An image with the component final result}
+
+{Link to bug tracker if applicable}
+
+{Close github issue X automatically if applicable (Closes #x, closes wizeline/repo#x)}
+
+## Highlights
+
+- {If your pull request is long, people will be lazy to review it.}
+- {In such a case, provide highlights in here, point to relevant code, etc.}
+
