@@ -59,3 +59,22 @@ showSource: true
   I'm a tag
 </wz-tag>
 ```
+
+### With Icon
+
+```html|span-2
+showSource: true
+---
+<wz-tag filled="primary" icon="access-time">
+  I'm a tag
+</wz-tag>
+```
+
+```html|span-2
+showSource: true
+---
+<wz-tag filled="negative" icon="access-time">
+  I'm a tag
+</wz-tag>
+```
+

@@ -1,0 +1,36 @@
+wz-icon {
+   --icon-fill: var(--info-light);
+
+  .xxsmall, .xxsmall svg {
+    width: 12px;
+    height: 12px;
+  }
+  .xsmall, .xsmall svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .small, .small svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .medium, .medium svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .large, .large svg {
+    width: 48px;
+    height: 48px;
+  }
+
+  .xlarge, .xlarge svg {
+    width: 56px;
+    height: 56px;
+  }
+
+  svg {
+    fill: var(--icon-fill);
+  }
+}

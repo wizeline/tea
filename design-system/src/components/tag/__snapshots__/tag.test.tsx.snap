@@ -1,5 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`wz-tag renders tag with icon 1`] = `
+<wz-tag
+  class="hydrated"
+  icon="edit"
+>
+  
+  
+  <div
+    class="tag-container neutral"
+  >
+    <div
+      class="tag-icon-container left-container"
+    >
+      <wz-icon
+        color="var(--ink-clear)"
+        icon="edit"
+        xxsmall=""
+      />
+    </div>
+    <div
+      class="tag-inner-container"
+    >
+      
+      Hello, my name is Marty McFly
+      
+    </div>
+  </div>
+</wz-tag>
+`;
+
 exports[`wz-tag renders value 1`] = `
 <wz-tag
   class="hydrated"
@@ -10,8 +40,13 @@ exports[`wz-tag renders value 1`] = `
     class="tag-container neutral"
   >
     
-    Hello, my name is Marty McFly
-    
+    <div
+      class="tag-inner-container"
+    >
+      
+      Hello, my name is Marty McFly
+      
+    </div>
   </div>
 </wz-tag>
 `;

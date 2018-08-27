@@ -1,23 +1,28 @@
 version: 2
 
+npm_login: &npm_login
+  run:
+    name: Login to NPM
+    command: |
+      npm config set @wizeline:registry=https://verdaccio.wizeline.sh
+      npm config set //verdaccio.wizeline.sh/:_authToken=$NPM_TOKEN
+
 jobs:
   dependency_install:
     docker: &yarn_defaults
     - image: node:8.7.0
     steps:
     - checkout
-    - run:
-        name: Login to NPM
-        command: |
-          npm config set @wizeline:registry=https://verdaccio.wizeline.sh
-          npm config set //verdaccio.wizeline.sh/:_authToken=$NPM_TOKEN
+    - *npm_login
     - restore_cache: &restore_yarn_cache
         keys:
         - v2-yarn-cache-{{ .Branch }}-{{ checksum "yarn.lock" }}
         - v2-yarn-cache-{{ .Branch }}
         - v2-yarn-cache-master
         - v2-yarn-cache
-    - run: yarn
+    - run:
+        name: Build
+        command: cd design-system && yarn
     - save_cache:
         key: v2-yarn-cache-{{ .Branch }}-{{ checksum "yarn.lock" }}
         paths:
@@ -29,18 +34,7 @@ jobs:
     - restore_cache: *restore_yarn_cache
     - run:
         name: Unit test
-        command: yarn run test
-  dangerjs:
-    docker: *yarn_defaults
-    environment:
-      NODE_ENV: test
-    steps:
-    - checkout
-    - restore_cache: *restore_yarn_cache
-    - run:
-        name: DangerJS
-        command: yarn danger ci
-
+        command: cd design-system && yarn && yarn run test
 workflows:
   version: 2
   continuous_integration:
@@ -51,7 +45,4 @@ workflows:
         context: ppm-js
         requires:
         - dependency_install
-    - dangerjs:
-        context: ppm-js
-        requires:
-        - dependency_install
+
