@@ -7,12 +7,16 @@ import statusMatcher, { NEUTRAL_STATUS } from '../../matchers/status';
   shadow: false,
 })
 export class Tag {
-
   // theming
-  @Prop() filled: string;
+  @Prop()
+  filled: string;
 
   // ability
-  @Prop() removable: boolean;
+  @Prop()
+  removable: boolean;
+
+  @Prop()
+  icon: string;
 
   getClass() {
     return statusMatcher({ [this.filled]: this.filled }) || NEUTRAL_STATUS;
@@ -23,8 +27,19 @@ export class Tag {
 
     return (
       <div class={['tag-container', componentClass].join(' ')}>
-        <slot />
-        {this.removable && <span>×</span>}
+        {this.icon && (
+          <div class="tag-icon-container left-container">
+            <wz-icon xxsmall color="var(--ink-clear)" icon={this.icon} />
+          </div>
+        )}
+        <div class="tag-inner-container">
+          <slot />
+          {this.removable && (
+            <div class="tag-icon-container right-container">
+              <wz-icon xxsmall icon="clear" />
+            </div>
+          )}
+        </div>
       </div>
     );
   }

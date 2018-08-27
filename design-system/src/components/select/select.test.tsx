@@ -1,7 +1,7 @@
 import { Select } from './select';
 import { TestWindow } from '@stencil/core/testing';
 
-describe.skip('wz-select', () => {
+describe('wz-select', () => {
   it('renders value', async () => {
     const window = new TestWindow();
     const element = await window.load({
@@ -12,9 +12,7 @@ describe.skip('wz-select', () => {
         <option option="2">Second Option</option>
       </wz-select>`,
     });
-    const select = element.querySelector('select');
 
-    expect(select.value).toEqual('');
     expect(element).toMatchSnapshot();
   });
 });

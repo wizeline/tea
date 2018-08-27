@@ -47,6 +47,11 @@ const pages = [
     content: pageLoader(() => import('../pages/link.md')),
   },
   {
+    path: '/icons',
+    title: 'Icons',
+    content: pageLoader(() => import('../pages/icons.md')),
+  },
+  {
     path: '/heading',
     title: 'Heading',
     content: pageLoader(() => import('../pages/heading.md')),

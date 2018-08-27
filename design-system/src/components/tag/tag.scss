@@ -1,13 +1,41 @@
 wz-tag {
+  --tag-border-radius: 3px;
   .tag-container {
     cursor: default;
     display: inline-flex;
     align-items: center;
     height: 28px;
-    padding: 4px 8px;
+    border-top-right-radius: var(--tag-border-radius);
+    border-bottom-right-radius: var(--tag-border-radius);
     font-size: 14px;
     border-radius: 3px;
     color: var(--ink-base);
+
+    .tag-icon-container {
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      &.left-container {
+        width: 20px;
+        border-bottom-left-radius: var(--tag-border-radius);
+        border-top-left-radius: var(--tag-border-radius);
+        background-blend-mode: luminosity;
+        background-image: linear-gradient(
+          rgba(24, 33, 35, 0.8),
+          rgba(24, 33, 35, 0.8)
+        );
+      }
+      &.right-container {
+        margin-left: 8px;
+      }
+    }
+
+    .tag-inner-container {
+      display: flex;
+      align-items: center;
+      padding: 4px 8px;
+    }
 
     &.neutral {
       box-shadow: 0 2px 4px 0 rgba(60, 66, 69, 0.16);
