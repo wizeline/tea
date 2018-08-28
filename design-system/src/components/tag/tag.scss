@@ -1,15 +1,38 @@
 wz-tag {
   --tag-border-radius: 3px;
+  --tag-fill: var(--ink-clear);
   .tag-container {
     cursor: default;
     display: inline-flex;
     align-items: center;
     height: 28px;
-    border-top-right-radius: var(--tag-border-radius);
-    border-bottom-right-radius: var(--tag-border-radius);
     font-size: 14px;
-    border-radius: 3px;
+    border-radius: var(--tag-border-radius);
     color: var(--ink-base);
+    overflow: hidden;
+
+    &.outline {
+      box-shadow: 0 2px 4px 0 rgba(60, 66, 69, 0.16);
+      border: solid 1px var(--ink-light);
+      background-color: var(--ink-clear);
+    }
+
+    &.outline .tag-icon-container.left-container {
+      background-color: var(--positive-base);
+    }
+
+    &.filled {
+      color: var(--ink-dark);
+      background-color: var(--tag-fill);
+    }
+
+    &.filled .tag-icon-container.left-container {
+      background-blend-mode: luminosity;
+      background-image: linear-gradient(
+        rgba(24, 33, 35, 0.8),
+        rgba(24, 33, 35, 0.8)
+      );
+    }
 
     .tag-icon-container {
       display: flex;
@@ -18,13 +41,6 @@ wz-tag {
       align-items: center;
       &.left-container {
         width: 20px;
-        border-bottom-left-radius: var(--tag-border-radius);
-        border-top-left-radius: var(--tag-border-radius);
-        background-blend-mode: luminosity;
-        background-image: linear-gradient(
-          rgba(24, 33, 35, 0.8),
-          rgba(24, 33, 35, 0.8)
-        );
       }
       &.right-container {
         margin-left: 8px;
@@ -35,32 +51,6 @@ wz-tag {
       display: flex;
       align-items: center;
       padding: 4px 8px;
-    }
-
-    &.neutral {
-      box-shadow: 0 2px 4px 0 rgba(60, 66, 69, 0.16);
-      background-color: var(--ink-clear);
-      border: solid 1px var(--ink-light);
-    }
-
-    &.primary {
-      background-color: var(--primary-light);
-    }
-
-    &.info {
-      background-color: var(--info-light);
-    }
-
-    &.warning {
-      background-color: var(--warning-light);
-    }
-
-    &.negative {
-      background-color: var(--negative-light);
-    }
-
-    &.positive {
-      background-color: var(--positive-light);
     }
 
     > span {
