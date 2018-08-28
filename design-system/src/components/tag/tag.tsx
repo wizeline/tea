@@ -1,5 +1,4 @@
-import { Component, Prop } from '@stencil/core';
-import statusMatcher, { NEUTRAL_STATUS } from '../../matchers/status';
+import { Component, Prop, Element } from '@stencil/core';
 
 @Component({
   tag: 'wz-tag',
@@ -7,9 +6,8 @@ import statusMatcher, { NEUTRAL_STATUS } from '../../matchers/status';
   shadow: false,
 })
 export class Tag {
-  // theming
   @Prop()
-  filled: string;
+  color: string;
 
   // ability
   @Prop()
@@ -18,15 +16,14 @@ export class Tag {
   @Prop()
   icon: string;
 
-  getClass() {
-    return statusMatcher({ [this.filled]: this.filled }) || NEUTRAL_STATUS;
-  }
+  @Element()
+  el: HTMLElement;
 
   render() {
-    const componentClass = this.getClass();
-
+    this.el.style.setProperty('--tag-fill', this.color);
+    const isFilledClass = Boolean(this.color) ? 'filled' : 'outline';
     return (
-      <div class={['tag-container', componentClass].join(' ')}>
+      <div class={['tag-container', isFilledClass].join(' ')}>
         {this.icon && (
           <div class="tag-icon-container left-container">
             <wz-icon xxsmall color="var(--ink-clear)" icon={this.icon} />

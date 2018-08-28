@@ -13,7 +13,7 @@ showSource: true
 ```html|span-2
 showSource: true
 ---
-<wz-tag filled="primary">
+<wz-tag color="var(--warning-light)">
   I'm a tag
 </wz-tag>
 ```
@@ -21,7 +21,7 @@ showSource: true
 ```html|span-2
 showSource: true
 ---
-<wz-tag filled="info">
+<wz-tag color="var(--positive-light)">
   I'm a tag
 </wz-tag>
 ```
@@ -29,23 +29,7 @@ showSource: true
 ```html|span-2
 showSource: true
 ---
-<wz-tag filled="warning">
-  I'm a tag
-</wz-tag>
-```
-
-```html|span-2
-showSource: true
----
-<wz-tag filled="negative">
-  I'm a tag
-</wz-tag>
-```
-
-```html|span-2
-showSource: true
----
-<wz-tag filled="positive">
+<wz-tag color="var(--info-light)">
   I'm a tag
 </wz-tag>
 ```
@@ -65,7 +49,7 @@ showSource: true
 ```html|span-2
 showSource: true
 ---
-<wz-tag filled="primary" icon="access-time">
+<wz-tag color="var(--primary-light)" icon="access-time">
   I'm a tag
 </wz-tag>
 ```
@@ -73,7 +57,7 @@ showSource: true
 ```html|span-2
 showSource: true
 ---
-<wz-tag filled="negative" icon="access-time">
+<wz-tag icon="access-time">
   I'm a tag
 </wz-tag>
 ```
