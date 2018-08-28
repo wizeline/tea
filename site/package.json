@@ -14,7 +14,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "catalog-start": "catalog start",
+    "start": "catalog start",
     "catalog-build": "catalog build",
     "deploy": "yarn catalog-build && surge --project ./catalog/build --domain wizeline-tea.surge.sh"
   }

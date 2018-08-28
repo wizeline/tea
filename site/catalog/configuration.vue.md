@@ -3,7 +3,7 @@
 Import `defineCustomElements` function from Wizeline Tea in your `main.js` file.
 
 ```code
-import { defineCustomElements } from '@wizeline/tea/dist/esm/es5/wizeline-tea.define';
+import { defineCustomElements } from '@wizeline/tea';
 ```
 
 #### Setup
