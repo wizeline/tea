@@ -8,7 +8,7 @@ exports[`wz-tag renders tag with icon 1`] = `
   
   
   <div
-    class="tag-container neutral"
+    class="tag-container outline"
   >
     <div
       class="tag-icon-container left-container"
@@ -37,7 +37,7 @@ exports[`wz-tag renders value 1`] = `
   
   
   <div
-    class="tag-container neutral"
+    class="tag-container outline"
   >
     
     <div
