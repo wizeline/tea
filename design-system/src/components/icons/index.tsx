@@ -18,6 +18,12 @@ export default ({ icon }) => {
     case 'search': {
       return <icon-search />;
     }
+    case 'thumb-down': {
+      return <icon-thumb-down />;
+    }
+    case 'thumb-up': {
+      return <icon-thumb-up />;
+    }
     default:
       break;
   }

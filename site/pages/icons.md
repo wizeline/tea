@@ -35,3 +35,15 @@ showSource: true
 ---
 <wz-icon icon="search" />
 ```
+
+```html|span-2
+showSource: true
+---
+<wz-icon icon="thumb-down" />
+```
+
+```html|span-2
+showSource: true
+---
+<wz-icon icon="thumb-up" />
+```
