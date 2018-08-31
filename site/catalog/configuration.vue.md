@@ -1,4 +1,4 @@
-#### Import the package
+#### Setup the package
 
 Import `defineCustomElements` function and the `css` from Wizeline Tea.
 
