@@ -12,13 +12,12 @@ export const config: Config = {
       serviceWorker: false,
     },
   ],
+  globalStyle: 'src/css/globals/variables.scss',
+  minifyCss: true,
+  minifyJs: true,
   plugins: [
     sass({
-      injectGlobalPaths: [
-        'src/css/globals/mixins.scss',
-        'src/css/globals/variables.scss',
-        'src/css/reset.scss',
-      ],
+      injectGlobalPaths: ['src/css/globals/mixins.scss'],
     }),
   ],
 };
