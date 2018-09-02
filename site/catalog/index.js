@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Catalog, pageLoader } from 'catalog';
 import { defineCustomElements } from '@wizeline/tea';
+import '@wizeline/tea/dist/wizeline-tea.css';
 import theme from './theme';
 
 const pages = [
