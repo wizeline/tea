@@ -1,7 +1,6 @@
-import { Config } from '@stencil/core';
 import { sass } from '@stencil/sass';
 
-export const config: Config = {
+export const config = {
   namespace: 'wizeline-tea',
   outputTargets: [
     {
@@ -12,7 +11,7 @@ export const config: Config = {
       serviceWorker: false,
     },
   ],
-  globalStyle: 'src/css/globals/variables.scss',
+  globalStyle: 'src/css/globals/global.scss',
   minifyCss: true,
   minifyJs: true,
   plugins: [
