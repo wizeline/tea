@@ -1,9 +1,10 @@
-#### Import the package
+#### Setup the package
 
-Import `defineCustomElements` function from Wizeline Tea in your `main.js` file.
+Import `defineCustomElements` function and the `css` from Wizeline Tea.
 
 ```code
 import { defineCustomElements } from '@wizeline/tea';
+import '@wizeline/tea/dist/wizeline-tea.css';
 ```
 
 #### Setup
