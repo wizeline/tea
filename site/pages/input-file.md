@@ -15,5 +15,5 @@ showSource: true
 ```html
 showSource: true
 ---
-<wz-input error="Please select a file" />
+<wz-input type="file" error="Please select a file" />
 ```
