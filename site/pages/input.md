@@ -11,5 +11,5 @@ showSource: true
 ```html
 showSource: true
 ---
-<wz-input invalid error="Please select at least one roadmap" />
+<wz-input error="Please select at least one roadmap" />
 ```
