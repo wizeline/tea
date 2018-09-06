@@ -6,9 +6,7 @@ exports[`wz-input renders disabled 1`] = `
   disabled="false"
 >
   
-  <div
-    class=""
-  >
+  <wz-form-error>
     <div
       class="input-container"
     >
@@ -16,10 +14,7 @@ exports[`wz-input renders disabled 1`] = `
         type="text"
       />
     </div>
-    <wz-error>
-      
-    </wz-error>
-  </div>
+  </wz-form-error>
 </wz-input>
 `;
 
@@ -29,9 +24,7 @@ exports[`wz-input renders value 1`] = `
   value="Hello, my name is Marty McFly"
 >
   
-  <div
-    class=""
-  >
+  <wz-form-error>
     <div
       class="input-container"
     >
@@ -39,9 +32,6 @@ exports[`wz-input renders value 1`] = `
         type="text"
       />
     </div>
-    <wz-error>
-      
-    </wz-error>
-  </div>
+  </wz-form-error>
 </wz-input>
 `;

@@ -12,6 +12,8 @@ export class InputFile {
   placeholder: string = 'Choose a file';
   @Prop()
   disabled: boolean = false;
+  @Prop()
+  accept: string;
   @Element()
   inputFile: HTMLStencilElement;
 
@@ -29,7 +31,13 @@ export class InputFile {
 
   render() {
     return [
-      <input type="file" name={this.name} id="file" class="inputfile" />,
+      <input
+        type="file"
+        name={this.name}
+        id="file"
+        class="inputfile"
+        accept={this.accept}
+      />,
       <label htmlFor="file">
         <wz-button onClick={this.byPassOnClick}>{this.placeholder}</wz-button>
         <span>{this.label}</span>

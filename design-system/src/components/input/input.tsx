@@ -20,30 +20,33 @@ export class Input {
   error: string;
   @Prop()
   class: string;
+  // file type props
   @Prop()
-  invalid: boolean;
+  accept: string;
 
   render() {
+    const commonProps = {
+      disabled: this.disabled,
+      name: this.name,
+      placeholder: this.placeholder,
+    };
+
     if (this.type === 'file') {
-      return <wz-input-file {...this} />;
+      return (
+        <wz-form-error error={this.error}>
+          <wz-input-file accept={this.accept} {...commonProps} />
+        </wz-form-error>
+      );
     }
 
-    const errorClass = this.error ? 'error' : '';
     const classes = [this.class, 'input-container'].join(' ');
 
     return (
-      <div class={errorClass}>
+      <wz-form-error error={this.error}>
         <div class={classes}>
-          <input
-            placeholder={this.placeholder}
-            disabled={this.disabled}
-            name={this.name}
-            value={this.value}
-            type={this.type}
-          />
+          <input value={this.value} type={this.type} {...commonProps} />
         </div>
-        <wz-error>{this.invalid && this.error}</wz-error>
-      </div>
+      </wz-form-error>
     );
   }
 }

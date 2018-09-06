@@ -1,0 +1,10 @@
+wz-form-error {
+  .error .input-container {
+    border-color: var(--negative-base);
+  }
+
+  wz-error {
+    display: block;
+    height: 16px;
+  }
+}
