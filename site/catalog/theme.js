@@ -1,4 +1,5 @@
-const FONT_FAMILY = '"ProximaNova"';
+const FONT_FAMILY =
+  "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica";
 
 export default {
   fontFamily: FONT_FAMILY,
