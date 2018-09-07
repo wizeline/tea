@@ -7,47 +7,13 @@
 
 ## Properties
 
-#### base
-
-boolean
-
-
-#### bold
-
-boolean
-
-
-#### semibold
-
-boolean
-
-
-#### small
-
-boolean
-
-
-## Attributes
-
-#### base
-
-boolean
-
-
-#### bold
-
-boolean
-
-
-#### semibold
-
-boolean
-
-
-#### small
-
-boolean
-
+| Property   | Attribute  | Description | Type      |
+| ---------- | ---------- | ----------- | --------- |
+| `base`     | `base`     |             | `boolean` |
+| `bold`     | `bold`     |             | `boolean` |
+| `color`    | `color`    |             | `string`  |
+| `semibold` | `semibold` |             | `boolean` |
+| `small`    | `small`    |             | `boolean` |
 
 
 ----------------------------------------------

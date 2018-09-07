@@ -7,47 +7,12 @@
 
 ## Properties
 
-#### large
-
-boolean
-
-
-#### medium
-
-boolean
-
-
-#### small
-
-boolean
-
-
-#### xlarge
-
-boolean
-
-
-## Attributes
-
-#### large
-
-boolean
-
-
-#### medium
-
-boolean
-
-
-#### small
-
-boolean
-
-
-#### xlarge
-
-boolean
-
+| Property | Attribute | Description | Type      |
+| -------- | --------- | ----------- | --------- |
+| `large`  | `large`   |             | `boolean` |
+| `medium` | `medium`  |             | `boolean` |
+| `small`  | `small`   |             | `boolean` |
+| `xlarge` | `xlarge`  |             | `boolean` |
 
 
 ----------------------------------------------
