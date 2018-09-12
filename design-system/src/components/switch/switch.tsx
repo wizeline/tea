@@ -5,7 +5,7 @@ import { Component, Prop } from '@stencil/core';
   styleUrl: 'switch.scss',
   shadow: false,
 })
-export class Checkbox {
+export class Switch {
   @Prop()
   id: string = 'wz-switch';
 
