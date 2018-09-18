@@ -5,7 +5,7 @@ import { Component, Prop } from '@stencil/core';
   styleUrl: 'toggle.scss',
   shadow: false,
 })
-export class Switch {
+export class Toggle {
   @Prop()
   id: string = 'wz-toggle';
   checked: boolean = false;

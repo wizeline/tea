@@ -87,9 +87,9 @@ const pages = [
         content: pageLoader(() => import('../pages/select.md')),
       },
       {
-        path: '/switch',
-        title: 'Switch',
-        content: pageLoader(() => import('../pages/switch.md')),
+        path: '/toggle',
+        title: 'Toggle',
+        content: pageLoader(() => import('../pages/toggle.md')),
       },
       {
         path: '/textarea',
