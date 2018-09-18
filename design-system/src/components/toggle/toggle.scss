@@ -1,0 +1,43 @@
+wz-switch {
+  --innerCircleSize: 20px;
+  --switchWidth: 48px;
+  --padding: 4px;
+  --checkedPosition: calc(
+    var(--switchWidth) - var(--innerCircleSize) - var(--padding)
+  );
+
+  input[type='checkbox'] {
+    display: none;
+  }
+
+  label {
+    content: '';
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: var(--switchWidth);
+    height: 28px;
+    border-radius: 14px;
+    background-color: var(--secondary-dark);
+    cursor: pointer;
+  }
+
+  label:before {
+    position: absolute;
+    content: '';
+    width: var(--innerCircleSize);
+    height: var(--innerCircleSize);
+    border-radius: 50%;
+    background-color: var(--surface-base);
+    @include transition(transform);
+    transform: translateX(var(--padding));
+  }
+
+  input[type='checkbox']:checked + label {
+    background-color: var(--primary-base);
+    @include transition(background-color);
+    &:before {
+      transform: translateX(var(--checkedPosition));
+    }
+  }
+}
