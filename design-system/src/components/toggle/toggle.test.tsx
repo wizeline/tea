@@ -1,13 +1,13 @@
-import { Switch } from './switch';
+import { Toggle } from './toggle';
 import { TestWindow } from '@stencil/core/testing';
 
-describe('wz-switch', () => {
+describe('wz-toggle', () => {
   it('renders value', async () => {
     const window = new TestWindow();
     const element = await window.load({
-      components: [Switch],
+      components: [Toggle],
       html: `
-        <wz-switch />
+        <wz-toggle />
       `,
     });
 
