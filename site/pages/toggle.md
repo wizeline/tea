@@ -1,6 +1,6 @@
-### Switch
+### Toggle
 ```html
 showSource: true
 ---
-<wz-switch />
+<wz-toggle checked />
 ```
