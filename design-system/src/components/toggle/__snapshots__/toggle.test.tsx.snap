@@ -1,3 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`wz-toggle renders value 1`] = `null`;
+exports[`wz-toggle renders value 1`] = `
+<wz-toggle
+  class="hydrated"
+>
+  
+  
+      
+  <div
+    class="checkbox"
+  >
+    <input
+      id=""
+      type="checkbox"
+    />
+    <label
+      for=""
+    />
+  </div>
+</wz-toggle>
+`;
