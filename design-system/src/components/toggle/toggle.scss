@@ -40,4 +40,11 @@ wz-toggle {
       transform: translateX(var(--checkedPosition));
     }
   }
+
+  input[type='checkbox']:disabled + label {
+    background-color: var(--secondary-dark);
+    &:before {
+      background-color: var(--ink-light);
+    }
+  }
 }
