@@ -1,10 +1,13 @@
 export default ({ icon }) => {
   switch (icon) {
-    case 'arrow-back': {
-      return <icon-arrow-back />;
-    }
     case 'access-time': {
       return <icon-access-time />;
+    }
+    case 'add-item': {
+      return <icon-add-item />;
+    }
+    case 'arrow-back': {
+      return <icon-arrow-back />;
     }
     case 'check': {
       return <icon-check />;
