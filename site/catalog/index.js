@@ -82,6 +82,16 @@ const pages = [
         content: pageLoader(() => import('../pages/input-file.md')),
       },
       {
+        path: '/select',
+        title: 'Select',
+        content: pageLoader(() => import('../pages/select.md')),
+      },
+      {
+        path: '/toggle',
+        title: 'Toggle',
+        content: pageLoader(() => import('../pages/toggle.md')),
+      },
+      {
         path: '/textarea',
         title: 'TextArea',
         content: pageLoader(() => import('../pages/textarea.md')),

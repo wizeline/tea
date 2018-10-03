@@ -19,6 +19,24 @@ value: "var(--primary-dark)"
 ```
 
 ```color
+span: 2
+name: "Secondary Light"
+value: "var(--secondary-light)"
+```
+
+```color
+span: 2
+name: "Secondary Base"
+value: "var(--secondary-base)"
+```
+
+```color
+span: 2
+name: "Secondary Dark"
+value: "var(--secondary-dark)"
+```
+
+```color
 span: 3
 name: "Background Base"
 value: "var(--background-base)"
