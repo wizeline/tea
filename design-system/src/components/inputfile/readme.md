@@ -7,37 +7,12 @@
 
 ## Properties
 
-#### disabled
-
-boolean
-
-
-#### name
-
-string
-
-
-#### placeholder
-
-string
-
-
-## Attributes
-
-#### disabled
-
-boolean
-
-
-#### name
-
-string
-
-
-#### placeholder
-
-string
-
+| Property      | Attribute     | Description | Type      |
+| ------------- | ------------- | ----------- | --------- |
+| `accept`      | `accept`      |             | `string`  |
+| `disabled`    | `disabled`    |             | `boolean` |
+| `name`        | `name`        |             | `string`  |
+| `placeholder` | `placeholder` |             | `string`  |
 
 
 ----------------------------------------------

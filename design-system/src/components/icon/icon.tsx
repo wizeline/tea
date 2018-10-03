@@ -22,12 +22,13 @@ export class Icon {
   @Prop()
   xlarge: boolean;
   @Prop()
-  color: string;
+  color: string = 'var(--info-light)';
   @Prop()
   icon: string;
 
   @Element()
   el: HTMLElement;
+
   render() {
     const SelectedIcon = IconSet(this);
     const size = sizeMatcher(this) || MEDIUM_SIZE;
