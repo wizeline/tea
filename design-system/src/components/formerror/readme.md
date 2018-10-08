@@ -1,4 +1,4 @@
-# wz-link
+# wz-form-error
 
 
 
@@ -9,8 +9,7 @@
 
 | Property | Attribute | Description | Type     |
 | -------- | --------- | ----------- | -------- |
-| `href`   | `href`    |             | `string` |
-| `target` | `target`  |             | `string` |
+| `error`  | `error`   |             | `string` |
 
 
 ----------------------------------------------

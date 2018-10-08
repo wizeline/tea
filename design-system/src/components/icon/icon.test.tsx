@@ -1,14 +1,10 @@
-import { TestWindow } from '@stencil/core/testing';
-import { Icon } from './icon';
+import { newE2EPage } from '@stencil/core/testing';
 
 describe('wz-icon', () => {
   it('renders icon', async () => {
-    const window = new TestWindow();
-    const element = await window.load({
-      components: [Icon],
-      html: '<wz-icon icon="clear" />',
-    });
-
-    expect(element).toMatchSnapshot();
+    const page = await newE2EPage();
+    await page.setContent("<wz-icon icon='clear' />");
+    const screenshot = await page.compareScreenshot();
+    expect(screenshot).toMatchScreenshot();
   });
 });

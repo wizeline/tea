@@ -1,0 +1,15 @@
+{
+  "id": "3d709b1b",
+  "image": "1f1bf78a49ceafe7e5c1c479c22ead30.png",
+  "userAgent": "Desktop",
+  "desc": "wz-icon renders icon",
+  "testPath": "src/components/icon/icon.test.tsx",
+  "width": 1280,
+  "height": 800,
+  "deviceScaleFactor": 1,
+  "naturalWidth": 1280,
+  "naturalHeight": 800,
+  "hasTouch": false,
+  "isLandscape": false,
+  "isMobile": false
+}

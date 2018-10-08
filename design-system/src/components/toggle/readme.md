@@ -1,4 +1,4 @@
-# wz-text
+# wz-toggle
 
 
 
@@ -9,10 +9,9 @@
 
 | Property   | Attribute  | Description | Type      |
 | ---------- | ---------- | ----------- | --------- |
-| `base`     | `base`     |             | `boolean` |
-| `bold`     | `bold`     |             | `boolean` |
-| `semibold` | `semibold` |             | `boolean` |
-| `small`    | `small`    |             | `boolean` |
+| `checked`  | `checked`  |             | `boolean` |
+| `disabled` | `disabled` |             | `boolean` |
+| `id`       | `id`       |             | `string`  |
 
 
 ----------------------------------------------
