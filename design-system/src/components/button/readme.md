@@ -7,77 +7,15 @@
 
 ## Properties
 
-#### destructive
-
-boolean
-
-
-#### disabled
-
-boolean
-
-
-#### large
-
-boolean
-
-
-#### medium
-
-boolean
-
-
-#### primary
-
-boolean
-
-
-#### secondary
-
-boolean
-
-
-#### small
-
-boolean
-
-
-## Attributes
-
-#### destructive
-
-boolean
-
-
-#### disabled
-
-boolean
-
-
-#### large
-
-boolean
-
-
-#### medium
-
-boolean
-
-
-#### primary
-
-boolean
-
-
-#### secondary
-
-boolean
-
-
-#### small
-
-boolean
-
+| Property      | Attribute     | Description | Type      |
+| ------------- | ------------- | ----------- | --------- |
+| `destructive` | `destructive` |             | `boolean` |
+| `disabled`    | `disabled`    |             | `boolean` |
+| `large`       | `large`       |             | `boolean` |
+| `medium`      | `medium`      |             | `boolean` |
+| `primary`     | `primary`     |             | `boolean` |
+| `secondary`   | `secondary`   |             | `boolean` |
+| `small`       | `small`       |             | `boolean` |
 
 
 ----------------------------------------------

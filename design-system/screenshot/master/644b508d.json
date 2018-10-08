@@ -1,0 +1,15 @@
+{
+  "id": "644b508d",
+  "image": "bef6aed21b96a0ee5f24a1b02e633036.png",
+  "userAgent": "Desktop",
+  "desc": "wz-tag renders tag with icon",
+  "testPath": "src/components/tag/tag.test.tsx",
+  "width": 1280,
+  "height": 800,
+  "deviceScaleFactor": 1,
+  "naturalWidth": 1280,
+  "naturalHeight": 800,
+  "hasTouch": false,
+  "isLandscape": false,
+  "isMobile": false
+}

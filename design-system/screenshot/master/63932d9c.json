@@ -1,0 +1,15 @@
+{
+  "id": "63932d9c",
+  "image": "99415c06bd5a192bfaef02b1fe6d3a8a.png",
+  "userAgent": "Desktop",
+  "desc": "wz-input renders disabled",
+  "testPath": "src/components/input/input.test.tsx",
+  "width": 1280,
+  "height": 800,
+  "deviceScaleFactor": 1,
+  "naturalWidth": 1280,
+  "naturalHeight": 800,
+  "hasTouch": false,
+  "isLandscape": false,
+  "isMobile": false
+}
