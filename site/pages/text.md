@@ -2,7 +2,7 @@
 ```html
 showSource: true
 ---
-<wz-text>
+<wz-text color="var(--primary-base)">
   The quick brown fox jumps over the lazy dog
 </wz-text>
 ```
