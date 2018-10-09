@@ -7,87 +7,16 @@
 
 ## Properties
 
-#### color
-
-string
-
-
-#### icon
-
-string
-
-
-#### large
-
-boolean
-
-
-#### medium
-
-boolean
-
-
-#### small
-
-boolean
-
-
-#### xlarge
-
-boolean
-
-
-#### xsmall
-
-boolean
-
-
-#### xxsmall
-
-boolean
-
-
-## Attributes
-
-#### color
-
-string
-
-
-#### icon
-
-string
-
-
-#### large
-
-boolean
-
-
-#### medium
-
-boolean
-
-
-#### small
-
-boolean
-
-
-#### xlarge
-
-boolean
-
-
-#### xsmall
-
-boolean
-
-
-#### xxsmall
-
-boolean
-
+| Property  | Attribute | Description | Type      |
+| --------- | --------- | ----------- | --------- |
+| `color`   | `color`   |             | `string`  |
+| `icon`    | `icon`    |             | `string`  |
+| `large`   | `large`   |             | `boolean` |
+| `medium`  | `medium`  |             | `boolean` |
+| `small`   | `small`   |             | `boolean` |
+| `xlarge`  | `xlarge`  |             | `boolean` |
+| `xsmall`  | `xsmall`  |             | `boolean` |
+| `xxsmall` | `xxsmall` |             | `boolean` |
 
 
 ----------------------------------------------
