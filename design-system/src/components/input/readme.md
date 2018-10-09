@@ -7,87 +7,16 @@
 
 ## Properties
 
-#### class
-
-string
-
-
-#### disabled
-
-boolean
-
-
-#### error
-
-string
-
-
-#### invalid
-
-boolean
-
-
-#### name
-
-string
-
-
-#### placeholder
-
-string
-
-
-#### type
-
-string
-
-
-#### value
-
-string
-
-
-## Attributes
-
-#### class
-
-string
-
-
-#### disabled
-
-boolean
-
-
-#### error
-
-string
-
-
-#### invalid
-
-boolean
-
-
-#### name
-
-string
-
-
-#### placeholder
-
-string
-
-
-#### type
-
-string
-
-
-#### value
-
-string
-
+| Property      | Attribute     | Description | Type      |
+| ------------- | ------------- | ----------- | --------- |
+| `accept`      | `accept`      |             | `string`  |
+| `class`       | `class`       |             | `string`  |
+| `disabled`    | `disabled`    |             | `boolean` |
+| `error`       | `error`       |             | `string`  |
+| `name`        | `name`        |             | `string`  |
+| `placeholder` | `placeholder` |             | `string`  |
+| `type`        | `type`        |             | `string`  |
+| `value`       | `value`       |             | `string`  |
 
 
 ----------------------------------------------
