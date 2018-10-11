@@ -25,5 +25,21 @@ showSource: true
 </wz-button>
 ```
 
+### Button Link
+```html
+showSource: true
+---
+<wz-button-link>
+  Button that looks like a link
+</wz-button-link>
+```
 
+### Button Link disabeld
+```html
+showSource: true
+---
+<wz-button-link disabled>
+  Button that looks like a link
+</wz-button-link>
+```
 

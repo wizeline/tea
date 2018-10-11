@@ -1,0 +1,29 @@
+wz-button-link {
+  display: inline-block;
+
+  &:focus {
+    outline: 0;
+  }
+
+  button {
+    background-color: transparent;
+    padding: 0 16px;
+    border: none;
+    color: var(--primary-base);
+    cursor: pointer;
+    font-size: 14px;
+    cursor: pointer;
+    outline: inherit;
+
+    &:hover {
+      color: var(--primary-dark);
+    }
+
+    &:disabled {
+      cursor: default;
+      color: var(--ink-light);
+    }
+
+ }
+
+}
