@@ -34,7 +34,7 @@ showSource: true
 </wz-button-link>
 ```
 
-### Button Link disabeld
+### Button Link disabled
 ```html
 showSource: true
 ---
