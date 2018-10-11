@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`wz-button-link renders disabled 1`] = `
+<button
+  disabled=""
+>
+  
+  Hello, my name is Marty McFly
+</button>
+`;
+
+exports[`wz-button-link renders value 1`] = `
+<button>
+  
+  Hello, my name is Marty McFly
+</button>
+`;
