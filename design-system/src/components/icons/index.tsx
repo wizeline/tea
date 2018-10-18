@@ -18,6 +18,9 @@ export default ({ icon }) => {
     case 'edit': {
       return <icon-edit />;
     }
+    case 'power': {
+      return <icon-power />;
+    }
     case 'search': {
       return <icon-search />;
     }
@@ -26,6 +29,9 @@ export default ({ icon }) => {
     }
     case 'thumb-up': {
       return <icon-thumb-up />;
+    }
+    case 'work': {
+      return <icon-work />;
     }
     default:
       break;
