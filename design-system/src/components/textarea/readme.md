@@ -7,27 +7,12 @@
 
 ## Properties
 
-#### placeholder
-
-string
-
-
-#### value
-
-string
-
-
-## Attributes
-
-#### placeholder
-
-string
-
-
-#### value
-
-string
-
+| Property      | Attribute     | Description | Type     |
+| ------------- | ------------- | ----------- | -------- |
+| `error`       | `error`       |             | `string` |
+| `name`        | `name`        |             | `string` |
+| `placeholder` | `placeholder` |             | `string` |
+| `value`       | `value`       |             | `string` |
 
 
 ----------------------------------------------

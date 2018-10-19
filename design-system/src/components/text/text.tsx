@@ -1,4 +1,4 @@
-import { Component, Prop } from '@stencil/core';
+import { Component, Element, Prop } from '@stencil/core';
 import { CLASS_DEFAULT } from '../../constants';
 import sizeMatcher from '../../matchers/size';
 import fontWeightMatcher from '../../matchers/fontWeight';
@@ -9,10 +9,20 @@ import fontWeightMatcher from '../../matchers/fontWeight';
   shadow: false,
 })
 export class Text {
-  @Prop() small: boolean;
-  @Prop() base: boolean;
-  @Prop() semibold: boolean;
-  @Prop() bold: boolean;
+  @Prop()
+  small: boolean;
+  @Prop()
+  base: boolean;
+  @Prop()
+  semibold: boolean;
+  @Prop()
+  bold: boolean;
+
+  @Prop()
+  color: string = 'var(--ink-base)';
+
+  @Element()
+  textElement: HTMLElement;
 
   getClass() {
     const fontWeight = fontWeightMatcher(this);
@@ -20,8 +30,11 @@ export class Text {
 
     return [fontWeight, size].join(' ');
   }
+
   render() {
     const componentClass = this.getClass();
+
+    this.textElement.style.setProperty('--wz-text-color', this.color);
 
     return (
       <span class={componentClass}>
