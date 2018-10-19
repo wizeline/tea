@@ -1,13 +1,15 @@
-wz-text span {
-  @include fontWeight;
-  color: var(--ink-base);
+wz-text {
+   --wz-text-color: var(--ink-base);
+  span {
+    @include fontWeight;
+    color: var(--wz-text-color);
 
-  &.default {
-    font-size: 14px;
+    &.default {
+      font-size: 14px;
+    }
+
+    &.small {
+      font-size: 12px;
+    }
   }
-
-  &.small {
-    font-size: 12px;
-  }
-
 }
