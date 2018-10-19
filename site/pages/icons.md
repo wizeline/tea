@@ -53,3 +53,15 @@ showSource: true
 ---
 <wz-icon icon="thumb-up" />
 ```
+
+```html|span-2
+showSource: true
+---
+<wz-icon icon="power" />
+```
+
+```html|span-2
+showSource: true
+---
+<wz-icon icon="work" />
+```
