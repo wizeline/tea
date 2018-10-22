@@ -39,6 +39,12 @@ showSource: true
 ```html|span-2
 showSource: true
 ---
+<wz-icon icon="power" />
+```
+
+```html|span-2
+showSource: true
+---
 <wz-icon icon="search" />
 ```
 
@@ -52,12 +58,6 @@ showSource: true
 showSource: true
 ---
 <wz-icon icon="thumb-up" />
-```
-
-```html|span-2
-showSource: true
----
-<wz-icon icon="power" />
 ```
 
 ```html|span-2
