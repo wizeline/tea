@@ -1,0 +1,43 @@
+wz-avatar {
+  div {
+    background-size: cover;
+
+    &.xsmall {
+      width: 24px;
+      height: 24px;
+    }
+
+    &.small {
+      width: 32px;
+      height: 32px;
+    }
+
+    &.medium {
+      width: 64px;
+      height: 64px;
+    }
+
+    &.large {
+      width: 100px;
+      height: 100px;
+    }
+
+    &.xlarge {
+      width: 132px;
+      height: 132px;
+    }
+
+    &.xxlarge {
+      width: 164px;
+      height: 164px;
+    }
+
+    &.round {
+      border-radius: 50%;
+    }
+
+    &.square {
+      border-radius: 4px;
+    }
+  }
+}
