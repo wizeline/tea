@@ -39,6 +39,12 @@ showSource: true
 ```html|span-2
 showSource: true
 ---
+<wz-icon icon="more-horiz" />
+```
+
+```html|span-2
+showSource: true
+---
 <wz-icon icon="power" />
 ```
 
