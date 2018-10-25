@@ -18,6 +18,9 @@ export default ({ icon }) => {
     case 'edit': {
       return <icon-edit />;
     }
+    case 'more-horiz': {
+      return <icon-more-horiz />;
+    }
     case 'power': {
       return <icon-power />;
     }
