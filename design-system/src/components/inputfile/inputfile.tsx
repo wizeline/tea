@@ -25,7 +25,8 @@ export class InputFile {
     this.inputFile.forceUpdate();
   }
 
-  byPassOnClick() {
+  bypassOnClick(event) {
+    event.preventDefault();
     document.getElementById('file').click();
   }
 
@@ -39,7 +40,7 @@ export class InputFile {
         accept={this.accept}
       />,
       <label htmlFor="file">
-        <wz-button onClick={this.byPassOnClick}>{this.placeholder}</wz-button>
+        <wz-button onClick={this.bypassOnClick}>{this.placeholder}</wz-button>
         <span>{this.label}</span>
       </label>,
     ];
