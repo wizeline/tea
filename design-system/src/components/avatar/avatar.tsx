@@ -7,7 +7,7 @@ import shapeMatcher, { ROUND } from '../../matchers/shape';
   styleUrl: 'avatar.scss',
   shadow: false,
 })
-export class Button {
+export class Avatar {
   @Prop()
   src: string;
   @Prop()
