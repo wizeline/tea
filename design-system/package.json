@@ -1,6 +1,6 @@
 {
   "name": "@wizeline/tea",
-  "version": "0.13.1",
+  "version": "0.14.0-oatmilk.0",
   "description": "Wizeline's Design System",
   "module": "dist/esm/index.js",
   "main": "dist/wizeline-tea",
