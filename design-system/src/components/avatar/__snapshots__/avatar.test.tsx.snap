@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`wz-avatar renders value 1`] = `
+<wz-avatar
+  class="hydrated"
+  square=""
+  src="https://api.adorable.io/avatars/285/abott@adorable.png"
+  xlarge=""
+>
+  
+  <div
+    class="square xlarge"
+  />
+</wz-avatar>
+`;
