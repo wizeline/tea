@@ -38,6 +38,11 @@ const pages = [
     content: pageLoader(() => import('../pages/colors.md')),
   },
   {
+    path: '/avatar',
+    title: 'Avatar',
+    content: pageLoader(() => import('../pages/avatar.md')),
+  },
+  {
     path: '/button',
     title: 'Button',
     content: pageLoader(() => import('../pages/button.md')),
