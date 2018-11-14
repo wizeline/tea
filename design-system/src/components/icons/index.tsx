@@ -33,6 +33,9 @@ export default ({ icon }) => {
     case 'thumb-up': {
       return <icon-thumb-up />;
     }
+    case 'warning': {
+      return <icon-warning />;
+    }
     case 'work': {
       return <icon-work />;
     }
