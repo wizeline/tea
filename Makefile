@@ -2,6 +2,7 @@
 
 build-tea:
 	cd design-system/; \
+	yarn; \
 	yarn build
 
 build-site: build-tea
