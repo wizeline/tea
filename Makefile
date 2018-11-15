@@ -7,7 +7,7 @@ build-tea:
 
 build-site: build-tea
 	cd site/; \
-	npm; \
+	npm i; \
 	npm run build
 
 clean:
