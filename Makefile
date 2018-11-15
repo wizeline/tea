@@ -2,13 +2,13 @@
 
 build-tea:
 	cd design-system/; \
-	yarn; \
-	yarn build
+	npm i; \
+	npm run build
 
 build-site: build-tea
 	cd site/; \
-	yarn; \
-	yarn build
+	npm; \
+	npm run build
 
 clean:
 	rm -rf design-system/node_modules
