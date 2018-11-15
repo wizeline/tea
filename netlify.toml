@@ -6,6 +6,6 @@
 #    that is where we will look for package.json/.nvmrc/etc not repo root!
 
 [build]
-base    = "site"
+base    = ""
 publish = "site/catalog/build"
 command = "make build-site"
