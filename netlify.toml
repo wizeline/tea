@@ -8,9 +8,4 @@
 [build]
 base    = "site"
 publish = "site/catalog/build"
-command = "make"
-
-# Production context: All deploys to the main
-# repository branch will inherit these settings.
-[context.production]
 command = "make build-site"
