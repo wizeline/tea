@@ -1,5 +1,5 @@
 wz-checkbox {
-  >div {
+  > div {
     display: inline-flex;
     height: 16px;
   }
@@ -23,11 +23,11 @@ wz-checkbox {
 
       &:after {
         content: "\2713";
-	font-size: 16px;
-	position: absolute;
-	top: -2px;
-	left: 1px;
-	color: var(--primary-dark);
+        font-size: 16px;
+        position: absolute;
+        top: -2px;
+        left: 1px;
+        color: var(--primary-dark);
       }
 
       &:hover:after {
@@ -35,11 +35,12 @@ wz-checkbox {
       }
     }
 
-    &:disabled, &:disabled:checked:after, &:disabled:hover:after {
+    &:disabled,
+    &:disabled:checked:after,
+    &:disabled:hover:after {
       border-color: var(--ink-light);
       color: var(--ink-light);
     }
   }
-
 }
 
