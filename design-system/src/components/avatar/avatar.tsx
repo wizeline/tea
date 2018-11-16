@@ -38,7 +38,7 @@ export class Avatar {
   render() {
     const componentClass = this.getClass();
     const style = {
-      backgroundImage: `url('${this.src}")`,
+      backgroundImage: `url('${this.src}')`,
       backgroundSize: this.backgroundsize,
     };
 
