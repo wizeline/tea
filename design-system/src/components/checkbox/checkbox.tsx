@@ -1,12 +1,12 @@
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'wz-input-checkbox',
-  styleUrl: 'inputcheckbox.scss',
+  tag: 'wz-checkbox',
+  styleUrl: 'checkbox.scss',
   shadow: false,
 })
-export class InputCheckbox {
-  @Prop({ mutable: true })
+export class Checkbox {
+  @Prop()
   value: string;
   @Prop()
   name: string;

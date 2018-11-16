@@ -1,6 +1,7 @@
-wz-input-checkbox {
+wz-checkbox {
   >div {
     display: inline-flex;
+    height: 16px;
   }
 
   input {
@@ -24,7 +25,7 @@ wz-input-checkbox {
         content: "\2713";
 	font-size: 16px;
 	position: absolute;
-	top: 0px;
+	top: -2px;
 	left: 1px;
 	color: var(--primary-dark);
       }
