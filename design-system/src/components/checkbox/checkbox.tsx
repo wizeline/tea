@@ -17,7 +17,7 @@ export class Checkbox {
 
   render() {
     return (
-      <div>
+      <div class="checkbox-container">
         <input
           checked={this.checked}
           disabled={this.disabled}
