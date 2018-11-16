@@ -19,7 +19,7 @@ wz-checkbox {
     }
 
     &:checked {
-      color: #1875d1;
+      color: var(--primary-dark);
 
       &:after {
         content: "\2713";
