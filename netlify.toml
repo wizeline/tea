@@ -8,4 +8,4 @@
 [build]
   base    = ""
   publish = "site/catalog/build"
-  command = "npm i yarn@1.12.3 && make build-site"
+  command = "npm i -g yarn@1.12.3 && make build-site"
