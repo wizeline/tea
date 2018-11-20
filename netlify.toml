@@ -8,7 +8,4 @@
 [build]
   base    = ""
   publish = "site/catalog/build"
-  command = "make build-site"
-
-[context.production.environment]
-  YARN_VERSION = "1.12.3"
+  command = "npm i yarn@1.12.3 && make build-site"

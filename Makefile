@@ -1,9 +1,6 @@
-.PHONY: install-yarn build-tea build-site clean
+.PHONY: build-tea build-site clean
 
-install-yarn:
-	npm i yarn
-
-build-tea: install-yarn
+build-tea:
 	cd design-system/; \
 	yarn; \
 	yarn build
