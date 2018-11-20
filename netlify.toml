@@ -6,6 +6,9 @@
 #    that is where we will look for package.json/.nvmrc/etc not repo root!
 
 [build]
-base    = ""
-publish = "site/catalog/build"
-command = "make build-site"
+  base    = ""
+  publish = "site/catalog/build"
+  command = "make build-site"
+
+[context.production.environment]
+  YARN_VERSION = "1.12.3"
