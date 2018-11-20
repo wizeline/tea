@@ -9,7 +9,7 @@
       "es2015"
     ],
     "moduleResolution": "node",
-    "module": "next",
+    "module": "esnext",
     "target": "es2017",
     "noUnusedLocals": true,
     "noUnusedParameters": true,
