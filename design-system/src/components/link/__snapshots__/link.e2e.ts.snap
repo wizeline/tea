@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`wz-link should render a link-component 1`] = `"Hello, my name is Marty McFly"`;
