@@ -1,6 +1,6 @@
 {
   "name": "@wizeline/tea",
-  "version": "0.14.0-oatmilk.2",
+  "version": "0.14.0-oatmilk.3",
   "description": "Wizeline's Design System",
   "module": "dist/esm/index.js",
   "main": "dist/wizeline-tea",
@@ -12,25 +12,22 @@
     "build": "stencil build --prerender",
     "createBlock": "node ./createBlock.js",
     "prepublishOnly": "stencil build",
-    "test": "jest --no-cache",
-    "test.watch": "jest --watch --no-cache"
+    "test": "stencil test --spec",
+    "test.watch": "stencil test --spec --watch",
+    "e2e": "stencil test --e2e"
   },
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.41",
-    "@babel/core": "^7.0.0-beta.41",
-    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.41",
-    "@babel/plugin-proposal-decorators": "^7.0.0-beta.41",
-    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.41",
-    "@babel/plugin-syntax-jsx": "^7.0.0-beta.41",
-    "@babel/preset-env": "^7.0.0-beta.41",
-    "@babel/preset-typescript": "^7.0.0-beta.41",
-    "@stencil/core": "^0.12.1",
-    "@stencil/sass": "0.1.0",
+    "@stencil/core": "^0.15.2",
+    "@stencil/sass": "0.1.1",
     "@stencil/utils": "latest",
     "@types/jest": "^23.3.0",
+    "@types/puppeteer": "^1.10.0",
     "babel-core": "^6.26.3",
     "babel-runtime": "^6.26.0",
-    "jest": "^23.5.0",
+    "jest": "23.6.0",
+    "jest-cli": "23.6.0",
+    "jest-environment-node": "^23.4.0",
+    "puppeteer": "1.8.0",
     "surge": "^0.20.1",
     "watch": "^1.0.2"
   },
@@ -38,16 +35,5 @@
     "Charlie L <charlie@wizeline.com>",
     "Fernando Rubio <fernando@wizeline.com>"
   ],
-  "license": "MIT",
-  "jest": {
-    "transform": {
-      "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"
-    },
-    "testMatch": [
-      "<rootDir>/src/**/__tests__/**/*.(j|t)s?(x)",
-      "<rootDir>/src/**/?(*.)(spec|test).(j|t)s?(x)"
-    ],
-
-    "moduleFileExtensions": ["ts", "tsx", "js", "json", "jsx"]
-  }
+  "license": "MIT"
 }

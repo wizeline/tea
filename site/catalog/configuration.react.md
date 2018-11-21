@@ -3,7 +3,7 @@
 Import `defineCustomElements` function and the `css` from Wizeline Tea.
 
 ```code
-import { defineCustomElements } from '@wizeline/tea';
+import { defineCustomElements } from '@wizeline/tea/dist/loader';
 import '@wizeline/tea/dist/wizeline-tea.css';
 ```
 

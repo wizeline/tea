@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`wz-avatar should render an avatar-component 1`] = `"<wz-avatar xlarge=\\"\\" square=\\"\\" src=\\"https://api.adorable.io/avatars/285/abott@adorable.png\\" class=\\"hydrated\\"><div class=\\"square xlarge\\" style=\\"background-image: url(\\"https;\\"></div></wz-avatar>"`;
