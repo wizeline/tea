@@ -87,6 +87,11 @@ const pages = [
         content: pageLoader(() => import('../pages/input-file.md')),
       },
       {
+        path: '/radio',
+        title: 'Radio',
+        content: pageLoader(() => import('../pages/radio.md')),
+      },
+      {
         path: '/select',
         title: 'Select',
         content: pageLoader(() => import('../pages/select.md')),
