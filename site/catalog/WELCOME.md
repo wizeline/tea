@@ -1,15 +1,16 @@
 ```image
-src: catalog_logo.svg
+src: wizeline-tea-logo.svg
+span: 1
 plain: true
 ```
 
-Hi!
+**Wizeline Tea** is a design system created to ease, accelerate, and standardize
+designs for HTML interfaces that are developed under the Wizeline brand.
 
-Welcome to your freshly set up Catalog. To get started immediately, check out the `catalog/` directory (or wherever you've set it up).
+As a developer or a designer, you can use these custom components to: 
 
-- `WELCOME.md`: This Markdown document
-- `index.js`: The entry file to start Catalog. Change configuration and add pages here.
-- `index.html`: The HTML document which gets served. Usually there's no need to edit this unless for example you want to load a custom font.
-- `static/`: A directory with files that are served statically. For example the Catalog logo above.
+- Create a consistent user experience across Wizeline’s virtual environments.  
+- Make their designs scalable and systematical.
+- Expedite prototyping and testing processes. 
 
-For more details about how to use Catalog, check out the [documentation](https://docs.catalog.style/).
+You may, as well, add components to the [design system](https://github.com/wizeline/tea).
