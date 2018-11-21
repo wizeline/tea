@@ -1,0 +1,66 @@
+wz-radio {
+  .radio-container {
+    display: block;
+    position: relative;
+    padding-left: 24px;
+    cursor: pointer;
+    user-select: none;
+
+    /* Hide the browser's default radio button */
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+
+      /* When the radio button is checked, add a background color */
+      &:checked ~ .checkmark {
+        background-color: white;
+        /* Show the indicator (dot/circle) when checked */
+        &:after {
+          display: block;
+        }
+      }
+
+      &:disabled ~ .checkmark {
+        border-color: var(--ink-light);
+        &:after {
+          background: var(--ink-light);
+        }
+      }
+    }
+
+    /* Create a custom radio button */
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 16px;
+      width: 16px;
+      background-color: white;
+      border: 1px solid var(--primary-base);
+      padding: 1px;
+      border-radius: 50%;
+
+      &:after {
+        /* Create the indicator (the dot/circle - hidden when not checked) */
+        content: "";
+        position: absolute;
+        display: none;
+        /* Style the indicator (dot/circle) */
+        top: 2px;
+        left: 2px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--primary-dark);
+      }
+    }
+
+    /* hover style on where input is not checked or disabled */
+    &:hover input:not(:checked):not(:disabled) ~ .checkmark:after {
+      display: block;
+      background-color: var(--neutral-base);
+    }
+  }
+}
+
