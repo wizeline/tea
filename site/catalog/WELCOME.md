@@ -4,7 +4,7 @@ span: 1
 plain: true
 ```
 
-**Wizeline Tea** is a design system created to ease, accelerate, and standardize
+**Wizeline Tea** is a design system created to ease, accelerate and standardize
 designs for HTML interfaces that are developed under the Wizeline brand.
 
 As a developer or a designer, you can use these custom components to: 
