@@ -10,7 +10,6 @@
   "scripts": {
     "start": "stencil build --dev --watch --serve",
     "build": "stencil build --prerender",
-    "createBlock": "node ./createBlock.js",
     "prepublishOnly": "stencil build",
     "test": "stencil test --spec",
     "test.watch": "stencil test --spec --watch",
