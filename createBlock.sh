@@ -29,7 +29,7 @@ cat > "${COMPONENT_DIRECTORY}/${FILE_NAME}.e2e.ts" << EOF
 import { newE2EPage } from '@stencil/core/testing';
 
 describe('wz-${FILE_NAME}', () => {
-  it('should render a ${FILE_NAME}-component', async () => {
+  it('should render a wz-${FILE_NAME} component', async () => {
     const page = await newE2EPage();
     await page.setContent('<wz-${FILE_NAME}></wz-${FILE_NAME}>');
   });
