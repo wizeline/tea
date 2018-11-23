@@ -1,21 +1,19 @@
 wz-dropdown-menu-item {
   .dropdown-menu-item-container {
+    --dropdown-menu-item-color: var(--ink-base);
     display: flex;
     align-items: center;
     height: 32px;
     width: 100%;
     padding: 0 8px;
     background-color: var(--ink-clear);
-    color: var(--ink-base);
     &.selected {
       background-color: var(--background-base);
     }
     &:hover:not(.selected) {
       background-color: var(--primary-base);
       cursor: pointer;
-      wz-text span {
-        color: var(--ink-clear);
-      }
+      --dropdown-menu-item-color: var(--ink-clear);
     }
   }
 }

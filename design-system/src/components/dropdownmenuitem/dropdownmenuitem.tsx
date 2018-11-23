@@ -17,9 +17,7 @@ export class DropdownMenuItem {
     const dropdownMenuItemClass = [baseClass, selectedClass].join(' ');
     return (
       <div class={dropdownMenuItemClass} data-value={this.value}>
-        <wz-text>
-          <slot />
-        </wz-text>
+        <slot />
       </div>
     );
   }

@@ -12,8 +12,8 @@ export class Dropdown {
   @State()
   isOpen: boolean = false;
 
-  dropdownTrigger: any;
-  dropdownMenu: any;
+  dropdownTrigger: Element;
+  dropdownMenu: HTMLElement;
   popper: Popper;
 
   componentDidLoad() {
@@ -21,15 +21,12 @@ export class Dropdown {
     // get the first element from the slot
     this.dropdownTrigger = this.dropdown.firstElementChild;
     this.dropdownMenu.style.display = 'none';
-
     this.dropdownTrigger.addEventListener('click', () => {
       this.toggleOpenDropdown();
     });
-
     this.closeOnClick();
-
     this.popper = new Popper(this.dropdownTrigger, this.dropdownMenu, {
-      placement: 'bottom',
+      placement: 'bottom-start',
     });
   }
 
