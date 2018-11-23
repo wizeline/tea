@@ -1,3 +1,7 @@
-wz-dropdown{
+wz-dropdown {
+  display: inline-block;
 
+  wz-dropdown-menu {
+    top: 10px;
+  }
 }

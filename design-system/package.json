@@ -6,7 +6,9 @@
   "main": "dist/wizeline-tea",
   "types": "dist/types/components.d.ts",
   "collection": "dist/collection/collection-manifest.json",
-  "files": ["dist/"],
+  "files": [
+    "dist/"
+  ],
   "scripts": {
     "start": "stencil build --dev --watch --serve",
     "build": "stencil build --prerender",
@@ -34,5 +36,8 @@
     "Charlie L <charlie@wizeline.com>",
     "Fernando Rubio <fernando@wizeline.com>"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "popper.js": "^1.14.5"
+  }
 }

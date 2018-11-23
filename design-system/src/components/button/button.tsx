@@ -1,6 +1,8 @@
 import { Component, Prop, Element } from '@stencil/core';
 import sizeMatcher, { MEDIUM_SIZE } from '../../matchers/size';
-import significanceMatcher, { SECONDARY_SIGNIFICANCE } from '../../matchers/significance';
+import significanceMatcher, {
+  SECONDARY_SIGNIFICANCE,
+} from '../../matchers/significance';
 
 @Component({
   tag: 'wz-button',
@@ -8,19 +10,27 @@ import significanceMatcher, { SECONDARY_SIGNIFICANCE } from '../../matchers/sign
   shadow: false,
 })
 export class Button {
-  @Element() button: HTMLButtonElement;
+  @Element()
+  button: HTMLButtonElement;
   // Token props
-  @Prop() primary: boolean;
-  @Prop() secondary: boolean;
-  @Prop() destructive: boolean;
+  @Prop()
+  primary: boolean;
+  @Prop()
+  secondary: boolean;
+  @Prop()
+  destructive: boolean;
 
   // Size props
-  @Prop() small: boolean;
-  @Prop() medium: boolean;
-  @Prop() large: boolean;
+  @Prop()
+  small: boolean;
+  @Prop()
+  medium: boolean;
+  @Prop()
+  large: boolean;
 
   // State props
-  @Prop() disabled: boolean;
+  @Prop()
+  disabled: boolean;
 
   getClass() {
     const significance = significanceMatcher(this) || SECONDARY_SIGNIFICANCE;
@@ -33,10 +43,7 @@ export class Button {
     const componentClass = this.getClass();
 
     return (
-      <button
-        class={componentClass}
-        disabled={this.disabled}
-        >
+      <button class={componentClass} disabled={this.disabled}>
         <slot />
       </button>
     );
