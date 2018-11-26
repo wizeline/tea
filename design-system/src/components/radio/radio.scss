@@ -1,8 +1,11 @@
+$wz-radio-size: 16px;
 wz-radio {
   .radio-container {
-    display: block;
+    display: flex;
     position: relative;
-    padding-left: 24px;
+    align-items: center;
+    height: $wz-radio-size;
+    padding-left: calc(#{$wz-radio-size} + 8px);
     cursor: pointer;
     user-select: none;
 
@@ -14,7 +17,7 @@ wz-radio {
 
       /* When the radio button is checked, add a background color */
       &:checked ~ .checkmark {
-        background-color: white;
+        background-color: var(--surface-base);
         /* Show the indicator (dot/circle) when checked */
         &:after {
           display: block;
@@ -34,9 +37,9 @@ wz-radio {
       position: absolute;
       top: 0;
       left: 0;
-      height: 16px;
-      width: 16px;
-      background-color: white;
+      height: $wz-radio-size;
+      width: $wz-radio-size;
+      background-color: var(--surface-base);
       border: 1px solid var(--primary-base);
       padding: 1px;
       border-radius: 50%;
@@ -47,10 +50,11 @@ wz-radio {
         position: absolute;
         display: none;
         /* Style the indicator (dot/circle) */
-        top: 2px;
-        left: 2px;
-        width: 10px;
-        height: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: calc(100% - 4px);
+        height: calc(100% - 4px);
         border-radius: 50%;
         background: var(--primary-dark);
       }
