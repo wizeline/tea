@@ -77,6 +77,11 @@ const pages = [
     title: 'Forms',
     pages: [
       {
+        path: '/dropdown',
+        title: 'Dropdown',
+        content: pageLoader(() => import('../pages/dropdown.md')),
+      },
+      {
         path: '/input',
         title: 'Input',
         content: pageLoader(() => import('../pages/input.md')),

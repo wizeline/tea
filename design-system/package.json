@@ -1,12 +1,14 @@
 {
   "name": "@wizeline/tea",
-  "version": "0.14.0-oatmilk.3",
+  "version": "0.14.0-oatmilk.4",
   "description": "Wizeline's Design System",
   "module": "dist/esm/index.js",
   "main": "dist/wizeline-tea",
   "types": "dist/types/components.d.ts",
   "collection": "dist/collection/collection-manifest.json",
-  "files": ["dist/"],
+  "files": [
+    "dist/"
+  ],
   "scripts": {
     "start": "stencil build --dev --watch --serve",
     "build": "stencil build --prerender",
@@ -28,11 +30,15 @@
     "jest-environment-node": "^23.4.0",
     "puppeteer": "1.8.0",
     "surge": "^0.20.1",
-    "watch": "^1.0.2"
+    "watch": "^1.0.2",
+    "workbox-build": "3.4.1"
   },
   "contributors": [
     "Charlie L <charlie@wizeline.com>",
     "Fernando Rubio <fernando@wizeline.com>"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "popper.js": "^1.14.5"
+  }
 }

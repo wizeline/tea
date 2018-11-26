@@ -3,11 +3,7 @@ import { sass } from '@stencil/sass';
 
 export const config: Config = {
   namespace: 'wizeline-tea',
-  outputTargets: [
-    {
-      type: 'dist',
-    },
-  ],
+  outputTargets: [{ type: 'www' }, { type: 'dist' }],
   globalStyle: 'src/css/globals/global.scss',
   minifyCss: true,
   minifyJs: true,
