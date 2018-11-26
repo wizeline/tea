@@ -1,4 +1,4 @@
-import { Component, Element, Prop, State } from '@stencil/core';
+import { Component, Element, Prop, State, Listen } from '@stencil/core';
 import Popper, { Placement } from 'popper.js';
 
 @Component({
@@ -18,15 +18,22 @@ export class Dropdown {
   dropdownMenu: HTMLElement;
   popper: Popper;
 
+  @Listen('document:click')
+  closesOnClick(event) {
+    if (this.dropdownTrigger.contains(event.target)) {
+      return;
+    }
+    this.toggleOpenDropdown(true);
+  }
+
   componentDidLoad() {
     this.dropdownMenu = this.dropdown.querySelector('wz-dropdown-menu');
     // get the first element from the slot
     this.dropdownTrigger = this.dropdown.firstElementChild;
     this.dropdownMenu.style.display = 'none';
-    this.dropdownTrigger.addEventListener('click', () => {
-      this.toggleOpenDropdown();
-    });
-    this.closeOnClick();
+    this.dropdownTrigger.addEventListener('click', () =>
+      this.toggleOpenDropdown(),
+    );
     this.popper = new Popper(this.dropdownTrigger, this.dropdownMenu, {
       placement: this.placement,
     });
@@ -38,16 +45,11 @@ export class Dropdown {
 
   componentDidUnload() {
     this.popper.destroy();
+    this.dropdownTrigger.removeEventListener(
+      'click',
+      () => this.toggleOpenDropdown,
+    );
   }
-
-  closeOnClick = () => {
-    document.addEventListener('click', (event: any) => {
-      if (this.dropdownTrigger.contains(event.target)) {
-        return;
-      }
-      this.toggleOpenDropdown(true);
-    });
-  };
 
   toggleOpenDropdown = (isOpen = this.isOpen) => {
     this.isOpen = !isOpen;
