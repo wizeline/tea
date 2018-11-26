@@ -3,7 +3,7 @@ wz-dropdown-menu-item {
     --dropdown-menu-item-color: var(--ink-base);
     display: flex;
     align-items: center;
-    height: 32px;
+    min-height: 32px;
     width: 100%;
     padding: 0 8px;
     background-color: var(--ink-clear);

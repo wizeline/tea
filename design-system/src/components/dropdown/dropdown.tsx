@@ -1,5 +1,5 @@
-import { Component, Element, State } from '@stencil/core';
-import Popper from 'popper.js';
+import { Component, Element, Prop, State } from '@stencil/core';
+import Popper, { Placement } from 'popper.js';
 
 @Component({
   tag: 'wz-dropdown',
@@ -11,6 +11,8 @@ export class Dropdown {
   dropdown: HTMLElement;
   @State()
   isOpen: boolean = false;
+  @Prop()
+  placement: Placement = 'bottom-start';
 
   dropdownTrigger: Element;
   dropdownMenu: HTMLElement;
@@ -26,7 +28,7 @@ export class Dropdown {
     });
     this.closeOnClick();
     this.popper = new Popper(this.dropdownTrigger, this.dropdownMenu, {
-      placement: 'bottom-start',
+      placement: this.placement,
     });
   }
 
