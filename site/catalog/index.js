@@ -77,6 +77,11 @@ const pages = [
     title: 'Forms',
     pages: [
       {
+        path: '/checkbox',
+        title: 'Checkbox',
+        content: pageLoader(() => import('../pages/checkbox.md')),
+      },
+      {
         path: '/input',
         title: 'Input',
         content: pageLoader(() => import('../pages/input.md')),
