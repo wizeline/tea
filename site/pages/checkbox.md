@@ -5,7 +5,7 @@ showSource: true
 ---
 <wz-checkbox>Regular</wz-checkbox>
 <wz-checkbox checked>Veggie</wz-checkbox>
-<wz-checkbox>Vegan</wz-radio>
+<wz-checkbox>Vegan</wz-checkbox>
 ```
 
 ### Disabled
