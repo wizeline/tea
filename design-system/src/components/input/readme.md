@@ -9,7 +9,6 @@
 
 | Property      | Attribute     | Description | Type      |
 | ------------- | ------------- | ----------- | --------- |
-| `accept`      | `accept`      |             | `string`  |
 | `class`       | `class`       |             | `string`  |
 | `disabled`    | `disabled`    |             | `boolean` |
 | `error`       | `error`       |             | `string`  |

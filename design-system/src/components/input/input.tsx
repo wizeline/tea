@@ -20,9 +20,6 @@ export class Input {
   error: string;
   @Prop()
   class: string;
-  // file type props
-  @Prop()
-  accept: string;
 
   render() {
     const commonProps = {
@@ -30,14 +27,6 @@ export class Input {
       name: this.name,
       placeholder: this.placeholder,
     };
-
-    if (this.type === 'file') {
-      return (
-        <wz-form-error error={this.error}>
-          <wz-input-file accept={this.accept} {...commonProps} />
-        </wz-form-error>
-      );
-    }
 
     const classes = [this.class, 'input-container'].join(' ');
 
