@@ -113,7 +113,7 @@ const pages = [
       },
       {
         path: '/textarea',
-        title: 'TextArea',
+        title: 'Textarea',
         content: pageLoader(() => import('../pages/textarea.md')),
       },
     ],

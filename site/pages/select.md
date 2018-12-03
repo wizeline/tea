@@ -7,5 +7,5 @@ showSource: true
   <option selected value="saab">Saab</option>
   <option value="mercedes">Mercedes</option>
   <option value="audi">Audi</option>
-</wz-select>`
+</wz-select>
 ```
