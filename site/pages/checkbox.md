@@ -13,7 +13,7 @@ showSource: true
 ```html
 showSource: true
 ---
-<wz-checkbox disabled>Regular</wz-radio>
+<wz-checkbox disabled>Regular</wz-checkbox>
 <wz-checkbox disabled>Veggie</wz-radio>
 <wz-checkbox checked>Vegan</wz-checkbox>
 ```
