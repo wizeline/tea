@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Catalog, pageLoader } from 'catalog';
-import { defineCustomElements } from '@wizeline/tea';
+import { defineCustomElements } from '@wizeline/tea/dist/loader';
 import '@wizeline/tea/dist/wizeline-tea.css';
 import theme from './theme';
 
@@ -38,6 +38,11 @@ const pages = [
     content: pageLoader(() => import('../pages/colors.md')),
   },
   {
+    path: '/avatar',
+    title: 'Avatar',
+    content: pageLoader(() => import('../pages/avatar.md')),
+  },
+  {
     path: '/button',
     title: 'Button',
     content: pageLoader(() => import('../pages/button.md')),
@@ -72,6 +77,16 @@ const pages = [
     title: 'Forms',
     pages: [
       {
+        path: '/checkbox',
+        title: 'Checkbox',
+        content: pageLoader(() => import('../pages/checkbox.md')),
+      },
+      {
+        path: '/dropdown',
+        title: 'Dropdown',
+        content: pageLoader(() => import('../pages/dropdown.md')),
+      },
+      {
         path: '/input',
         title: 'Input',
         content: pageLoader(() => import('../pages/input.md')),
@@ -80,6 +95,11 @@ const pages = [
         path: '/input-file',
         title: 'Input File',
         content: pageLoader(() => import('../pages/input-file.md')),
+      },
+      {
+        path: '/radio',
+        title: 'Radio',
+        content: pageLoader(() => import('../pages/radio.md')),
       },
       {
         path: '/select',
@@ -93,7 +113,7 @@ const pages = [
       },
       {
         path: '/textarea',
-        title: 'TextArea',
+        title: 'Textarea',
         content: pageLoader(() => import('../pages/textarea.md')),
       },
     ],

@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`wz-toggle should render a toggle-component 1`] = `"<wz-toggle class=\\"hydrated\\"><div class=\\"checkbox\\"><input id=\\"wz-toggle\\" type=\\"checkbox\\"><label for=\\"wz-toggle\\"></label></div></wz-toggle>"`;

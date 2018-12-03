@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`wz-text renders text component 1`] = `"<span class=\\"regular default\\">Hello, my name is Marty McFly</span>"`;

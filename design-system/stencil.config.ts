@@ -1,16 +1,9 @@
+import { Config } from '@stencil/core';
 import { sass } from '@stencil/sass';
 
-export const config = {
+export const config: Config = {
   namespace: 'wizeline-tea',
-  outputTargets: [
-    {
-      type: 'dist',
-    },
-    {
-      type: 'www',
-      serviceWorker: false,
-    },
-  ],
+  outputTargets: [{ type: 'www' }, { type: 'dist' }],
   globalStyle: 'src/css/globals/global.scss',
   minifyCss: true,
   minifyJs: true,
@@ -19,9 +12,4 @@ export const config = {
       injectGlobalPaths: ['src/css/globals/mixins.scss'],
     }),
   ],
-};
-
-export const devServer = {
-  root: 'www',
-  watchGlob: '**/**',
 };

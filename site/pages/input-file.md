@@ -2,8 +2,7 @@
 ```html
 showSource: true
 ---
-<wz-input
-  type="file"
+<wz-input-file
   accept="application/pdf"
   placeholder="Write something"
   name="something"
@@ -15,5 +14,5 @@ showSource: true
 ```html
 showSource: true
 ---
-<wz-input type="file" error="Please select a file" />
+<wz-input-file error="Please select a file" />
 ```
