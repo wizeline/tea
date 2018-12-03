@@ -3,7 +3,7 @@
 ```html
 showSource: true
 ---
-<wz-checkbox>Regular</wz-radio>
+<wz-checkbox>Regular</wz-checkbox>
 <wz-checkbox checked>Veggie</wz-radio>
 <wz-checkbox>Vegan</wz-radio>
 ```
