@@ -36,6 +36,9 @@ export default ({ icon }) => {
     case 'warning': {
       return <icon-warning />;
     }
+    case 'info': {
+      return <icon-info />;
+    }
     case 'work': {
       return <icon-work />;
     }
