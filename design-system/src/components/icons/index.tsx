@@ -18,6 +18,9 @@ export default ({ icon }) => {
     case 'edit': {
       return <icon-edit />;
     }
+    case 'info': {
+      return <icon-info />;
+    }
     case 'more-horiz': {
       return <icon-more-horiz />;
     }
@@ -35,9 +38,6 @@ export default ({ icon }) => {
     }
     case 'warning': {
       return <icon-warning />;
-    }
-    case 'info': {
-      return <icon-info />;
     }
     case 'work': {
       return <icon-work />;
