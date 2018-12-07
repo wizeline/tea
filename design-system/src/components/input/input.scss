@@ -1,6 +1,9 @@
 wz-input {
   .error .input-container {
     border-color: var(--negative-base);
+    &:focus-within {
+      border-color: var(--negative-base);
+    }
   }
 
   wz-error {
