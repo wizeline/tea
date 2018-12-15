@@ -14,6 +14,8 @@ export class TextArea {
   placeholder: string;
   @Prop()
   error: string;
+  @Prop()
+  disabled: boolean;
 
   render() {
     const DEFAULT_ROWS = 3;
@@ -25,6 +27,7 @@ export class TextArea {
           placeholder={this.placeholder}
           rows={DEFAULT_ROWS}
           value={this.value}
+          disabled={this.disabled}
         />
       </wz-form-error>
     );
