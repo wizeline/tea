@@ -3,7 +3,7 @@
 ```html|span-2
 showSource: true
 ---
-<wz-icon icon="arrow-back" color="red" />
+<wz-icon icon="arrow-back" />
 ```
 
 ```html|span-2
@@ -21,7 +21,7 @@ showSource: true
 ```html|span-2
 showSource: true
 ---
-<wz-icon icon="check" color="var(--primary-light)" />
+<wz-icon icon="check" />
 ```
 
 ```html|span-2
@@ -76,4 +76,24 @@ showSource: true
 showSource: true
 ---
 <wz-icon icon="work" />
+```
+
+## Color
+
+```html|span-2
+showSource: true
+---
+<wz-icon color="var(--warning-base)" icon="warning" />
+```
+
+```html|span-2
+showSource: true
+---
+<wz-icon color="#29487d" icon="thumb-up" />
+```
+
+```html|span-2
+showSource: true
+---
+<wz-icon color="rebeccapurple" icon="work" />
 ```
