@@ -16,3 +16,14 @@ showSource: true
   error="Please select at least one roadmap"
 />
 ```
+
+### Disabled
+
+```html
+showSource: true
+---
+<wz-input
+  disabled
+  placeholder="Cannot Write"
+/>
+```
