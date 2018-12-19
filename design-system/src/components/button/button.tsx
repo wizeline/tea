@@ -22,7 +22,7 @@ export class Button {
   // State props
   @Prop() disabled: boolean;
   
-  @Prop() type: string;
+  @Prop() type: 'reset' | 'button' | 'submit';
 
   getClass() {
     const significance = significanceMatcher(this) || SECONDARY_SIGNIFICANCE;
