@@ -21,6 +21,8 @@ export class Button {
 
   // State props
   @Prop() disabled: boolean;
+  
+  @Prop() type: string;
 
   getClass() {
     const significance = significanceMatcher(this) || SECONDARY_SIGNIFICANCE;
@@ -35,6 +37,7 @@ export class Button {
     return (
       <button
         class={componentClass}
+        type={this.type}
         disabled={this.disabled}
         >
         <slot />
