@@ -1,4 +1,17 @@
 wz-textarea {
+
+  .error textarea {
+    border-color: var(--negative-base);
+    &:focus-within {
+      border-color: var(--negative-base);
+    }
+  }
+
+  wz-error {
+    display: block;
+    height: 16px;
+  }
+
   textarea {
     padding: 8px 16px;
     border: none;
