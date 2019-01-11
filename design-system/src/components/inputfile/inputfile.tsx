@@ -44,8 +44,7 @@ export class InputFile {
             accept={this.accept}
           />
         </div>
-      </wz-form-error>
-      ,
+      </wz-form-error>,
       <label htmlFor="file">
         <wz-button onClick={this.bypassOnClick}>{this.placeholder}</wz-button>
         <span>{this.label}</span>
