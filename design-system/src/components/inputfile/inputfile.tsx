@@ -14,6 +14,8 @@ export class InputFile {
   disabled: boolean = false;
   @Prop()
   accept: string;
+  @Prop()
+  error: string;
   @Element()
   inputFile: HTMLStencilElement;
 
@@ -32,13 +34,18 @@ export class InputFile {
 
   render() {
     return [
-      <input
-        type="file"
-        name={this.name}
-        id="file"
-        class="inputfile"
-        accept={this.accept}
-      />,
+      <wz-form-error error={this.error}>
+        <div>
+          <input
+            type="file"
+            name={this.name}
+            id="file"
+            class="inputfile"
+            accept={this.accept}
+          />
+        </div>
+      </wz-form-error>
+      ,
       <label htmlFor="file">
         <wz-button onClick={this.bypassOnClick}>{this.placeholder}</wz-button>
         <span>{this.label}</span>
