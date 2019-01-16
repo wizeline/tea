@@ -1,0 +1,32 @@
+                add -> plus
+        access_time -> clock
+                bookmark -> bookmark
+                check -> check
+                close -> cross
+                credit_card -> credit-card
+                date_range -> calendar
+                delete -> trash
+                domain -> building
+                edit -> pencil
+                expand_more -> arrow-down
+                favorite -> heart
+                flag -> flag
+                get_app -> download (use publish)
+                hourglass_empty -> sand-clock
+                import_contacts -> book (use import_contacts)
+                info -> info
+                insert_drive_file -> file (use description)
+                lock -> lock
+                more_horiz -> dots-h
+                more_vert -> dots-v
+                notifications -> bell
+                people -> people
+                person_add -> add-people
+                playlist_add -> add-item
+                search -> magnifier
+                send -> send
+                thumb_down -> thumbs-down
+                thumb_up -> thumbs-up
+                warning -> warning
+ -> duplicate (use file_copy)
+ -> filter

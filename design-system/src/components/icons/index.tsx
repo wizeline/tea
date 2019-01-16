@@ -9,6 +9,9 @@ export default ({ icon }) => {
     case 'arrow-back': {
       return <icon-arrow-back />;
     }
+    case 'arrow-down': {
+      return <icon-arrow-down />;
+    }
     case 'check': {
       return <icon-check />;
     }

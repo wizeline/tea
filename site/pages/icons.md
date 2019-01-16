@@ -9,6 +9,12 @@ showSource: true
 ```html|span-2
 showSource: true
 ---
+<wz-icon icon="arrow-down" />
+```
+
+```html|span-2
+showSource: true
+---
 <wz-icon icon="add-item" />
 ```
 
