@@ -102,6 +102,9 @@ export default ({ icon }) => {
     case 'trash': {
       return <icon-trash />;
     }
+    case 'warning': {
+      return <icon-warning />;
+    }
     case 'work': {
       return <icon-work />;
     }

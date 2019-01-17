@@ -207,6 +207,12 @@ showSource: true
 ```html|span-2
 showSource: true
 ---
+<wz-icon icon="warning" />
+```
+
+```html|span-2
+showSource: true
+---
 <wz-icon icon="work" />
 ```
 ## Color
