@@ -81,6 +81,12 @@ showSource: true
 ```html|span-2
 showSource: true
 ---
+<wz-icon icon="duplicate" />
+```
+
+```html|span-2
+showSource: true
+---
 <wz-icon icon="download" />
 ```
 
@@ -94,6 +100,12 @@ showSource: true
 showSource: true
 ---
 <wz-icon icon="file" />
+```
+
+```html|span-2
+showSource: true
+---
+<wz-icon icon="filter" />
 ```
 
 ```html|span-2

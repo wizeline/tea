@@ -39,6 +39,9 @@ export default ({ icon }) => {
     case 'credit-card': {
       return <icon-credit-card />;
     }
+    case 'duplicate': {
+      return <icon-duplicate />;
+    }
     case 'download': {
       return <icon-download />;
     }
@@ -47,6 +50,9 @@ export default ({ icon }) => {
     }
     case 'file': {
       return <icon-file />;
+    }
+    case 'filter': {
+      return <icon-filter />;
     }
     case 'flag': {
       return <icon-flag />;
