@@ -6,12 +6,7 @@ wz-toggle {
     var(--switchWidth) - var(--innerCircleSize) - var(--padding)
   );
 
-  input[type='checkbox'] {
-    display: none;
-  }
-
-  label {
-    content: '';
+  input {
     display: flex;
     align-items: center;
     position: relative;
@@ -20,31 +15,33 @@ wz-toggle {
     border-radius: 14px;
     background-color: var(--secondary-dark);
     cursor: pointer;
-  }
+    appearance: none;
+    outline: none;
 
-  label:before {
-    position: absolute;
-    content: '';
-    width: var(--innerCircleSize);
-    height: var(--innerCircleSize);
-    border-radius: 50%;
-    background-color: var(--surface-base);
-    @include transition(transform);
-    transform: translateX(var(--padding));
-  }
-
-  input[type='checkbox']:checked + label {
-    background-color: var(--primary-base);
-    @include transition(background-color);
     &:before {
-      transform: translateX(var(--checkedPosition));
+      position: absolute;
+      content: '';
+      width: var(--innerCircleSize);
+      height: var(--innerCircleSize);
+      border-radius: 50%;
+      background-color: var(--surface-base);
+      @include transition(transform);
+      transform: translateX(var(--padding));
     }
-  }
 
-  input[type='checkbox']:disabled + label {
-    background-color: var(--secondary-dark);
-    &:before {
-      background-color: var(--ink-light);
+    &:checked {
+      background-color: var(--primary-base);
+      @include transition(background-color);
+      &:before {
+        transform: translateX(var(--checkedPosition));
+      }
+    }
+
+    &:disabled {
+      background-color: var(--secondary-dark);
+      &:before {
+        background-color: var(--ink-light);
+      }
     }
   }
 }

@@ -22,7 +22,6 @@ export class Toggle {
           id={this.id}
           type="checkbox"
         />
-        <label htmlFor={this.id} />
       </div>
     );
   }
