@@ -62,5 +62,6 @@ lib/
 
 site/catalog/build/*
 
-
+# Vim temp files
+*.sw[mnpcod]
 
