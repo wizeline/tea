@@ -1,175 +1,124 @@
 ### Theme Colors
 
-```color
-span: 2
-name: "Primary Light"
-value: "var(--primary-light)"
+```color-palette
+colors:
+ - { name: "var(--primary-light)", value: "#1D8BF2" }
+ - { name: "var(--primary-base)", value: "#0A76DB" }
+ - { name: "var(--primary-dark)", value: "#0966bE" }
 ```
 
-```color
-span: 2
-name: "Primary Base"
-value: "var(--primary-base)"
+```color-palette
+colors:
+ - { name: "var(--secondary-light)", value: "#FFF" }
+ - { name: "var(--secondary-base)", value: "#FFF" }
+ - { name: "var(--secondary-dark)", value: "#E6E7E8" }
 ```
 
-```color
-span: 2
-name: "Primary Dark"
-value: "var(--primary-dark)"
+```color-palette
+colors:
+ - { name: "var(--background-base)", value: "#FAFAFA" }
+ - { name: "var(--surface-base)", value: "#FFF" }
 ```
 
-```color
-span: 2
-name: "Secondary Light"
-value: "var(--secondary-light)"
-```
+### Text Colors
 
-```color
-span: 2
-name: "Secondary Base"
-value: "var(--secondary-base)"
-```
-
-```color
-span: 2
-name: "Secondary Dark"
-value: "var(--secondary-dark)"
-```
-
-```color
-span: 3
-name: "Background Base"
-value: "var(--background-base)"
-```
-
-```color
-span: 3
-name: "Surface Base"
-value: "var(--surface-base)"
+```color-palette
+colors:
+ - { name: "var(--ink-clear)", value: "#F0F0F0" }
+ - { name: "var(--ink-light)", value: "#717171" }
+ - { name: "var(--ink-base)", value: "#262626" }
+ - { name: "var(--ink-dark)", value: "#182123" }
 ```
 
 ### Status Colors
 
 ```color
 span: 2
-name: "Neutral Light"
-value: "var(--neutral-light)"
+name: "var(--neutral-light)"
+value: "#FAFAFA"
 ```
 
 ```color
 span: 2
-name: "Neutral Base"
-value: "var(--neutral-base)"
+name: "var(--neutral-base)"
+value: "#EBEBEB"
 ```
 
 ```color
 span: 2
-name: "Neutral Dark"
-value: "var(--neutral-dark)"
+name: "var(--neutral-dark)"
+value: "#919191"
 ```
 
 ```color
 span: 2
-name: "Info Light"
-value: "var(--info-light)"
+name: "var(--info-light)"
+value: "#7A91C7"
 ```
 
 ```color
 span: 2
-name: "Info Base"
-value: "var(--info-base)"
+name: "var(--info-base)"
+value: "#4765AA"
 ```
 
 ```color
 span: 2
-name: "Info Dark"
-value: "var(--info-dark)"
+name: "var(--info-dark)"
+value: "#3E5693"
 ```
 
 ```color
 span: 2
-name: "Negative Light"
-value: "var(--negative-light)"
+name: "var(--negative-light)"
+value: "#EA103C"
 ```
 
 ```color
 span: 2
-name: "Negative Base"
-value: "var(--negative-base)"
+name: "var(--negative-base)"
+value: "#C80E33"
 ```
 
 ```color
 span: 2
-name: "Negative Dark"
-value: "var(--negative-dark)"
+name: "var(--negative-dark)"
+value: "#A20B29"
 ```
 
 ```color
 span: 2
-name: "Warning Light"
-value: "var(--warning-light)"
+name: "var(--warning-light)"
+value: "#F9C642"
 ```
 
 ```color
 span: 2
-name: "Warning Base"
-value: "var(--warning-base)"
+name: "var(--warning-base)"
+value: "#FDB81E"
 ```
 
 ```color
 span: 2
-name: "Warning Dark"
-value: "var(--warning-dark)"
+name: "var(--warning-dark)"
+value: "#B17F10"
 ```
 
 ```color
 span: 2
-name: "Positive Light"
-value: "var(--positive-light)"
+name: "var(--positive-light)"
+value: "#20883E"
 ```
 
 ```color
 span: 2
-name: "Positive Base"
-value: "var(--positive-base)"
+name: "var(--positive-base)"
+value: "#1A7032"
 ```
 
 ```color
 span: 2
-name: "Positive Dark"
-value: "var(--positive-dark)"
+name: "var(--positive-dark)"
+value: "#166028"
 ```
 
-### Text Colors
-
-```color
-span: 1.5
-name: "Ink Light"
-value: "var(--ink-light)"
-```
-
-```color
-span: 1.5
-name: "Ink Base"
-value: "var(--ink-base)"
-```
-
-```color
-span: 1.5
-name: "Ink Dark"
-value: "var(--ink-dark)"
-```
-
-```color
-span: 1.5
-name: "Ink Clear"
-value: "var(--ink-clear)"
-```
-
-```html
-showSource: false
----
-<wz-text>
-  Colors
-</wz-text>
-```
