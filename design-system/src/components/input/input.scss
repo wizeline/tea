@@ -15,10 +15,11 @@ wz-input {
     display: flex;
     align-items: center;
     border-radius: 3px;
-    background-color: var(--ink-clear);
+    background-color: var(--surface-base);
     border: solid 1px;
     height: 40px;
     overflow: hidden;
+    color: var(--ink-light);
     border-color: var(--ink-light);
 
     &:focus-within {
@@ -32,7 +33,15 @@ wz-input {
       font-size: 14px;
       width: 100%;
 
-      &:disabled {
+    }
+  }
+
+  &[disabled] {
+    .input-container {
+      background-color: var(--neutral-base);
+      border-color: var(--neutral-base);
+      input {
+        background-color: var(--neutral-base);
         color: var(--neutral-dark);
       }
     }
