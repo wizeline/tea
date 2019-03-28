@@ -9,7 +9,7 @@ colors:
 
 ```color-palette
 colors:
- - { name: "var(--secondary-light)", value: "#E6E7E8" }
+ - { name: "var(--secondary-light)", value: "#FFF" }
  - { name: "var(--secondary-base)", value: "#FFF" }
  - { name: "var(--secondary-dark)", value: "#E6E7E8" }
 ```
