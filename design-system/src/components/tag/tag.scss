@@ -14,7 +14,7 @@ wz-tag {
     &.outline {
       box-shadow: 0 2px 4px 0 rgba(60, 66, 69, 0.16);
       border: solid 1px var(--ink-light);
-      background-color: var(--ink-clear);
+      background-color: var(--neutral-base);
     }
 
     &.outline .tag-icon-container.left-container {
