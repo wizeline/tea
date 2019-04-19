@@ -6,9 +6,9 @@ wz-dropdown-menu-item {
     min-height: 32px;
     width: 100%;
     padding: 0 8px;
-    background-color: var(--surface-base);
+    background-color: var(--ink-clear);
     &.selected {
-      background-color: var(--neutral-light);
+      background-color: var(--background-base);
     }
     &:hover:not(.selected) {
       background-color: var(--primary-base);

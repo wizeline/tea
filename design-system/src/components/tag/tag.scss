@@ -13,8 +13,8 @@ wz-tag {
 
     &.outline {
       box-shadow: 0 2px 4px 0 rgba(60, 66, 69, 0.16);
-      border: solid 1px var(--neutral-dark);
-      background-color: var(--secondary-light);
+      border: solid 1px var(--ink-light);
+      background-color: var(--ink-clear);
     }
 
     &.outline .tag-icon-container.left-container {
