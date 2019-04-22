@@ -11,7 +11,7 @@ wz-checkbox {
     display: inline-block;
     position: relative;
 
-    background-color: var(--ink-clear);
+    background-color: var(--surface-base);
     border: 1px solid var(--primary-base);
     border-radius: 1px;
     &:focus {
@@ -25,8 +25,8 @@ wz-checkbox {
         content: "\2713";
         font-size: 16px;
         position: absolute;
-        top: -2px;
-        left: 1px;
+        top: -3px;
+        left: 0px;
         color: var(--primary-dark);
       }
 
@@ -38,7 +38,7 @@ wz-checkbox {
     &:disabled,
     &:disabled:checked:after,
     &:disabled:hover:after {
-      border-color: var(--ink-light);
+      border-color: var(--neutral-base);
       color: var(--ink-light);
     }
   }
