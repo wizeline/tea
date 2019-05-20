@@ -1,3 +1,5 @@
+import { h } from '@stencil/core';
+
 export default ({ icon }) => {
   switch (icon) {
     case 'access-time': {

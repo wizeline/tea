@@ -2,24 +2,26 @@
   "name": "@wizeline/tea",
   "version": "0.15.0-oatmilk.5",
   "description": "Wizeline's Design System",
-  "module": "dist/esm/index.js",
-  "main": "dist/wizeline-tea",
-  "types": "dist/types/components.d.ts",
+  "module": "dist/index.mjs",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
   "files": [
     "dist/"
   ],
   "scripts": {
     "start": "stencil build --dev --watch --serve",
-    "build": "stencil build --prerender",
+    "build": "stencil build --docs",
     "prepublishOnly": "stencil build",
     "test": "stencil test --spec",
     "test.watch": "stencil test --spec --watch",
     "e2e": "stencil test --e2e"
   },
   "devDependencies": {
-    "@stencil/core": "^0.15.2",
-    "@stencil/sass": "0.1.1",
+    "@stencil/core": "one",
+    "@stencil/sass": "^0.2.1",
     "@stencil/utils": "latest",
     "@types/jest": "^23.3.0",
     "@types/puppeteer": "^1.10.0",

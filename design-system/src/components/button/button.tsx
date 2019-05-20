@@ -1,6 +1,8 @@
-import { Component, Prop, Element } from '@stencil/core';
+import { Component, Prop, Element, h } from '@stencil/core';
 import sizeMatcher, { MEDIUM_SIZE } from '../../matchers/size';
-import significanceMatcher, { SECONDARY_SIGNIFICANCE } from '../../matchers/significance';
+import significanceMatcher, {
+  SECONDARY_SIGNIFICANCE,
+} from '../../matchers/significance';
 
 @Component({
   tag: 'wz-button',
@@ -21,7 +23,7 @@ export class Button {
 
   // State props
   @Prop() disabled: boolean;
-  
+
   @Prop() type: 'reset' | 'button' | 'submit';
 
   getClass() {
@@ -35,11 +37,7 @@ export class Button {
     const componentClass = this.getClass();
 
     return (
-      <button
-        class={componentClass}
-        type={this.type}
-        disabled={this.disabled}
-        >
+      <button class={componentClass} type={this.type} disabled={this.disabled}>
         <slot />
       </button>
     );

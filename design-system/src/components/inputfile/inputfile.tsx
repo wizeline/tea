@@ -1,9 +1,10 @@
-import { Component, Prop, Element, Listen } from '@stencil/core';
+import { Component, Prop, Element, Listen, h } from '@stencil/core';
+import { HTMLStencilElement } from '@stencil/core/internal';
 
 @Component({
   tag: 'wz-input-file',
   styleUrl: 'inputfile.scss',
-  shadow: false,
+  shadow: true,
 })
 export class InputFile {
   @Prop()
@@ -25,7 +26,7 @@ export class InputFile {
     this.inputFile.forceUpdate();
   }
 
-  bypassOnClick(event) {
+  bypassOnClick(event: Event) {
     event.preventDefault();
     document.getElementById('file').click();
   }
