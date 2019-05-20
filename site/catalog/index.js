@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Catalog, pageLoader } from 'catalog';
-import { defineCustomElements } from '@wizeline/tea/dist/loader';
-import '@wizeline/tea/dist/wizeline-tea.css';
+// import { defineCustomElements } from '@wizeline/tea/loader';
+import a from '@wizeline/tea/loader';
+// import '@wizeline/tea/dist/wizeline-tea.css';
 import theme from './theme';
+console.log(a);
 
 const pages = [
   {
