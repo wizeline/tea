@@ -7,17 +7,30 @@
 
 ## Properties
 
-| Property  | Attribute | Description | Type      |
-| --------- | --------- | ----------- | --------- |
-| `color`   | `color`   |             | `string`  |
-| `icon`    | `icon`    |             | `string`  |
-| `large`   | `large`   |             | `boolean` |
-| `medium`  | `medium`  |             | `boolean` |
-| `small`   | `small`   |             | `boolean` |
-| `xlarge`  | `xlarge`  |             | `boolean` |
-| `xsmall`  | `xsmall`  |             | `boolean` |
-| `xxsmall` | `xxsmall` |             | `boolean` |
+| Property  | Attribute | Description | Type      | Default     |
+| --------- | --------- | ----------- | --------- | ----------- |
+| `color`   | `color`   |             | `string`  | `undefined` |
+| `icon`    | `icon`    |             | `string`  | `undefined` |
+| `large`   | `large`   |             | `boolean` | `undefined` |
+| `medium`  | `medium`  |             | `boolean` | `undefined` |
+| `small`   | `small`   |             | `boolean` | `undefined` |
+| `xlarge`  | `xlarge`  |             | `boolean` | `undefined` |
+| `xsmall`  | `xsmall`  |             | `boolean` | `undefined` |
+| `xxsmall` | `xxsmall` |             | `boolean` | `undefined` |
 
+
+## Dependencies
+
+### Used by
+
+ - [wz-tag](../tag)
+
+### Graph
+```mermaid
+graph TD;
+  wz-tag --> wz-icon
+  style wz-icon fill:#f9f,stroke:#333,stroke-width:4px
+```
 
 ----------------------------------------------
 

@@ -7,17 +7,17 @@
 
 ## Properties
 
-| Property         | Attribute        | Description | Type      |
-| ---------------- | ---------------- | ----------- | --------- |
-| `backgroundsize` | `backgroundsize` |             | `string`  |
-| `large`          | `large`          |             | `boolean` |
-| `medium`         | `medium`         |             | `boolean` |
-| `small`          | `small`          |             | `boolean` |
-| `square`         | `square`         |             | `boolean` |
-| `src`            | `src`            |             | `string`  |
-| `xlarge`         | `xlarge`         |             | `boolean` |
-| `xsmall`         | `xsmall`         |             | `boolean` |
-| `xxlarge`        | `xxlarge`        |             | `boolean` |
+| Property         | Attribute        | Description | Type      | Default     |
+| ---------------- | ---------------- | ----------- | --------- | ----------- |
+| `backgroundsize` | `backgroundsize` |             | `string`  | `undefined` |
+| `large`          | `large`          |             | `boolean` | `undefined` |
+| `medium`         | `medium`         |             | `boolean` | `undefined` |
+| `small`          | `small`          |             | `boolean` | `undefined` |
+| `square`         | `square`         |             | `boolean` | `undefined` |
+| `src`            | `src`            |             | `string`  | `undefined` |
+| `xlarge`         | `xlarge`         |             | `boolean` | `undefined` |
+| `xsmall`         | `xsmall`         |             | `boolean` | `undefined` |
+| `xxlarge`        | `xxlarge`        |             | `boolean` | `undefined` |
 
 
 ----------------------------------------------

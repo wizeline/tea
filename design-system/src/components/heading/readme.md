@@ -7,12 +7,12 @@
 
 ## Properties
 
-| Property | Attribute | Description | Type      |
-| -------- | --------- | ----------- | --------- |
-| `large`  | `large`   |             | `boolean` |
-| `medium` | `medium`  |             | `boolean` |
-| `small`  | `small`   |             | `boolean` |
-| `xlarge` | `xlarge`  |             | `boolean` |
+| Property | Attribute | Description | Type      | Default     |
+| -------- | --------- | ----------- | --------- | ----------- |
+| `large`  | `large`   |             | `boolean` | `undefined` |
+| `medium` | `medium`  |             | `boolean` | `undefined` |
+| `small`  | `small`   |             | `boolean` | `undefined` |
+| `xlarge` | `xlarge`  |             | `boolean` | `undefined` |
 
 
 ----------------------------------------------

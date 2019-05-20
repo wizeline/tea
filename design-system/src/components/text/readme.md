@@ -7,14 +7,27 @@
 
 ## Properties
 
-| Property   | Attribute  | Description | Type      |
-| ---------- | ---------- | ----------- | --------- |
-| `base`     | `base`     |             | `boolean` |
-| `bold`     | `bold`     |             | `boolean` |
-| `color`    | `color`    |             | `string`  |
-| `semibold` | `semibold` |             | `boolean` |
-| `small`    | `small`    |             | `boolean` |
+| Property   | Attribute  | Description | Type      | Default             |
+| ---------- | ---------- | ----------- | --------- | ------------------- |
+| `base`     | `base`     |             | `boolean` | `undefined`         |
+| `bold`     | `bold`     |             | `boolean` | `undefined`         |
+| `color`    | `color`    |             | `string`  | `'var(--ink-base)'` |
+| `semibold` | `semibold` |             | `boolean` | `undefined`         |
+| `small`    | `small`    |             | `boolean` | `undefined`         |
 
+
+## Dependencies
+
+### Used by
+
+ - [wz-error](../error)
+
+### Graph
+```mermaid
+graph TD;
+  wz-error --> wz-text
+  style wz-text fill:#f9f,stroke:#333,stroke-width:4px
+```
 
 ----------------------------------------------
 

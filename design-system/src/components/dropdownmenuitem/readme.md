@@ -7,10 +7,10 @@
 
 ## Properties
 
-| Property   | Attribute  | Description | Type      |
-| ---------- | ---------- | ----------- | --------- |
-| `selected` | `selected` |             | `boolean` |
-| `value`    | `value`    |             | `string`  |
+| Property   | Attribute  | Description | Type      | Default     |
+| ---------- | ---------- | ----------- | --------- | ----------- |
+| `selected` | `selected` |             | `boolean` | `false`     |
+| `value`    | `value`    |             | `string`  | `undefined` |
 
 
 ----------------------------------------------

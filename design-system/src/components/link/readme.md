@@ -7,10 +7,10 @@
 
 ## Properties
 
-| Property | Attribute | Description | Type     |
-| -------- | --------- | ----------- | -------- |
-| `href`   | `href`    |             | `string` |
-| `target` | `target`  |             | `string` |
+| Property | Attribute | Description | Type     | Default     |
+| -------- | --------- | ----------- | -------- | ----------- |
+| `href`   | `href`    |             | `string` | `undefined` |
+| `target` | `target`  |             | `string` | `undefined` |
 
 
 ----------------------------------------------
