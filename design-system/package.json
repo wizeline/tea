@@ -2,18 +2,18 @@
   "name": "@wizeline/tea",
   "version": "0.15.0-oatmilk.5",
   "description": "Wizeline's Design System",
-  "module": "dist/index.mjs",
   "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "es2015": "dist/esm/index.mjs",
   "es2017": "dist/esm/index.mjs",
-  "types": "dist/types/components.d.ts",
+  "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
   "files": [
-    "dist/"
+    "dist/",
+    "loader/"
   ],
   "scripts": {
-    "start": "stencil build --dev --watch --serve",
     "build": "stencil build --docs",
     "prepublishOnly": "stencil build",
     "test": "stencil test --spec",
@@ -30,11 +30,7 @@
     "babel-runtime": "^6.26.0",
     "jest": "23.6.0",
     "jest-cli": "23.6.0",
-    "jest-environment-node": "^23.4.0",
-    "puppeteer": "1.8.0",
-    "surge": "^0.20.1",
-    "watch": "^1.0.2",
-    "workbox-build": "4.3.1"
+    "jest-environment-node": "^23.4.0"
   },
   "contributors": [
     "Charlie L <charlie@wizeline.com>",
