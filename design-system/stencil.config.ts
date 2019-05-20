@@ -4,7 +4,7 @@ import { sass } from '@stencil/sass';
 export const config: Config = {
   namespace: 'wizeline-tea',
   outputTargets: [
-    { type: 'dist', esmLoaderPath: '../loader' },
+    { type: 'dist' },
     { type: 'docs-readme' },
     {
       type: 'www',
