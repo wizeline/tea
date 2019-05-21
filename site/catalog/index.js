@@ -125,4 +125,4 @@ ReactDOM.render(
   document.getElementById('catalog'),
 );
 
-defineCustomElements(window);
+defineCustomElements();
