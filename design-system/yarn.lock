@@ -108,7 +108,7 @@
     lodash "^4.17.5"
     to-fast-properties "^2.0.0"
 
-"@stencil/core@one":
+"@stencil/core@^1.0.0-beta.0":
   version "1.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/@stencil/core/-/core-1.0.0-beta.2.tgz#8090345b08249c5ae93a0fe59cbc67b8597876e9"
   integrity sha512-RRkR8s2hmlC6U1fjYgJsFOIIiHhFURyQQLYDpoo8eeUQWW3QSdNrHfqLjw0MmgqaYAIUi68EL50eJSmQjffFRw==

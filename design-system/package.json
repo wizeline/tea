@@ -3,15 +3,16 @@
   "version": "0.15.0-oatmilk.5",
   "description": "Wizeline's Design System",
   "main": "dist/index.js",
+  "esnext": "dist/esm",
   "module": "dist/index.mjs",
   "es2015": "dist/esm/index.mjs",
   "es2017": "dist/esm/index.mjs",
-  "types": "dist/types/index.d.ts",
+  "jsnext:main": "dist/esm/index.mjs",
+  "types": "dist/types/components.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
   "files": [
-    "dist/",
-    "loader/"
+    "dist/"
   ],
   "scripts": {
     "build": "stencil build --docs",
@@ -21,7 +22,7 @@
     "e2e": "stencil test --e2e"
   },
   "devDependencies": {
-    "@stencil/core": "one",
+    "@stencil/core": "^1.0.0-beta.0",
     "@stencil/sass": "^0.2.1",
     "@stencil/utils": "latest",
     "@types/jest": "^23.3.0",
