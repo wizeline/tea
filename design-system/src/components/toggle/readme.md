@@ -7,11 +7,11 @@
 
 ## Properties
 
-| Property   | Attribute  | Description | Type      |
-| ---------- | ---------- | ----------- | --------- |
-| `checked`  | `checked`  |             | `boolean` |
-| `disabled` | `disabled` |             | `boolean` |
-| `id`       | `id`       |             | `string`  |
+| Property   | Attribute  | Description | Type      | Default       |
+| ---------- | ---------- | ----------- | --------- | ------------- |
+| `checked`  | `checked`  |             | `boolean` | `false`       |
+| `disabled` | `disabled` |             | `boolean` | `false`       |
+| `id`       | `id`       |             | `string`  | `'wz-toggle'` |
 
 
 ----------------------------------------------

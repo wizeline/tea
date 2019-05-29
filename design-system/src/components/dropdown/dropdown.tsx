@@ -1,4 +1,4 @@
-import { Component, Element, Prop, State, Listen } from '@stencil/core';
+import { Component, Element, Prop, State, Listen, h } from '@stencil/core';
 import Popper, { Placement } from 'popper.js';
 
 @Component({
@@ -18,7 +18,7 @@ export class Dropdown {
   dropdownMenu: HTMLElement;
   popper: Popper;
 
-  @Listen('document:click')
+  @Listen('click', { target: 'document' })
   closesOnClick(event) {
     if (this.dropdownTrigger.contains(event.target)) {
       return;

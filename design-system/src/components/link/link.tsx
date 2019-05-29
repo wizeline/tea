@@ -1,4 +1,4 @@
-import { Component, Prop } from '@stencil/core';
+import { Component, Prop, h } from '@stencil/core';
 
 @Component({
   tag: 'wz-link',
@@ -11,10 +11,7 @@ export class Link {
 
   render() {
     return (
-      <a
-        href={this.href}
-        target={this.target}
-      >
+      <a href={this.href} target={this.target}>
         <slot />
       </a>
     );

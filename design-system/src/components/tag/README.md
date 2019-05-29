@@ -1,38 +1,32 @@
 # wz-tag
-## Description
-I would like to have a tag component that supports:
-- many design systems state (primary, positive, secondary, info, negatie, warning)
-- removable ability
 
-## DEVX
-### Default
+
+
+<!-- Auto Generated Below -->
+
+
+## Properties
+
+| Property    | Attribute   | Description | Type      | Default     |
+| ----------- | ----------- | ----------- | --------- | ----------- |
+| `color`     | `color`     |             | `string`  | `undefined` |
+| `icon`      | `icon`      |             | `string`  | `undefined` |
+| `removable` | `removable` |             | `boolean` | `undefined` |
+
+
+## Dependencies
+
+### Depends on
+
+- [wz-icon](../icon)
+
+### Graph
+```mermaid
+graph TD;
+  wz-tag --> wz-icon
+  style wz-tag fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
-<wz-tag>
-  This is a tag
-</wz-tag>
+----------------------------------------------
 
-[ This is a tag ]
-```
-
-### State
-
-> filled= primary | info | warning | negative | positive
-```
-<wz-tag filled="info" >
-  This is a tag
-</wz-tag>
-
-[ This is a tag ] // imagine it has color
-```
-
-### Ability
-
-> removable
-```
-<wz-tag removable >
-  This is a tag
-</wz-tag>
-
-[ This is a tag | x ]
-```
+*Built with [StencilJS](https://stenciljs.com/)*

@@ -2,24 +2,28 @@
   "name": "@wizeline/tea",
   "version": "0.15.0-oatmilk.5",
   "description": "Wizeline's Design System",
-  "module": "dist/esm/index.js",
-  "main": "dist/wizeline-tea",
+  "main": "dist/index.js",
+  "esnext": "dist/esm",
+  "module": "dist/index.mjs",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "jsnext:main": "dist/esm/index.mjs",
   "types": "dist/types/components.d.ts",
   "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
   "files": [
     "dist/"
   ],
   "scripts": {
-    "start": "stencil build --dev --watch --serve",
-    "build": "stencil build --prerender",
+    "build": "stencil build --docs",
     "prepublishOnly": "stencil build",
     "test": "stencil test --spec",
     "test.watch": "stencil test --spec --watch",
     "e2e": "stencil test --e2e"
   },
   "devDependencies": {
-    "@stencil/core": "^0.15.2",
-    "@stencil/sass": "0.1.1",
+    "@stencil/core": "^1.0.0-beta.2",
+    "@stencil/sass": "^0.2.3",
     "@stencil/utils": "latest",
     "@types/jest": "^23.3.0",
     "@types/puppeteer": "^1.10.0",
@@ -27,11 +31,7 @@
     "babel-runtime": "^6.26.0",
     "jest": "23.6.0",
     "jest-cli": "23.6.0",
-    "jest-environment-node": "^23.4.0",
-    "puppeteer": "1.8.0",
-    "surge": "^0.20.1",
-    "watch": "^1.0.2",
-    "workbox-build": "3.4.1"
+    "jest-environment-node": "^23.4.0"
   },
   "contributors": [
     "Charlie L <charlie@wizeline.com>",

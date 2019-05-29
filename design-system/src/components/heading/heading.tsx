@@ -1,4 +1,4 @@
-import { Component, Prop } from '@stencil/core';
+import { Component, Prop, h } from '@stencil/core';
 import { CLASS_DEFAULT } from '../../constants';
 import sizeMatcher from '../../matchers/size';
 
@@ -16,8 +16,10 @@ export class Heading {
   render() {
     const componentClass = sizeMatcher(this) || CLASS_DEFAULT;
 
-    return <span class={componentClass}>
+    return (
+      <span class={componentClass}>
         <slot />
-      </span>;
+      </span>
+    );
   }
 }

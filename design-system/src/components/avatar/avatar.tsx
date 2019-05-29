@@ -1,4 +1,4 @@
-import { Component, Prop } from '@stencil/core';
+import { Component, Prop, h } from '@stencil/core';
 import sizeMatcher, { MEDIUM_SIZE } from '../../matchers/size';
 import shapeMatcher, { ROUND } from '../../matchers/shape';
 
