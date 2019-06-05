@@ -63,6 +63,9 @@ export default ({ icon }) => {
     case 'info': {
       return <icon-info />;
     }
+    case 'list': {
+      return <icon-list />;
+    }
     case 'lock': {
       return <icon-lock />;
     }

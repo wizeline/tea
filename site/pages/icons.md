@@ -129,6 +129,12 @@ showSource: true
 ```html|span-2
 showSource: true
 ---
+<wz-icon icon="list" />
+```
+
+```html|span-2
+showSource: true
+---
 <wz-icon icon="lock" />
 ```
 
