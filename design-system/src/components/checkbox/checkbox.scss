@@ -14,9 +14,6 @@ wz-checkbox {
     background-color: var(--ink-clear);
     border: 1px solid var(--primary-base);
     border-radius: 1px;
-    &:focus {
-      outline: none;
-    }
 
     &:checked {
       color: var(--primary-dark);
@@ -43,4 +40,3 @@ wz-checkbox {
     }
   }
 }
-
